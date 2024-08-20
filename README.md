@@ -7,5 +7,5 @@ Welcome to my GitHub profile. I'm a computer science student at Loyola Universit
 ### Skills: 
 Programming Languages: Python, Java, R <br />
 Tools: Git <br />
-Other: Data Structures, Algorithms, Problem Solving
+Other: Data Structures, Algorithms, Problem Solving <br />
 🚀⭐️
