@@ -3,9 +3,9 @@ Welcome to my GitHub profile. I'm a computer science student at Loyola Universit
 ### About Me:
 * I currently work at my university's ITS Service Desk. 💻
 * I was raised in the PNW. 🌲
-* I have two dogs and like exploring with them. 🐶
+* I have two dogs and like adventuring with them. 🐶
 ### Skills: 
-Programming Languages: Python, Java, R <br />
-Tools: Git <br />
+Programming Languages: Python, Java, R, C, Scala <br />
+Tools: Git, Excel, Microsoft Azure <br />
 Other: Data Structures, Algorithms, Problem Solving <br /> <br />
 🚀⭐️
