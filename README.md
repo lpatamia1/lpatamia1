@@ -6,9 +6,13 @@ Welcome to my GitHub profile. I just graduated from Loyola University Chicago wi
 * I have two dogs and like adventuring with them. 🐶
 * I enjoy reading and exploring new cafes.📚
 ### Skills: 
-Programming Languages: Python, Java, R, C, Scala <br />
+Programming Languages: Python, Java, R, C <br />
 Tools: Git, Excel, Microsoft Azure, pandas <br />
-Analytics: Statistics, Modeling
+Analytics: Statistics, Modeling <br />
+Web Development: HTML, JavaScript <br />
+Security: Cryptography, Threat Modeling <br />
+Familiar with: Scrum, Agile <br />
+Learning: SQL, AWS <br />
 Collaboration: GitHub <br />
 Other: Data Structures, Algorithms, Data Visualization <br /> <br />
 🚀⭐️
