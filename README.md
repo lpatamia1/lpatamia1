@@ -1,7 +1,7 @@
 ### Hello, World! 😄 
 Welcome to my GitHub profile. I just graduated from Loyola University Chicago with a degree in computer science. This repository serves as a showcase of my projects, learning journey, and contributions to the open-source community.
 ### About Me:
-* I just graduated and am currently seeking opportunities to start my career in tech, software development, or data analysis. 💻
+* Currently seeking opportunities to start my career in tech, software development, or data analysis. 💻
 * I was raised in the PNW. 🌲
 * I have two dogs and like adventuring with them. 🐶
 * I enjoy reading and exploring new cafes.📚
