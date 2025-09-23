@@ -8,5 +8,7 @@ Welcome to my GitHub profile. I just graduated from Loyola University Chicago wi
 ### Skills: 
 Programming Languages: Python, Java, R, C, Scala <br />
 Tools: Git, Excel, Microsoft Azure, pandas <br />
+Analytics: Statistics, Modeling
+Collaboration: GitHub
 Other: Data Structures, Algorithms, Data Visualization <br /> <br />
 🚀⭐️
