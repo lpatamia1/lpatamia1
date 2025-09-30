@@ -1,3 +1,8 @@
+/*
+ *  Short, text-based "choose your own adventure" game written in Java. 
+ *  You make choices by typing letters, guiding a character through a short sci-fi story. 
+ *  Your decisions create branching paths that lead to one of several different endings, and the game uses ASCII art to set the mood.
+ */
 import java.util.Scanner;
 
 public class FutureAdventure {
