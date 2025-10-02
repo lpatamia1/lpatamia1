@@ -56,9 +56,9 @@ Welcome to my GitHub profile! I recently graduated from **Loyola University Chic
 
 **ENVS 350 Food Pantry Project 🥫**  
 - Analysis of **university food pantry operations**  
-- Visualizations on **accessibility and community impact** 🌎  
+- Visualizations on **accessibility and community impact**  
 
-### 🌍 GIS & Interactive Maps – Food Deserts in Chicago
+**GIS & Interactive Maps – Food Deserts in Chicago 🌍**
 - **ArcGIS:** Analyzed and mapped underserved neighborhoods using public census & USDA data.  
 - **Jupyter Notebook:** Created an interactive map to explore food desert locations with Python libraries.  
 ---
