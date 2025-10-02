@@ -37,14 +37,6 @@ Welcome to my GitHub profile! I recently graduated from **Loyola University Chic
 ![Cryptography](https://img.shields.io/badge/Cryptography-008080?style=for-the-badge&logoColor=white)
 
 ---
-
-### Goals 🎯
-- Build **apps and tools for environmental sustainability** 🌱  
-- Use tech to drive **social impact and community initiatives** 🤝  
-- Grow expertise in **Java, Python, and web development** while making a difference 💡  
-
----
-
 ### Projects 💡  
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lpatamia1&layout=compact)
 
