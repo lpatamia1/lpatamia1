@@ -33,8 +33,6 @@ Welcome to my GitHub profile! I recently graduated from **Loyola University Chic
 ![Agile](https://img.shields.io/badge/Agile-F05A28?style=for-the-badge&logoColor=white)
 ![Cryptography](https://img.shields.io/badge/Cryptography-008080?style=for-the-badge&logoColor=white)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lpatamia1&layout=compact)
-
 ---
 ### Projects 💡  
 **Pomodoro Focus Timer ⏱️**  
