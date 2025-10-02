@@ -6,7 +6,6 @@ Welcome to my GitHub profile! I recently graduated from **Loyola University Chic
 - Raised in the **Pacific Northwest** 🌲  
 - Dog parent to two adventurous pups 🐶  
 - Passionate about **reading, exploring cafes, and learning new skills** 📚  
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=lpatamia1&theme=radical)
 ---
 
 ### Skills 🛠️  
@@ -62,5 +61,7 @@ Welcome to my GitHub profile! I recently graduated from **Loyola University Chic
 - Visualizations on **accessibility and community impact** 🌎  
 
 ---
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=lpatamia1&theme=radical)
+
 I’m always open to **collaboration, mentorship, or sharing ideas** about tech and data.  
 🚀⭐️
