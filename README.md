@@ -11,8 +11,7 @@ Welcome to my GitHub profile! I recently graduated from **Loyola University Chic
 * Dog parent to two adventurous pups. 🐶
 * Love **reading**, exploring new cafes, and learning new skills. 📚
 
-──────────────────────────────────────────────
-
+---
 ### Skills: 🛠️
 - **Programming Languages:** Python, Java, R, C  
 - **Web Development:** HTML, CSS, JavaScript  
