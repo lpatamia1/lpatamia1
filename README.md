@@ -6,9 +6,7 @@ Welcome to my GitHub profile! I recently graduated from **Loyola University Chic
 - Raised in the **Pacific Northwest** 🌲  
 - Dog parent to two adventurous pups 🐶  
 - Passionate about **reading, exploring cafes, and learning new skills** 📚  
-
-![Lily's GitHub stats](https://github-readme-stats.vercel.app/api?username=lpatamia1&show_icons=true&theme=radical)
-
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=lpatamia1&theme=radical)
 ---
 
 ### Skills 🛠️  
@@ -64,6 +62,5 @@ Welcome to my GitHub profile! I recently graduated from **Loyola University Chic
 - Visualizations on **accessibility and community impact** 🌎  
 
 ---
-
 I’m always open to **collaboration, mentorship, or sharing ideas** about tech and data.  
 🚀⭐️
