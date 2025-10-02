@@ -24,15 +24,14 @@ Welcome to my GitHub profile! I recently graduated from **Loyola University Chic
 
 🌿🌎🌿🌎🌿
 
-──────────────────────────────────────────────
+---
 
 ### Goals: 🎯
 * Build apps and tools that promote **environmental sustainability**.  
 * Use technology to support **social impact and community projects**.  
 * Grow skills in **Java, Python, and web development** while making a difference.  
 
-──────────────────────────────────────────────
-
+---
 ### Projects: 💡
 
 ### **Pomodoro Focus Timer ⏱️**
@@ -64,6 +63,6 @@ Machine learning pipeline:
 - Analysis of **university food pantry operations**  
 - Visualizations on **accessibility** and **community impact** 🌎
 
-──────────────────────────────────────────────
-
-I’m always open to **collaboration, mentorship, or sharing ideas** about tech and data. 🚀⭐️
+---
+I’m always open to **collaboration, mentorship, or sharing ideas** about tech and data. 
+🚀⭐️
