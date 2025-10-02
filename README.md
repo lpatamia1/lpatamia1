@@ -58,6 +58,9 @@ Welcome to my GitHub profile! I recently graduated from **Loyola University Chic
 - Analysis of **university food pantry operations**  
 - Visualizations on **accessibility and community impact** 🌎  
 
+### 🌍 GIS & Interactive Maps – Food Deserts in Chicago
+- **ArcGIS:** Analyzed and mapped underserved neighborhoods using public census & USDA data.  
+- **Jupyter Notebook:** Created an interactive map to explore food desert locations with Python libraries.  
 ---
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=lpatamia1&theme=radical)
 
