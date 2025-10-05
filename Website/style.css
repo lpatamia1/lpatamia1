@@ -1,0 +1,227 @@
+/* --- Global Styles & Desktop Background --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    background-color: #E6E6FA; /* Lavender background */
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #333333;
+    padding: 20px;
+    padding-top: 80px; /* Space for the header */
+}
+
+/* --- Header & Navigation --- */
+.desktop-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 2px solid #000000;
+}
+
+.desktop-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.desktop-header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.desktop-header nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Window Styles --- */
+.window {
+    background-color: #FFC0CB; /* Soft Pink */
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0px #000000;
+    margin: 40px auto;
+}
+
+.title-bar {
+    background-color: #FF69B4; /* Hot Pink */
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 16px;
+    background-color: #E6E6FA;
+    box-shadow: inset -2px -2px 0px #888, inset 2px 2px 0px #fff;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-top: 0;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+}
+
+.content p, .content .project-item {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.content img {
+    margin: 5px;
+}
+
+/* --- Buttons --- */
+.pixel-button {
+    display: inline-block;
+    background-color: #FF69B4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0px #000000;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.pixel-button:hover {
+    background-color: #E6E6FA;
+    color: #333;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .desktop-header {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+    .desktop-header nav {
+        margin-top: 10px;
+    }
+    body {
+        padding-top: 120px;
+    }
+}
+
+body {
+    font-family: 'VT323', monospace;
+    background-color: #E6E6FA; /* Lavender background */
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #333333;
+    /* UPDATED: Top, Right, Bottom, Left padding */
+    padding: 80px 60px 40px 60px;
+}
+
+/* --- New rule to fix header on medium screens --- */
+@media (max-width: 950px) {
+    .desktop-header {
+        flex-direction: column;   /* Stack title and nav vertically */
+        align-items: flex-start;  /* Align everything to the left */
+    }
+
+    .desktop-header nav {
+        margin-top: 10px; /* Add some space below the title */
+    }
+
+    .desktop-header nav a:first-child {
+        margin-left: 0; /* Remove margin from the first link */
+    }
+
+    body {
+        padding-top: 120px; /* Add more space for the now-taller header */
+    }
+}
+
+/* --- Centered Contact Buttons --- */
+.contact-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* --- Retro Player Styles --- */
+.player-body {
+    background-color: #333;
+    color: #00FF00; /* Classic green terminal text */
+    padding: 15px;
+    border: 2px solid #000;
+}
+.now-playing-display {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    border: 1px inset #555;
+    margin-bottom: 10px;
+}
+.now-playing-display span {
+    font-size: 16px;
+    color: #888;
+}
+#current-track {
+    margin: 5px 0 0 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.player-controls {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.control-button {
+    margin: 0 10px;
+    cursor: pointer;
+}
+.playlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    max-height: 120px;
+    overflow-y: auto;
+    background-color: #000;
+    padding: 10px;
+}
+.playlist li {
+    padding: 5px;
+    border-bottom: 1px dotted #333;
+}
