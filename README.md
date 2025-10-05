@@ -1,6 +1,9 @@
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,%20World!%20😄;Welcome%20to%20my%20GitHub%20profile!%20👋&font=Arial&size=20&duration=2000&color=000000&center=true&vCenter=true&width=450&height=70&pause=1000&background=0d111700" alt="Hello, World! Typing SVG" />
 </div>
+<p align="center">
+  <img src="https://media.giphy.com/media/AOSwwqVjNZlDO/giphy.gif" width="300" />
+</p>
 I recently graduated from **Loyola University Chicago** with a degree in **Computer Science**. This repository highlights my projects, skills, and contributions to the open-source community. Raised in the Pacific Northwest 🌲 and now based in Chicago 🏙️, I'm driven by a love for learning 🧠, whether it's exploring new cafes
 🍵 or diving into a new technology. 💻 
 
@@ -11,7 +14,7 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - 🤖 **Deep Learning:** Working through projects with TensorFlow and PyTorch.
 - 🎨 **Advanced Frontend:** Mastering animations and state management in React.
 ---
-### Open-Source Contributions ✨ 
+### Open-Source Contributions ✨ #snake edition
 ![Snake animation](https://github.com/lpatamia1/lpatamia1/blob/output/github-contribution-grid-snake.svg)
 
 ### My Tech Stack 🛠️ 
