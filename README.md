@@ -10,8 +10,6 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - ☁️ **Cloud Native Technologies:** Exploring Docker and Kubernetes for containerization.
 - 🤖 **Deep Learning:** Working through projects with TensorFlow and PyTorch.
 - 🎨 **Advanced Frontend:** Mastering animations and state management in React.
-- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white)
 ---
 ### My Tech Stack 🛠️ 
 **Languages:**
