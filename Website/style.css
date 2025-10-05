@@ -182,7 +182,7 @@ body {
 /* --- Retro Player Styles --- */
 .player-body {
     background-color: #333;
-    color: #00FF00; /* Classic green terminal text */
+    color: #ff69b4; 
     padding: 15px;
     border: 2px solid #000;
 }
@@ -229,7 +229,7 @@ body {
 /* --- Retro Terminal Styles --- */
 #terminal-body {
     background-color: #0c0c0c;
-    color: #00FF00;
+    color: #ff69b4;
     font-family: 'VT323', monospace;
     padding: 15px;
     height: 400px;
@@ -283,13 +283,18 @@ body {
 .terminal-input {
     background: none;
     border: none;
-    color: #00FF00;
+    color: #ff69b4;
     font-family: 'VT323', monospace;
     width: 100%;
-    caret-color: #00FF00;
+    caret-color: #ff69b4;
     font-size: 18px;
 }
 
 .terminal-input:focus {
     outline: none;
+}
+/* --- Style for active playlist item --- */
+.playlist li.active {
+    color: #ff69b4; /* Pink to match your theme */
+    font-weight: bold;
 }
