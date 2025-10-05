@@ -86,11 +86,14 @@ body {
 .pixel-badge.bash { background-color: #c8edc2; }
 .pixel-badge.sql { background-color: #a2b8e0; }
 .pixel-badge.html { background-color: #ffc9a3; }
+.pixel-badge.kotlin { background-color: #ffc9a3; }
 .pixel-badge.css { background-color: #a3c2ff; }
 .pixel-badge.react { background-color: #a3d9ff; }
 .pixel-badge.flask { background-color: #d1d1d1; }
 .pixel-badge.nodejs { background-color: #c8edc2; }
 .pixel-badge.mysql { background-color: #a3c9e8; }
+.pixel-badge.go { background-color: #a3c9e8; }
+.pixel-badge.typescript { background-color: #a3c9e8; }
 
 /* --- Buttons --- */
 .pixel-button { display: inline-block; background-color: #FF69B4; color: white; padding: 10px 20px; text-decoration: none; border: 2px solid #000; box-shadow: 4px 4px 0px #000000; margin-right: 10px; font-size: 18px; }
