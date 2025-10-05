@@ -24,7 +24,7 @@
 
     <main id="desktop">
 
-        <section id="about" class="window">
+        <section id="about" class="window draggable">
             <div class="title-bar">
                 <div class="title">About_Me.txt</div>
                 <div class="buttons">
@@ -41,7 +41,7 @@
             </div>
         </section>
 
-        <section id="skills" class="window">
+        <section id="skills" class="window draggable">
             <div class="title-bar">
                 <div class="title">Skills.exe</div>
                 <div class="buttons">
@@ -84,7 +84,7 @@
             </div>
         </section>
 
-        <section id="projects" class="window">
+        <section id="projects" class="window draggable">
             <div class="title-bar">
                 <div class="title">Projects Folder</div>
                 <div class="buttons">
@@ -120,13 +120,13 @@
                 </div>
             </div>
         </section>
-        <section id="player" class="window">
+        <section id="player" class="window draggable">
                     <div class="title-bar">
                         <div class="title">Now_Playing.exe</div>
                         <div class="buttons">
-                            <div class="button">-</div>
-                            <div class="button">□</div>
-                            <div class="button">×</div>
+                            <div class="button btn-minimize">-</div>
+                            <div class="button btn-maximize">□</div>
+                            <div class="button btn-close">×</div>
                         </div>
                     </div>
                     <div class="content">
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                 </section>
-        <section id="contact" class="window">
+        <section id="contact" class="window draggable">
                     <div class="title-bar">
                         <div class="title">Contact.app</div>
                         <div class="buttons">
@@ -171,7 +171,7 @@
                     </div>
                 </section>
 
-                <section id="terminal" class="window">
+                <section id="terminal" class="window draggable">
                     <div class="title-bar">
                         <div class="title">Terminal.exe</div>
                         <div class="buttons">
@@ -194,6 +194,22 @@
                         </div>
                     </div>
                 </section>
+                <div id="danger-window" class="window draggable" style="top: 1300px; right: 5%;">
+            <div class="title-bar">
+                <div class="title">Warning.exe</div>
+            </div>
+            <div class="content" style="text-align: center;">
+                <p><strong>DANGER!</strong></p>
+                <p>System integrity is critical. Do not click this button.</p>
+                <button id="danger-button" class="pixel-button">OK</button>
+            </div>
+        </div>
+
+        <div id="screensaver" class="hidden">
+            <svg id="dvd-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50" width="150">
+                <text x="50" y="35" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="white">DVD</text>
+            </svg>
+        </div>
     </main>
     <script src="script.js" defer></script>
 
