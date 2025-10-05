@@ -10,6 +10,8 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - ☁️ **Cloud Native Technologies:** Exploring Docker and Kubernetes for containerization.
 - 🤖 **Deep Learning:** Working through projects with TensorFlow and PyTorch.
 - 🎨 **Advanced Frontend:** Mastering animations and state management in React.
+- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white)
 ---
 ### My Tech Stack 🛠️ 
 **Languages:**
@@ -22,8 +24,6 @@ I'm always excited to learn new things. Right now, I'm focused on:
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 **Frontend & Design**
