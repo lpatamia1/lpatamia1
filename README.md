@@ -11,7 +11,7 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - 🤖 **Deep Learning:** Working through projects with TensorFlow and PyTorch.
 - 🎨 **Advanced Frontend:** Mastering animations and state management in React.
 ---
-### Contributions 
+### Open-Source Contributions ✨ 
 ![Snake animation](https://github.com/lpatamia1/lpatamia1/blob/output/github-contribution-grid-snake.svg)
 
 ### My Tech Stack 🛠️ 
