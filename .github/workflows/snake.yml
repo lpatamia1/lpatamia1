@@ -1,14 +1,18 @@
 name: Generate Snake Animation
 
 on:
-  schedule:
-    - cron: "0 0 * * *" # Runs once a day
+  # This allows you to run the workflow manually from the Actions tab
   workflow_dispatch:
+  
+  # This will run the workflow automatically once a day
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      # This step generates the snake.svg file
       - name: Generate github-contribution-grid-snake.svg
         uses: Platane/snk@v3
         with:
@@ -16,6 +20,8 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # This step pushes the generated file to a new branch called 'output'
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
