@@ -99,7 +99,6 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - **Jupyter Notebook:** Created an interactive map to explore food desert locations with Python libraries. 📍
 ---
 ### GitHub Stats 📊
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=lpatamia1&theme=radical)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=lpatamia1&layout=compact&theme=radical)
 [![My GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=lpatamia1&bg_color=0d1117&color=ff69b4&line=ff69b4&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
