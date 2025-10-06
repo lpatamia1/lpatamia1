@@ -93,7 +93,12 @@ I'm always excited to learn new things. Right now, I'm focused on:
 
 **ENVS 350 Food Pantry Project 🥫**  
 - Analysis of **university food pantry operations** 📈
-- Visualizations on **accessibility and community impact**  
+- Visualizations on **accessibility and community impact**
+   
+**Renewable Energy Growth Analyzer 📊**  
+- Analyzes U.S. renewable energy production trends using **Pandas, Seaborn, Flask**, and real data from EIA.  
+- Includes interactive visualizations and a full Flask dashboard.  🖥️
+- 🔗 [View Project](https://github.com/lpatamia1/Renewable_Energy_Growth_Analyzer)
 
 **GIS & Interactive Maps – Food Deserts in Chicago 🌍**
 - **ArcGIS:** Analyzed and mapped underserved neighborhoods using public census & USDA data.  
@@ -106,7 +111,7 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - Yearly trend visualization showing post-pandemic recovery 📉 
 - Correlation analysis linking total and cancer mortality (r ≈ 0.76) 🧠 
 - Flask web interface with interactive map toggling 🧩
-- **Repo:** [State_Mortality](https://github.com/lpatamia1/State_Mortality)
+- 🔗 [State_Mortality](https://github.com/lpatamia1/State_Mortality)
 
 ---
 ### GitHub Stats 📊
