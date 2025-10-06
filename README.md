@@ -98,7 +98,7 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - **ArcGIS:** Analyzed and mapped underserved neighborhoods using public census & USDA data.  
 - **Jupyter Notebook:** Created an interactive map to explore food desert locations with Python libraries. 📍
  
-**State Mortality & Cancer Death Dashboard (Flask + Python) 🩺 **  
+**State Mortality & Cancer Death Dashboard (Flask + Python) 🩺**  
 - Interactive dashboard analyzing **U.S. mortality data (2014–2023)** using real NCHS datasets.  
 - Built with **Flask, Pandas, Plotly, and Matplotlib**, it features:  
 - Choropleth maps for all-cause and cancer mortality 🗺️ 
