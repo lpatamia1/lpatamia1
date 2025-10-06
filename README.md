@@ -97,6 +97,16 @@ I'm always excited to learn new things. Right now, I'm focused on:
 **GIS & Interactive Maps – Food Deserts in Chicago 🌍**
 - **ArcGIS:** Analyzed and mapped underserved neighborhoods using public census & USDA data.  
 - **Jupyter Notebook:** Created an interactive map to explore food desert locations with Python libraries. 📍
+ 
+🩺 **State Mortality & Cancer Death Dashboard (Flask + Python)**  
+Interactive dashboard analyzing **U.S. mortality data (2014–2023)** using real NCHS datasets.  
+Built with **Flask, Pandas, Plotly, and Matplotlib**, it features:  
+- 🗺️ Choropleth maps for all-cause and cancer mortality  
+- 📉 Yearly trend visualization showing post-pandemic recovery  
+- 🧠 Correlation analysis linking total and cancer mortality (r ≈ 0.76)  
+- 🧩 Flask web interface with interactive map toggling
+**Repo:** [State_Mortality](https://github.com/lpatamia1/State_Mortality)
+
 ---
 ### GitHub Stats 📊
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=lpatamia1&layout=compact&theme=radical)
