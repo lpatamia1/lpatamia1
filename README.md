@@ -69,7 +69,6 @@ I'm always excited to learn new things. Right now, I'm focused on:
 ![OOP](https://img.shields.io/badge/Object_Oriented_Programming-FF6F00?style=for-the-badge&logoColor=white)
 ![Cryptography](https://img.shields.io/badge/Cryptography-008080?style=for-the-badge&logoColor=white)
 
-
 ---
 ### Projects 💡  
 **Pomodoro Focus Timer ⏱️**  
@@ -106,12 +105,9 @@ I'm always excited to learn new things. Right now, I'm focused on:
  
 **State Mortality & Cancer Death Dashboard (Flask + Python) 🩺**  
 - Interactive dashboard analyzing **U.S. mortality data (2014–2023)** using real NCHS datasets.  
-- Built with **Flask, Pandas, Plotly, and Matplotlib**, it features:  
-- Choropleth maps for all-cause and cancer mortality 🗺️ 
-- Yearly trend visualization showing post-pandemic recovery 📉 
-- Correlation analysis linking total and cancer mortality (r ≈ 0.76) 🧠 
-- Flask web interface with interactive map toggling 🧩
-- 🔗 [State_Mortality](https://github.com/lpatamia1/State_Mortality)
+- Interactive dashboard analyzing U.S. mortality data (2014–2023) using NCHS datasets.
+- Built with Flask, Pandas, Plotly, and Matplotlib, featuring choropleth maps, trend visualizations, and correlation insights on cancer vs. total mortality.
+- 🔗 [View Project](https://github.com/lpatamia1/State_Mortality)
 
 ---
 ### GitHub Stats 📊
