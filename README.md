@@ -105,8 +105,7 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - Yearly trend visualization showing post-pandemic recovery 📉 
 - Correlation analysis linking total and cancer mortality (r ≈ 0.76) 🧠 
 - Flask web interface with interactive map toggling 🧩
-  
-**Repo:** [State_Mortality](https://github.com/lpatamia1/State_Mortality)
+- **Repo:** [State_Mortality](https://github.com/lpatamia1/State_Mortality)
 
 ---
 ### GitHub Stats 📊
