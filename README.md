@@ -80,6 +80,11 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - Analyzes U.S. renewable energy production trends using **Pandas, Seaborn, Flask**, and real data from EIA.  
 - Includes interactive visualizations and a full Flask dashboard.  🖥️
 - 🔗 [View Project](https://github.com/lpatamia1/Renewable_Energy_Growth_Analyzer)
+  
+**DeveloperSkillAPI 🧩**  
+- A **Java Spring Boot REST API** showcasing clean backend design, OOP principles, and JSON data handling.  
+- Features CRUD operations for developer profiles with a scalable and maintainable architecture.  
+- 🔗 [View Project](https://github.com/lpatamia1/DeveloperSkillAPI)
 
 **GIS & Interactive Maps – Food Deserts in Chicago 🌍**
 - **ArcGIS:** Analyzed and mapped underserved neighborhoods using public census & USDA data.  
