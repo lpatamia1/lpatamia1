@@ -71,15 +71,21 @@ I'm always excited to learn new things. Right now, I'm focused on:
 
 ---
 ### Projects 💡  
-**Pomodoro Focus Timer ⏱️**  
-- Web app to enhance focus and productivity 🎯
-- Animated circular countdown, customizable sessions 🔄  
-- Built with **HTML, CSS, and JavaScript**  
+**State Mortality & Cancer Death Dashboard (Flask + Python) 🩺**  
+- Interactive dashboard analyzing **U.S. mortality data (2014–2023)** using real NCHS datasets.  
+- Interactive dashboard analyzing U.S. mortality data (2014–2023) using NCHS datasets.
+- Built with Flask, Pandas, Plotly, and Matplotlib, featuring choropleth maps, trend visualizations, and correlation insights on cancer vs. total mortality.
+- 🔗 [View Project](https://github.com/lpatamia1/State_Mortality)
 
-**Simple Interest Calculator 💰**  
-- Console app to compute simple interest 🔢
-- Demonstrates basic input/output and arithmetic in **JavaScript or Java**  
+**Renewable Energy Growth Analyzer 📊**  
+- Analyzes U.S. renewable energy production trends using **Pandas, Seaborn, Flask**, and real data from EIA.  
+- Includes interactive visualizations and a full Flask dashboard.  🖥️
+- 🔗 [View Project](https://github.com/lpatamia1/Renewable_Energy_Growth_Analyzer)
 
+**GIS & Interactive Maps – Food Deserts in Chicago 🌍**
+- **ArcGIS:** Analyzed and mapped underserved neighborhoods using public census & USDA data.  
+- **Jupyter Notebook:** Created an interactive map to explore food desert locations with Python libraries. 📍
+  
 **Java & Web Games Portfolio 🎮**  
 - Collection of **graphical web apps** and **Java console games**  
 - **Rock, Paper, Scissors** ✂️🪨📄, **Hangman** 🪢  
@@ -90,24 +96,21 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - ML pipeline using **TF-IDF**, dimensionality reduction, and classifiers 🤖 
 - Predicts movie genres from text 📝
 
+**Pomodoro Focus Timer ⏱️**  
+- Web app to enhance focus and productivity 🎯
+- Animated circular countdown, customizable sessions 🔄  
+- Built with **HTML, CSS, and JavaScript**  
+
+**Simple Interest Calculator 💰**  
+- Console app to compute simple interest 🔢
+- Demonstrates basic input/output and arithmetic in **JavaScript or Java**  
+
 **ENVS 350 Food Pantry Project 🥫**  
 - Analysis of **university food pantry operations** 📈
 - Visualizations on **accessibility and community impact**
-   
-**Renewable Energy Growth Analyzer 📊**  
-- Analyzes U.S. renewable energy production trends using **Pandas, Seaborn, Flask**, and real data from EIA.  
-- Includes interactive visualizations and a full Flask dashboard.  🖥️
-- 🔗 [View Project](https://github.com/lpatamia1/Renewable_Energy_Growth_Analyzer)
 
-**GIS & Interactive Maps – Food Deserts in Chicago 🌍**
-- **ArcGIS:** Analyzed and mapped underserved neighborhoods using public census & USDA data.  
-- **Jupyter Notebook:** Created an interactive map to explore food desert locations with Python libraries. 📍
  
-**State Mortality & Cancer Death Dashboard (Flask + Python) 🩺**  
-- Interactive dashboard analyzing **U.S. mortality data (2014–2023)** using real NCHS datasets.  
-- Interactive dashboard analyzing U.S. mortality data (2014–2023) using NCHS datasets.
-- Built with Flask, Pandas, Plotly, and Matplotlib, featuring choropleth maps, trend visualizations, and correlation insights on cancer vs. total mortality.
-- 🔗 [View Project](https://github.com/lpatamia1/State_Mortality)
+
 
 ---
 ### GitHub Stats 📊
