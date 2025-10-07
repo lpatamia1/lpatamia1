@@ -74,7 +74,7 @@ I'm always excited to learn new things. Right now, I'm focused on:
 
 ### Projects 💡  
 
-**State Mortality, Cancer, and Pandemic Death Dashboard (Flask + Python) 🩺**  
+**State Mortality, Cancer, and Pandemic Death Dashboard 🩺**  
 *Flask + Python | Interactive U.S. health analysis 2014–2023*  
 - Interactive dashboard analyzing **U.S. mortality data (2014–2023)** using real NCHS datasets.  
 - Features choropleth maps, trend visualizations, and correlation insights on cancer, total mortality, and COVID-19.  
@@ -98,7 +98,7 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - Fully scalable API with CRUD functionality.  
 - 🔗 [View Project](https://github.com/lpatamia1/DeveloperSkillAPI)
 
-**Matcha Tracker (React + Tailwind + Framer Motion) 🍵**  
+**Matcha Tracker 🍵**  
 *React + Tailwind + Recharts | Mindful energy tracker*  
 - Log your matcha cups and track energy (1–5) with a soothing animated dashboard.  
 - Visualizes daily energy trends with smooth transitions and floating leaves.  
