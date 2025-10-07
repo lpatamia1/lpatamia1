@@ -91,6 +91,11 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - Features CRUD operations for developer profiles with a scalable and maintainable architecture.  
 - 🔗 [View Project](https://github.com/lpatamia1/DeveloperSkillAPI)
 
+**Matcha Tracker (React + Tailwind + Framer Motion) 🍵** 
+- Log your matcha cups and track energy (1–5) with a soothing animated dashboard.  
+- Built with **React**, **Tailwind**, and **Framer Motion**, it visualizes daily energy trends with smooth transitions and floating leaves.  
+- 🔗 [View Project](https://github.com/lpatamia1/Matcha_Tracker)
+  
 **GIS & Interactive Maps – Food Deserts in Chicago 🌍**
 - **ArcGIS:** Analyzed and mapped underserved neighborhoods using public census & USDA data.  
 - **Jupyter Notebook:** Created an interactive map to explore food desert locations with Python libraries. 📍
