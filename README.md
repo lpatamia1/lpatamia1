@@ -4,6 +4,8 @@
 <p align="center">
   <img src="https://media.giphy.com/media/AOSwwqVjNZlDO/giphy.gif" width="300" />
 </p>
+
+### About Me  
 I recently graduated from **Loyola University Chicago** with a degree in **Computer Science**. This repository highlights my projects, skills, and contributions to the open-source community. Raised in the Pacific Northwest 🌲 and now based in Chicago 🏙️, I'm driven by a love for learning 🧠, whether it's exploring new cafes
 🍵 or diving into a new technology. 💻 
 
@@ -71,29 +73,35 @@ I'm always excited to learn new things. Right now, I'm focused on:
 
 ---
 ### Projects 💡  
+
 **State Mortality, Cancer, and Pandemic Death Dashboard (Flask + Python) 🩺**  
+*Flask + Python | Interactive U.S. health analysis 2014–2023*  
 - Interactive dashboard analyzing **U.S. mortality data (2014–2023)** using real NCHS datasets.  
-- Built with Flask, Pandas, Plotly, and Matplotlib, featuring choropleth maps, trend visualizations, and correlation insights on cancer and total mortality and the COVID-19 pandemic.
+- Features choropleth maps, trend visualizations, and correlation insights on cancer, total mortality, and COVID-19.  
 - 🔗 [View Project](https://github.com/lpatamia1/State_Mortality)
 
 **Renewable Energy Growth Analyzer 📊**  
-- Analyzes U.S. renewable energy production trends using **Pandas, Seaborn, Flask**, and real data from EIA.  
-- Includes interactive visualizations and a full Flask dashboard.  🖥️
+*Flask + Pandas + Seaborn | U.S. renewable energy trends*  
+- Analyzes **U.S. renewable energy production** using EIA datasets.  
+- Includes interactive visualizations and a full Flask dashboard.  
 - 🔗 [View Project](https://github.com/lpatamia1/Renewable_Energy_Growth_Analyzer)
 
 **Environmental Health Index 🌎**  
-- Explores the link between **environmental stress (CO₂, pollution)** and **human health (life expectancy)** through data and empathy-driven design.  
-- Built with **Python, Pandas, Plotly, and Streamlit**, featuring interactive global maps, correlations, and machine learning insights.  
+*Streamlit + Plotly | Data-driven environmental health insights*  
+- Explores links between **environmental stress (CO₂, pollution)** and **human health (life expectancy)**.  
+- Features interactive global maps, correlations, and ML-driven insights.  
 - 🔗 [View Project](https://github.com/lpatamia1/Environmental_Health_Index)
 
 **DeveloperSkillAPI 🧩**  
-- A **Java Spring Boot REST API** showcasing clean backend design, OOP principles, and JSON data handling.  
-- Features CRUD operations for developer profiles with a scalable and maintainable architecture.  
+*Java Spring Boot | RESTful CRUD API for developer profiles*  
+- Showcases clean backend architecture, OOP design, and JSON handling.  
+- Fully scalable API with CRUD functionality.  
 - 🔗 [View Project](https://github.com/lpatamia1/DeveloperSkillAPI)
 
-**Matcha Tracker (React + Tailwind + Framer Motion) 🍵** 
+**Matcha Tracker (React + Tailwind + Framer Motion) 🍵**  
+*React + Tailwind + Recharts | Mindful energy tracker*  
 - Log your matcha cups and track energy (1–5) with a soothing animated dashboard.  
-- Built with **React**, **Tailwind**, and **Framer Motion**, it visualizes daily energy trends with smooth transitions and floating leaves.  
+- Visualizes daily energy trends with smooth transitions and floating leaves.  
 - 🔗 [View Project](https://github.com/lpatamia1/Matcha_Tracker)
   
 **GIS & Interactive Maps – Food Deserts in Chicago 🌍**
@@ -133,6 +141,10 @@ I'm always excited to learn new things. Right now, I'm focused on:
 
 I’m always open to **collaboration 🤝, mentorship, or sharing ideas** about tech and data.  
 🚀⭐️
+
+---
+💌 *Let’s connect!*  
+[LinkedIn](https://www.linkedin.com/in/lilyanapatamia) • [Email](mailto:lpatamia1@gmail.com)
 
 
 
