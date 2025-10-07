@@ -106,32 +106,15 @@ I'm always excited to learn new things. Right now, I'm focused on:
 
 <br>
 
-**GIS & Interactive Maps – Food Deserts in Chicago 🌍**
-- **ArcGIS:** Analyzed and mapped underserved neighborhoods using public census & USDA data. 
-- **Jupyter Notebook:** Created an interactive map to explore food desert locations with Python libraries. 📍
-  
-**Java & Web Games Portfolio 🎮**  
-- Collection of **graphical web apps** and **Java console games**  
-- **Rock, Paper, Scissors** ✂️🪨📄, **Hangman** 🪢  
-- **Future Adventure** – branching story game with secrets 🔮  
-- **Java Vocab Flashcards** – simple and advanced interactive versions 💡  
+<details>
+  <summary>More Projects</summary>
 
-**Movie Genre Classification 🎬**  
-- ML pipeline using **TF-IDF**, dimensionality reduction, and classifiers 🤖 
-- Predicts movie genres from text 📝
-
-**Pomodoro Focus Timer ⏱️**  
-- Web app to enhance focus and productivity 🎯
-- Animated circular countdown, customizable sessions 🔄  
-- Built with **HTML, CSS, and JavaScript**  
-
-**Simple Interest Calculator 💰**  
-- Console app to compute simple interest 🔢
-- Demonstrates basic input/output and arithmetic in **JavaScript or Java**  
-
-**ENVS 350 Food Pantry Project 🥫**  
-- Analysis of **university food pantry operations** 📈
-- Visualizations on **accessibility and community impact**
+- 🎮 **Java & Web Games Portfolio** — Fun creative side projects (Hangman, Flashcards, Adventure Game)  
+- 🎬 **Movie Genre Classification** — ML text classification using TF-IDF  
+- ⏱️ **Pomodoro Focus Timer** — JavaScript productivity app  
+- 💰 **Simple Interest Calculator** — basic console app  
+- 🥫 **ENVS 350 Food Pantry Project** — data visualization for community research  
+</details>
   
 ---
 
