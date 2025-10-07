@@ -71,9 +71,9 @@ I'm always excited to learn new things. Right now, I'm focused on:
 
 ---
 ### Projects 💡  
-**State Mortality & Cancer Death Dashboard (Flask + Python) 🩺**  
+**State Mortality, Cancer, and Pandemic Death Dashboard (Flask + Python) 🩺**  
 - Interactive dashboard analyzing **U.S. mortality data (2014–2023)** using real NCHS datasets.  
-- Built with Flask, Pandas, Plotly, and Matplotlib, featuring choropleth maps, trend visualizations, and correlation insights on cancer vs. total mortality.
+- Built with Flask, Pandas, Plotly, and Matplotlib, featuring choropleth maps, trend visualizations, and correlation insights on cancer and total mortality and the COVID-19 pandemic.
 - 🔗 [View Project](https://github.com/lpatamia1/State_Mortality)
 
 **Renewable Energy Growth Analyzer 📊**  
