@@ -80,7 +80,12 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - Analyzes U.S. renewable energy production trends using **Pandas, Seaborn, Flask**, and real data from EIA.  
 - Includes interactive visualizations and a full Flask dashboard.  🖥️
 - 🔗 [View Project](https://github.com/lpatamia1/Renewable_Energy_Growth_Analyzer)
-  
+
+**Environmental Health Index 🌎**  
+- Explores the link between **environmental stress (CO₂, pollution)** and **human health (life expectancy)** through data and empathy-driven design.  
+- Built with **Python, Pandas, Plotly, and Streamlit**, featuring interactive global maps, correlations, and machine learning insights.  
+- 🔗 [View Project](https://github.com/lpatamia1/Environmental_Health_Index)
+
 **DeveloperSkillAPI 🧩**  
 - A **Java Spring Boot REST API** showcasing clean backend design, OOP principles, and JSON data handling.  
 - Features CRUD operations for developer profiles with a scalable and maintainable architecture.  
