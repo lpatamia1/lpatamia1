@@ -113,7 +113,8 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - 🎬 **Movie Genre Classification** — ML text classification using TF-IDF  
 - ⏱️ **Pomodoro Focus Timer** — JavaScript productivity app  
 - 💰 **Simple Interest Calculator** — basic console app  
-- 🥫 **ENVS 350 Food Pantry Project** — data visualization for community research  
+- 🥫 **ENVS 350 Food Pantry Project** — data visualization for community research
+- 🧮 **To-Do List** — nostalgic, terminal-style Java to-do app with modern JSON persistence and colorful, minimalist productivity.
 </details>
   
 ---
