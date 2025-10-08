@@ -110,11 +110,11 @@ I'm always excited to learn new things. Right now, I'm focused on:
   <summary>More Projects</summary>
 
 - 🎮 **Java & Web Games Portfolio** — Fun creative side projects (Hangman, Flashcards, Adventure Game)  
-- 🎬 **Movie Genre Classification** — ML text classification using TF-IDF  
-- ⏱️ **Pomodoro Focus Timer** — JavaScript productivity app  
-- 💰 **Simple Interest Calculator** — basic console app  
-- 🥫 **ENVS 350 Food Pantry Project** — data visualization for community research
-- 🧮 **To-Do List** — nostalgic, terminal-style Java to-do app with modern JSON persistence and colorful, minimalist productivity.
+- 🎬 **Movie Genre Classification** — ML text classification using TF-IDF, SVD, and Logistic Regression
+- ⏱️ **Pomodoro Focus Timer** — JavaScript productivity app with animated SVG progress
+- 💰 **Simple Interest Calculator** — Basic console app with clean CLI input validation
+- 🥫 **ENVS 350 Food Pantry Project** — Data visualization and mapping for community research
+- 🧮 **To-Do List** — Nostalgic, terminal-style Java to-do app with modern JSON persistence and colorful, minimalist productivity
 </details>
   
 ---
