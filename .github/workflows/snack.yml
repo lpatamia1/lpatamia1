@@ -1,4 +1,4 @@
-name: Generate Pink Snake Animation
+name: snake
 
 on:
   # Allows manual trigger from Actions tab
