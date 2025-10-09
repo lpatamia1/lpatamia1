@@ -94,9 +94,16 @@ I'm always excited to learn new things. Right now, I'm focused on:
 
 **DeveloperSkillAPI 🧩**  
 *Java Spring Boot | RESTful CRUD API for developer profiles*  
-- Showcases clean backend architecture, OOP design, and JSON handling.  
-- Fully scalable API with CRUD functionality.  
+- Showcases clean backend architecture, OOP design, and JSON data handling.  
+- Fully **scalable API with CRUD functionality.** 
 - 🔗 [View Project](https://github.com/lpatamia1/DeveloperSkillAPI)
+
+**To-Do List 🧮** 
+*Java | CLI | Gson | JUnit | GitHub Actions | JaCoCo*
+- Nostalgic **retro-style console app** with rainbow loading bar, beeps, and motivational quotes.  
+- Implements **JSON persistence, file I/O, and object serialization** for permanent task storage.  
+- **89 % test coverage**, automated builds via **GitHub Actions**, and CI-driven reliability.  
+- 🔗 [View Project](https://github.com/lpatamia1/To-Do-List-App)
 
 **Matcha Tracker 🍵**  
 *React + Tailwind + Recharts | Mindful energy tracker*  
@@ -114,7 +121,6 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - ⏱️ **Pomodoro Focus Timer** — JavaScript productivity app with animated SVG progress
 - 💰 **Simple Interest Calculator** — Basic console app with clean CLI input validation
 - 🥫 **ENVS 350 Food Pantry Project** — Data visualization and mapping for community research
-- 🧮 **To-Do List** — Nostalgic, terminal-style Java to-do app with modern JSON persistence and colorful, minimalist productivity
 </details>
   
 ---
