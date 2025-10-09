@@ -1,10 +1,10 @@
 name: Generate Pink Snake Animation
 
 on:
-  # Allows manual trigger from Actions tab
+  # Allows manual trigger
   workflow_dispatch:
 
-  # Runs daily at midnight UTC
+  # Runs daily
   schedule:
     - cron: "0 0 * * *"
 
@@ -12,16 +12,19 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      # Step 1 — Generate pink snake SVGs
-      - name: Generate github-contribution-grid-snake.svg (pink theme)
+      # Step 1 — Generate snake SVG with pink theme
+      - name: Generate github-contribution-grid-snake.svg (pink)
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # The color customization happens here 👇
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=ff69b4&color_dots=#ffb6c1,#ffc0cb,#ff69b4,#ff1493,#ffb6c1
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=ff69b4&color_dots=#ffc0cb,#ffb6c1,#ff69b4,#ff1493,#ffc0cb
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          color_snake: ff69b4
+          color_dots: "#ffb6c1,#ffc0cb,#ff69b4,#ff1493,#ffc0cb"
 
-      # Step 2 — Push generated files to the output branch
+      # Step 2 — Push to output branch
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
