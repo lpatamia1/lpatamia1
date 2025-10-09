@@ -136,10 +136,10 @@ I'm always excited to learn new things. Right now, I'm focused on:
 ### Let's Connect  💌
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/lily-patamia/" target="_blank">
+  <a href="https://www.linkedin.com/in/lilyanapatamia/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-ff69b4?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="mailto:lpatamia1@gmail.com">
+  <a href="mailto:lpatamia@luc.edu">
     <img src="https://img.shields.io/badge/Email-ffb6c1?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
   <a href="https://github.com/lpatamia1">
