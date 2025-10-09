@@ -4,9 +4,11 @@
 <p align="center">
   <img src="https://media.giphy.com/media/AOSwwqVjNZlDO/giphy.gif" width="300" />
 </p>
-<p align="center">
-  <img src="https://media.giphy.com/media/GghGKaZ8JeHJx0apQC/giphy.gif" width="300" alt="Coding animation" />
-</p>
+
+<div align="center">
+  <img src="assets/Stressed%20Focus%20GIF%20by%20Persona.gif" width="320" alt="Girl coding" />
+</div>
+
 
 
 ---
@@ -130,8 +132,10 @@ I'm always excited to learn new things. Right now, I'm focused on:
 ---
 
 ### GitHub Stats 📊
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=lpatamia1&layout=compact&theme=radical)
-[![My GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=lpatamia1&bg_color=0d1117&color=ff69b4&line=ff69b4&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=lpatamia1&layout=compact&title_color=ff69b4&text_color=000000&icon_color=ff69b4&bg_color=ffffff&border_color=ffb6c1)
+[![My GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=lpatamia1&bg_color=ffffff&color=ff69b4&line=ff69b4&point=ffb6c1&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+![GitHub Commits](https://github-readme-streak-stats.herokuapp.com?user=lpatamia1&theme=default&background=ffffff&border=ffb6c1&stroke=ff69b4&ring=ff69b4&fire=ff69b4&currStreakNum=ff69b4&sideNums=ff69b4&currStreakLabel=ff69b4&sideLabels=ff69b4&dates=ff9dc9)
 
 ---
 
