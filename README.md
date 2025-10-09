@@ -98,7 +98,7 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - Fully **scalable API with CRUD functionality.** 
 - 🔗 [View Project](https://github.com/lpatamia1/DeveloperSkillAPI)
 
-**To-Do List 🧮** 
+**To-Do List 🧮**  
 *Java | CLI | Gson | JUnit | GitHub Actions | JaCoCo*
 - Nostalgic **retro-style console app** with rainbow loading bar, beeps, and motivational quotes.  
 - Implements **JSON persistence, file I/O, and object serialization** for permanent task storage.  
