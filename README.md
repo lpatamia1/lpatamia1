@@ -1,15 +1,10 @@
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,%20World!%20😄;Welcome%20to%20my%20GitHub%20profile!%20👋&font=Arial&size=20&duration=2000&color=000000&center=true&vCenter=true&width=450&height=70&pause=1000&background=0d111700" alt="Hello, World! Typing SVG" />
 </div>
-<p align="center">
-  <img src="https://media.giphy.com/media/AOSwwqVjNZlDO/giphy.gif" width="300" />
-</p>
 
 <div align="center">
   <img src="assets/Stressed%20Focus%20GIF%20by%20Persona.gif" width="320" alt="Girl coding" />
 </div>
-
-
 
 ---
 
@@ -133,13 +128,12 @@ I'm always excited to learn new things. Right now, I'm focused on:
 
 ### GitHub Stats 📊
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=lpatamia1&layout=compact&title_color=ff69b4&text_color=000000&icon_color=ff69b4&bg_color=ffffff&border_color=ffb6c1)
 [![My GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=lpatamia1&bg_color=ffffff&color=ff69b4&line=ff69b4&point=ffb6c1&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 ![GitHub Commits](https://github-readme-streak-stats.herokuapp.com?user=lpatamia1&theme=default&background=ffffff&border=ffb6c1&stroke=ff69b4&ring=ff69b4&fire=ff69b4&currStreakNum=ff69b4&sideNums=ff69b4&currStreakLabel=ff69b4&sideLabels=ff69b4&dates=ff9dc9)
 
 ---
 
-### 💌 Let's Connect  
+### Let's Connect  💌
 
 <p align="center">
   <a href="https://www.linkedin.com/in/lily-patamia/" target="_blank">
@@ -161,7 +155,10 @@ I'm always excited to learn new things. Right now, I'm focused on:
   <sub>Built with passion, code, and a little pink flair.</sub>
 </p>
 
-
-
+<!-- matrix rain gif
+<p align="center">
+  <img src="https://media.giphy.com/media/AOSwwqVjNZlDO/giphy.gif" width="300" />
+</p>
+-->
 
 
