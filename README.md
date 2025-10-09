@@ -4,6 +4,10 @@
 <p align="center">
   <img src="https://media.giphy.com/media/AOSwwqVjNZlDO/giphy.gif" width="300" />
 </p>
+<p align="center">
+  <img src="https://media.giphy.com/media/GghGKaZ8JeHJx0apQC/giphy.gif" width="300" alt="Coding animation" />
+</p>
+
 
 ---
 
@@ -131,8 +135,29 @@ I'm always excited to learn new things. Right now, I'm focused on:
 
 ---
 
-💌 *Let’s connect!*  
-[LinkedIn](https://www.linkedin.com/in/lilyanapatamia) • [Email](mailto:lpatamia1@gmail.com)
+### 💌 Let's Connect  
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/lily-patamia/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-ff69b4?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:lpatamia1@gmail.com">
+    <img src="https://img.shields.io/badge/Email-ffb6c1?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://github.com/lpatamia1">
+    <img src="https://img.shields.io/badge/GitHub-ffc0cb?style=for-the-badge&logo=github&logoColor=black" alt="GitHub" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5xcThsMWczN2JjcjZpYmxjbnkybXJmOXE5OGFueXNyNmx1OXJxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S9RnJWRWoiRZlHgaHa/giphy.gif" width="300" alt="Outro Animation" />
+</p>
+<p align="center">
+  <b>Thanks for dropping by! 🌸</b><br>
+  <sub>Built with passion, code, and a little pink flair.</sub>
+</p>
+
+
 
 
 
