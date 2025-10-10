@@ -28,6 +28,8 @@ jobs:
           sed -i 's/#216e39/#ff1493/g' pinksnake/github-contribution-grid-snake*.svg
           sed -i 's/#9be9a8/#ffc0cb/g' pinksnake/github-contribution-grid-snake*.svg
           sed -i 's/#26a641/#ff8cbf/g' pinksnake/github-contribution-grid-snake*.svg
+          sed -i 's/#57ab5a/#ff9fc9/g' pinksnake/github-contribution-grid-snake*.svg
+          sed -i 's/#28a745/#ff7ab8/g' pinksnake/github-contribution-grid-snake*.svg
 
 
       - name: Push pink snake to output branch
