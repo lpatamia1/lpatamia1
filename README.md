@@ -6,10 +6,6 @@
   <img src="assets/hellointernetgirltyping.gif" width="400" alt="Hello Internet Girl Typing GIF"/>
 </div>
 
-<div align="center">
-  <img src="assets/Stressed%20Focus%20GIF%20by%20Persona.gif" width="320" alt="Girl coding" />
-</div>
-
 ---
 
 ### About Me 💻
@@ -152,12 +148,12 @@ I'm always excited to learn new things. Right now, I'm focused on:
 </p>
 
 <p align="center">
-  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5xcThsMWczN2JjcjZpYmxjbnkybXJmOXE5OGFueXNyNmx1OXJxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S9RnJWRWoiRZlHgaHa/giphy.gif" width="300" alt="Outro Animation" />
-</p>
-<p align="center">
   <b>Thanks for dropping by! 🌸</b><br>
   <sub>Built with passion, code, and a little pink flair.</sub>
 </p>
+<div align="center">
+  <img src="assets/Stressed%20Focus%20GIF%20by%20Persona.gif" width="320" alt="Girl coding" />
+</div>
 
 <!-- matrix rain gif
 <p align="center">
