@@ -23,7 +23,6 @@ jobs:
           # The color customization happens here 👇
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
           color_snake: ff69b4
           color_dots: "#ffb6c1,#ffc0cb,#ff69b4,#ff1493,#ffc0cb"
 
