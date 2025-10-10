@@ -20,6 +20,7 @@ jobs:
       # 💕 recolor greens → pinks
       - name: Recolor snake to pink
         run: |
+          chmod +w dist/github-contribution-grid-snake*.svg
           sed -i 's/#40c463/#ff69b4/g' dist/github-contribution-grid-snake.svg
           sed -i 's/#30a14e/#ffb6c1/g' dist/github-contribution-grid-snake.svg
           sed -i 's/#216e39/#ff1493/g' dist/github-contribution-grid-snake.svg
