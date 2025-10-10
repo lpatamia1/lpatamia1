@@ -163,8 +163,15 @@ I'm always excited to learn new things. Right now, I'm focused on:
   <sub>Built with passion, code, and a little pink flair.</sub>
 </p>
 <div align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjMycTFuZzBqbDV0czVuazZoajFldjNydXI2dWUwZThsYXo4OTZkNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tMS6hTWc6Fnmvt8zjo/giphy.gif" alt="Hello Internet Girl Typing" width="300" />
+</div>
+
+
+<!---
+<div align="center">
   <img src="assets/Stressed%20Focus%20GIF%20by%20Persona.gif" width="320" alt="Girl coding" />
 </div>
+--->
 
 <!-- matrix rain gif
 <p align="center">
