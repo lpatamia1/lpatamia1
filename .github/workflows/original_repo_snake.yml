@@ -14,8 +14,8 @@ jobs:
         with:
           github_user_name: lpatamia1
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-pink.svg
+            dist/github-contribution-grid-snake-pink-dark.svg?palette=github-dark
 
       # 💕 copy, then recolor
       - name: Copy and recolor snake to pink
