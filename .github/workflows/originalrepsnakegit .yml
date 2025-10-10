@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Step 1 — Generate pink snake SVGs
-      - name: Generate github-contribution-grid-snake.svg (pink theme)
+      - name: generate_regular_snake.svg (pink theme)
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
