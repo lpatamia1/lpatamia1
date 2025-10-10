@@ -9,7 +9,7 @@
 ---
 
 ### About Me 💻
-I recently graduated from **Loyola University Chicago** with a degree in **Computer Science**. This repository highlights my projects, skills, and contributions to the open-source community. Raised in the Pacific Northwest 🌲 and now based in Chicago 🏙️, I'm driven by a love for learning 🧠, whether it's exploring new cafes
+I recently graduated from **Loyola University Chicago** with a degree in **computer science** and a minor in environmental science. This repository highlights my projects, skills, and contributions to the open-source community. Raised in the Pacific Northwest 🌲 and now based in Chicago 🏙️, I'm driven by a love for learning 🧠, whether it's exploring new cafes
 🍵 or diving into a new technology. 
 
 ---
