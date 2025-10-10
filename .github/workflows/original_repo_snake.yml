@@ -1,4 +1,4 @@
-name: snake
+name: original repo color snake
 
 on:
   # Allows manual trigger from Actions tab
