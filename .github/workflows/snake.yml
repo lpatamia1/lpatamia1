@@ -1,4 +1,4 @@
-name: Generate Pink Snake Animation
+name: regular snake
 
 on:
   # Allows manual trigger
