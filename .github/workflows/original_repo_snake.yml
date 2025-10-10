@@ -22,7 +22,11 @@ jobs:
         run: |
           mkdir pinksnake
           cp dist/github-contribution-grid-snake*.svg pinksnake/
+          
           # Correct light→dark pink gradient
+          
+          echo "🎨 Recoloring light mode snake..."
+
           sed -i 's/#9be9a8/#ffe6ee/g' pinksnake/github-contribution-grid-snake*.svg  # lowest
           sed -i 's/#40c463/#ff9fc9/g' pinksnake/github-contribution-grid-snake*.svg  # low-mid
           sed -i 's/#30a14e/#ff4da6/g' pinksnake/github-contribution-grid-snake*.svg  # mid-high
@@ -32,7 +36,14 @@ jobs:
           sed -i 's/#57ab5a/#ff66b2/g' pinksnake/github-contribution-grid-snake*.svg
           sed -i 's/#28a745/#e60073/g' pinksnake/github-contribution-grid-snake*.svg
 
+          echo "🌙 Recoloring dark mode snake..."
+          sed -i 's/#0e4429/#2b0014/g' pinksnake/github-contribution-grid-snake-pink-dark.svg  # empty
+          sed -i 's/#006d32/#57002a/g' pinksnake/github-contribution-grid-snake-pink-dark.svg  # low
+          sed -i 's/#26a641/#820040/g' pinksnake/github-contribution-grid-snake-pink-dark.svg  # mid
+          sed -i 's/#39d353/#ff5fa2/g' pinksnake/github-contribution-grid-snake-pink-dark.svg  # high
 
+          echo "✅ Recolor complete!"
+          
       - name: Push pink snake to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
