@@ -17,17 +17,19 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Recolor snake to pink
+      # 💕 copy, then recolor
+      - name: Copy and recolor snake to pink
         run: |
-          chmod +w dist/github-contribution-grid-snake*.svg
-          sed -i 's/#40c463/#ff69b4/g' dist/github-contribution-grid-snake*.svg
-          sed -i 's/#30a14e/#ffb6c1/g' dist/github-contribution-grid-snake*.svg
-          sed -i 's/#216e39/#ff1493/g' dist/github-contribution-grid-snake*.svg
+          mkdir pinksnake
+          cp dist/github-contribution-grid-snake*.svg pinksnake/
+          sed -i 's/#40c463/#ff69b4/g' pinksnake/github-contribution-grid-snake*.svg
+          sed -i 's/#30a14e/#ffb6c1/g' pinksnake/github-contribution-grid-snake*.svg
+          sed -i 's/#216e39/#ff1493/g' pinksnake/github-contribution-grid-snake*.svg
 
-      - name: Push to output branch
+      - name: Push pink snake to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
-          build_dir: dist
+          build_dir: pinksnake
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
