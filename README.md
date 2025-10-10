@@ -136,7 +136,11 @@ I'm always excited to learn new things. Right now, I'm focused on:
 ### GitHub Stats 📊
 
 [![My GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=lpatamia1&bg_color=ffffff&color=ff69b4&line=ff69b4&point=ffb6c1&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<div align="center">
+
 ![GitHub Commits](https://github-readme-streak-stats.herokuapp.com?user=lpatamia1&theme=default&background=ffffff&border=ffb6c1&stroke=ff69b4&ring=ff69b4&fire=ff69b4&currStreakNum=ff69b4&sideNums=ff69b4&currStreakLabel=ff69b4&sideLabels=ff69b4&dates=ff9dc9)
+
+</div>
 
 ---
 
