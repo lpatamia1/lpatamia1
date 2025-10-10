@@ -137,6 +137,39 @@ I'm always excited to learn new things. Right now, I'm focused on:
 ![GitHub Commits](https://github-readme-streak-stats.herokuapp.com?user=lpatamia1&theme=default&background=ffffff&border=ffb6c1&stroke=ff69b4&ring=ff69b4&fire=ff69b4&currStreakNum=ff69b4&sideNums=ff69b4&currStreakLabel=ff69b4&sideLabels=ff69b4&dates=ff9dc9)
 
 </div>
+<!-- 🌸 GitHub Activity Graph -->
+<p align="center">
+  <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
+    <picture>
+      <!-- Dark mode -->
+      <source media="(prefers-color-scheme: dark)" 
+        srcset="https://github-readme-activity-graph.vercel.app/graph?username=lpatamia1&bg_color=0d1117&color=ffb6c1&line=ff69b4&point=ffffff&area=true&hide_border=true" />
+      <!-- Light mode -->
+      <source media="(prefers-color-scheme: light)" 
+        srcset="https://github-readme-activity-graph.vercel.app/graph?username=lpatamia1&bg_color=ffffff&color=ff69b4&line=ff69b4&point=ffb6c1&area=true&hide_border=true" />
+      <!-- Fallback -->
+      <img 
+        src="https://github-readme-activity-graph.vercel.app/graph?username=lpatamia1&bg_color=ffffff&color=ff69b4&line=ff69b4&point=ffb6c1&area=true&hide_border=true" 
+        alt="My GitHub Activity Graph" />
+    </picture>
+  </a>
+</p>
+
+<!-- 💕 GitHub Streak Stats -->
+<div align="center">
+  <picture>
+    <!-- Dark mode -->
+    <source media="(prefers-color-scheme: dark)" 
+      srcset="https://github-readme-streak-stats.herokuapp.com?user=lpatamia1&theme=dark&background=0d1117&border=ffb6c1&stroke=ff69b4&ring=ffb6c1&fire=ff69b4&currStreakNum=ffb6c1&sideNums=ffb6c1&currStreakLabel=ffb6c1&sideLabels=ffb6c1&dates=ffcce0" />
+    <!-- Light mode -->
+    <source media="(prefers-color-scheme: light)" 
+      srcset="https://github-readme-streak-stats.herokuapp.com?user=lpatamia1&theme=default&background=ffffff&border=ffb6c1&stroke=ff69b4&ring=ff69b4&fire=ff69b4&currStreakNum=ff69b4&sideNums=ff69b4&currStreakLabel=ff69b4&sideLabels=ff69b4&dates=ff9dc9" />
+    <!-- Fallback -->
+    <img 
+      src="https://github-readme-streak-stats.herokuapp.com?user=lpatamia1&theme=default&background=ffffff&border=ffb6c1&stroke=ff69b4&ring=ff69b4&fire=ff69b4&currStreakNum=ff69b4&sideNums=ff69b4&currStreakLabel=ff69b4&sideLabels=ff69b4&dates=ff9dc9" 
+      alt="GitHub Commits" />
+  </picture>
+</div>
 
 ---
 
