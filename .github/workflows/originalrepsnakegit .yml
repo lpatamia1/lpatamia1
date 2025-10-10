@@ -15,6 +15,11 @@ jobs:
       # Step 1 — Generate pink snake SVGs
       - name: generate_regular_snake.svg (pink theme)
         uses: Platane/snk@v3
+        # Uses original repo from the official version of the generator maintained by Platane
+        # Always up-to-date with official fixes
+        # Can't change the color palettes
+        # GitHub only runs their code as-is
+        # When using Platane/snk@vs, you borrow their generator
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |

@@ -15,6 +15,7 @@ jobs:
       # Step 1 — Generate snake SVG with pink theme
       - name: Generate github-contribution-grid-snake.svg (pink)
         uses: lpatamia1/snk@main
+        # This is the forked repo
         with:
           github_user_name: ${{ github.repository_owner }}
           # The color customization happens here 👇
