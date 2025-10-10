@@ -23,7 +23,6 @@ I'm always excited to learn new things. Right now, I'm focused on:
 ---
 
 ### Open-Source Contributions ✨ #snake edition
-![Snake animation](https://github.com/lpatamia1/lpatamia1/blob/output/github-contribution-grid-snake.svg)
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" 
