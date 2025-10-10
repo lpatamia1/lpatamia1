@@ -3,6 +3,10 @@
 </div>
 
 <div align="center">
+  <img src="assets/hellointernetgirltyping.gif" width="400" alt="Hello Internet Girl Typing GIF"/>
+</div>
+
+<div align="center">
   <img src="assets/Stressed%20Focus%20GIF%20by%20Persona.gif" width="320" alt="Girl coding" />
 </div>
 
