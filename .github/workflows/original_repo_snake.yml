@@ -1,9 +1,9 @@
-name: Generate Pink Snake from original repo
+name: Generate Pink Snake
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"  # every day
+    - cron: "0 0 * * *"
 
 jobs:
   generate:
@@ -17,17 +17,12 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # 💕 recolor greens → pinks
       - name: Recolor snake to pink
         run: |
           chmod +w dist/github-contribution-grid-snake*.svg
-          sed -i 's/#40c463/#ff69b4/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#30a14e/#ffb6c1/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#216e39/#ff1493/g' dist/github-contribution-grid-snake.svg
-
-          sed -i 's/#40c463/#ff69b4/g' dist/github-contribution-grid-snake-dark.svg
-          sed -i 's/#30a14e/#ffb6c1/g' dist/github-contribution-grid-snake-dark.svg
-          sed -i 's/#216e39/#ff1493/g' dist/github-contribution-grid-snake-dark.svg
+          sed -i 's/#40c463/#ff69b4/g' dist/github-contribution-grid-snake*.svg
+          sed -i 's/#30a14e/#ffb6c1/g' dist/github-contribution-grid-snake*.svg
+          sed -i 's/#216e39/#ff1493/g' dist/github-contribution-grid-snake*.svg
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
