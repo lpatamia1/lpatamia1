@@ -185,10 +185,15 @@ I'm always excited to learn new things. Right now, I'm focused on:
   <b>Thanks for dropping by! 🌸</b><br>
   <sub>Built with passion, code, and a little pink flair.</sub>
 </p>
-<div align="center">
+
+<!---<div align="center">
   <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnR0OTN3anU5dGt4YWtyZzdtNDJqY2JuaGk2dzRoZ3pwM2txcGVyMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DeoqjowSQvaQWdUg8D/giphy.gif" alt="Hello Internet Girl Typing" width="300" />
 </div>
+--->
 
+<div align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXlsM2x5eWRnb282bjFjZ3d3ajB4MnE2YjJsZ21pdXA2d2t1NGx0dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kZqbBT64ECtjy/giphy.gif" alt="Hello Internet Girl Typing" width="300" />
+</div>
 
 <!---
 <div align="center">
