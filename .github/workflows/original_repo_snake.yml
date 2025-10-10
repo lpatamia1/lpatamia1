@@ -18,18 +18,19 @@ jobs:
             dist/github-contribution-grid-snake-pink-dark.svg?palette=github-dark
 
       # 💕 copy, then recolor
-      - name: Copy and recolor snake to pink
+      - name: Copy and recolor snake to pink (balanced contrast)
         run: |
           mkdir pinksnake
           cp dist/github-contribution-grid-snake*.svg pinksnake/
-          # Replace every known green shade used by Platane/snk
-          sed -i 's/#40c463/#ff69b4/g' pinksnake/github-contribution-grid-snake*.svg
-          sed -i 's/#30a14e/#ffb6c1/g' pinksnake/github-contribution-grid-snake*.svg
-          sed -i 's/#216e39/#ff1493/g' pinksnake/github-contribution-grid-snake*.svg
-          sed -i 's/#9be9a8/#ffc0cb/g' pinksnake/github-contribution-grid-snake*.svg
-          sed -i 's/#26a641/#ff8cbf/g' pinksnake/github-contribution-grid-snake*.svg
-          sed -i 's/#57ab5a/#ff9fc9/g' pinksnake/github-contribution-grid-snake*.svg
-          sed -i 's/#28a745/#ff7ab8/g' pinksnake/github-contribution-grid-snake*.svg
+          # Correct light→dark pink gradient
+          sed -i 's/#9be9a8/#ffe6ee/g' pinksnake/github-contribution-grid-snake*.svg  # lowest
+          sed -i 's/#40c463/#ff9fc9/g' pinksnake/github-contribution-grid-snake*.svg  # low-mid
+          sed -i 's/#30a14e/#ff4da6/g' pinksnake/github-contribution-grid-snake*.svg  # mid-high
+          sed -i 's/#216e39/#b30059/g' pinksnake/github-contribution-grid-snake*.svg  # highest
+          # extras
+          sed -i 's/#26a641/#ff7ab8/g' pinksnake/github-contribution-grid-snake*.svg
+          sed -i 's/#57ab5a/#ff66b2/g' pinksnake/github-contribution-grid-snake*.svg
+          sed -i 's/#28a745/#e60073/g' pinksnake/github-contribution-grid-snake*.svg
 
 
       - name: Push pink snake to output branch
