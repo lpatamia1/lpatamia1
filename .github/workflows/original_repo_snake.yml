@@ -26,7 +26,6 @@ jobs:
           # Correct light→dark pink gradient
           
           echo "🎨 Recoloring light mode snake..."
-
           sed -i 's/#9be9a8/#ffe6ee/g' pinksnake/github-contribution-grid-snake*.svg  # lowest
           sed -i 's/#40c463/#ff9fc9/g' pinksnake/github-contribution-grid-snake*.svg  # low-mid
           sed -i 's/#30a14e/#ff4da6/g' pinksnake/github-contribution-grid-snake*.svg  # mid-high
@@ -36,7 +35,15 @@ jobs:
           sed -i 's/#57ab5a/#ff66b2/g' pinksnake/github-contribution-grid-snake*.svg
           sed -i 's/#28a745/#e60073/g' pinksnake/github-contribution-grid-snake*.svg
 
-          echo "🌙 Recoloring dark mode snake..."
+          # GitHub dark palette (multiple variations)
+          for color in \
+            "#0e4429" "#003820" "#004d26" "#005d2a" "#006d32" \
+            "#017b36" "#01863b" "#009e44" "#00aa49" "#00b84e" \
+            "#26a641" "#28a745" "#2ea043" "#3fb950" "#39d353"
+          do
+            sed -i "s/$color/#57002a/g" pinksnake/github-contribution-grid-snake-pink-dark.svg
+          done
+          # Apply gradient by intensity
           sed -i 's/#0e4429/#2b0014/g' pinksnake/github-contribution-grid-snake-pink-dark.svg  # empty
           sed -i 's/#006d32/#57002a/g' pinksnake/github-contribution-grid-snake-pink-dark.svg  # low
           sed -i 's/#26a641/#820040/g' pinksnake/github-contribution-grid-snake-pink-dark.svg  # mid
