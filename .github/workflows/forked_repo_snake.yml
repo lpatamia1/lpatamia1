@@ -22,7 +22,7 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           # The color customization happens here 👇
           outputs: |
-            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake.svg?palette=github-light
           color_snake: ff69b4
           color_dots: "#ffb6c1,#ffc0cb,#ff69b4,#ff1493,#ffc0cb"
 
