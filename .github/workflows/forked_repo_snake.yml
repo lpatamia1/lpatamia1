@@ -1,4 +1,4 @@
-name: regular snake
+name: forked snake
 
 on:
   # Allows manual trigger
