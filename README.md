@@ -163,7 +163,7 @@ I'm always excited to learn new things. Right now, I'm focused on:
   <sub>Built with passion, code, and a little pink flair.</sub>
 </p>
 <div align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjMycTFuZzBqbDV0czVuazZoajFldjNydXI2dWUwZThsYXo4OTZkNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tMS6hTWc6Fnmvt8zjo/giphy.gif" alt="Hello Internet Girl Typing" width="300" />
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnR0OTN3anU5dGt4YWtyZzdtNDJqY2JuaGk2dzRoZ3pwM2txcGVyMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DeoqjowSQvaQWdUg8D/giphy.gif" alt="Hello Internet Girl Typing" width="300" />
 </div>
 
 
