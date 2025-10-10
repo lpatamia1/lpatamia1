@@ -1,10 +1,10 @@
 name: original repo color snake
 
 on:
-  # Allows manual trigger from Actions tab
+  # Manual trigger from Actions tab
   workflow_dispatch:
 
-  # Runs daily at midnight UTC
+  # Run daily at midnight UTC
   schedule:
     - cron: "0 0 * * *"
 
@@ -12,19 +12,14 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      # Step 1 — Generate pink snake SVGs
-      - name: generate_regular_snake.svg (pink theme)
+      # Step 1 — Generate snake SVGs
+      - name: Generate GitHub contribution snake
         uses: Platane/snk@v3
-        # Uses original repo from the official version of the generator maintained by Platane
-        # Always up-to-date with official fixes
-        # Can't change the color palettes
-        # GitHub only runs their code as-is
-        # When using Platane/snk@vs, you borrow their generator
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=ff69b4&color_dots=#ffb6c1,#ffc0cb,#ff69b4,#ff1493,#ffb6c1
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=ff69b4&color_dots=#ffc0cb,#ffb6c1,#ff69b4,#ff1493,#ffc0cb
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       # Step 2 — Push generated files to the output branch
       - name: Push to output branch
