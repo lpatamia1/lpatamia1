@@ -113,12 +113,6 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - **89 % test coverage**, automated builds via **GitHub Actions**, and CI-driven reliability.  
 - 🔗 [View Project](https://github.com/lpatamia1/To-Do-List-App)
 
-**Matcha Tracker 🍵**  
-*React + Tailwind + Recharts | Mindful energy tracker*  
-- Log your matcha cups and track energy (1–5) with a soothing animated dashboard.  
-- Visualizes daily energy trends with smooth transitions and floating leaves.  
-- 🔗 [View Project](https://github.com/lpatamia1/Matcha_Tracker)
-
 <br>
 
 <details>
@@ -129,6 +123,8 @@ I'm always excited to learn new things. Right now, I'm focused on:
 - ⏱️ **Pomodoro Focus Timer** — JavaScript productivity app with animated SVG progress
 - 💰 **Simple Interest Calculator** — Basic console app with clean CLI input validation
 - 🥫 **ENVS 350 Food Pantry Project** — Data visualization and mapping for community research
+- 🍵 **Matcha Tracker** — Log matcha cups and track energy levels with *React, Tailwind, and Recharts*
+
 </details>
   
 ---
