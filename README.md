@@ -31,7 +31,65 @@ I'm always excited to learn new things. Right now, I'm focused on:
       src="https://raw.githubusercontent.com/lpatamia1/lpatamia1/output/github-contribution-grid-snake-pink.svg" />
   </picture>
 </div>
+---
 
+### My Tech Stack 🛠️ 
+
+<div align="center">
+
+  <h4>Languages</h4>
+  <img src="https://img.shields.io/badge/Python-ff69b4?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Java-ff69b4?style=for-the-badge&logo=java&logoColor=white" alt="Java"/>
+  <img src="https://img.shields.io/badge/JavaScript-ff69b4?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/R-ff69b4?style=for-the-badge&logo=r&logoColor=white" alt="R"/>
+  <img src="https://img.shields.io/badge/C-ff69b4?style=for-the-badge&logo=c&logoColor=white" alt="C"/>
+  <img src="https://img.shields.io/badge/C++-ff69b4?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"/>
+  <img src="https://img.shields.io/badge/Rust-ff69b4?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
+  <img src="https://img.shields.io/badge/SQL-ff69b4?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL"/>
+
+  <br><br>
+
+  <h4>Frontend & Design</h4>
+  <img src="https://img.shields.io/badge/HTML5-ff69b4?style=for-the-badge&logo=html5&logoColor=white" alt="HTML"/>
+  <img src="https://img.shields.io/badge/CSS-ff69b4?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"/>
+  <img src="https://img.shields.io/badge/React-ff69b4?style=for-the-badge&logo=react&logoColor=white" alt="React"/>
+  <img src="https://img.shields.io/badge/Figma-ff69b4?style=for-the-badge&logo=figma&logoColor=white" alt="Figma"/>
+
+  <br><br>
+
+  <h4>Backend & API Development</h4>
+  <img src="https://img.shields.io/badge/Flask-ff69b4?style=for-the-badge&logo=flask&logoColor=white" alt="Flask"/>
+  <img src="https://img.shields.io/badge/Node.js-ff69b4?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/>
+  <img src="https://img.shields.io/badge/MySQL-ff69b4?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+  <img src="https://img.shields.io/badge/REST_API-ff69b4?style=for-the-badge&logo=apacheserver&logoColor=white" alt="REST API"/>
+
+  <br><br>
+
+  <h4>Data Science & Analytics</h4>
+  <img src="https://img.shields.io/badge/pandas-ff69b4?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas"/>
+  <img src="https://img.shields.io/badge/NumPy-ff69b4?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Matplotlib-ff69b4?style=for-the-badge&logo=chartdotjs&logoColor=white" alt="Matplotlib"/>
+  <img src="https://img.shields.io/badge/scikit--learn-ff69b4?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn"/>
+  <img src="https://img.shields.io/badge/Jupyter-ff69b4?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
+  <img src="https://img.shields.io/badge/Power_BI-ff69b4?style=for-the-badge&logo=powerbi&logoColor=white" alt="Power BI"/>
+
+  <br><br>
+
+  <h4>Tools & Platforms</h4>
+  <img src="https://img.shields.io/badge/Git-ff69b4?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+  <img src="https://img.shields.io/badge/GitHub-ff69b4?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  <img src="https://img.shields.io/badge/Azure-ff69b4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure"/>
+  <img src="https://img.shields.io/badge/Windows-ff69b4?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"/>
+
+  <br><br>
+
+  <h4>Methodologies</h4>
+  <img src="https://img.shields.io/badge/Scrum-ff69b4?style=for-the-badge" alt="Scrum"/>
+  <img src="https://img.shields.io/badge/Agile-ff69b4?style=for-the-badge" alt="Agile"/>
+  <img src="https://img.shields.io/badge/OOP-ff69b4?style=for-the-badge" alt="OOP"/>
+  <img src="https://img.shields.io/badge/Cryptography-ff69b4?style=for-the-badge" alt="Cryptography"/>
+
+</div>
 ---
 
 ### My Tech Stack 🛠️ 
