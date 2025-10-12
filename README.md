@@ -35,7 +35,7 @@ I'm always excited to learn new things. Right now, I'm focused on:
 
 ### My Tech Stack 🛠️ 
 
-<div align="center">
+<div align="center" style="pointer-events:none; user-select:none;">
 
   <h4>Languages</h4>
   <img src="https://img.shields.io/badge/Python-ff69b4?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
