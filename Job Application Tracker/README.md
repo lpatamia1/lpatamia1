@@ -94,4 +94,18 @@ Includes LinkedIn, Indeed, and recruiter-based submissions.
 
 
 
-🧩
+🧩## 📅 Applications by Month  
+### October 2025  
+- [Data Scientist I – Radian](https://radian.com/careers) — *Data Science* — Applied 10/13 — Pending  
+- [GIS Intern – TDS](https://tdstelecom.com/careers) — *Environmental / GIS* — Applied 10/13 — Pending  
+- [Electrical Engineer – LeoLabs](https://www.leolabs.space/careers) — *Engineering* — Applied 10/13 — Pending  
+- [IT Internship – Lumen Technologies](https://jobs.lumen.com) — *IT Support* — Applied 10/13 — Pending  
+- [Software Engineering Research Intern – Alljoined](https://alljoined.com) — *Software Engineering* — Applied 10/2 — Pending  
+- [Multiple Roles – Robert Half](https://www.roberthalf.com/jobs) — *IT & Admin* — Applied 10/3 — Pending  
+  - Part-Time Admin Assistant  
+  - Medical Coder  
+  - Azure Data Architect  
+  - IT Site Discovery & Infrastructure Coordinator  
+  - Help Desk Analyst II  
+  - Desktop Support Analyst  
+  - Help Desk Analyst  
