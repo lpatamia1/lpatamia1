@@ -34,4 +34,38 @@ _A living record of my job applications, interviews, and outcomes in IT, Data, a
 | [**Mercor**](https://www.mercor.io/) | Software Engineering Code Review (Rust) | 💻 Software | Remote | 🕐 Applied | 09/19/2025 |
 | [**Mercor**](https://www.mercor.io/) | Data Engineer | 📊 Data | Remote | 🕐 Applied | 09/19/2025 |
 | [**RWE**](https://www.rwe.com/careers) | IT Graduate Program | 💻 IT / Graduate | Remote | 🕐 Applied | 09/17/2025 |
-| [**Morningstar**](https://www.morningstar.com/careers) | Development Program for Technologists | 💻 Software | Chicago, IL | 🕐 Applied
+| [**Morningstar**](https://www.morningstar.com/careers) | Development Program for Technologists | 💻 Software | Chicago, IL | 🕐 Applied | 09/17/2025 |
+| [**Epsilon**](https://www.epsilon.com/us/about-us/careers) | New Grad Program | 💻 Software | Chicago, IL | 🕐 Applied | 09/17/2025 |
+| [**TDS**](https://www.tdsinc.com/careers/default.aspx) | GIS Intern | 🌎 GIS / Data | Chicago, IL | 🕐 Applied | 10/13/2025 |
+| [**LeoLabs**](https://leolabs.space/careers/) | Electrical Engineer | ⚙️ Engineering | Remote | 🕐 Applied | 10/13/2025 |
+| [**Lumen Technologies**](https://www.lumen.com/en-us/about/careers.html) | Internship | ☁️ Cloud / IT | Remote | 🕐 Applied | 10/13/2025 |
+| [**Radian**](https://www.radian.com/careers) | Data Scientist I (Hybrid) | 📊 Data | New York, NY | 🕐 Applied | 10/13/2025 |
+
+---
+
+### 📊 **Application Stats (as of October 15, 2025)**
+
+| **Metric** | **Count** |
+|-------------|-----------|
+| 🧾 Total Applications | **34** |
+| 🕐 Active / Pending | **28** |
+| 💬 Interviewed | **1** (Capgemini – Junior Developer) |
+| ✅ Hired / Active | **1** (GreenPaws – Dog Walker) |
+| ❌ Rejected | **3** |
+| 🧭 Preparing / Upcoming | **1+** |
+| 💻 IT / Software Roles | **20+** |
+| 📊 Data-Focused Roles | **6+** |
+| 🐾 Animal / Service Roles | **2** |
+| ☁️ Cloud / Hybrid Roles | **3** |
+
+---
+
+### 🌱 Notes
+- Categorized by role type for quick scanning (💻 IT, 📊 Data, 🐾 Animal, ☁️ Cloud, etc.).  
+- Next additions: Boeing, Aurora Innovation, General Dynamics, RTX, Credit Acceptance, mthree, Capital One, Feri.  
+- Continue outreach to recruiters and prep for technical interviews.  
+
+---
+
+**Last Updated:** October 15, 2025  
+**Maintainer:** [@lpatamia1](https://github.com/lpatamia1)
