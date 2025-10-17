@@ -1,5 +1,5 @@
 <div align="center">
-# 🗂️ Job Application Tracker
+  <h1>🗂️ Job Application Tracker</h1>
 </div>
 
 A living record of my 2025 job applications, interview progress, and outcomes across **IT**, **Data**, and **Software Engineering** roles — alongside opportunities in design, research, education, public health, and community-focused organizations.
