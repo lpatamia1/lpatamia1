@@ -125,6 +125,8 @@ Comprehensive record of job applications, interviews, and outcomes across **IT**
 
 </details>
 
+
+**Summary:** 📋 102 total — 🕐 75 active — ❌ 12 rejected — 💬 0 interviews — ✅ 0 hired.**
 ---
 *Generated automatically by the Java Job Application Tracker.*
-*Lilyana Patamia — last updated October 17, 2025.*
+*Last updated October 17, 2025.*

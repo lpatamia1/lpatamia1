@@ -167,19 +167,35 @@ private static final String SEED_MARKDOWN =
 
     private static void showMenu() {
         Scanner sc = new Scanner(System.in);
+
+        // Colors
+        final String PINK = "\u001B[95m";
+        final String CYAN = "\u001B[96m";
+        final String RESET = "\u001B[0m";
+
         while (true) {
-            System.out.println("\\n=== Job Application Tracker ===");
-            System.out.println("1. View summary");
-            System.out.println("2. Add new application");
-            System.out.println("3. Export README (stats + sorted table)");
-            System.out.println("4. Add multiple from shell (instructions)");
-            System.out.println("5. Import from embedded Markdown seed (once)");
-            System.out.println("6. Update job status");
-            System.out.println("7. Exit");
+            System.out.println("═".repeat(70));
+            System.out.println(CYAN + "               ／l、");
+            System.out.println("             （ﾟ､ ｡７   ~ meow! keeping tabs on your career ~");
+            System.out.println("              l、 ~ヽ     keep applying, you got this! 🐾");
+            System.out.println("              じしf_, )ノ" + RESET);
+            System.out.println("═".repeat(70));
+            System.out.println("                         JOB APPLICATION TRACKER");
+            System.out.println("═".repeat(70));
+            System.out.println("📊  1. View Summary");
+            System.out.println("📝  2. Add New Application");
+            System.out.println("📤  3. Export README (Stats + Sorted Table)");
+            System.out.println("➕  4. Add Multiple from Shell (Instructions)");
+            System.out.println("📥  5. Import from Embedded Markdown Seed (Once)");
+            System.out.println("✏️   6. Update Job Status");
+            System.out.println("🔍  7. Search Applications");
+            System.out.println("🚪  8. Exit");
+            System.out.println("═".repeat(70));
+
             System.out.print("> ");
 
             if (!sc.hasNextInt()) {
-                System.out.println("Please enter 1–6.");
+                System.out.println("Please enter 1–8.");
                 sc.nextLine();
                 continue;
             }
@@ -212,6 +228,9 @@ private static final String SEED_MARKDOWN =
                     updateStatus(sc);
                     break;
                 case 7:
+                    searchApplications(sc);
+                    break;
+                case 8:
                     saveApplications();
                     System.out.println("Goodbye!");
                     return;
@@ -295,18 +314,114 @@ private static final String SEED_MARKDOWN =
     }
 
     private static void saveApplications() {
-        // 🔒 Safety: Backup existing file before overwriting
+        // 🔒 Safety: Create a timestamped backup before overwriting
         File original = new File(FILE);
         if (original.exists()) {
-            File backup = new File(FILE + ".bak");
-            if (backup.exists()) backup.delete(); // replace old backup
-            original.renameTo(backup);
+            String timestamp = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+            File backup = new File(FILE.replace(".txt", "_" + timestamp + ".bak"));
+            if (backup.exists()) backup.delete(); // replace same-day backup
+            boolean renamed = original.renameTo(backup);
+            if (renamed) {
+                System.out.println("📦 Backup created: " + backup.getName());
+            } else {
+                System.out.println("⚠️ Warning: Could not create backup file.");
+            }
         }
-        
+
+        // 📝 Write all applications to the main file
         try (PrintWriter pw = new PrintWriter(new FileWriter(FILE))) {
-            for (JobApplication a : applications) pw.println(a.toFileLine());
+            for (JobApplication a : applications) {
+                pw.println(a.toFileLine());
+            }
+            System.out.printf("💾 Saved %d applications to %s at %s%n",
+                    applications.size(), FILE,
+                    LocalDate.now().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         } catch (IOException e) {
-            System.out.println("Failed to save " + FILE + ": " + e.getMessage());
+            System.out.println("❌ Failed to save " + FILE + ": " + e.getMessage());
+        }
+    }
+
+    private static void searchApplications(Scanner sc) {
+        System.out.print("🔎 Enter keyword to search (company or role): ");
+        String keyword = sc.nextLine().trim().toLowerCase();
+
+        if (keyword.isEmpty()) {
+            System.out.println("⚠️ No keyword entered.");
+            return;
+        }
+
+        List<JobApplication> results = applications.stream()
+                .filter(a -> a.company.toLowerCase().contains(keyword)
+                        || a.role.toLowerCase().contains(keyword))
+                .sorted(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed())
+                .collect(Collectors.toList());
+
+        if (results.isEmpty()) {
+            System.out.println("❌ No matching applications found for \"" + keyword + "\".");
+            return;
+        }
+
+        System.out.println("\n🔍 Found " + results.size() + " match" + (results.size() == 1 ? "" : "es") + ":");
+        System.out.println("-------------------------------------------------------------");
+        for (int i = 0; i < results.size(); i++) {
+            JobApplication a = results.get(i);
+            System.out.printf("%2d. %-35s | %-25s | %-12s | %s\n",
+                    i + 1, a.company, a.role, a.status,
+                    a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+        }
+        System.out.println("-------------------------------------------------------------");
+
+        System.out.print("\n💡 View details or update status (enter number, or press Enter to skip): ");
+        String input = sc.nextLine().trim();
+        if (input.isEmpty()) return;
+
+        int index;
+        try {
+            index = Integer.parseInt(input) - 1;
+            if (index < 0 || index >= results.size()) {
+                System.out.println("Invalid number.");
+                return;
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input.");
+            return;
+        }
+
+        JobApplication a = results.get(index);
+
+        System.out.println("\nDetails:");
+        System.out.println("Company:   " + a.company);
+        System.out.println("Role:      " + a.role);
+        System.out.println("Type:      " + a.type);
+        System.out.println("Location:  " + a.location);
+        System.out.println("Status:    " + a.status);
+        System.out.println("Applied:   " + a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+        System.out.println("Source:    " + a.source);
+
+        System.out.print("\n✏️  Update status? (leave blank to skip): ");
+        String newStatus = sc.nextLine().trim();
+        if (!newStatus.isEmpty()) {
+            a.status = newStatus;
+            saveApplications();
+            System.out.println("✅ Status updated and saved.");
+
+            try {
+                exportMarkdown();
+                System.out.println("✅ README automatically updated after status change.");
+            } catch (IOException e) {
+                System.out.println("⚠️ Could not update README: " + e.getMessage());
+            }
+        }
+
+        System.out.print("\n📝 Export these search results to file? (y/n): ");
+        String export = sc.nextLine().trim().toLowerCase();
+        if (export.equals("y")) {
+            try (PrintWriter pw = new PrintWriter(new FileWriter("search_results.txt"))) {
+                for (JobApplication j : results) pw.println(j.toFileLine());
+                System.out.println("✅ Saved results to search_results.txt");
+            } catch (IOException e) {
+                System.out.println("⚠️ Failed to export results: " + e.getMessage());
+            }
         }
     }
 
@@ -366,7 +481,7 @@ private static final String SEED_MARKDOWN =
 
         selected.status = newStatus;
         saveApplications();
-        System.out.println("✅ Status updated and saved.");
+        System.out.println("✅ Status updated and saved! 🐱✨ (your career cat approves!)");
 
         try { exportMarkdown();
         System.out.println("✅ README automatically updated after status change.");
