@@ -4,6 +4,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.time.temporal.ChronoUnit;
 
 class JobApplication {
     String company, role, type, location, status, source;
@@ -207,12 +208,12 @@ private static final String SEED_MARKDOWN =
 
         while (true) {
             System.out.println(BLUE + "═".repeat(90));
+            System.out.println("||                                JOB APPLICATION TRACKER                               ||");
+            System.out.println("-".repeat(90));
             System.out.println("||                       ／l、                                                          ||");                                               
             System.out.println("||                     （ﾟ､ ｡７   ~ meow! keeping tabs on your career ~                 ||");
             System.out.println("||                      l、 ~ヽ     keep applying, you got this! 🐾                     ||");
             System.out.println("||                      じしf_, )ノ                                                     ||");
-            System.out.println("═".repeat(90));
-            System.out.println("                                  JOB APPLICATION TRACKER");
             System.out.println("═".repeat(90));
             // Two-column layout
             String leftCol[] = {
@@ -583,17 +584,28 @@ private static void showSummary() {
     long closed = applications.stream().map(a -> a.status.toLowerCase())
             .filter(s -> s.contains("closed")).count();
     long active = total - rejected - hired - closed;
-    double successRate = total == 0 ? 0 : (double) (hired + interviews) / total * 100;
 
+    // ⏳ Likely inactive (applied > 60 days ago and still "Applied")
+    long stale = applications.stream()
+            .filter(a -> a.status.toLowerCase().contains("applied"))
+            .filter(a -> java.time.temporal.ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) > 60)
+            .count();
+
+    long trulyActive = active - stale;
+    if (trulyActive < 0) trulyActive = 0;
+
+    double successRate = total == 0 ? 0 : (double) (hired + interviews) / total * 100;
 
     // 🐾 Top section with colors
     System.out.println(ORANGE + "═".repeat(90));
     System.out.println("                                   APPLICATION SUMMARY");
     System.out.println("═".repeat(90) + RESET);
 
-    System.out.printf("%sTotal:%s %-9d  %sActive:%s %-9d  %sRejected:%s %-9d  %sInterviews:%s %-9d  %sHired:%s %-9d%n",
+    System.out.printf(
+        "  %sTotal:%s %-3d  %sActive:%s %-3d  %sLikely Inactive:%s %-3d  %sRejected:%s %-3d  %sInterviews:%s %-3d  %sHired:%s %-3d%n",
             CYAN, RESET, total,
-            GREEN, RESET, active,
+            GREEN, RESET, trulyActive,
+            ORANGE, RESET, stale,
             RED, RESET, rejected,
             YELLOW, RESET, interviews,
             PINK, RESET, hired);
@@ -652,6 +664,17 @@ private static void exportMarkdown() throws IOException {
             .filter(s -> s.contains("closed")).count();
 
     long active = total - rejected - hired - closed;
+
+    // --- Likely inactive applications (applied > 60 days ago and still marked Applied) ---
+    long stale = applications.stream()
+        .filter(a -> a.status.toLowerCase().contains("applied"))
+        .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) > 60)
+        .count();
+
+    // Adjust active to exclude likely inactive ones
+    long trulyActive = active - stale;
+    if (trulyActive < 0) trulyActive = 0; // safety clamp\
+
     String today = LocalDate.now().format(HUMAN);
 
     StringBuilder md = new StringBuilder();
@@ -669,10 +692,11 @@ private static void exportMarkdown() throws IOException {
     md.append("  <h2>💡 Highlights</h2>\n");
     md.append("</div>\n\n");    
     md.append(String.format(
-        "So far, I've applied to **%d positions** across multiple industries. Currently, **%d applications remain active**, with **%d interview%s** completed.  \n" +
+        "So far, I've applied to **%d positions** across multiple industries. Currently, **%d applications remain active**, " +
+        "and **%d likely inactive** (older than 60 days), with **%d interview%s** completed.  \n" +
         "Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  \n" +
         "This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.\n\n",
-        total, active, interviews, interviews == 1 ? "" : "s"
+        total, trulyActive, stale, interviews, interviews == 1 ? "" : "s"
     ));
 
     // --- APPLICATION OVERVIEW ---
@@ -683,7 +707,8 @@ private static void exportMarkdown() throws IOException {
     md.append("<tr>\n");
     md.append("<td align=\"left\" width=\"50%\">\n\n");
     md.append("- **Total Applications:** ").append(total).append("  \n");
-    md.append("- 🕐 **Active / Pending:** ").append(active).append("  \n");
+    md.append("- 🕐 **Active / Pending:** ").append(trulyActive).append("  \n");
+    md.append("- ⏳ **Likely Inactive:** ").append(stale).append("  \n");
     md.append("- ❌ **Rejected:** ").append(rejected).append("  \n\n");
     md.append("</td>\n");
     md.append("<td align=\"left\" width=\"50%\">\n\n");
@@ -754,8 +779,10 @@ private static void exportMarkdown() throws IOException {
     }
 
     md.append("\n</details>\n\n");
-    md.append(String.format("**Summary:** 📋 %d total — 🕐 %d active — ❌ %d rejected — 💬 %d interviews — ✅ %d hired.\n\n",
-            total, active, rejected, interviews, hired));
+    md.append(String.format(
+        "**Summary:** 📋 %d total — 🕐 %d active — ⏳ %d likely inactive — ❌ %d rejected — 💬 %d interviews — ✅ %d hired.**\n\n",
+        total, trulyActive, stale, rejected, interviews, hired
+    ));
 
     md.append("---\n");
     md.append("🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*\n");

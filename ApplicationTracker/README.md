@@ -25,7 +25,8 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 <td align="left" width="50%">
 
 - **Total Applications:** 125  
-- 🕐 **Active / Pending:** 97  
+- 🕐 **Active / Pending:** 42  
+- ⏳ **Likely Inactive:** 55  
 - ❌ **Rejected:** 13  
 
 </td>
@@ -220,7 +221,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 
 </details>
 
-**Summary:** 📋 125 total — 🕐 97 active — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.
+**Summary:** 📋 125 total — 🕐 42 active — ⏳ 55 likely inactive — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
