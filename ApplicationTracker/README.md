@@ -220,7 +220,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 
 </details>
 
-**Summary:** 📋 125 total — 🕐 97 active — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.**
+**Summary:** 📋 125 total — 🕐 97 active — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*

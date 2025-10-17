@@ -754,7 +754,7 @@ private static void exportMarkdown() throws IOException {
     }
 
     md.append("\n</details>\n\n");
-    md.append(String.format("**Summary:** 📋 %d total — 🕐 %d active — ❌ %d rejected — 💬 %d interviews — ✅ %d hired.**\n\n",
+    md.append(String.format("**Summary:** 📋 %d total — 🕐 %d active — ❌ %d rejected — 💬 %d interviews — ✅ %d hired.\n\n",
             total, active, rejected, interviews, hired));
 
     md.append("---\n");
