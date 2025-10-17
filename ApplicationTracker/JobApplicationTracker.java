@@ -657,12 +657,15 @@ private static void exportMarkdown() throws IOException {
     StringBuilder md = new StringBuilder();
 
     // --- HEADER ---
-    md.append("# 🗂️ Job Application Tracker\n\n");
-    md.append("A living record of my 2025 job applications, interview progress, and outcomes across **IT**, **Data**, and **Software Engineering** roles — alongside opportunities in design, research, education, public health, and community-focused organizations.\n\n");
+    md.append("<div align=\"center\">\n");
+    md.append("  <h1>🗂️ Job Application Tracker</h1>\n");
+    md.append("  <p><em>A living record of my 2025 job applications, interview progress, and outcomes across</em><br>\n");
+    md.append("  <strong>IT, Data, and Software Engineering</strong> roles — alongside opportunities in design, research, education, public health, and community-focused organizations.</p>\n");
     md.append("> *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*\n\n");
-    
+    md.append("</div>\n\n");    
+
     // --- HIGHLIGHTS ---
-    md.append("## 💡 Highlights\n\n");
+    md.append("<div align=\"center\">\n<h2>💡 Highlights</h2>\n</div>\n\n");
     md.append(String.format(
         "So far, I've applied to **%d positions** across multiple industries. " +
         "Currently, **%d applications remain active**, with **%d interviews** completed. " +
@@ -672,8 +675,8 @@ private static void exportMarkdown() throws IOException {
     ));
 
     // --- APPLICATION OVERVIEW ---
-    md.append("## 📊 Application Overview\n\n");
-    md.append("<table>\n");
+    md.append("<div align=\"center\">\n<h2>📊 Application Overview</h2>\n</div>\n\n");
+    md.append("<table align=\"center\">\n");
     md.append("<tr>\n");
     md.append("<td align=\"left\" width=\"50%\">\n\n");
     md.append("- **Total Applications:** ").append(total).append("  \n");
@@ -689,22 +692,23 @@ private static void exportMarkdown() throws IOException {
     md.append("</table>\n\n");
 
     // --- CATEGORY SUMMARY ---
-    md.append("## 🧾 Breakdown by Job Type\n\n");
+    md.append("<div align=\"center\">\n<h2>🧾 Breakdown by Job Type</h2>\n</div>\n\n");
 
     Map<String, Long> byCategory = applications.stream()
         .collect(Collectors.groupingBy(a -> simplifyType(a.type), TreeMap::new, Collectors.counting()));
 
     List<Map.Entry<String, Long>> entries = new ArrayList<>(byCategory.entrySet());
-    int mid = (entries.size() + 1) / 2;
+    entries.sort((a, b) -> Long.compare(b.getValue(), a.getValue())); // biggest first
 
-    md.append("<table><tr><td valign='top'>\n\n");
+    int mid = (entries.size() + 1) / 2;
+    md.append("<table align=\"center\"><tr><td valign='top' align='left'>\n\n");
 
     for (int i = 0; i < mid; i++) {
         Map.Entry<String, Long> e = entries.get(i);
         md.append(String.format("• **%s:** %d<br>\n", e.getKey(), e.getValue()));
     }
 
-    md.append("</td><td valign='top'>\n\n");
+    md.append("</td><td valign='top' align='left'>\n\n");
 
     for (int i = mid; i < entries.size(); i++) {
         Map.Entry<String, Long> e = entries.get(i);
@@ -712,7 +716,6 @@ private static void exportMarkdown() throws IOException {
     }
 
     md.append("</td></tr></table>\n\n");
-
 
     // --- ABOUT THIS TRACKER SECTION ---
     md.append("## 💻 About This Tracker\n\n");
