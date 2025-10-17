@@ -174,7 +174,8 @@ private static final String SEED_MARKDOWN =
             System.out.println("3. Export README (stats + sorted table)");
             System.out.println("4. Add multiple from shell (instructions)");
             System.out.println("5. Import from embedded Markdown seed (once)");
-            System.out.println("6. Exit");
+            System.out.println("6. Update job status");
+            System.out.println("7. Exit");
             System.out.print("> ");
 
             if (!sc.hasNextInt()) {
@@ -208,6 +209,9 @@ private static final String SEED_MARKDOWN =
                     System.out.println("✅ Imported " + added + " applications from seed.");
                     break;
                 case 6:
+                    updateStatus(sc);
+                    break;
+                case 7:
                     saveApplications();
                     System.out.println("Goodbye!");
                     return;
@@ -297,6 +301,66 @@ private static final String SEED_MARKDOWN =
             System.out.println("Failed to save " + FILE + ": " + e.getMessage());
         }
     }
+
+    private static void updateStatus(Scanner sc) {
+        if (applications.isEmpty()) {
+            System.out.println("No applications to update.");
+            return;
+        }
+
+        System.out.print("Enter part of the company or role name to search: ");
+        String query = sc.nextLine().trim().toLowerCase();
+
+        // Find matches
+        List<JobApplication> matches = new ArrayList<>();
+        for (JobApplication a : applications) {
+            if (a.company.toLowerCase().contains(query) || a.role.toLowerCase().contains(query)) {
+                matches.add(a);
+            }
+        }
+
+        if (matches.isEmpty()) {
+            System.out.println("No matching applications found.");
+            return;
+        }
+
+        // Display matches
+        System.out.println("\nMatches found:");
+        for (int i = 0; i < matches.size(); i++) {
+            JobApplication a = matches.get(i);
+            System.out.printf("%d. %s — %s (%s) [%s]\n",
+                    i + 1, a.company, a.role, a.location, a.status);
+        }
+
+        System.out.print("\nEnter the number of the job to update: ");
+        int choice;
+        try {
+            choice = Integer.parseInt(sc.nextLine());
+            if (choice < 1 || choice > matches.size()) {
+                System.out.println("Invalid selection.");
+                return;
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input.");
+            return;
+        }
+
+        JobApplication selected = matches.get(choice - 1);
+        System.out.printf("Current status for %s — %s: %s\n",
+                selected.company, selected.role, selected.status);
+        System.out.print("Enter new status (e.g. Rejected, Interviewed, Offer, Hired, Applied (closed)): ");
+        String newStatus = sc.nextLine().trim();
+
+        if (newStatus.isEmpty()) {
+            System.out.println("No status entered. Cancelled.");
+            return;
+        }
+
+        selected.status = newStatus;
+        saveApplications();
+        System.out.println("✅ Status updated and saved.");
+    }
+
 
     private static void showSummary() {
         int total = applications.size();

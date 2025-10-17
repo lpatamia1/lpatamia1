@@ -21,7 +21,7 @@ Eataly|Cashier|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn
 [Mercor](https://www.mercor.io/)|English Support|IT / Support|Remote|Applied|09/19/2025|LinkedIn
 [Mercor](https://www.mercor.io/)|Enterprise Cloud Domain Support|Cloud / IT|Remote|Applied|09/19/2025|LinkedIn
 [Mercor](https://www.mercor.io/)|Intelligent Identity Engineer|Security / IT|Remote|Applied|09/19/2025|LinkedIn
-[Mercor](https://www.mercor.io/)|Software Eng. Code Review (Rust)|Software|Remote|Applied|09/19/2025|LinkedIn
+[Mercor](https://www.mercor.io/)|Software Eng. Code Review (Rust)|Software|Remote|Rejected|09/19/2025|LinkedIn
 [Mercor](https://www.mercor.io/)|Data Engineer|Data|Remote|Applied|09/19/2025|LinkedIn
 [RWE](https://www.rwe.com/careers)|IT Graduate Program|IT / Graduate|Remote|Rejected|09/17/2025|LinkedIn
 [Morningstar](https://www.morningstar.com/careers)|Development Program for Technologists|Software / Data|Chicago, IL|Applied|09/17/2025|LinkedIn
@@ -48,7 +48,7 @@ Eataly|Cashier|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn
 [Taylor Farms Illinois](https://www.taylorfarms.com/careers/)|Label Room Technician|Manufacturing / Ops|Chicago, IL|Applied|09/04/2025|Indeed
 [Creative Tech](#)|IT Field Technician|IT Support|Skokie, IL|Not Selected|09/04/2025|Indeed
 [Fernwood Property Mgmt](#)|Maintenance Admin Intern|Admin / Operations|Chicago, IL|Applied|09/04/2025|Indeed
-[Trump Intl. Hotel Chicago](https://www.trumphotels.com/chicago/careers)|Security Intern|Security / Ops|Chicago, IL|Applied|09/04/2025|Indeed
+[Trump Intl. Hotel Chicago](https://www.trumphotels.com/chicago/careers)|Security Intern|Security / Ops|Chicago, IL|Rejected|09/04/2025|Indeed
 [Green Paws Chicago](https://greenpawschicago.com/)|Dog Walker & Pet Sitter|Animal Care|Chicago, IL|Applied (closed)|09/04/2025|Indeed
 [Capgemini](https://www.capgemini.com/careers)|Business Analyst|Business / IT|Remote|Applied|09/01/2025|LinkedIn
 [Momotaro](https://www.bokagrp.com/careers)|Food Runner|Service|Chicago, IL|Applied|08/29/2025|Indeed
@@ -81,9 +81,9 @@ Eataly|Cashier|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn
 [Cadinho Bakery & Cafe](#)|Food Service Associate|Food Service|Chicago, IL|Applied (closed)|07/20/2025|Indeed
 [Montelimar Bread Co.](#)|Farmers Market Vendor|Food Service|Evanston, IL|Applied (closed)|07/20/2025|Indeed
 [Anti-Cruelty Society](https://anticruelty.org/careers)|Animal Care Specialist|Animal Care|Chicago, IL|Applied (closed)|07/20/2025|Indeed
-[Fire Hydrant Pet Sitting Co.](https://www.firehydrantpetsitting.com/)|Overnight Pet Care Specialist|Animal Care|Chicago, IL|Not Selected|07/20/2025|Indeed
+[Fire Hydrant Pet Sitting Co.](https://www.firehydrantpetsitting.com/)|Overnight Pet Care Specialist|Animal Care|Chicago, IL|Rejected|07/20/2025|Indeed
 [Thornton Tomasetti](https://www.thorntontomasetti.com/careers)|IT Support Technician|IT Support|Chicago, IL|Applied (closed)|07/20/2025|Indeed
-[Lincoln Park Art Gallery](#)|Art Gallery Assistant|Arts / Admin|Chicago, IL|Applied (closed)|07/20/2025|Indeed
+[Lincoln Park Art Gallery](#)|Art Gallery Assistant|Arts / Admin|Chicago, IL|Rejected|07/20/2025|Indeed
 [Advance Spine Rehab Center](#)|IT Personnel — As Needed|IT Support|Chicago, IL|Applied (closed)|07/20/2025|Indeed
 [Kids STEM Studio](https://kidsstemstudio.com/)|After School Instructor|Education / Tech|Evanston, IL|Not Selected|05/16/2025|Indeed
 [Sweet Rabbit Bakery](#)|Part-Time FOH|Service|Chicago, IL|Not Selected|05/08/2025|Indeed
