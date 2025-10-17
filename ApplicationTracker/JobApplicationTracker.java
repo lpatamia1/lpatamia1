@@ -658,7 +658,7 @@ private static void exportMarkdown() throws IOException {
 
     // --- HEADER ---
     md.append("<div align=\"center\">\n");
-    md.append("# 🗂️ Job Application Tracker\n");
+    md.append("  <h1>🗂️ Job Application Tracker</h1>\n");
     md.append("</div>\n\n");
     md.append("A living record of my 2025 job applications, interview progress, and outcomes across **IT**, **Data**, and **Software Engineering** roles — alongside opportunities in design, research, education, public health, and community-focused organizations.\n\n");
     md.append("> *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*\n\n");
