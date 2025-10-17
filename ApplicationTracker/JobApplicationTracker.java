@@ -663,13 +663,26 @@ private static void exportMarkdown() throws IOException {
     md.append("> *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*\n\n");
 
     // --- OVERVIEW ---
-    md.append("## 📊 Application Overview\n\n");
-    md.append(String.format("- **Total Applications:** %d\n", total));
-    md.append(String.format("- 🕐 **Active / Pending:** %d\n", active));
-    md.append(String.format("- ❌ **Rejected:** %d\n", rejected));
-    md.append(String.format("- 💬 **Interviewed:** %d\n", interviews));
-    md.append(String.format("- ✅ **Hired / Offer:** %d\n", hired));
-    md.append(String.format("- 🗓️ **Last Updated:** %s\n\n", today));
+    ## 📊 Application Overview
+
+    <table>
+    <tr>
+    <td>
+
+    - **Total Applications:** 125  
+    - 🕐 **Active / Pending:** 97  
+    - ❌ **Rejected:** 13  
+
+    </td>
+    <td>
+
+    - 💬 **Interviewed:** 1  
+    - ✅ **Hired / Offer:** 0  
+    - 🗓️ **Last Updated:** October 17, 2025  
+
+    </td>
+    </tr>
+    </table>
 
     // --- HIGHLIGHTS ---
     md.append("## 💡 Highlights\n\n");
