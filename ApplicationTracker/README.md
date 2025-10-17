@@ -1,5 +1,4 @@
 <div align="center">
-
 # 🗂️ Job Application Tracker
 </div>
 
@@ -10,7 +9,6 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 ---
 
 <div align="center">
-
 ## 💡 Highlights
 </div>
 
@@ -19,7 +17,6 @@ Most applications came through LinkedIn and Handshake, spanning software, IT, an
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
 <div align="center">
-
 ## 📊 Application Overview
 </div>
 
@@ -42,65 +39,51 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 </tr>
 </table>
 
-</div>
-
----
-
 <div align="center">
-
 ## 🧾 Breakdown by Job Type
 </div>
 
-<table align="center">
-<tr>
-<td valign='top' align='left' width="50%">
+<table align="center"><tr><td valign='top' align='left'>
 
-• **AI / Data Science:** 13<br>
-• **Administration:** 5<br>
-• **Animal Care:** 15<br>
-• **Culinary / Food Service:** 3<br>
-• **Data / Analytics:** 10<br>
-• **Education / Training:** 3<br>
-• **Engineering:** 1<br>
-• **Environmental / Sustainability:** 2<br>
-
-</td>
-<td valign='top' align='left' width="50%">
-
-• **Finance:** 1<br>
 • **IT / Support:** 34<br>
+• **Software / Development:** 26<br>
+• **Animal Care:** 15<br>
+• **AI / Data Science:** 13<br>
+• **Data / Analytics:** 10<br>
+• **Retail / Service:** 8<br>
+• **Administration:** 5<br>
+• **Culinary / Food Service:** 3<br>
+</td><td valign='top' align='left'>
+
+• **Education / Training:** 3<br>
+• **Environmental / Sustainability:** 2<br>
+• **Engineering:** 1<br>
+• **Finance:** 1<br>
 • **Marketing / Communications:** 1<br>
 • **Other:** 1<br>
 • **Policy / Research:** 1<br>
 • **Product / Design:** 1<br>
-• **Retail / Service:** 8<br>
-• **Software / Development:** 26<br>
-
-</td>
-</tr>
-</table>
+</td></tr></table>
 
 <div align="center">
-
 ## 💻 About This Tracker
 </div>
 
 Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. The tracker calculates dynamic statistics, success rates, and updates this file in real-time.
 
 <div align="center">
-
 ## ⚙️ How to Use
 </div>
 
 This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:
-
-1. Add new applications interactively  
-2. Import a pre-seeded dataset (option 5)  
-3. Search, update, and export to this Markdown report (option 3)  
-4. Generate timestamped backups each time the file is saved  
+1. Add new applications interactively
+2. Import a pre-seeded dataset (option 5)
+3. Search, update, and export to this Markdown report (option 3)
+4. Generate timestamped backups each time the file is saved
 
 To refresh this README, run **Option 3: Export README** from the main menu.
 
+<div align="center">
 ## 📋 Master Application Log
 </div>
 

@@ -658,24 +658,23 @@ private static void exportMarkdown() throws IOException {
 
     // --- HEADER ---
     md.append("<div align=\"center\">\n");
-    md.append("  <h1>🗂️ Job Application Tracker</h1>\n");
-    md.append("  <p><em>A living record of my 2025 job applications, interview progress, and outcomes across</em><br>\n");
-    md.append("  <strong>IT, Data, and Software Engineering</strong> roles — alongside opportunities in design, research, education, public health, and community-focused organizations.</p>\n");
+    md.append("# 🗂️ Job Application Tracker\n");
+    md.append("</div>\n\n");
+    md.append("A living record of my 2025 job applications, interview progress, and outcomes across **IT**, **Data**, and **Software Engineering** roles — alongside opportunities in design, research, education, public health, and community-focused organizations.\n\n");
     md.append("> *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*\n\n");
-    md.append("</div>\n\n");    
+    md.append("---\n\n");
 
     // --- HIGHLIGHTS ---
-    md.append("<div align=\"center\">\n<h2>💡 Highlights</h2>\n</div>\n\n");
+    md.append("<div align=\"center\">\n## 💡 Highlights\n</div>\n\n");
     md.append(String.format(
-        "So far, I've applied to **%d positions** across multiple industries. " +
-        "Currently, **%d applications remain active**, with **%d interviews** completed. " +
-        "Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles. " +
+        "So far, I've applied to **%d positions** across multiple industries. Currently, **%d applications remain active**, with **%d interview%s** completed.  \n" +
+        "Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  \n" +
         "This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.\n\n",
-        total, active, interviews
+        total, active, interviews, interviews == 1 ? "" : "s"
     ));
 
     // --- APPLICATION OVERVIEW ---
-    md.append("<div align=\"center\">\n<h2>📊 Application Overview</h2>\n</div>\n\n");
+    md.append("<div align=\"center\">\n## 📊 Application Overview\n</div>\n\n");
     md.append("<table align=\"center\">\n");
     md.append("<tr>\n");
     md.append("<td align=\"left\" width=\"50%\">\n\n");
@@ -692,7 +691,7 @@ private static void exportMarkdown() throws IOException {
     md.append("</table>\n\n");
 
     // --- CATEGORY SUMMARY ---
-    md.append("<div align=\"center\">\n<h2>🧾 Breakdown by Job Type</h2>\n</div>\n\n");
+    md.append("<div align=\"center\">\n## 🧾 Breakdown by Job Type\n</div>\n\n");
 
     Map<String, Long> byCategory = applications.stream()
         .collect(Collectors.groupingBy(a -> simplifyType(a.type), TreeMap::new, Collectors.counting()));
@@ -718,13 +717,13 @@ private static void exportMarkdown() throws IOException {
     md.append("</td></tr></table>\n\n");
 
     // --- ABOUT THIS TRACKER SECTION ---
-    md.append("## 💻 About This Tracker\n\n");
+    md.append("<div align=\"center\">\n## 💻 About This Tracker\n</div>\n\n");
     md.append("Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. ");
     md.append("It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. ");
     md.append("The tracker calculates dynamic statistics, success rates, and updates this file in real-time.\n\n");
     
     // --- HOW TO USE ---
-    md.append("## ⚙️ How to Use\n\n");
+    md.append("<div align=\"center\">\n## ⚙️ How to Use\n</div>\n\n");
     md.append("This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:\n");
     md.append("1. Add new applications interactively\n");
     md.append("2. Import a pre-seeded dataset (option 5)\n");
@@ -733,7 +732,7 @@ private static void exportMarkdown() throws IOException {
     md.append("To refresh this README, run **Option 3: Export README** from the main menu.\n\n");
  
     // --- MASTER LOG ---
-    md.append("## 📋 Master Application Log\n\n");
+    md.append("<div align=\"center\">\n## 📋 Master Application Log\n</div>\n\n");
     md.append("<details>\n<summary>Click to expand full job application list</summary>\n\n");
     md.append("| Company | Role | Type | Location | Status | Date Applied | Source |\n");
     md.append("|----------|------|------|-----------|----------|---------------|---------|\n");
