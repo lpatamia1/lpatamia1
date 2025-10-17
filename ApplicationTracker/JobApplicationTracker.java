@@ -689,15 +689,6 @@ private static void exportMarkdown() throws IOException {
     md.append("</tr>\n");
     md.append("</table>\n\n");
 
-    // --- HOW TO USE ---
-    md.append("## ⚙️ How to Use\n\n");
-    md.append("This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:\n");
-    md.append("1. Add new applications interactively\n");
-    md.append("2. Import a pre-seeded dataset (option 5)\n");
-    md.append("3. Search, update, and export to this Markdown report (option 3)\n");
-    md.append("4. Generate timestamped backups each time the file is saved\n\n");
-    md.append("To refresh this README, run **Option 3: Export README** from the main menu.\n\n");
-
     // --- ABOUT SECTION ---
     md.append("## 💻 About This Tracker\n\n");
     md.append("Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. ");
@@ -706,9 +697,12 @@ private static void exportMarkdown() throws IOException {
     
     // --- CATEGORY SUMMARY ---
     md.append("## 🧾 Breakdown by Job Type\n\n");
-    Map<String, Long> byType = applications.stream()
-        .collect(Collectors.groupingBy(a -> a.type, TreeMap::new, Collectors.counting()));
-    for (Map.Entry<String, Long> e : byType.entrySet()) {
+
+    // Simplify / merge related subtypes before counting
+    Map<String, Long> byCategory = applications.stream()
+        .collect(Collectors.groupingBy(a -> simplifyType(a.type), TreeMap::new, Collectors.counting()));
+
+    for (Map.Entry<String, Long> e : byCategory.entrySet()) {
         md.append(String.format("- **%s:** %d  \n", e.getKey(), e.getValue()));
     }
     md.append("\n");
@@ -731,6 +725,15 @@ private static void exportMarkdown() throws IOException {
     md.append("🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*\n");
     md.append("*Last updated ").append(today).append(".*\n");
 
+    // --- HOW TO USE ---
+    md.append("## ⚙️ How to Use\n\n");
+    md.append("This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:\n");
+    md.append("1. Add new applications interactively\n");
+    md.append("2. Import a pre-seeded dataset (option 5)\n");
+    md.append("3. Search, update, and export to this Markdown report (option 3)\n");
+    md.append("4. Generate timestamped backups each time the file is saved\n\n");
+    md.append("To refresh this README, run **Option 3: Export README** from the main menu.\n\n");
+
     // --- WRITE FILE ---
     File output = new File(README);
     try (FileWriter w = new FileWriter(output)) {
@@ -751,6 +754,35 @@ private static void exportMarkdown() throws IOException {
         System.out.println("\nThen run option 3 in the tracker menu to regenerate the README.\n");
     }
 
+// --- Helper function for simplifying job types ---
+    private static String simplifyType(String rawType) {
+        String t = rawType.toLowerCase();
 
+        if (t.contains("software")) return "Software / Development";
+        if (t.contains("ai") || t.contains("machine learning")) return "AI / Data Science";
+        if (t.contains("data")) return "Data / Analytics";
+        if (t.contains("it")) return "IT / Support";
+        if (t.contains("cloud")) return "Cloud / Infrastructure";
+        if (t.contains("admin")) return "Administration";
+        if (t.contains("business")) return "Business / Operations";
+        if (t.contains("finance") || t.contains("insurance")) return "Finance";
+        if (t.contains("security")) return "Cybersecurity / Infrastructure";
+        if (t.contains("education")) return "Education / Training";
+        if (t.contains("animal")) return "Animal Care";
+        if (t.contains("healthcare") || t.contains("medical") || t.contains("biotech")) return "Healthcare / Life Sciences";
+        if (t.contains("policy") || t.contains("research")) return "Policy / Research";
+        if (t.contains("retail") || t.contains("service") || t.contains("customer")) return "Retail / Service";
+        if (t.contains("environmental") || t.contains("energy")) return "Environmental / Sustainability";
+        if (t.contains("marketing") || t.contains("communications")) return "Marketing / Communications";
+        if (t.contains("nonprofit")) return "Nonprofit / Community";
+        if (t.contains("engineering")) return "Engineering";
+        if (t.contains("culinary") || t.contains("food")) return "Culinary / Food Service";
+        if (t.contains("arts")) return "Arts / Creative";
+        if (t.contains("product")) return "Product / Design";
+        if (t.contains("automation")) return "Automation / Robotics";
+        if (t.contains("gis")) return "GIS / Mapping";
+
+        return "Other";
+    }
 
 }
