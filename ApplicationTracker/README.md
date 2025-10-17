@@ -9,7 +9,7 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 ---
 
 <div align="center">
-## 💡 Highlights
+  <h2>💡 Highlights</h2>
 </div>
 
 So far, I've applied to **125 positions** across multiple industries. Currently, **97 applications remain active**, with **1 interview** completed.  
@@ -17,7 +17,7 @@ Most applications came through LinkedIn and Handshake, spanning software, IT, an
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
 <div align="center">
-📊 Application Overview
+  <h2>📊 Application Overview</h2>
 </div>
 
 <table align="center">
@@ -40,7 +40,7 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 </table>
 
 <div align="center">
-🧾 Breakdown by Job Type
+  <h2>🧾 Breakdown by Job Type</h2>
 </div>
 
 <table align="center"><tr><td valign='top' align='left'>
@@ -66,13 +66,13 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 </td></tr></table>
 
 <div align="center">
-💻 About This Tracker
+  <h2>💻 About This Tracker</h2>
 </div>
 
 Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. The tracker calculates dynamic statistics, success rates, and updates this file in real-time.
 
 <div align="center">
-⚙️ How to Use
+  <h2>⚙️ How to Use</h2>
 </div>
 
 This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:
@@ -84,7 +84,7 @@ This CLI tool built in **Java 17** automatically stores job data in `application
 To refresh this README, run **Option 3: Export README** from the main menu.
 
 <div align="center">
-📋 Master Application Log
+  <h2>📋 Master Application Log</h2>
 </div>
 
 <details>
