@@ -295,6 +295,14 @@ private static final String SEED_MARKDOWN =
     }
 
     private static void saveApplications() {
+        // 🔒 Safety: Backup existing file before overwriting
+        File original = new File(FILE);
+        if (original.exists()) {
+            File backup = new File(FILE + ".bak");
+            if (backup.exists()) backup.delete(); // replace old backup
+            original.renameTo(backup);
+        }
+        
         try (PrintWriter pw = new PrintWriter(new FileWriter(FILE))) {
             for (JobApplication a : applications) pw.println(a.toFileLine());
         } catch (IOException e) {
@@ -359,8 +367,13 @@ private static final String SEED_MARKDOWN =
         selected.status = newStatus;
         saveApplications();
         System.out.println("✅ Status updated and saved.");
-    }
 
+        try { exportMarkdown();
+        System.out.println("✅ README automatically updated after status change.");
+        } catch (IOException e) {
+            System.out.println("⚠️ Could not auto-export README: " + e.getMessage());
+        }
+    }
 
     private static void showSummary() {
         int total = applications.size();
@@ -436,17 +449,21 @@ private static void exportMarkdown() throws IOException {
     }
 
     md.append("\n</details>\n\n");
+
+    // Add summary below the collapsible list
+    md.append("\n**Summary:** ")
+    .append(String.format("%d total — %d active, %d rejected, %d interviews, %d hired.**\n",
+            total, active, rejected, interviews, hired));
+
     md.append("---\n");
     md.append("*Generated automatically by the Java Job Application Tracker.*\n");
-    md.append("*Lilyana Patamia — last updated ").append(today).append(".*\n");
+    md.append("*Last updated ").append(today).append(".*\n");
 
     try (FileWriter w = new FileWriter(README)) {
         w.write(md.toString());
     }
 
     System.out.println("✅ README updated with " + total + " jobs (" + active + " active, " + rejected + " rejected).");
-}
-
 
     private static void printEchoInstructions() {
         System.out.println("\\nYou can append from the shell like this (outside the program):\\n");
