@@ -29,28 +29,43 @@ So far, I've applied to **125 positions** across multiple industries. Currently,
 </tr>
 </table>
 
+## 🧾 Breakdown by Job Type
+
+<table><tr><td valign='top'>
+
+• **AI / Data Science:** 13<br>
+• **Administration:** 5<br>
+• **Animal Care:** 15<br>
+• **Culinary / Food Service:** 3<br>
+• **Data / Analytics:** 10<br>
+• **Education / Training:** 3<br>
+• **Engineering:** 1<br>
+• **Environmental / Sustainability:** 2<br>
+</td><td valign='top'>
+
+• **Finance:** 1<br>
+• **IT / Support:** 34<br>
+• **Marketing / Communications:** 1<br>
+• **Other:** 1<br>
+• **Policy / Research:** 1<br>
+• **Product / Design:** 1<br>
+• **Retail / Service:** 8<br>
+• **Software / Development:** 26<br>
+</td></tr></table>
+
 ## 💻 About This Tracker
 
 Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. The tracker calculates dynamic statistics, success rates, and updates this file in real-time.
 
-## 🧾 Breakdown by Job Type
+## ⚙️ How to Use
 
-- **AI / Data Science:** 13  
-- **Administration:** 5  
-- **Animal Care:** 15  
-- **Culinary / Food Service:** 3  
-- **Data / Analytics:** 10  
-- **Education / Training:** 3  
-- **Engineering:** 1  
-- **Environmental / Sustainability:** 2  
-- **Finance:** 1  
-- **IT / Support:** 34  
-- **Marketing / Communications:** 1  
-- **Other:** 1  
-- **Policy / Research:** 1  
-- **Product / Design:** 1  
-- **Retail / Service:** 8  
-- **Software / Development:** 26  
+This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:
+1. Add new applications interactively
+2. Import a pre-seeded dataset (option 5)
+3. Search, update, and export to this Markdown report (option 3)
+4. Generate timestamped backups each time the file is saved
+
+To refresh this README, run **Option 3: Export README** from the main menu.
 
 ## 📋 Master Application Log
 
@@ -192,13 +207,3 @@ Built with **Java 17**, this app demonstrates file handling, date parsing, Markd
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
 *Last updated October 17, 2025.*
-## ⚙️ How to Use
-
-This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:
-1. Add new applications interactively
-2. Import a pre-seeded dataset (option 5)
-3. Search, update, and export to this Markdown report (option 3)
-4. Generate timestamped backups each time the file is saved
-
-To refresh this README, run **Option 3: Export README** from the main menu.
-

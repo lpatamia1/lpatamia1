@@ -611,27 +611,27 @@ private static void showSummary() {
     // Breakdown
     // 💼 Breakdown by type
     Map<String, Long> byType = applications.stream()
-            .collect(Collectors.groupingBy(a -> a.type, TreeMap::new, Collectors.counting()));
+        .collect(Collectors.groupingBy(a -> simplifyBroadCategory(a.type), TreeMap::new, Collectors.counting()));
 
     System.out.println(PEACH + "-".repeat(90));
     System.out.println("                                    Breakdown by Type:");
     System.out.println("-".repeat(90));
 
+    // Sort from largest → smallest
     List<Map.Entry<String, Long>> entries = new ArrayList<>(byType.entrySet());
-    int colWidth = 37; // adjust to your terminal width; 32 fits nicely in 80–90 columns
+    entries.sort((a, b) -> Long.compare(b.getValue(), a.getValue()));
+
+    int colWidth = 37; // fits nicely in 90-char width terminals
 
     for (int i = 0; i < entries.size(); i += 2) {
-        // Left column
         String left = String.format("• %-"+colWidth+"s %3d", 
             entries.get(i).getKey(), entries.get(i).getValue());
 
-        // Right column (only if exists)
         String right = (i + 1 < entries.size())
             ? String.format("   • %-"+colWidth+"s %3d", 
                 entries.get(i + 1).getKey(), entries.get(i + 1).getValue())
             : "";
 
-        // print both columns in cyan/green for consistency
         System.out.println(CYAN + left + right + RESET);
     }
     System.out.println("═".repeat(90));
@@ -671,8 +671,7 @@ private static void exportMarkdown() throws IOException {
         total, active, interviews
     ));
 
-
-    // --- OVERVIEW ---
+    // --- APPLICATION OVERVIEW ---
     md.append("## 📊 Application Overview\n\n");
     md.append("<table>\n");
     md.append("<tr>\n");
@@ -689,24 +688,47 @@ private static void exportMarkdown() throws IOException {
     md.append("</tr>\n");
     md.append("</table>\n\n");
 
-    // --- ABOUT SECTION ---
+    // --- CATEGORY SUMMARY ---
+    md.append("## 🧾 Breakdown by Job Type\n\n");
+
+    Map<String, Long> byCategory = applications.stream()
+        .collect(Collectors.groupingBy(a -> simplifyType(a.type), TreeMap::new, Collectors.counting()));
+
+    List<Map.Entry<String, Long>> entries = new ArrayList<>(byCategory.entrySet());
+    int mid = (entries.size() + 1) / 2;
+
+    md.append("<table><tr><td valign='top'>\n\n");
+
+    for (int i = 0; i < mid; i++) {
+        Map.Entry<String, Long> e = entries.get(i);
+        md.append(String.format("• **%s:** %d<br>\n", e.getKey(), e.getValue()));
+    }
+
+    md.append("</td><td valign='top'>\n\n");
+
+    for (int i = mid; i < entries.size(); i++) {
+        Map.Entry<String, Long> e = entries.get(i);
+        md.append(String.format("• **%s:** %d<br>\n", e.getKey(), e.getValue()));
+    }
+
+    md.append("</td></tr></table>\n\n");
+
+
+    // --- ABOUT THIS TRACKER SECTION ---
     md.append("## 💻 About This Tracker\n\n");
     md.append("Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. ");
     md.append("It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. ");
     md.append("The tracker calculates dynamic statistics, success rates, and updates this file in real-time.\n\n");
     
-    // --- CATEGORY SUMMARY ---
-    md.append("## 🧾 Breakdown by Job Type\n\n");
-
-    // Simplify / merge related subtypes before counting
-    Map<String, Long> byCategory = applications.stream()
-        .collect(Collectors.groupingBy(a -> simplifyType(a.type), TreeMap::new, Collectors.counting()));
-
-    for (Map.Entry<String, Long> e : byCategory.entrySet()) {
-        md.append(String.format("- **%s:** %d  \n", e.getKey(), e.getValue()));
-    }
-    md.append("\n");
-
+    // --- HOW TO USE ---
+    md.append("## ⚙️ How to Use\n\n");
+    md.append("This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:\n");
+    md.append("1. Add new applications interactively\n");
+    md.append("2. Import a pre-seeded dataset (option 5)\n");
+    md.append("3. Search, update, and export to this Markdown report (option 3)\n");
+    md.append("4. Generate timestamped backups each time the file is saved\n\n");
+    md.append("To refresh this README, run **Option 3: Export README** from the main menu.\n\n");
+ 
     // --- MASTER LOG ---
     md.append("## 📋 Master Application Log\n\n");
     md.append("<details>\n<summary>Click to expand full job application list</summary>\n\n");
@@ -724,15 +746,6 @@ private static void exportMarkdown() throws IOException {
     md.append("---\n");
     md.append("🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*\n");
     md.append("*Last updated ").append(today).append(".*\n");
-
-    // --- HOW TO USE ---
-    md.append("## ⚙️ How to Use\n\n");
-    md.append("This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:\n");
-    md.append("1. Add new applications interactively\n");
-    md.append("2. Import a pre-seeded dataset (option 5)\n");
-    md.append("3. Search, update, and export to this Markdown report (option 3)\n");
-    md.append("4. Generate timestamped backups each time the file is saved\n\n");
-    md.append("To refresh this README, run **Option 3: Export README** from the main menu.\n\n");
 
     // --- WRITE FILE ---
     File output = new File(README);
@@ -754,7 +767,55 @@ private static void exportMarkdown() throws IOException {
         System.out.println("\nThen run option 3 in the tracker menu to regenerate the README.\n");
     }
 
-// --- Helper function for simplifying job types ---
+    // --- Simplify subtypes into broader job categories ---
+    private static String simplifyBroadCategory(String rawType) {
+        String t = rawType.toLowerCase();
+
+        if (t.contains("software") || t.contains("developer") || t.contains("engineer"))
+            return "Software / Development";
+        if (t.contains("it") || t.contains("support") || t.contains("infrastructure"))
+            return "IT & Tech Support";
+        if (t.contains("data") || t.contains("ai") || t.contains("analytics") || t.contains("machine learning"))
+            return "Data & AI";
+        if (t.contains("admin") || t.contains("office") || t.contains("operations"))
+            return "Administration & Operations";
+        if (t.contains("business"))
+            return "Business & Strategy";
+        if (t.contains("finance") || t.contains("insurance"))
+            return "Finance";
+        if (t.contains("security") || t.contains("cyber"))
+            return "Cybersecurity";
+        if (t.contains("education") || t.contains("teaching"))
+            return "Education";
+        if (t.contains("animal"))
+            return "Animal Care";
+        if (t.contains("healthcare") || t.contains("medical") || t.contains("biotech"))
+            return "Healthcare & Life Sciences";
+        if (t.contains("policy") || t.contains("research"))
+            return "Policy & Research";
+        if (t.contains("retail") || t.contains("service") || t.contains("customer"))
+            return "Retail & Service";
+        if (t.contains("environmental") || t.contains("energy") || t.contains("gis"))
+            return "Environmental & Sustainability";
+        if (t.contains("marketing") || t.contains("communications"))
+            return "Marketing & Communications";
+        if (t.contains("nonprofit") || t.contains("community"))
+            return "Nonprofit & Outreach";
+        if (t.contains("culinary") || t.contains("food"))
+            return "Culinary & Food Service";
+        if (t.contains("arts") || t.contains("design"))
+            return "Arts & Design";
+        if (t.contains("product"))
+            return "Product Management";
+        if (t.contains("automation") || t.contains("robotics"))
+            return "Automation & Robotics";
+        if (t.contains("engineering"))
+            return "Engineering";
+
+        return "Other";
+    }
+
+    // --- Helper function for simplifying job types ---
     private static String simplifyType(String rawType) {
         String t = rawType.toLowerCase();
 
