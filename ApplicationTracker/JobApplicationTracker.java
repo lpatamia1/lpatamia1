@@ -638,7 +638,6 @@ private static void showSummary() {
 
 }
 
-
 private static void exportMarkdown() throws IOException {
     applications.sort(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed());
 
@@ -661,29 +660,7 @@ private static void exportMarkdown() throws IOException {
     md.append("# 🗂️ Job Application Tracker\n\n");
     md.append("A living record of my 2025 job applications, interview progress, and outcomes across **IT**, **Data**, and **Software Engineering** roles.\n\n");
     md.append("> *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*\n\n");
-
-    // --- OVERVIEW ---
-    ## 📊 Application Overview
-
-    <table>
-    <tr>
-    <td>
-
-    - **Total Applications:** 125  
-    - 🕐 **Active / Pending:** 97  
-    - ❌ **Rejected:** 13  
-
-    </td>
-    <td>
-
-    - 💬 **Interviewed:** 1  
-    - ✅ **Hired / Offer:** 0  
-    - 🗓️ **Last Updated:** October 17, 2025  
-
-    </td>
-    </tr>
-    </table>
-
+    
     // --- HIGHLIGHTS ---
     md.append("## 💡 Highlights\n\n");
     md.append(String.format(
@@ -693,6 +670,24 @@ private static void exportMarkdown() throws IOException {
         "This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.\n\n",
         total, active, interviews
     ));
+
+
+    // --- OVERVIEW ---
+    md.append("## 📊 Application Overview\n\n");
+    md.append("<table>\n");
+    md.append("<tr>\n");
+    md.append("<td align=\"left\" width=\"50%\">\n\n");
+    md.append("- **Total Applications:** ").append(total).append("  \n");
+    md.append("- 🕐 **Active / Pending:** ").append(active).append("  \n");
+    md.append("- ❌ **Rejected:** ").append(rejected).append("  \n\n");
+    md.append("</td>\n");
+    md.append("<td align=\"left\" width=\"50%\">\n\n");
+    md.append("- 💬 **Interviewed:** ").append(interviews).append("  \n");
+    md.append("- ✅ **Hired / Offer:** ").append(hired).append("  \n");
+    md.append("- 🗓️ **Last Updated:** ").append(today).append("  \n\n");
+    md.append("</td>\n");
+    md.append("</tr>\n");
+    md.append("</table>\n\n");
 
     // --- HOW TO USE ---
     md.append("## ⚙️ How to Use\n\n");

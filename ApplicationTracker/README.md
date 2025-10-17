@@ -1,10 +1,12 @@
-# 🗂️ Job Application Tracker — Lilyana Patamia
+# 🗂️ Job Application Tracker
 
 A living record of my 2025 job applications, interview progress, and outcomes across **IT**, **Data**, and **Software Engineering** roles.
 
 > *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*
 
-> *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*
+## 💡 Highlights
+
+So far, I've applied to **125 positions** across multiple industries. Currently, **97 applications remain active**, with **1 interviews** completed. Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles. This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
 ## 📊 Application Overview
 
@@ -26,10 +28,6 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </td>
 </tr>
 </table>
-
-## 💡 Highlights
-
-So far, applied to **125 positions** across multiple industries. Currently, **97 applications remain active**, with **1 interviews** completed. Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles. This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
 ## ⚙️ How to Use
 
@@ -183,5 +181,5 @@ Built with **Java 17**, this app demonstrates file handling, date parsing, Markd
 **Summary:** 📋 125 total — 🕐 97 active — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.**
 
 ---
-🌸 *Maintained by Lilyana Patamia — powered by the Java Job Application Tracker.*
+🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
 *Last updated October 17, 2025.*
