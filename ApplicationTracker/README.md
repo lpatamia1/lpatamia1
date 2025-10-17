@@ -1,8 +1,12 @@
+<div align="center">
+
 # 🗂️ Job Application Tracker
 
 A living record of my 2025 job applications, interview progress, and outcomes across **IT**, **Data**, and **Software Engineering** roles — alongside opportunities in design, research, education, public health, and community-focused organizations.
 
 > *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*
+
+<div align="center">
 
 ## 💡 Highlights
 
@@ -10,7 +14,7 @@ So far, I've applied to **125 positions** across multiple industries. Currently,
 
 ## 📊 Application Overview
 
-<table>
+<table align="center">
 <tr>
 <td align="left" width="50%">
 
@@ -29,9 +33,13 @@ So far, I've applied to **125 positions** across multiple industries. Currently,
 </tr>
 </table>
 
+</div>
+
 ## 🧾 Breakdown by Job Type
 
-<table><tr><td valign='top'>
+<table align="center">
+<tr>
+<td valign='top' align='left' width="50%">
 
 • **AI / Data Science:** 13<br>
 • **Administration:** 5<br>
@@ -41,7 +49,9 @@ So far, I've applied to **125 positions** across multiple industries. Currently,
 • **Education / Training:** 3<br>
 • **Engineering:** 1<br>
 • **Environmental / Sustainability:** 2<br>
-</td><td valign='top'>
+
+</td>
+<td valign='top' align='left' width="50%">
 
 • **Finance:** 1<br>
 • **IT / Support:** 34<br>
@@ -51,7 +61,12 @@ So far, I've applied to **125 positions** across multiple industries. Currently,
 • **Product / Design:** 1<br>
 • **Retail / Service:** 8<br>
 • **Software / Development:** 26<br>
-</td></tr></table>
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ## 💻 About This Tracker
 
