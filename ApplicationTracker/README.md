@@ -5,14 +5,21 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 > *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*
 
 ## 📊 Application Overview
-
+<table>
+<tr>
+<td align="left" width="50%">
 - **Total Applications:** 125
 - 🕐 **Active / Pending:** 97
 - ❌ **Rejected:** 13
+
+</td>
+<td align="left" width="50%">
 - 💬 **Interviewed:** 1
 - ✅ **Hired / Offer:** 0
 - 🗓️ **Last Updated:** October 17, 2025
-
+</td>
+</tr>
+</table>
 ## 💡 Highlights
 
 So far, applied to **125 positions** across multiple industries. Currently, **97 applications remain active**, with **1 interviews** completed. Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles. This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
