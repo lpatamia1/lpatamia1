@@ -67,6 +67,7 @@ So far, I've applied to **125 positions** across multiple industries. Currently,
 </table>
 
 </div>
+<div align="center">
 
 ## 💻 About This Tracker
 
@@ -83,6 +84,7 @@ This CLI tool built in **Java 17** automatically stores job data in `application
 To refresh this README, run **Option 3: Export README** from the main menu.
 
 ## 📋 Master Application Log
+</div>
 
 <details>
 <summary>Click to expand full job application list</summary>
