@@ -319,40 +319,57 @@ private static final String SEED_MARKDOWN =
         }
     }
 
-    private static void exportMarkdown() throws IOException {
-        applications.sort(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed());
+private static void exportMarkdown() throws IOException {
+    applications.sort(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed());
 
-        int total = applications.size();
-        long rejected = applications.stream().map(a -> a.status.toLowerCase())
-                .filter(s -> s.contains("reject") || s.contains("not selected")).count();
-        long hired = applications.stream().map(a -> a.status.toLowerCase())
-                .filter(s -> s.contains("hired")).count();
-        long interviews = applications.stream().map(a -> a.status.toLowerCase())
-                .filter(s -> s.contains("interview")).count();
-        long active = total - rejected - hired;
+    int total = applications.size();
+    long rejected = applications.stream().map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("reject") || s.contains("not selected")).count();
+    long hired = applications.stream().map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("hired")).count();
+    long interviews = applications.stream().map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("interview")).count();
+    long active = total - rejected - hired;
 
-        StringBuilder md = new StringBuilder();
-        md.append("# 🗂️ Job Application Tracker — Lilyana Patamia\\n\\n");
-        md.append("A comprehensive record of my job applications, interviews, and outcomes across IT, Data, and Software Engineering roles.\\n");
-        md.append("Includes LinkedIn, Indeed, and recruiter-based submissions.\\n\\n");
-        md.append(String.format("- **Total applications:** %d\\n", total));
-        md.append(String.format("- **Active / pending:** %d\\n", active));
-        md.append(String.format("- **Rejected:** %d\\n", rejected));
-        md.append(String.format("- **Interviewed:** %d\\n", interviews));
-        md.append(String.format("- **Hired:** %d\\n", hired));
-        md.append(String.format("- **Last updated:** %s\\n\\n", LocalDate.now().format(HUMAN)));
+    StringBuilder md = new StringBuilder();
 
-        md.append("## 📋 Master Application Log\\n\\n");
-        md.append("| Company | Role | Type | Location | Status | Date Applied | Source |\\n");
-        md.append("|----------|------|------|-----------|----------|---------------|---------|\\n");
-        for (JobApplication a : applications) {
-            md.append(a.toMarkdownRow()).append("\\n");
-        }
+    // --- HEADER ---
+    md.append("# 🗂️ Job Application Tracker — Lilyana Patamia\n\n");
+    md.append("Comprehensive record of job applications, interviews, and outcomes across **IT**, **Data**, and **Software Engineering** roles.\n\n");
+    md.append("> *Includes submissions from LinkedIn, Indeed, and recruiter referrals.*\n\n");
 
-        try (FileWriter w = new FileWriter(README)) {
-            w.write(md.toString());
-        }
+    // --- SUMMARY STATS ---
+    md.append("## 📊 Application Overview\n\n");
+    md.append(String.format("- **Total Applications:** %d\n", total));
+    md.append(String.format("- 🕐 **Active / Pending:** %d\n", active));
+    md.append(String.format("- ❌ **Rejected:** %d\n", rejected));
+    md.append(String.format("- 💬 **Interviewed:** %d\n", interviews));
+    md.append(String.format("- ✅ **Hired / Offer:** %d\n", hired));
+    md.append(String.format("- 🗓️ **Last Updated:** %s\n\n", LocalDate.now().format(HUMAN)));
+
+    // --- COLLAPSIBLE TABLE HEADER ---
+    md.append("## 📋 Master Application Log\n\n");
+    md.append("<details>\n<summary>Click to expand full job application list</summary>\n\n");
+    md.append("| Company | Role | Type | Location | Status | Date Applied | Source |\n");
+    md.append("|----------|------|------|-----------|----------|---------------|---------|\n");
+
+    // --- TABLE CONTENT ---
+    for (JobApplication a : applications) {
+        md.append(a.toMarkdownRow()).append("\n");
     }
+
+    md.append("\n</details>\n\n");
+
+    // --- FOOTER ---
+    md.append("---\n");
+    md.append("*Generated automatically by the Java Job Application Tracker.*\n");
+    md.append("*Lilyana Patamia — last updated ").append(LocalDate.now().format(HUMAN)).append(".*\n");
+
+    try (FileWriter w = new FileWriter(README)) {
+        w.write(md.toString());
+    }
+}
+
 
     private static void printEchoInstructions() {
         System.out.println("\\nYou can append from the shell like this (outside the program):\\n");
