@@ -152,7 +152,37 @@ private static final String SEED_MARKDOWN =
         "| [Epsilon](https://www.epsilon.com/us/about-us/careers) | New Grad Program | Software | Chicago, IL | Applied | 09/17/2025 | LinkedIn |\n" +
         "| [AllJoined](https://alljoined.com) | Software Engineering Research Intern | Software / Research | Remote | Applied | 10/02/2025 | LinkedIn |\n" +
         "| [TDS](https://tdstelecom.com/careers) | GIS Intern | GIS / Environmental | Remote | Applied | 10/13/2025 | LinkedIn |\n" +
-        "| [LeoLabs](https://www.leolabs.space/careers) | Electrical Engineer | Engineering | Remote | Applied | 10/13/2025 | LinkedIn |";
+        "| [LeoLabs](https://www.leolabs.space/careers) | Electrical Engineer | Engineering | Remote | Applied | 10/13/2025 | LinkedIn |\n" +
+        "| [Council of International Programs Chicago](https://www.cipchicago.org/) | Web Designer / Developer Intern | Nonprofit / Web | Remote / Chicago, IL / Bensenville, IL | Applied | 07/20/2025 | Handshake |\n" +
+        "| [Wesco](https://www.wesco.com/careers) | IT Development Program (2026) | IT / Graduate | Hybrid / Glenview, IL / Pittsburgh, PA | Applied | 07/20/2025 | Handshake |\n" +
+        "| [DataCapable](https://www.datacapable.com/careers) | Software Engineer | Software | Remote / Chicago, IL | Applied | 07/20/2025 | Handshake |\n" +
+        "| [GenieAI](https://www.genieai.co/) | Software Engineer | AI / Software | Remote | Applied | 07/20/2025 | Handshake |\n" +
+        "| [Northwestern Mutual Chicagoland](https://chicagoland.nm.com/careers.htm) | Financial Advisor | Finance / Insurance | Onsite / Chicago, IL | Applied | 07/09/2025 | Handshake |\n" +
+        "| [Blue Cross Blue Shield (HCSC)](https://jobs.hcsc.com/) | Associate Systems Analyst | Healthcare / IT | Hybrid / Chicago, IL | Applied | 06/27/2025 | Handshake |\n" +
+        "| [Epic Systems Corporation](https://careers.epic.com/) | Software Developer | Software | Onsite / Verona, WI | Applied | 06/27/2025 | Handshake |\n" +
+        "| [Belay Diagnostics](https://belaydiagnostics.com/careers) | Intern, Technical Project & Systems Management | Biotech / IT | Hybrid / Chicago, IL | Applied | 06/26/2025 | Handshake |\n" +
+        "| [Siemens Digital Industries Software](https://www.siemens.com/global/en/company/jobs.html) | Software Development Intern | Software | Hybrid / Marlborough, MA / Huntsville, AL | Applied | 06/26/2025 | Handshake |\n" +
+        "| [Vantero](https://vantero.ai/) | Software Engineering / LLM Intern | AI / Software | Remote | Applied | 06/26/2025 | Handshake |\n" +
+        "| [Catholic Extension](https://www.catholicextension.org/about/careers/) | AI Data Strategy Intern | AI / Nonprofit | Onsite / Chicago, IL | Declined | 06/26/2025 | Handshake |\n" +
+        "| [Fynite Corp.](https://fynite.ai/careers) | Data Scientist | Data | Remote / U.S. | Applied | 06/26/2025 | Handshake |\n" +
+        "| [Fynite Corp.](https://fynite.ai/careers) | Data Engineer | Data | Remote / U.S. | Declined | 06/26/2025 | Handshake |\n" +
+        "| [Google](https://careers.google.com/students/) | Student Researcher (BS/MS) | Research / Software | Hybrid / Ann Arbor, MI / Austin, TX | Applied | 05/12/2025 | Handshake |\n" +
+        "| [Blueera Technologies, Inc.](https://blueeratech.com/careers) | DevOps Engineer | Software / IT | Remote / Indiana / TX | Applied | 05/07/2025 | Handshake |\n" +
+        "| [The Public Interest Network Creative Team](https://publicinterestnetwork.org/jobs/) | Web & Digital Content Intern | Communications / Web | Remote / Chicago, IL / Boston, MA | Applied | 05/07/2025 | Handshake |\n" +
+        "| [DataCapable](https://www.datacapable.com/careers) | Software Engineer | Software | Remote / Chicago, IL | Applied | 07/20/2025 | Handshake |\n" +
+        "| [GenieAI](https://www.genieai.co/) | Software Engineer | AI / Software | Remote | Applied | 07/20/2025 | Handshake |\n" +
+        "| [Northwestern Mutual Chicagoland](https://chicagoland.nm.com/careers.htm) | Financial Advisor | Finance / Insurance | Onsite / Chicago, IL | Applied | 07/09/2025 | Handshake |\n" +
+        "| [Blue Cross Blue Shield (HCSC)](https://jobs.hcsc.com/) | Associate Systems Analyst | Healthcare / IT | Hybrid / Chicago, IL | Applied | 06/27/2025 | Handshake |\n" +
+        "| [Epic Systems Corporation](https://careers.epic.com/) | Software Developer | Software | Onsite / Verona, WI | Applied | 06/27/2025 | Handshake |\n" +
+        "| [Belay Diagnostics](https://belaydiagnostics.com/careers) | Intern, Technical Project & Systems Management | Biotech / IT | Hybrid / Chicago, IL | Applied | 06/26/2025 | Handshake |\n" +
+        "| [Siemens Digital Industries Software](https://www.siemens.com/global/en/company/jobs.html) | Software Development Intern | Software | Hybrid / Marlborough, MA / Huntsville, AL | Applied | 06/26/2025 | Handshake |\n" +
+        "| [Vantero](https://vantero.ai/) | Software Engineering / LLM Intern | AI / Software | Remote | Applied | 06/26/2025 | Handshake |\n" +
+        "| [Catholic Extension](https://www.catholicextension.org/about/careers/) | AI Data Strategy Intern | AI / Nonprofit | Onsite / Chicago, IL | Declined | 06/26/2025 | Handshake |\n" +
+        "| [Fynite Corp.](https://fynite.ai/careers) | Data Scientist | Data | Remote / U.S. | Applied | 06/26/2025 | Handshake |\n" +
+        "| [Fynite Corp.](https://fynite.ai/careers) | Data Engineer | Data | Remote / U.S. | Declined | 06/26/2025 | Handshake |\n" +
+        "| [Google](https://careers.google.com/students/) | Student Researcher (BS/MS) | Research / Software | Hybrid / Ann Arbor, MI / Austin, TX | Applied | 05/12/2025 | Handshake |\n" +
+        "| [Blueera Technologies, Inc.](https://blueeratech.com/careers) | DevOps Engineer | Software / IT | Remote / Indiana / TX | Applied | 05/07/2025 | Handshake |\n" +
+        "| [The Public Interest Network Creative Team](https://publicinterestnetwork.org/jobs/) | Web & Digital Content Intern | Communications / Web | Remote / Chicago, IL / Boston, MA | Applied | 05/07/2025 | Handshake |";
 
 
     private static final List<JobApplication> applications = new ArrayList<>();
@@ -613,36 +643,26 @@ private static void exportMarkdown() throws IOException {
     applications.sort(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed());
 
     int total = applications.size();
-    long rejected = applications.stream()
-            .map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("reject") || s.contains("not selected"))
-            .count();
-    long hired = applications.stream()
-            .map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("hired") || s.contains("offer"))
-            .count();
-    long interviews = applications.stream()
-            .map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("interview"))
-            .count();
-    long closed = applications.stream()
-            .map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("closed"))
-            .count();
+    long rejected = applications.stream().map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("reject") || s.contains("not selected")).count();
+    long hired = applications.stream().map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("hired") || s.contains("offer")).count();
+    long interviews = applications.stream().map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("interview")).count();
+    long closed = applications.stream().map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("closed")).count();
 
-    // Active = total - (rejected + hired + closed)
     long active = total - rejected - hired - closed;
-
     String today = LocalDate.now().format(HUMAN);
 
     StringBuilder md = new StringBuilder();
 
     // --- HEADER ---
     md.append("# 🗂️ Job Application Tracker — Lilyana Patamia\n\n");
-    md.append("Comprehensive record of job applications, interviews, and outcomes across **IT**, **Data**, and **Software Engineering** roles.\n\n");
-    md.append("> *Includes submissions from LinkedIn, Indeed, and recruiter referrals.*\n\n");
+    md.append("A living record of my 2025 job applications, interview progress, and outcomes across **IT**, **Data**, and **Software Engineering** roles.\n\n");
+    md.append("> *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*\n\n");
 
-    // --- SUMMARY STATS ---
+    // --- OVERVIEW ---
     md.append("## 📊 Application Overview\n\n");
     md.append(String.format("- **Total Applications:** %d\n", total));
     md.append(String.format("- 🕐 **Active / Pending:** %d\n", active));
@@ -651,7 +671,32 @@ private static void exportMarkdown() throws IOException {
     md.append(String.format("- ✅ **Hired / Offer:** %d\n", hired));
     md.append(String.format("- 🗓️ **Last Updated:** %s\n\n", today));
 
-    // --- TABLE SECTION ---
+    // --- HIGHLIGHTS ---
+    md.append("## 💡 Highlights\n\n");
+    md.append(String.format(
+        "So far, applied to **%d positions** across multiple industries. " +
+        "Currently, **%d applications remain active**, with **%d interviews** completed. " +
+        "Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles. " +
+        "This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.\n\n",
+        total, active, interviews
+    ));
+
+    // --- HOW TO USE ---
+    md.append("## ⚙️ How to Use\n\n");
+    md.append("This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:\n");
+    md.append("1. Add new applications interactively\n");
+    md.append("2. Import a pre-seeded dataset (option 5)\n");
+    md.append("3. Search, update, and export to this Markdown report (option 3)\n");
+    md.append("4. Generate timestamped backups each time the file is saved\n\n");
+    md.append("To refresh this README, run **Option 3: Export README** from the main menu.\n\n");
+
+    // --- ABOUT SECTION ---
+    md.append("## 💻 About This Tracker\n\n");
+    md.append("Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. ");
+    md.append("It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. ");
+    md.append("The tracker calculates dynamic statistics, success rates, and updates this file in real-time.\n\n");
+
+    // --- MASTER LOG ---
     md.append("## 📋 Master Application Log\n\n");
     md.append("<details>\n<summary>Click to expand full job application list</summary>\n\n");
     md.append("| Company | Role | Type | Location | Status | Date Applied | Source |\n");
@@ -662,27 +707,31 @@ private static void exportMarkdown() throws IOException {
     }
 
     md.append("\n</details>\n\n");
-
-    // Add summary below the collapsible list
-    md.append("\n**Summary:** ")
-        .append(String.format("📋 %d total — 🕐 %d active — ❌ %d rejected — 💬 %d interviews — ✅ %d hired.**\n",
+    md.append(String.format("**Summary:** 📋 %d total — 🕐 %d active — ❌ %d rejected — 💬 %d interviews — ✅ %d hired.**\n\n",
             total, active, rejected, interviews, hired));
 
     md.append("---\n");
-    md.append("*Generated automatically by the Java Job Application Tracker.*\n");
+    md.append("🌸 *Maintained by Lilyana Patamia — powered by the Java Job Application Tracker.*\n");
     md.append("*Last updated ").append(today).append(".*\n");
 
-    try (FileWriter w = new FileWriter(README)) {
+    // --- WRITE FILE ---
+    File output = new File(README);
+    try (FileWriter w = new FileWriter(output)) {
         w.write(md.toString());
     }
 
-    System.out.println("✅ README updated with " + total + " jobs (" + active + " active, " + rejected + " rejected).");
+    System.out.printf("📁 Writing README to: %s%n", output.getAbsolutePath());
+    System.out.printf("📝 Markdown length: %d characters (%d lines)%n",
+            md.length(), md.toString().split("\n").length);
+    System.out.printf("✅ README updated successfully with %d jobs (%d active, %d rejected).%n",
+            total, active, rejected);
 }
 
-    private static void printEchoInstructions() {
-        System.out.println("\\nYou can append from the shell like this (outside the program):\\n");
-        System.out.println("echo \"[Eataly](https://www.eataly.com/us_en/)|Cashier / Front End Associate – Seasonal|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn\" >> applications.txt");
-        System.out.println("echo \"[MUSEUM OF ICE CREAM](https://www.museumoficecream.com/careers)|Show Ambassador (Weekends Only)|Retail / Customer Service|Chicago, IL|Applied|10/15/2025|LinkedIn\" >> applications.txt");
-        System.out.println("\\nThen re-run option 3 to export an updated README.");
-    }
+private static void printEchoInstructions() {
+    System.out.println("\n💡 To append new jobs from the shell (outside the program):\n");
+    System.out.println("echo \"[Eataly](https://www.eataly.com/us_en/)|Cashier / Front End Associate – Seasonal|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn\" >> applications.txt");
+    System.out.println("echo \"[MUSEUM OF ICE CREAM](https://www.museumoficecream.com/careers)|Show Ambassador (Weekends Only)|Retail / Customer Service|Chicago, IL|Applied|10/15/2025|LinkedIn\" >> applications.txt");
+    System.out.println("\nThen run option 3 in the tracker menu to regenerate the README.\n");
+}
+
 }

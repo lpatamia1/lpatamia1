@@ -1,17 +1,35 @@
 # 🗂️ Job Application Tracker — Lilyana Patamia
 
-Comprehensive record of job applications, interviews, and outcomes across **IT**, **Data**, and **Software Engineering** roles.
+A living record of my 2025 job applications, interview progress, and outcomes across **IT**, **Data**, and **Software Engineering** roles.
 
-> *Includes submissions from LinkedIn, Indeed, and recruiter referrals.*
+> *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*
 
 ## 📊 Application Overview
 
-- **Total Applications:** 102
-- 🕐 **Active / Pending:** 74
+- **Total Applications:** 125
+- 🕐 **Active / Pending:** 97
 - ❌ **Rejected:** 13
 - 💬 **Interviewed:** 1
 - ✅ **Hired / Offer:** 0
 - 🗓️ **Last Updated:** October 17, 2025
+
+## 💡 Highlights
+
+So far, applied to **125 positions** across multiple industries. Currently, **97 applications remain active**, with **1 interviews** completed. Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles. This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
+
+## ⚙️ How to Use
+
+This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:
+1. Add new applications interactively
+2. Import a pre-seeded dataset (option 5)
+3. Search, update, and export to this Markdown report (option 3)
+4. Generate timestamped backups each time the file is saved
+
+To refresh this README, run **Option 3: Export README** from the main menu.
+
+## 💻 About This Tracker
+
+Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. The tracker calculates dynamic statistics, success rates, and updates this file in real-time.
 
 ## 📋 Master Application Log
 
@@ -103,6 +121,11 @@ Comprehensive record of job applications, interviews, and outcomes across **IT**
 | [Chicago Youth Centers](https://chicagoyouthcenters.org/careers) | STEAM Intern | Education / Nonprofit | Chicago, IL | Applied | 07/25/2025 | LinkedIn |
 | [The Bridge Teen Center](https://thebridgeteencenter.org/) | Horticulture Plant Propagation Intern | Environmental / Education | Orland Park, IL | Applied | 07/25/2025 | LinkedIn |
 | [American Red Cross](https://www.redcross.org/about-us/careers.html) | Fundraising & Strategy Intern | Nonprofit / Strategy | Remote | Applied | 07/25/2025 | LinkedIn |
+| [SCB Global](https://www.scbglobal.com/) | Data Support Engineer | IT Support | Remote / Chicago, IL | Applied | 07/25/2025 | Handshake |
+| [ifm efector inc](https://www.ifm.com/) | Software Developer, SAP Applications | Software | Remote / Chicago, IL | Applied | 07/25/2025 | Handshake |
+| [Antra Inc.](https://www.antra.com/careers) | Java Full Stack Developer | Software | Hybrid / Chicago, IL / Sterling, VA | Applied | 07/25/2025 | Handshake |
+| [Supernova Companies](https://www.supernovacompanies.com/careers) | Program Analyst | Data / Business | Chicago, IL | Applied | 07/25/2025 | Handshake |
+| [Aclipse](https://www.aclipse.net/) | Teach English in Korea | Education / International | Seoul, South Korea | Applied | 07/25/2025 | Handshake |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Adoption Services Associate | Animal Care / Service | Chicago, IL | Applied | 07/20/2025 | Indeed |
 | [Lawrence Fish Market](#) | Sushi Chef Assistant | Culinary | Chicago, IL | Applied (closed) | 07/20/2025 | Indeed |
 | [Eataly North America](https://www.eataly.com/us_en/) | Fishmonger — Raw Bar & Oyster | Culinary | Chicago, IL | Applied (closed) | 07/20/2025 | Indeed |
@@ -116,17 +139,35 @@ Comprehensive record of job applications, interviews, and outcomes across **IT**
 | [Advance Spine Rehab Center](#) | IT Personnel — As Needed | IT Support | Chicago, IL | Applied (closed) | 07/20/2025 | Indeed |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Veterinary Assistant Apprentice | Animal Care / Service | Chicago, IL | Applied | 07/20/2025 | Indeed |
 | [Lawrence Fish Market](https://ct.lawrencefish.com/) | Sushi Chef Assistant | Culinary | Chicago, IL | Applied | 07/20/2025 | Indeed |
+| [New Home Star](https://www.newhomestar.com/careers) | AI Intern | AI / Real Estate | Hybrid / Elmhurst, IL | Applied | 07/20/2025 | Handshake |
+| [Energy Solutions](https://energy-solution.com/careers) | Solar Programs Associate | Energy / Environmental | Hybrid / Portland, OR / Oakland, CA | Applied | 07/20/2025 | Handshake |
+| [Council of International Programs Chicago](https://www.cipchicago.org/) | Web Designer / Developer Intern | Nonprofit / Web | Remote / Chicago, IL / Bensenville, IL | Applied | 07/20/2025 | Handshake |
+| [Wesco](https://www.wesco.com/careers) | IT Development Program (2026) | IT / Graduate | Hybrid / Glenview, IL / Pittsburgh, PA | Applied | 07/20/2025 | Handshake |
+| [DataCapable](https://www.datacapable.com/careers) | Software Engineer | Software | Remote / Chicago, IL | Applied | 07/20/2025 | Handshake |
+| [GenieAI](https://www.genieai.co/) | Software Engineer | AI / Software | Remote | Applied | 07/20/2025 | Handshake |
+| [Northwestern Mutual Chicagoland](https://chicagoland.nm.com/careers.htm) | Financial Advisor | Finance / Insurance | Onsite / Chicago, IL | Applied | 07/09/2025 | Handshake |
+| [Blue Cross Blue Shield (HCSC)](https://jobs.hcsc.com/) | Associate Systems Analyst | Healthcare / IT | Hybrid / Chicago, IL | Applied | 06/27/2025 | Handshake |
+| [Epic Systems Corporation](https://careers.epic.com/) | Software Developer | Software | Onsite / Verona, WI | Applied | 06/27/2025 | Handshake |
+| [Belay Diagnostics](https://belaydiagnostics.com/careers) | Intern, Technical Project & Systems Management | Biotech / IT | Hybrid / Chicago, IL | Applied | 06/26/2025 | Handshake |
+| [Siemens Digital Industries Software](https://www.siemens.com/global/en/company/jobs.html) | Software Development Intern | Software | Hybrid / Marlborough, MA / Huntsville, AL | Applied | 06/26/2025 | Handshake |
+| [Vantero](https://vantero.ai/) | Software Engineering / LLM Intern | AI / Software | Remote | Applied | 06/26/2025 | Handshake |
+| [Catholic Extension](https://www.catholicextension.org/about/careers/) | AI Data Strategy Intern | AI / Nonprofit | Onsite / Chicago, IL | Declined | 06/26/2025 | Handshake |
+| [Fynite Corp.](https://fynite.ai/careers) | Data Scientist | Data | Remote / U.S. | Applied | 06/26/2025 | Handshake |
+| [Fynite Corp.](https://fynite.ai/careers) | Data Engineer | Data | Remote / U.S. | Declined | 06/26/2025 | Handshake |
 | [Kids STEM Studio](https://kidsstemstudio.com/) | After School Instructor | Education / Tech | Evanston, IL | Not Selected | 05/16/2025 | Indeed |
+| [Google](https://careers.google.com/students/) | Student Researcher (BS/MS) | Research / Software | Hybrid / Ann Arbor, MI / Austin, TX | Applied | 05/12/2025 | Handshake |
 | [Sweet Rabbit Bakery](#) | Part-Time FOH | Service | Chicago, IL | Not Selected | 05/08/2025 | Indeed |
 | [Fusion92](https://www.fusion92.com/careers) | Internship Program | Marketing / Data | Chicago, IL | Applied (closed) | 05/08/2025 | Indeed |
 | [APCIA](https://www.apci.org/) | IT Systems Support Intern | IT Support | Chicago, IL | Applied (closed) | 05/08/2025 | Indeed |
 | [C4 Chicago](https://www.c4chicago.org/) | Development Intern | Nonprofit / Dev | Chicago, IL | Applied (closed) | 05/08/2025 | Indeed |
+| [Blueera Technologies, Inc.](https://blueeratech.com/careers) | DevOps Engineer | Software / IT | Remote / Indiana / TX | Applied | 05/07/2025 | Handshake |
+| [The Public Interest Network Creative Team](https://publicinterestnetwork.org/jobs/) | Web & Digital Content Intern | Communications / Web | Remote / Chicago, IL / Boston, MA | Applied | 05/07/2025 | Handshake |
 | [Bark Bark Club](https://www.barkbarkclub.com/) | Dog Daycare Attendant (Part-Time) | Animal Care | Chicago, IL | Applied (closed) | 04/18/2025 | Indeed |
 
 </details>
 
+**Summary:** 📋 125 total — 🕐 97 active — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.**
 
-**Summary:** 📋 102 total — 🕐 74 active — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.**
 ---
-*Generated automatically by the Java Job Application Tracker.*
+🌸 *Maintained by Lilyana Patamia — powered by the Java Job Application Tracker.*
 *Last updated October 17, 2025.*
