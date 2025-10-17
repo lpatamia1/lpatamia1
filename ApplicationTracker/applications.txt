@@ -3,6 +3,10 @@ Eataly|Cashier|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn
 [Eataly](https://www.eataly.com/us_en/)|Cheesemonger / Salumi & Formaggi Artisan|Culinary / Retail|Chicago, IL|Applied|10/15/2025|LinkedIn
 [Eataly](https://www.eataly.com/us_en/)|Cashier / Front End Associate – Seasonal|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn
 [Comfort Dental Fairwood](https://www.comfortdental.com/)|Office Assistant|Admin / Office Support|Chicago, IL|Applied|10/15/2025|ZipRecruiter
+[MUSEUM OF ICE CREAM](https://www.museumoficecream.com/careers/)|Show Ambassador (Weekends Only)|Retail / Customer Service|Chicago, IL|Rejected|10/15/2025|LinkedIn
+[Eataly](https://www.eataly.com/us_en/)|Cheesemonger / Salumi & Formaggi Artisan|Culinary / Retail|Chicago, IL|Applied|10/15/2025|LinkedIn
+[Eataly](https://www.eataly.com/us_en/)|Cashier / Front End Associate - Seasonal|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn
+[Comfort Dental Fairwood](https://www.comfortdental.com/)|Office Assistant|Admin / Office Support|Chicago, IL|Applied|10/15/2025|ZipRecruiter
 [TDS](https://tdstelecom.com/careers)|GIS Intern|GIS / Environmental|Remote|Applied|10/13/2025|LinkedIn
 [LeoLabs](https://www.leolabs.space/careers)|Electrical Engineer|Engineering|Remote|Applied|10/13/2025|LinkedIn
 [Robert Half](https://www.roberthalf.com/jobs)|Part-Time Admin Assistant|Admin|Chicago, IL|Applied|10/03/2025|LinkedIn
@@ -87,3 +91,12 @@ Eataly|Cashier|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn
 [APCIA](https://www.apci.org/)|IT Systems Support Intern|IT Support|Chicago, IL|Applied (closed)|05/08/2025|Indeed
 [C4 Chicago](https://www.c4chicago.org/)|Development Intern|Nonprofit / Dev|Chicago, IL|Applied (closed)|05/08/2025|Indeed
 [Bark Bark Club](https://www.barkbarkclub.com/)|Dog Daycare Attendant (Part-Time)|Animal Care|Chicago, IL|Applied (closed)|04/18/2025|Indeed
+[Momotaro](https://www.bokagrp.com/careers)|Food Runner|Service|Chicago, IL|Applied|08/29/2025|Indeed
+[Wakamono](https://www.wakamonosush)|Food Runner|Service|Chicago, IL|Applied|08/29/2025|Indeed
+[Green Paws Chicago](https://greenpawschicago.com/)|Dog Walker & Pet Sitter|Animal Care|Chicago, IL|Applied|09/05/2025|Indeed
+[AESLIN Pup Hub](https://aeslin.com/)|Dog Daycare & Boarding Handler|Animal Care|Chicago, IL|Applied|09/05/2025|Indeed
+[PAWS Chicago](https://www.pawschicago.org/about-us/careers)|Veterinary Assistant Apprentice|Animal Care / Service|Chicago, IL|Applied|07/20/2025|Indeed
+[PAWS Chicago](https://www.pawschicago.org/about-us/careers)|Adoption Services Associate|Animal Care / Service|Chicago, IL|Applied|08/29/2025|Indeed
+[Ravenswoof](https://www.ravenswoof.com/?gad_source=1&gad_campaignid=22676922603&gbraid=0AAAAAqwvntwaAuii5WDQFzZqKpMl_f7ry&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qdE4YxOPjDwyfsH15ohUFJVWXrIDCo2LDEYh-97qlAet5LVunlU0LhoCB3sQAvD_BwE)|Pet Bather|Animal Care|Chicago, IL|Applied|09/07/2025|Indeed
+[Bark Bark Club](https://www.barkbarkclub.com/)|Dog Daycare Attendant|Animal Care|Chicago, IL|Applied|09/23/2025|Indeed
+[Lawrence Fish Market](https://ct.lawrencefish.com/)|Sushi Chef Assistant|Culinary|Chicago, IL|Applied|07/20/2025|Indeed

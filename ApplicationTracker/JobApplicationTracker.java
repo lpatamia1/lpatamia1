@@ -323,13 +323,27 @@ private static void exportMarkdown() throws IOException {
     applications.sort(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed());
 
     int total = applications.size();
-    long rejected = applications.stream().map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("reject") || s.contains("not selected")).count();
-    long hired = applications.stream().map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("hired")).count();
-    long interviews = applications.stream().map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("interview")).count();
-    long active = total - rejected - hired;
+    long rejected = applications.stream()
+            .map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("reject") || s.contains("not selected"))
+            .count();
+    long hired = applications.stream()
+            .map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("hired") || s.contains("offer"))
+            .count();
+    long interviews = applications.stream()
+            .map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("interview"))
+            .count();
+    long closed = applications.stream()
+            .map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("closed"))
+            .count();
+
+    // Active = total - (rejected + hired + closed)
+    long active = total - rejected - hired - closed;
+
+    String today = LocalDate.now().format(HUMAN);
 
     StringBuilder md = new StringBuilder();
 
@@ -345,29 +359,28 @@ private static void exportMarkdown() throws IOException {
     md.append(String.format("- ❌ **Rejected:** %d\n", rejected));
     md.append(String.format("- 💬 **Interviewed:** %d\n", interviews));
     md.append(String.format("- ✅ **Hired / Offer:** %d\n", hired));
-    md.append(String.format("- 🗓️ **Last Updated:** %s\n\n", LocalDate.now().format(HUMAN)));
+    md.append(String.format("- 🗓️ **Last Updated:** %s\n\n", today));
 
-    // --- COLLAPSIBLE TABLE HEADER ---
+    // --- TABLE SECTION ---
     md.append("## 📋 Master Application Log\n\n");
     md.append("<details>\n<summary>Click to expand full job application list</summary>\n\n");
     md.append("| Company | Role | Type | Location | Status | Date Applied | Source |\n");
     md.append("|----------|------|------|-----------|----------|---------------|---------|\n");
 
-    // --- TABLE CONTENT ---
     for (JobApplication a : applications) {
         md.append(a.toMarkdownRow()).append("\n");
     }
 
     md.append("\n</details>\n\n");
-
-    // --- FOOTER ---
     md.append("---\n");
     md.append("*Generated automatically by the Java Job Application Tracker.*\n");
-    md.append("*Lilyana Patamia — last updated ").append(LocalDate.now().format(HUMAN)).append(".*\n");
+    md.append("*Lilyana Patamia — last updated ").append(today).append(".*\n");
 
     try (FileWriter w = new FileWriter(README)) {
         w.write(md.toString());
     }
+
+    System.out.println("✅ README updated with " + total + " jobs (" + active + " active, " + rejected + " rejected).");
 }
 
 
