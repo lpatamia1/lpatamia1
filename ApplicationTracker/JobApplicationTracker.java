@@ -658,7 +658,7 @@ private static void exportMarkdown() throws IOException {
     StringBuilder md = new StringBuilder();
 
     // --- HEADER ---
-    md.append("# 🗂️ Job Application Tracker — Lilyana Patamia\n\n");
+    md.append("# 🗂️ Job Application Tracker\n\n");
     md.append("A living record of my 2025 job applications, interview progress, and outcomes across **IT**, **Data**, and **Software Engineering** roles.\n\n");
     md.append("> *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*\n\n");
 
@@ -711,7 +711,7 @@ private static void exportMarkdown() throws IOException {
             total, active, rejected, interviews, hired));
 
     md.append("---\n");
-    md.append("🌸 *Maintained by Lilyana Patamia — powered by the Java Job Application Tracker.*\n");
+    md.append("🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*\n");
     md.append("*Last updated ").append(today).append(".*\n");
 
     // --- WRITE FILE ---
