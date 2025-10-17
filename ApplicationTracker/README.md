@@ -12,6 +12,7 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 <div align="center">
 
 ## 💡 Highlights
+</div>
 So far, I've applied to **125 positions** across multiple industries. Currently, **97 applications remain active**, with **1 interview** completed.  
 Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
