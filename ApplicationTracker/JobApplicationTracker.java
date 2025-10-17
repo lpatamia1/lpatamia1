@@ -674,7 +674,7 @@ private static void exportMarkdown() throws IOException {
     ));
 
     // --- APPLICATION OVERVIEW ---
-    md.append("<div align=\"center\">\n## 📊 Application Overview\n</div>\n\n");
+    md.append("<div align=\"center\">\n📊 Application Overview\n</div>\n\n");
     md.append("<table align=\"center\">\n");
     md.append("<tr>\n");
     md.append("<td align=\"left\" width=\"50%\">\n\n");
@@ -691,7 +691,7 @@ private static void exportMarkdown() throws IOException {
     md.append("</table>\n\n");
 
     // --- CATEGORY SUMMARY ---
-    md.append("<div align=\"center\">\n## 🧾 Breakdown by Job Type\n</div>\n\n");
+    md.append("<div align=\"center\">\n🧾 Breakdown by Job Type\n</div>\n\n");
 
     Map<String, Long> byCategory = applications.stream()
         .collect(Collectors.groupingBy(a -> simplifyType(a.type), TreeMap::new, Collectors.counting()));
@@ -717,13 +717,13 @@ private static void exportMarkdown() throws IOException {
     md.append("</td></tr></table>\n\n");
 
     // --- ABOUT THIS TRACKER SECTION ---
-    md.append("<div align=\"center\">\n## 💻 About This Tracker\n</div>\n\n");
+    md.append("<div align=\"center\">\n💻 About This Tracker\n</div>\n\n");
     md.append("Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. ");
     md.append("It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. ");
     md.append("The tracker calculates dynamic statistics, success rates, and updates this file in real-time.\n\n");
     
     // --- HOW TO USE ---
-    md.append("<div align=\"center\">\n## ⚙️ How to Use\n</div>\n\n");
+    md.append("<div align=\"center\">\n⚙️ How to Use\n</div>\n\n");
     md.append("This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:\n");
     md.append("1. Add new applications interactively\n");
     md.append("2. Import a pre-seeded dataset (option 5)\n");
@@ -732,7 +732,7 @@ private static void exportMarkdown() throws IOException {
     md.append("To refresh this README, run **Option 3: Export README** from the main menu.\n\n");
  
     // --- MASTER LOG ---
-    md.append("<div align=\"center\">\n## 📋 Master Application Log\n</div>\n\n");
+    md.append("<div align=\"center\">\n📋 Master Application Log\n</div>\n\n");
     md.append("<details>\n<summary>Click to expand full job application list</summary>\n\n");
     md.append("| Company | Role | Type | Location | Status | Date Applied | Source |\n");
     md.append("|----------|------|------|-----------|----------|---------------|---------|\n");

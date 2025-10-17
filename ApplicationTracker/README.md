@@ -17,7 +17,7 @@ Most applications came through LinkedIn and Handshake, spanning software, IT, an
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
 <div align="center">
-## 📊 Application Overview
+📊 Application Overview
 </div>
 
 <table align="center">
@@ -40,7 +40,7 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 </table>
 
 <div align="center">
-## 🧾 Breakdown by Job Type
+🧾 Breakdown by Job Type
 </div>
 
 <table align="center"><tr><td valign='top' align='left'>
@@ -66,13 +66,13 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 </td></tr></table>
 
 <div align="center">
-## 💻 About This Tracker
+💻 About This Tracker
 </div>
 
 Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. The tracker calculates dynamic statistics, success rates, and updates this file in real-time.
 
 <div align="center">
-## ⚙️ How to Use
+⚙️ How to Use
 </div>
 
 This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:
@@ -84,7 +84,7 @@ This CLI tool built in **Java 17** automatically stores job data in `application
 To refresh this README, run **Option 3: Export README** from the main menu.
 
 <div align="center">
-## 📋 Master Application Log
+📋 Master Application Log
 </div>
 
 <details>
