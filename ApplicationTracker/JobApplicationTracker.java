@@ -176,23 +176,33 @@ private static final String SEED_MARKDOWN =
         final String BLUE = "\u001B[94m";
 
         while (true) {
-            System.out.println(BLUE + "═".repeat(70));
-            System.out.println("               ／l、");
-            System.out.println("             （ﾟ､ ｡７   ~ meow! keeping tabs on your career ~");
-            System.out.println("              l、 ~ヽ     keep applying, you got this! 🐾");
-            System.out.println("              じしf_, )ノ");
-            System.out.println("═".repeat(70));
-            System.out.println("                         JOB APPLICATION TRACKER");
-            System.out.println("═".repeat(70));
-            System.out.println("📊  1. View Summary");
-            System.out.println("📝  2. Add New Application");
-            System.out.println("📤  3. Export README (Stats + Sorted Table)");
-            System.out.println("➕  4. Add Multiple from Shell (Instructions)");
-            System.out.println("📥  5. Import from Embedded Markdown Seed (Once)");
-            System.out.println("✏️   6. Update Job Status");
-            System.out.println("🔍  7. Search Applications");
-            System.out.println("🚪  8. Exit");
-            System.out.println("═".repeat(70) + RESET);
+            System.out.println(BLUE + "═".repeat(90));
+            System.out.println("||                       ／l、                                                          ||");                                               
+            System.out.println("||                     （ﾟ､ ｡７   ~ meow! keeping tabs on your career ~                 ||");
+            System.out.println("||                      l、 ~ヽ     keep applying, you got this! 🐾                     ||");
+            System.out.println("||                      じしf_, )ノ                                                     ||");
+            System.out.println("═".repeat(90));
+            System.out.println("                                  JOB APPLICATION TRACKER");
+            System.out.println("═".repeat(90));
+            // Two-column layout
+            String leftCol[] = {
+                "📊  1. View Summary",
+                "📝  2. Add New Application",
+                "📤  3. Export README",
+                "➕  4. Batch-Add Multiple from Shell"
+            };
+
+            String rightCol[] = {
+                " 📥  5. Import Seed Dataset",
+                " ✏️   6. Update Status",
+                " 🔍  7. Search Applications by Keywords",
+                "🚪  8. Save and Close Tracker"
+            };
+            // Print both columns side by side
+            for (int i = 0; i < leftCol.length; i++) {
+                System.out.printf("  %-45s %s%n", leftCol[i], rightCol[i]);
+            }
+            System.out.println("═".repeat(90) + RESET);
 
             System.out.print("> ");
 
@@ -297,10 +307,19 @@ private static final String SEED_MARKDOWN =
         final String CYAN = "\u001B[96m";
         final String RESET = "\u001B[0m";
 
+        String pad = " ".repeat(35);
         String[] frames = {
-            CYAN + "   ／l、\n  （=‐ ω ‐=） zzz...\n   じしf_, )ノ" + RESET,
-            CYAN + "   ／l、\n  （=・ω・=） blink blink\n   じしf_, )ノ" + RESET,
-            CYAN + "   ／l、\n  （=｀ω´ =） ready to work!\n   じしf_, )ノ" + RESET
+            CYAN + pad + "  ／l、\n" +
+            pad + "（=‐ ω ‐=） zzz...\n" +
+            pad + "  じしf_, )ノ" + RESET,
+
+            CYAN + pad + "  ／l、\n" +
+            pad + "（=・ω・=） blink blink\n" +
+            pad + "  じしf_, )ノ" + RESET,
+
+            CYAN + pad + "  ／l、\n" +
+            pad + "（=｀ω´ =） ready to work!\n" +
+            pad + "  じしf_, )ノ" + RESET
         };
 
         for (String frame : frames) {
@@ -312,7 +331,7 @@ private static final String SEED_MARKDOWN =
 
         // Clean up final cat before menu appears
         System.out.print("\r\033[3A\033[J");
-        System.out.println("🐾 Meow! Time to check your job hunt 💼");
+        System.out.println("\n                        🐾 Meow! Time to check your job hunt 💼");
     }
 
     private static void loadApplications() {
@@ -370,7 +389,7 @@ private static final String SEED_MARKDOWN =
         String keyword = sc.nextLine().trim().toLowerCase();
 
         if (keyword.isEmpty()) {
-            System.out.println("⚠️ No keyword entered.");
+            System.out.println("⚠️  No keyword entered.");
             return;
         }
 
@@ -520,6 +539,8 @@ private static void showSummary() {
     final String GREEN = "\u001B[92m";
     final String YELLOW = "\u001B[93m";
     final String RED = "\u001B[91m";
+    final String ORANGE = "\u001B[38;2;255;165;0m";
+    final String PEACH = "\u001B[38;2;255;200;150m";
     final String RESET = "\u001B[0m";
 
     int total = applications.size();
@@ -529,31 +550,45 @@ private static void showSummary() {
             .filter(s -> s.contains("hired") || s.contains("offer")).count();
     long interviews = applications.stream().map(a -> a.status.toLowerCase())
             .filter(s -> s.contains("interview")).count();
-    long active = total - rejected - hired;
+    long closed = applications.stream().map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("closed")).count();
+    long active = total - rejected - hired - closed;
+    double successRate = total == 0 ? 0 : (double) (hired + interviews) / total * 100;
+
 
     // 🐾 Top section with colors
-    final String ORANGE = "\u001B[38;2;255;165;0m";  // RGB(255,165,0)
-    System.out.println(ORANGE + "═".repeat(70));
-    System.out.println("                         APPLICATION SUMMARY");
-    System.out.println("═".repeat(70) + RESET);
-    System.out.printf("%sTotal:%s %-4d  %sActive:%s %-4d  %sRejected:%s %-4d  %sInterviews:%s %-4d  %sHired:%s %-4d%n",
+    System.out.println(ORANGE + "═".repeat(90));
+    System.out.println("                                   APPLICATION SUMMARY");
+    System.out.println("═".repeat(90) + RESET);
+
+    System.out.printf("%sTotal:%s %-9d  %sActive:%s %-9d  %sRejected:%s %-9d  %sInterviews:%s %-9d  %sHired:%s %-9d%n",
             CYAN, RESET, total,
             GREEN, RESET, active,
             RED, RESET, rejected,
             YELLOW, RESET, interviews,
             PINK, RESET, hired);
+
     System.out.println();
-    final String PEACH = "\u001B[38;2;255;200;150m";
+    
+    // Success rate and closed count
+    int barLength = 30;
+    int filled = (int) (barLength * successRate / 100);
+    String bar = "█".repeat(filled) + "░".repeat(barLength - filled);
+    System.out.println();
+    System.out.printf("%s📈 Success Rate:%s %.1f%% %s%s%s%n", ORANGE, RESET, successRate, GREEN, bar, RESET);
+    System.out.printf("%s📦 Closed:%s %d%n%n", CYAN, RESET, closed);
+
+    // Breakdown
     // 💼 Breakdown by type
     Map<String, Long> byType = applications.stream()
             .collect(Collectors.groupingBy(a -> a.type, TreeMap::new, Collectors.counting()));
-            
-    System.out.println("-".repeat(70));
-    System.out.println(PEACH + "                          Breakdown by Type:");
-    System.out.println("-".repeat(70));
+
+    System.out.println(PEACH + "-".repeat(90));
+    System.out.println("                                    Breakdown by Type:");
+    System.out.println("-".repeat(90));
 
     List<Map.Entry<String, Long>> entries = new ArrayList<>(byType.entrySet());
-    int colWidth = 27; // adjust to your terminal width; 32 fits nicely in 80–90 columns
+    int colWidth = 37; // adjust to your terminal width; 32 fits nicely in 80–90 columns
 
     for (int i = 0; i < entries.size(); i += 2) {
         // Left column
@@ -569,7 +604,7 @@ private static void showSummary() {
         // print both columns in cyan/green for consistency
         System.out.println(CYAN + left + right + RESET);
     }
-    System.out.println("═".repeat(70));
+    System.out.println("═".repeat(90));
 
 }
 

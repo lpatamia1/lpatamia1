@@ -7,9 +7,9 @@ Comprehensive record of job applications, interviews, and outcomes across **IT**
 ## 📊 Application Overview
 
 - **Total Applications:** 102
-- 🕐 **Active / Pending:** 75
-- ❌ **Rejected:** 12
-- 💬 **Interviewed:** 0
+- 🕐 **Active / Pending:** 74
+- ❌ **Rejected:** 13
+- 💬 **Interviewed:** 1
 - ✅ **Hired / Offer:** 0
 - 🗓️ **Last Updated:** October 17, 2025
 
@@ -88,7 +88,7 @@ Comprehensive record of job applications, interviews, and outcomes across **IT**
 | [Supernova Companies](https://www.supernovacompanies.com/careers) | Data Analyst | Data | Chicago, IL | Applied | 08/07/2025 | LinkedIn |
 | [Magnifact](https://www.magnifact.com/careers) | Data Analyst – SQL / ETL | Data | Chicago, IL | Applied | 07/30/2025 | LinkedIn |
 | [Dominican University](https://www.dom.edu/hr/employment-opportunities) | Web Developer | Software / Web | Chicago, IL | Applied | 07/30/2025 | LinkedIn |
-| [Capgemini America Inc.](https://www.capgemini.com/us-en/careers/) | Chicago Junior Developer | Software | Chicago, IL / New York, NY | Applied | 07/30/2025 | LinkedIn |
+| [Capgemini America Inc.](https://www.capgemini.com/us-en/careers/) | Chicago Junior Developer | Software | Chicago, IL / New York, NY | Rejected (After Interview) | 07/30/2025 | LinkedIn |
 | [Oak Street Health](https://www.oakstreethealth.com/careers) | Medical Scribe | Healthcare / IT | Chicago, IL | Applied | 07/26/2025 | LinkedIn |
 | [SFORCE IT](https://www.sforceit.com/) | Robotic Process Automation Developer | Automation / IT | Chicago, IL / Dallas, TX | Applied | 07/26/2025 | LinkedIn |
 | [Sunixa Solutions Inc.](https://sunixasolutions.com/careers) | AI/ML Engineer | AI / Software | Remote | Applied | 07/26/2025 | LinkedIn |
@@ -126,7 +126,7 @@ Comprehensive record of job applications, interviews, and outcomes across **IT**
 </details>
 
 
-**Summary:** 📋 102 total — 🕐 75 active — ❌ 12 rejected — 💬 0 interviews — ✅ 0 hired.**
+**Summary:** 📋 102 total — 🕐 74 active — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.**
 ---
 *Generated automatically by the Java Job Application Tracker.*
 *Last updated October 17, 2025.*
