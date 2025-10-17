@@ -452,7 +452,7 @@ private static void exportMarkdown() throws IOException {
 
     // Add summary below the collapsible list
     md.append("\n**Summary:** ")
-    .append(String.format("%d total — %d active, %d rejected, %d interviews, %d hired.**\n",
+        .append(String.format("📋 %d total — 🕐 %d active — ❌ %d rejected — 💬 %d interviews — ✅ %d hired.**\n",
             total, active, rejected, interviews, hired));
 
     md.append("---\n");
@@ -465,6 +465,7 @@ private static void exportMarkdown() throws IOException {
 
     System.out.println("✅ README updated with " + total + " jobs (" + active + " active, " + rejected + " rejected).");
 }
+
     private static void printEchoInstructions() {
         System.out.println("\\nYou can append from the shell like this (outside the program):\\n");
         System.out.println("echo \"[Eataly](https://www.eataly.com/us_en/)|Cashier / Front End Associate – Seasonal|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn\" >> applications.txt");
