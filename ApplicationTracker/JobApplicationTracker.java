@@ -658,7 +658,7 @@ private static void exportMarkdown() throws IOException {
 
     // --- HEADER ---
     md.append("# 🗂️ Job Application Tracker\n\n");
-    md.append("A living record of my 2025 job applications, interview progress, and outcomes across **IT**, **Data**, and **Software Engineering** roles.\n\n");
+    md.append("A living record of my 2025 job applications, interview progress, and outcomes across **IT**, **Data**, and **Software Engineering** roles — alongside opportunities in design, research, education, public health, and community-focused organizations.\n\n");
     md.append("> *Includes submissions from LinkedIn, Indeed, Handshake, and recruiter referrals.*\n\n");
     
     // --- HIGHLIGHTS ---
@@ -703,6 +703,15 @@ private static void exportMarkdown() throws IOException {
     md.append("Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. ");
     md.append("It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. ");
     md.append("The tracker calculates dynamic statistics, success rates, and updates this file in real-time.\n\n");
+    
+    // --- CATEGORY SUMMARY ---
+    md.append("## 🧾 Breakdown by Job Type\n\n");
+    Map<String, Long> byType = applications.stream()
+        .collect(Collectors.groupingBy(a -> a.type, TreeMap::new, Collectors.counting()));
+    for (Map.Entry<String, Long> e : byType.entrySet()) {
+        md.append(String.format("- **%s:** %d  \n", e.getKey(), e.getValue()));
+    }
+    md.append("\n");
 
     // --- MASTER LOG ---
     md.append("## 📋 Master Application Log\n\n");
@@ -735,11 +744,13 @@ private static void exportMarkdown() throws IOException {
             total, active, rejected);
 }
 
-private static void printEchoInstructions() {
-    System.out.println("\n💡 To append new jobs from the shell (outside the program):\n");
-    System.out.println("echo \"[Eataly](https://www.eataly.com/us_en/)|Cashier / Front End Associate – Seasonal|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn\" >> applications.txt");
-    System.out.println("echo \"[MUSEUM OF ICE CREAM](https://www.museumoficecream.com/careers)|Show Ambassador (Weekends Only)|Retail / Customer Service|Chicago, IL|Applied|10/15/2025|LinkedIn\" >> applications.txt");
-    System.out.println("\nThen run option 3 in the tracker menu to regenerate the README.\n");
-}
+    private static void printEchoInstructions() {
+        System.out.println("\n💡 To append new jobs from the shell (outside the program):\n");
+        System.out.println("echo \"[Eataly](https://www.eataly.com/us_en/)|Cashier / Front End Associate – Seasonal|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn\" >> applications.txt");
+        System.out.println("echo \"[MUSEUM OF ICE CREAM](https://www.museumoficecream.com/careers)|Show Ambassador (Weekends Only)|Retail / Customer Service|Chicago, IL|Applied|10/15/2025|LinkedIn\" >> applications.txt");
+        System.out.println("\nThen run option 3 in the tracker menu to regenerate the README.\n");
+    }
+
+
 
 }
