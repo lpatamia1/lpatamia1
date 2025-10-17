@@ -674,7 +674,7 @@ private static void exportMarkdown() throws IOException {
     // --- HIGHLIGHTS ---
     md.append("## 💡 Highlights\n\n");
     md.append(String.format(
-        "So far, applied to **%d positions** across multiple industries. " +
+        "So far, I've applied to **%d positions** across multiple industries. " +
         "Currently, **%d applications remain active**, with **%d interviews** completed. " +
         "Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles. " +
         "This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.\n\n",
