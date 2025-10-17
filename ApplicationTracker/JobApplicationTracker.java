@@ -593,7 +593,7 @@ private static void showSummary() {
 
     long trulyActive = active - stale;
     if (trulyActive < 0) trulyActive = 0;
-
+    
     double successRate = total == 0 ? 0 : (double) (hired + interviews) / total * 100;
 
     // 🐾 Top section with colors
@@ -618,7 +618,37 @@ private static void showSummary() {
     String bar = "█".repeat(filled) + "░".repeat(barLength - filled);
     System.out.println();
     System.out.printf("%s📈 Success Rate:%s %.1f%% %s%s%s%n", ORANGE, RESET, successRate, GREEN, bar, RESET);
-    System.out.printf("%s📦 Closed:%s %d%n%n", CYAN, RESET, closed);
+    System.out.printf("%s📦 Closed:%s %d%n", CYAN, RESET, closed);
+    String topSource = applications.stream()
+        .collect(Collectors.groupingBy(a -> a.source, Collectors.counting()))
+        .entrySet().stream()
+        .max(Map.Entry.comparingByValue())
+        .map(Map.Entry::getKey)
+        .orElse("Unknown");
+    System.out.printf("%s🌐 Top Source:%s %s%n", CYAN, RESET, topSource);
+    long daysSpan = ChronoUnit.DAYS.between(
+        applications.stream().map(a -> a.dateApplied).min(LocalDate::compareTo).orElse(LocalDate.now()),
+        LocalDate.now());
+    double perWeek = total / Math.max(daysSpan / 7.0, 1.0);
+    System.out.printf("%s⚡ Avg Applications per Week:%s %.1f%n", GREEN, RESET, perWeek);
+    long openApps = applications.stream()
+        .filter(a -> a.status.equalsIgnoreCase("applied"))
+        .count();
+    System.out.printf("%s🕐 Still Waiting (Applied Only):%s %d%n", CYAN, RESET, openApps);
+    String topLocation = applications.stream()
+        .collect(Collectors.groupingBy(a -> a.location, Collectors.counting()))
+        .entrySet().stream()
+        .max(Map.Entry.comparingByValue())
+        .map(Map.Entry::getKey)
+        .orElse("Unknown");
+    System.out.printf("%s📍 Top Location:%s %s%n", GREEN, RESET, topLocation);
+    JobApplication latest = applications.stream()
+        .max(Comparator.comparing(a -> a.dateApplied))
+        .orElse(null);
+    if (latest != null)
+        System.out.printf("%s🆕 Most Recent:%s %s — %s (%s)%n",
+            PINK, RESET, latest.company, latest.role,
+            latest.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
 
     // Breakdown
     // 💼 Breakdown by type
@@ -674,6 +704,8 @@ private static void exportMarkdown() throws IOException {
     // Adjust active to exclude likely inactive ones
     long trulyActive = active - stale;
     if (trulyActive < 0) trulyActive = 0; // safety clamp\
+    
+    double successRate = total == 0 ? 0 : (double) (hired + interviews) / total * 100;
 
     String today = LocalDate.now().format(HUMAN);
 
@@ -718,6 +750,58 @@ private static void exportMarkdown() throws IOException {
     md.append("</td>\n");
     md.append("</tr>\n");
     md.append("</table>\n\n");
+    // --- ADDITIONAL INSIGHTS ---
+    md.append("<div align=\"center\">\n");
+    md.append("  <h2>📈 Additional Insights</h2>\n");
+    md.append("</div>\n\n");
+
+    // 🧮 Calculate extra stats
+    long avgDays = (long) applications.stream()
+        .mapToLong(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()))
+        .average()
+        .orElse(0);
+
+    String topSource = applications.stream()
+        .collect(Collectors.groupingBy(a -> a.source, Collectors.counting()))
+        .entrySet().stream()
+        .max(Map.Entry.comparingByValue())
+        .map(Map.Entry::getKey)
+        .orElse("Unknown");
+
+    long daysSpan = ChronoUnit.DAYS.between(
+        applications.stream().map(a -> a.dateApplied).min(LocalDate::compareTo).orElse(LocalDate.now()),
+        LocalDate.now());
+    double perWeek = total / Math.max(daysSpan / 7.0, 1.0);
+
+    long openApps = applications.stream()
+        .filter(a -> a.status.equalsIgnoreCase("applied"))
+        .count();
+
+    String topLocation = applications.stream()
+        .collect(Collectors.groupingBy(a -> a.location, Collectors.counting()))
+        .entrySet().stream()
+        .max(Map.Entry.comparingByValue())
+        .map(Map.Entry::getKey)
+        .orElse("Unknown");
+
+    JobApplication latest = applications.stream()
+        .max(Comparator.comparing(a -> a.dateApplied))
+        .orElse(null);
+
+    // 🪄 Append stats to Markdown
+    md.append("<table align=\"center\"><tr><td align=\"left\">\n\n");
+    md.append(String.format("- 📈 **Success Rate:** %.1f%%  \n", successRate));
+    md.append(String.format("- 📦 **Closed:** %d  \n", closed));
+    md.append(String.format("- 🌐 **Top Source:** %s  \n", topSource));
+    md.append(String.format("- ⚡ **Avg Applications per Week:** %.1f  \n", perWeek));
+    md.append(String.format("- 🕐 **Still Waiting (Applied Only):** %d  \n", openApps));
+    md.append(String.format("- 📍 **Top Location:** %s  \n", topLocation));
+    md.append(String.format("- 📆 **Avg Days Since Application:** %d days  \n", avgDays));
+    if (latest != null)
+        md.append(String.format("- 🆕 **Most Recent:** %s — %s (%s)  \n",
+            latest.company, latest.role,
+            latest.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"))));
+    md.append("</td></tr></table>\n\n");
 
     // --- CATEGORY SUMMARY ---
     md.append("<div align=\"center\">\n");

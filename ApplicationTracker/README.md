@@ -12,7 +12,7 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
   <h2>💡 Highlights</h2>
 </div>
 
-So far, I've applied to **125 positions** across multiple industries. Currently, **97 applications remain active**, with **1 interview** completed.  
+So far, I've applied to **125 positions** across multiple industries. Currently, **42 applications remain active**, and **55 likely inactive** (older than 60 days), with **1 interview** completed.  
 Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
@@ -39,6 +39,22 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 </td>
 </tr>
 </table>
+
+<div align="center">
+  <h2>📈 Additional Insights</h2>
+</div>
+
+<table align="center"><tr><td align="left">
+
+- 📈 **Success Rate:** 0.8%  
+- 📦 **Closed:** 15  
+- 🌐 **Top Source:** LinkedIn  
+- ⚡ **Avg Applications per Week:** 4.8  
+- 🕐 **Still Waiting (Applied Only):** 95  
+- 📍 **Top Location:** Chicago, IL  
+- 📆 **Avg Days Since Application:** 64 days  
+- 🆕 **Most Recent:** Eataly — Cashier (10/15/2025)  
+</td></tr></table>
 
 <div align="center">
   <h2>🧾 Breakdown by Job Type</h2>
