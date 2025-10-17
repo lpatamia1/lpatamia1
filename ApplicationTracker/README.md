@@ -18,9 +18,10 @@ So far, I've applied to **125 positions** across multiple industries. Currently,
 Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
-<br>
+<div align="center">
 
 ## 📊 Application Overview
+</div>
 
 <table align="center">
 <tr>
@@ -82,16 +83,21 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 <div align="center">
 
 ## 💻 About This Tracker
+</div>
 
 Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. The tracker calculates dynamic statistics, success rates, and updates this file in real-time.
 
+<div align="center">
+
 ## ⚙️ How to Use
+</div>
 
 This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:
-1. Add new applications interactively
-2. Import a pre-seeded dataset (option 5)
-3. Search, update, and export to this Markdown report (option 3)
-4. Generate timestamped backups each time the file is saved
+
+1. Add new applications interactively  
+2. Import a pre-seeded dataset (option 5)  
+3. Search, update, and export to this Markdown report (option 3)  
+4. Generate timestamped backups each time the file is saved  
 
 To refresh this README, run **Option 3: Export README** from the main menu.
 
