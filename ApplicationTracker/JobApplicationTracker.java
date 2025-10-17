@@ -162,6 +162,7 @@ private static final String SEED_MARKDOWN =
         if (applications.isEmpty()) {
             System.out.println("ℹ️ No applications found. You can import your seeded rows via option 5.");
         }
+        catIntro();
         showMenu();
     }
 
@@ -172,13 +173,14 @@ private static final String SEED_MARKDOWN =
         final String PINK = "\u001B[95m";
         final String CYAN = "\u001B[96m";
         final String RESET = "\u001B[0m";
+        final String BLUE = "\u001B[94m";
 
         while (true) {
-            System.out.println("═".repeat(70));
-            System.out.println(CYAN + "               ／l、");
+            System.out.println(BLUE + "═".repeat(70));
+            System.out.println("               ／l、");
             System.out.println("             （ﾟ､ ｡７   ~ meow! keeping tabs on your career ~");
             System.out.println("              l、 ~ヽ     keep applying, you got this! 🐾");
-            System.out.println("              じしf_, )ノ" + RESET);
+            System.out.println("              じしf_, )ノ");
             System.out.println("═".repeat(70));
             System.out.println("                         JOB APPLICATION TRACKER");
             System.out.println("═".repeat(70));
@@ -190,7 +192,7 @@ private static final String SEED_MARKDOWN =
             System.out.println("✏️   6. Update Job Status");
             System.out.println("🔍  7. Search Applications");
             System.out.println("🚪  8. Exit");
-            System.out.println("═".repeat(70));
+            System.out.println("═".repeat(70) + RESET);
 
             System.out.print("> ");
 
@@ -232,7 +234,7 @@ private static final String SEED_MARKDOWN =
                     break;
                 case 8:
                     saveApplications();
-                    System.out.println("Goodbye!");
+                    System.out.println(CYAN + "ฅ^•ﻌ•^ฅ Bye-bye human! Career cat curls up for a nap. 💤");
                     return;
                 default:
                     System.out.println("Invalid choice.");
@@ -289,6 +291,28 @@ private static final String SEED_MARKDOWN =
             } catch (Exception ignore) {}
         }
         return applications.size() - before;
+    }
+
+    private static void catIntro() {
+        final String CYAN = "\u001B[96m";
+        final String RESET = "\u001B[0m";
+
+        String[] frames = {
+            CYAN + "   ／l、\n  （=‐ ω ‐=） zzz...\n   じしf_, )ノ" + RESET,
+            CYAN + "   ／l、\n  （=・ω・=） blink blink\n   じしf_, )ノ" + RESET,
+            CYAN + "   ／l、\n  （=｀ω´ =） ready to work!\n   じしf_, )ノ" + RESET
+        };
+
+        for (String frame : frames) {
+            // Move cursor up and erase previous 3 lines before drawing the next frame
+            System.out.print("\r\033[3A\033[J");
+            System.out.println(frame);
+            try { Thread.sleep(800); } catch (InterruptedException ignored) {}
+        }
+
+        // Clean up final cat before menu appears
+        System.out.print("\r\033[3A\033[J");
+        System.out.println("🐾 Meow! Time to check your job hunt 💼");
     }
 
     private static void loadApplications() {
@@ -490,26 +514,65 @@ private static final String SEED_MARKDOWN =
         }
     }
 
-    private static void showSummary() {
-        int total = applications.size();
-        long rejected = applications.stream().map(a -> a.status.toLowerCase())
-                .filter(s -> s.contains("reject") || s.contains("not selected")).count();
-        long hired = applications.stream().map(a -> a.status.toLowerCase())
-                .filter(s -> s.contains("hired")).count();
-        long interviews = applications.stream().map(a -> a.status.toLowerCase())
-                .filter(s -> s.contains("interview")).count();
-        long active = total - rejected - hired;
+private static void showSummary() {
+    final String PINK = "\u001B[95m";
+    final String CYAN = "\u001B[96m";
+    final String GREEN = "\u001B[92m";
+    final String YELLOW = "\u001B[93m";
+    final String RED = "\u001B[91m";
+    final String RESET = "\u001B[0m";
 
-        System.out.printf("\\n📊 Total: %d | Active: %d | Rejected: %d | Interviews: %d | Hired: %d\\n",
-                total, active, rejected, interviews, hired);
+    int total = applications.size();
+    long rejected = applications.stream().map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("reject") || s.contains("not selected")).count();
+    long hired = applications.stream().map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("hired") || s.contains("offer")).count();
+    long interviews = applications.stream().map(a -> a.status.toLowerCase())
+            .filter(s -> s.contains("interview")).count();
+    long active = total - rejected - hired;
 
-        Map<String, Long> byType = applications.stream()
-                .collect(Collectors.groupingBy(a -> a.type, TreeMap::new, Collectors.counting()));
-        System.out.println("\\n💼 Breakdown by Type:");
-        for (Map.Entry<String, Long> e : byType.entrySet()) {
-            System.out.printf("- %s: %d\\n", e.getKey(), e.getValue());
-        }
+    // 🐾 Top section with colors
+    final String ORANGE = "\u001B[38;2;255;165;0m";  // RGB(255,165,0)
+    System.out.println(ORANGE + "═".repeat(70));
+    System.out.println("                         APPLICATION SUMMARY");
+    System.out.println("═".repeat(70) + RESET);
+    System.out.printf("%sTotal:%s %-4d  %sActive:%s %-4d  %sRejected:%s %-4d  %sInterviews:%s %-4d  %sHired:%s %-4d%n",
+            CYAN, RESET, total,
+            GREEN, RESET, active,
+            RED, RESET, rejected,
+            YELLOW, RESET, interviews,
+            PINK, RESET, hired);
+    System.out.println();
+    final String PEACH = "\u001B[38;2;255;200;150m";
+    // 💼 Breakdown by type
+    Map<String, Long> byType = applications.stream()
+            .collect(Collectors.groupingBy(a -> a.type, TreeMap::new, Collectors.counting()));
+            
+    System.out.println("-".repeat(70));
+    System.out.println(PEACH + "                          Breakdown by Type:");
+    System.out.println("-".repeat(70));
+
+    List<Map.Entry<String, Long>> entries = new ArrayList<>(byType.entrySet());
+    int colWidth = 27; // adjust to your terminal width; 32 fits nicely in 80–90 columns
+
+    for (int i = 0; i < entries.size(); i += 2) {
+        // Left column
+        String left = String.format("• %-"+colWidth+"s %3d", 
+            entries.get(i).getKey(), entries.get(i).getValue());
+
+        // Right column (only if exists)
+        String right = (i + 1 < entries.size())
+            ? String.format("   • %-"+colWidth+"s %3d", 
+                entries.get(i + 1).getKey(), entries.get(i + 1).getValue())
+            : "";
+
+        // print both columns in cyan/green for consistency
+        System.out.println(CYAN + left + right + RESET);
     }
+    System.out.println("═".repeat(70));
+
+}
+
 
 private static void exportMarkdown() throws IOException {
     applications.sort(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed());
