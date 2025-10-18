@@ -12,7 +12,7 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
   <h2>💡 Highlights</h2>
 </div>
 
-So far, I've applied to **125 positions** across multiple industries. Currently, **42 applications remain active**, and **55 likely inactive** (older than 60 days), with **1 interview** completed.  
+So far, I've applied to **135 positions** across multiple industries. Currently, **52 applications remain active**, and **55 likely inactive** (older than 60 days), with **1 interview** completed.  
 Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
@@ -24,8 +24,8 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 <tr>
 <td align="left" width="50%">
 
-- **Total Applications:** 125  
-- 🕐 **Active / Pending:** 42  
+- **Total Applications:** 135  
+- 🕐 **Active / Pending:** 52  
 - ⏳ **Likely Inactive:** 55  
 - ❌ **Rejected:** 13  
 
@@ -46,14 +46,14 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 
 <table align="center"><tr><td align="left">
 
-- 📈 **Success Rate:** 0.8%  
+- 📈 **Success Rate:** 0.7%  
 - 📦 **Closed:** 15  
 - 🌐 **Top Source:** LinkedIn  
-- ⚡ **Avg Applications per Week:** 4.8  
-- 🕐 **Still Waiting (Applied Only):** 95  
+- ⚡ **Avg Applications per Week:** 5.2  
+- 🕐 **Still Waiting (Applied Only):** 105  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 65 days  
-- 🆕 **Most Recent:** Eataly — Cashier (10/15/2025)  
+- 📆 **Avg Days Since Application:** 60 days  
+- 🆕 **Most Recent:** [Application Success – Business Continuity Planner](https://careers.morningstar.com/us/en/applythankyou?status=success&jobSeqNo=MORMORUSAP8200436EXTERNALENUS&jobTitle=Business%20Continuity%20Planner&jobId=AP-8200436&candidateHomeUrl=https://morningstar.wd5.myworkdayjobs.com/Americas/login?Job_Application_ID=JOB_APPLICATION-3-2213667&jobApplicationId=JOB_APPLICATION-3-2213667&candidateId=CANDIDATE-3-1483762) — Business Continuity Planner (10/17/2025)  
 </td></tr></table>
 
 <div align="center">
@@ -62,22 +62,22 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 
 <table align="center"><tr><td valign='top' align='left'>
 
-• **IT / Support:** 34<br>
+• **IT / Support:** 39<br>
 • **Software / Development:** 26<br>
-• **Animal Care:** 15<br>
+• **Animal Care:** 17<br>
 • **AI / Data Science:** 13<br>
 • **Data / Analytics:** 10<br>
-• **Retail / Service:** 8<br>
-• **Administration:** 5<br>
+• **Retail / Service:** 9<br>
+• **Administration:** 6<br>
 • **Culinary / Food Service:** 3<br>
 </td><td valign='top' align='left'>
 
 • **Education / Training:** 3<br>
 • **Environmental / Sustainability:** 2<br>
+• **Other:** 2<br>
 • **Engineering:** 1<br>
 • **Finance:** 1<br>
 • **Marketing / Communications:** 1<br>
-• **Other:** 1<br>
 • **Policy / Research:** 1<br>
 • **Product / Design:** 1<br>
 </td></tr></table>
@@ -109,6 +109,16 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 
 | Company | Role | Type | Location | Status | Date Applied | Source |
 |----------|------|------|-----------|----------|---------------|---------|
+| [Application Success – Business Continuity Planner](https://careers.morningstar.com/us/en/applythankyou?status=success&jobSeqNo=MORMORUSAP8200436EXTERNALENUS&jobTitle=Business%20Continuity%20Planner&jobId=AP-8200436&candidateHomeUrl=https://morningstar.wd5.myworkdayjobs.com/Americas/login?Job_Application_ID=JOB_APPLICATION-3-2213667&jobApplicationId=JOB_APPLICATION-3-2213667&candidateId=CANDIDATE-3-1483762) | Business Continuity Planner | IT / Business | Chicago, IL | Applied | 10/17/2025 | Company Website |
+| [Application Success – MDP Track: Direct Platform (Campus)](https://careers.morningstar.com/us/en/applythankyou?status=success&jobSeqNo=MORMORUSREQ052832EXTERNALENUS&jobTitle=MDP%20Track%3A%20Direct%20Platform%20(Campus)&jobId=REQ-052832&candidateHomeUrl=https://morningstar.wd5.myworkdayjobs.com/Americas/login?Job_Application_ID=JOB_APPLICATION-3-2213663&jobApplicationId=JOB_APPLICATION-3-2213663&candidateId=CANDIDATE-3-1483762) | MDP Track - Direct Platform (Campus) | Full-time (Early Career Program) | Chicago, IL | Applied | 10/17/2025 | Company Website |
+| [Barback — Avli Chicago](https://www.avli.us/careers) | Barback | Hospitality | Chicago, IL | Applied | 10/17/2025 | Indeed |
+| [Server — Avli Chicago](https://www.avli.us/careers) | Server | Hospitality | Chicago, IL | Applied | 10/17/2025 | Indeed |
+| [Host — Sunda Fulton Market](https://www.sundachicago.com/careers/) | Host | Restaurant / Service | Chicago, IL | Applied | 10/17/2025 | Indeed |
+| [Veterinary Receptionist — PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Veterinary Receptionist | Animal Care / Medical | Chicago, IL | Applied | 10/17/2025 | Indeed |
+| [Doggy Daycare Attendant / Dog Handler — Urban Pooch Canine Life Center](https://www.urbanpooch.com/employment/) | Doggy Daycare Attendant / Dog Handler | Animal Petcare / Pet Services | Chicago, IL | Applied | 10/17/2025 | Indeed |
+| [IT Support Specialist (Hybrid) — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/) | IT Support Specialist (Hybrid) | Healthcare / IT | Chicago, IL | Applied | 10/17/2025 | Indeed |
+| [Barback — Z Bar, The Hongkong and Shanghai Hotels, Limited (Chicago, IL)](https://www.peninsula.com/en/careers) | Barback | Hospitality | Chicago, IL | Applied | 10/17/2025 | Company Website |
+| [Front Desk Medical Receptionist — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/) | Front Desk Medical Receptionist | Healthcare / Administration | Chicago, IL | Applied | 10/17/2025 | Company Website |
 | Eataly | Cashier | Retail / Service | Chicago, IL | Applied | 10/15/2025 | LinkedIn |
 | [MUSEUM OF ICE CREAM](https://www.museumoficecream.com/careers) | Show Ambassador (Weekends Only) | Retail / Customer Service | Chicago, IL | Applied | 10/15/2025 | LinkedIn |
 | [Eataly](https://www.eataly.com/us_en/) | Cheesemonger / Salumi & Formaggi Artisan | Culinary / Retail | Chicago, IL | Applied | 10/15/2025 | LinkedIn |
@@ -237,7 +247,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 
 </details>
 
-**Summary:** 📋 125 total — 🕐 42 active — ⏳ 55 likely inactive — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.**
+**Summary:** 📋 135 total — 🕐 52 active — ⏳ 55 likely inactive — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*

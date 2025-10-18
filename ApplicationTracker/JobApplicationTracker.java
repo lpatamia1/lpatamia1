@@ -519,7 +519,7 @@ private static void showSummary() {
 
     System.out.println(LAVENDER + "-".repeat(91));
     System.out.println("                                    Breakdown by Type:");
-    System.out.print("-".repeat(91));
+    System.out.println("-".repeat(91));
 
     // Sort from largest → smallest
     List<Map.Entry<String, Long>> entries = new ArrayList<>(byType.entrySet());
