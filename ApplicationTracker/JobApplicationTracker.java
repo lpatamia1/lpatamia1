@@ -6,59 +6,6 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.time.temporal.ChronoUnit;
 
-class JobApplication {
-    String company, role, type, location, status, source;
-    LocalDate dateApplied;
-
-    private static final DateTimeFormatter ISO = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-    private static final DateTimeFormatter MD  = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-    private static final DateTimeFormatter MD_DASH  = DateTimeFormatter.ofPattern("MM-dd-yyyy");
-    
-    public JobApplication(String company, String role, String type, String location,
-                          String status, String dateApplied, String source) {
-        this.company   = company.trim();
-        this.role      = role.trim();
-        this.type      = type.trim();
-        this.location  = location.trim();
-        this.status    = status.trim();
-        this.source    = source.trim();
-        this.dateApplied = parseFlexible(dateApplied.trim());
-    }
-
-    private static LocalDate parseFlexible(String s) {
-        String t = s.trim();
-        // Try common formats in order: MM/dd/yyyy, yyyy-MM-dd, MM-dd-yyyy
-        try { return LocalDate.parse(t, MD); }         catch (DateTimeParseException ignore) {}
-        try { return LocalDate.parse(t, ISO); }        catch (DateTimeParseException ignore) {}
-        try { return LocalDate.parse(t, MD_DASH); }    catch (DateTimeParseException ignore) {}
-        // As a last resort, try replacing `/` with `-` and parse ISO if it happens to be yyyy/MM/dd
-        try { return LocalDate.parse(t.replace('/', '-'), ISO); } catch (DateTimeParseException e) {
-            throw new IllegalArgumentException("Unrecognized date format: " + s + " (expected MM/dd/yyyy or yyyy-MM-dd)");
-        }
-    }
-
-    // file format (7 fields, | delimited)
-    public String toFileLine() {
-        return String.join("|",
-                company, role, type, location, status, dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")), source);
-    }
-
-    public static JobApplication fromFileLine(String line) {
-        if (line == null) return null;
-        String raw = line.trim();
-        if (raw.isEmpty() || raw.startsWith("#")) return null;
-        String[] p = raw.split("\\|", -1);
-        if (p.length != 7) return null;
-        return new JobApplication(p[0], p[1], p[2], p[3], p[4], p[5], p[6]);
-    }
-
-    public String toMarkdownRow() {
-        // Ensure README dates use Markdown MM/DD/YYYY style
-        return String.format("| %s | %s | %s | %s | %s | %s | %s |",
-                company, role, type, location, status, dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")), source);
-    }
-}
-
 public class JobApplicationTracker {
     private static final String FILE   = "applications.txt";
     private static final String README = "README.md";
