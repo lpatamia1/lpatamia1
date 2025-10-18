@@ -86,16 +86,18 @@ public class JobApplicationTracker {
         final String CYAN = "\u001B[96m";
         final String RESET = "\u001B[0m";
         final String BLUE = "\u001B[94m";
+        System.out.println("                       ／l、                                                          ");                                               
+        System.out.println("                     （ﾟ､ ｡７   ~ meow! keeping tabs on your career ~                 ");
+        System.out.println("                      l、 ~ヽ     keep applying, you got this! 🐾                     ");
+        System.out.println("                      じしf_, )ノ                                                     ");
 
         while (true) {
-            System.out.println(BLUE + "═".repeat(90));
-            System.out.println("||                                JOB APPLICATION TRACKER                               ||");
-            System.out.println("-".repeat(90));
-            System.out.println("||                       ／l、                                                          ||");                                               
-            System.out.println("||                     （ﾟ､ ｡７   ~ meow! keeping tabs on your career ~                 ||");
-            System.out.println("||                      l、 ~ヽ     keep applying, you got this! 🐾                     ||");
-            System.out.println("||                      じしf_, )ノ                                                     ||");
-            System.out.println("═".repeat(90));
+            System.out.println(CYAN +
+            "╭─────────────────────────────────────────────────────────────────────────────────────────╮\n" +
+            "│                                  JOB APPLICATION TRACKER                                │\n" +
+            "╰─────────────────────────────────────────────────────────────────────────────────────────╯" +
+            RESET);
+
             // Two-column layout
             String leftCol[] = {
                 "📊  1. View Summary",
@@ -218,6 +220,7 @@ public class JobApplicationTracker {
     private static void catIntro() {
         final String CYAN = "\u001B[96m";
         final String RESET = "\u001B[0m";
+        final String BLUE = "\u001B[94m";
 
         String pad = " ".repeat(35);
         String[] frames = {
@@ -243,7 +246,11 @@ public class JobApplicationTracker {
 
         // Clean up final cat before menu appears
         System.out.print("\r\033[3A\033[J");
-        System.out.println("\n                        🐾 Meow! Time to check your job hunt 💼");
+        System.out.println(BLUE +
+        "\n╭─────────────────────────────────────────────────────────────────────────────────────────╮\n" +
+        "│                       🐾 Meow! Time to check your job hunt 💼                           │\n" +
+        "╰─────────────────────────────────────────────────────────────────────────────────────────╯" +
+        RESET);
     }
 
     private static void loadApplications() {
@@ -293,6 +300,28 @@ public class JobApplicationTracker {
                     LocalDate.now().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         } catch (IOException e) {
             System.out.println("❌ Failed to save " + FILE + ": " + e.getMessage());
+        }
+        
+        // 🧹 Cleanup old backups (keep only 5 most recent)
+        cleanupOldBackups();
+    }
+    
+    // --- Optional cleanup: keep only 5 most recent backups ---
+    private static void cleanupOldBackups() {
+        File dir = new File("."); // current working directory
+        File[] backups = dir.listFiles((d, name) -> name.startsWith("applications_") && name.endsWith(".bak"));
+        if (backups == null || backups.length <= 5) return;
+
+        // Sort backups by last modified date (oldest first)
+        Arrays.sort(backups, Comparator.comparingLong(File::lastModified));
+
+        int filesToDelete = backups.length - 5;
+        for (int i = 0; i < filesToDelete; i++) {
+            if (backups[i].delete()) {
+                System.out.println("🧹 Deleted old backup: " + backups[i].getName());
+            } else {
+                System.out.println("⚠️ Could not delete: " + backups[i].getName());
+            }
         }
     }
 
