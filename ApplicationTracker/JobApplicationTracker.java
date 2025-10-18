@@ -539,10 +539,24 @@ private static void showSummary() {
         System.out.println(CYAN + left + right + RESET);
     }
     System.out.print(LAVENDER + "-".repeat(91));
-    System.out.printf(MINT + "\n📬 %d apps logged — %d active, %.1f%% showing progress.%n" + RESET, 
+    System.out.printf(MINT + "\n📬 %d applications logged — %d active, %.1f%% showing progress.%n" + RESET, 
         total, trulyActive, successRate);
     System.out.println(TEAL + "🐾 Career Cat: you’re doing great — keep applying!" + RESET);
+    
+    // 💫 Recently applied stats (within the last 7 days)
+    long recent = applications.stream()
+        .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) <= 7)
+        .count();
+
+    if (recent > 0) {
+        System.out.printf(MINT + "🕊️  You’ve applied to %d job%s in the last 7 days.%n" + RESET,
+            recent, recent == 1 ? "" : "s");
+    } else {
+        System.out.println(ORANGE + " 🌼 No new applications this week — time to find a few more leads!" + RESET);
+    }
+
 }
+
 
 private static void exportMarkdown() throws IOException {
     applications.sort(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed());
