@@ -34,7 +34,7 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 
 - 💬 **Interviewed:** 1  
 - ✅ **Hired / Offer:** 0  
-- 🗓️ **Last Updated:** October 17, 2025  
+- 🗓️ **Last Updated:** October 18, 2025  
 
 </td>
 </tr>
@@ -52,7 +52,7 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 - ⚡ **Avg Applications per Week:** 4.8  
 - 🕐 **Still Waiting (Applied Only):** 95  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 64 days  
+- 📆 **Avg Days Since Application:** 65 days  
 - 🆕 **Most Recent:** Eataly — Cashier (10/15/2025)  
 </td></tr></table>
 
@@ -241,4 +241,4 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
-*Last updated October 17, 2025.*
+*Last updated October 18, 2025.*

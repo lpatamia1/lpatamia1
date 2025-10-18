@@ -13,7 +13,7 @@ class JobApplication {
     private static final DateTimeFormatter ISO = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     private static final DateTimeFormatter MD  = DateTimeFormatter.ofPattern("MM/dd/yyyy");
     private static final DateTimeFormatter MD_DASH  = DateTimeFormatter.ofPattern("MM-dd-yyyy");
-
+    
     public JobApplication(String company, String role, String type, String location,
                           String status, String dateApplied, String source) {
         this.company   = company.trim();
@@ -64,6 +64,24 @@ public class JobApplicationTracker {
     private static final String README = "README.md";
     private static final DateTimeFormatter HUMAN = DateTimeFormatter.ofPattern("MMMM d, yyyy");
 
+    // 🎨 Color constants
+    private static final String RESET  = "\u001B[0m";
+    private static final String BLACK  = "\u001B[30m";
+    private static final String RED    = "\u001B[31m";
+    private static final String GREEN  = "\u001B[32m";
+    private static final String YELLOW = "\u001B[33m";
+    private static final String BLUE   = "\u001B[34m";
+    private static final String PURPLE = "\u001B[35m";
+    private static final String CYAN   = "\u001B[36m";
+    private static final String WHITE  = "\u001B[37m";
+
+    // Bright / custom
+    private static final String ORANGE = "\u001B[38;2;255;165;0m";
+    private static final String PEACH  = "\u001B[38;2;255;200;150m";
+    private static final String PINK   = "\u001B[38;2;255;105;180m";
+    private static final String BRIGHT_ORANGE = "\u001B[38;2;255;200;60m";    // lighter bright orange-gold
+    private static final String LAVENDER      = "\u001B[38;2;200;160;255m";   // soft purple
+
     // Import seed data from separate file
     private static final String SEED_MARKDOWN = SeedData.SEED_MARKDOWN;
 
@@ -82,21 +100,17 @@ public class JobApplicationTracker {
         Scanner sc = new Scanner(System.in);
 
         // Colors
-        final String PINK = "\u001B[95m";
-        final String CYAN = "\u001B[96m";
-        final String RESET = "\u001B[0m";
-        final String BLUE = "\u001B[94m";
+
         System.out.println("                       ／l、                                                          ");                                               
         System.out.println("                     （ﾟ､ ｡７   ~ meow! keeping tabs on your career ~                 ");
         System.out.println("                      l、 ~ヽ     keep applying, you got this! 🐾                     ");
         System.out.println("                      じしf_, )ノ                                                     ");
 
         while (true) {
-            System.out.println(CYAN +
+            System.out.println(BRIGHT_ORANGE +
             "╭─────────────────────────────────────────────────────────────────────────────────────────╮\n" +
             "│                                  JOB APPLICATION TRACKER                                │\n" +
-            "╰─────────────────────────────────────────────────────────────────────────────────────────╯" +
-            RESET);
+            "╰─────────────────────────────────────────────────────────────────────────────────────────╯" );
 
             // Two-column layout
             String leftCol[] = {
@@ -218,9 +232,6 @@ public class JobApplicationTracker {
     }
 
     private static void catIntro() {
-        final String CYAN = "\u001B[96m";
-        final String RESET = "\u001B[0m";
-        final String BLUE = "\u001B[94m";
 
         String pad = " ".repeat(35);
         String[] frames = {
@@ -305,7 +316,7 @@ public class JobApplicationTracker {
         // 🧹 Cleanup old backups (keep only 5 most recent)
         cleanupOldBackups();
     }
-    
+
     // --- Optional cleanup: keep only 5 most recent backups ---
     private static void cleanupOldBackups() {
         File dir = new File("."); // current working directory
@@ -475,14 +486,6 @@ public class JobApplicationTracker {
     }
 
 private static void showSummary() {
-    final String PINK = "\u001B[95m";
-    final String CYAN = "\u001B[96m";
-    final String GREEN = "\u001B[92m";
-    final String YELLOW = "\u001B[93m";
-    final String RED = "\u001B[91m";
-    final String ORANGE = "\u001B[38;2;255;165;0m";
-    final String PEACH = "\u001B[38;2;255;200;150m";
-    final String RESET = "\u001B[0m";
 
     int total = applications.size();
     long rejected = applications.stream().map(a -> a.status.toLowerCase())
@@ -565,7 +568,7 @@ private static void showSummary() {
     Map<String, Long> byType = applications.stream()
         .collect(Collectors.groupingBy(a -> simplifyBroadCategory(a.type), TreeMap::new, Collectors.counting()));
 
-    System.out.println(PEACH + "-".repeat(90));
+    System.out.println(LAVENDER + "-".repeat(90));
     System.out.println("                                    Breakdown by Type:");
     System.out.println("-".repeat(90));
 
@@ -586,7 +589,7 @@ private static void showSummary() {
 
         System.out.println(CYAN + left + right + RESET);
     }
-    System.out.println("═".repeat(90));
+    System.out.println(LAVENDER + "═".repeat(90));
 
 }
 
