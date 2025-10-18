@@ -81,6 +81,8 @@ public class JobApplicationTracker {
     private static final String PINK   = "\u001B[38;2;255;105;180m";
     private static final String BRIGHT_ORANGE = "\u001B[38;2;255;200;60m";    // lighter bright orange-gold
     private static final String LAVENDER      = "\u001B[38;2;200;160;255m";   // soft purple
+    private static final String MINT  = "\u001B[38;2;152;255;204m"; // soft mint green
+    private static final String TEAL  = "\u001B[38;2;0;191;188m";   // calm teal blue
 
     // Import seed data from separate file
     private static final String SEED_MARKDOWN = SeedData.SEED_MARKDOWN;
@@ -101,15 +103,16 @@ public class JobApplicationTracker {
 
         // Colors
 
-        System.out.println("                       ／l、                                                          ");                                               
-        System.out.println("                     （ﾟ､ ｡７   ~ meow! keeping tabs on your career ~                 ");
-        System.out.println("                      l、 ~ヽ     keep applying, you got this! 🐾                     ");
-        System.out.println("                      じしf_, )ノ                                                     ");
+        System.out.println("            ┌──────┐       ／l、                                                          ");                                               
+        System.out.println("            │  🖥️   │     （ﾟ､ ｡７   ~ meow! keeping tabs on your career ~                 ");
+        System.out.println("            └──────┘      l、 ~ヽ     keep applying, you got this! 🐾                     ");
+        System.out.println("              (--)        じしf_, )ノ                                                     ");
+        System.out.println("───────────────────────────────────────────────────────────────────────────────────────────");
 
         while (true) {
-            System.out.println(BRIGHT_ORANGE +
+            System.out.println(BLUE +
             "╭─────────────────────────────────────────────────────────────────────────────────────────╮\n" +
-            "│                                  JOB APPLICATION TRACKER                                │\n" +
+            "│                                 JOB APPLICATION TRACKER                                 │\n" +
             "╰─────────────────────────────────────────────────────────────────────────────────────────╯" );
 
             // Two-column layout
@@ -130,7 +133,7 @@ public class JobApplicationTracker {
             for (int i = 0; i < leftCol.length; i++) {
                 System.out.printf("  %-45s %s%n", leftCol[i], rightCol[i]);
             }
-            System.out.println("═".repeat(90) + RESET);
+            System.out.println("═".repeat(91) + RESET);
 
             System.out.print("> ");
 
@@ -257,9 +260,9 @@ public class JobApplicationTracker {
 
         // Clean up final cat before menu appears
         System.out.print("\r\033[3A\033[J");
-        System.out.println(BLUE +
+        System.out.println(PINK +
         "\n╭─────────────────────────────────────────────────────────────────────────────────────────╮\n" +
-        "│                       🐾 Meow! Time to check your job hunt 💼                           │\n" +
+        "│                        🐾 Meow! Time to check your job hunt 💼                          │\n" +
         "╰─────────────────────────────────────────────────────────────────────────────────────────╯" +
         RESET);
     }
@@ -510,9 +513,9 @@ private static void showSummary() {
     double successRate = total == 0 ? 0 : (double) (hired + interviews) / total * 100;
 
     // 🐾 Top section with colors
-    System.out.println(ORANGE + "═".repeat(90));
-    System.out.println("                                   APPLICATION SUMMARY");
-    System.out.println("═".repeat(90) + RESET);
+    System.out.println(LAVENDER + "╔═════════════════════════════════════════════════════════════════════════════════════════╗");
+    System.out.println("║                               🌸  APPLICATION SUMMARY  🌸                               ║");
+    System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝" + RESET);
 
     System.out.printf(
         "  %sTotal:%s %-3d  %sActive:%s %-3d  %sLikely Inactive:%s %-3d  %sRejected:%s %-3d  %sInterviews:%s %-3d  %sHired:%s %-3d%n",
@@ -522,8 +525,7 @@ private static void showSummary() {
             RED, RESET, rejected,
             YELLOW, RESET, interviews,
             PINK, RESET, hired);
-
-    System.out.println();
+    System.out.println(LAVENDER + "-".repeat(91) + RESET);
     
     // Success rate and closed count
     int barLength = 30;
@@ -568,15 +570,15 @@ private static void showSummary() {
     Map<String, Long> byType = applications.stream()
         .collect(Collectors.groupingBy(a -> simplifyBroadCategory(a.type), TreeMap::new, Collectors.counting()));
 
-    System.out.println(LAVENDER + "-".repeat(90));
+    System.out.println(LAVENDER + "-".repeat(91));
     System.out.println("                                    Breakdown by Type:");
-    System.out.println("-".repeat(90));
+    System.out.print("-".repeat(91));
 
     // Sort from largest → smallest
     List<Map.Entry<String, Long>> entries = new ArrayList<>(byType.entrySet());
     entries.sort((a, b) -> Long.compare(b.getValue(), a.getValue()));
 
-    int colWidth = 37; // fits nicely in 90-char width terminals
+    int colWidth = 37; // fits nicely in 91-char width terminals
 
     for (int i = 0; i < entries.size(); i += 2) {
         String left = String.format("• %-"+colWidth+"s %3d", 
@@ -589,8 +591,10 @@ private static void showSummary() {
 
         System.out.println(CYAN + left + right + RESET);
     }
-    System.out.println(LAVENDER + "═".repeat(90));
-
+    System.out.print(LAVENDER + "-".repeat(91));
+    System.out.printf(MINT + "\n📬 %d apps logged — %d active, %.1f%% showing progress.%n" + RESET, 
+        total, trulyActive, successRate);
+    System.out.println(TEAL + "🐾 Career Cat: you’re doing great — keep applying!" + RESET);
 }
 
 private static void exportMarkdown() throws IOException {
