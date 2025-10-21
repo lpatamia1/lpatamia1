@@ -182,4 +182,25 @@ document.addEventListener('DOMContentLoaded', () => {
             animationFrameId = requestAnimationFrame(animate);
         });
     }
+
+    // 💖 Floating Hearts Generator
+    const heartContainer = document.getElementById('hearts');
+
+    function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.textContent = '💖';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.fontSize = Math.random() * 18 + 12 + 'px';
+    heart.style.animationDuration = Math.random() * 4 + 5 + 's';
+    heart.style.opacity = Math.random() * 0.5 + 0.5;
+    heartContainer.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 9000);
+    }
+
+    setInterval(createHeart, 600);
 });
+

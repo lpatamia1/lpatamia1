@@ -19,7 +19,7 @@ body {
 #desktop {
     position: relative;
     width: 100%;
-    height: 2200px; /* enough vertical space */
+    height: 3000px; /* enough vertical space */
     padding-top: 100px;
 }
 
@@ -34,51 +34,46 @@ body {
 /* --- Manual Window Placement (Y + X axis) --- */
 #about {
     position: absolute;
-    top: 120px;
-    left: var(--col1);
-    width: var(--winW);
+    top: 20px;
+    width: 1350px;
 }
 
 #skills {
     position: absolute;
-    top: 120px;
-    left: var(--col2);
-    width: var(--winW);
+    top: 350px;
+    width: 900px;
 }
-
 
 #projects {
     position: absolute;
-    top: 600px;
-    left: var(--col1);
-    width: var(--winW);
+    top: 850px;
+    width: 700px;
 }
 
 #player {
     position: absolute;
-    top: 600px;
+    top: 850px;
     left: var(--col2);
     width: var(--winW);
 }
 
 #terminal {
     position: absolute;
-    top: 1100px;
-    left: var(--col1);
+    top: 1300px;
+    left: var(--col2);
     width: var(--winW);
 }
 
 #contact {
     position: absolute;
-    top: 1100px;
-    left: var(--col2);
-    width: var(--winW);
+    top: 2000px;
+    width: 1350px;
 }
 
 #danger-window {
     position: absolute;
-    top: 1650px;
-    left: calc(50% - (var(--winW) / 2));
+    top: 450px;
+    left: var(--col2);
     width: var(--winW);
 }
 
@@ -423,6 +418,11 @@ body {
     }
 }
 
+.window:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000;
+}
+
 /* --- Minimized Windows --- */
 .window.minimized .content {
     display: none;
@@ -434,4 +434,35 @@ body {
 
 .window.minimized .title-bar {
     cursor: pointer;
+}
+
+/* 💕 Floating Hearts Animation */
+.heart {
+  position: fixed !important;  
+  bottom: 0 !important;
+  color: #ff99bb;
+  font-size: 20px;
+  opacity: 0.8;
+  animation: floatUp 12s linear infinite, colorFade 10s ease-in-out infinite;
+}
+
+#hearts {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  mix-blend-mode: lighten; /* optional: soft glow against background */
+  z-index: 99999 !important; /* top of everything */
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+}
+
+@keyframes colorFade {
+  0% { color: #ffb6c1; }
+  33% { color: #ff9ad5; }
+  66% { color: #d9b3ff; }
+  100% { color: #a6f1d0; }
 }
