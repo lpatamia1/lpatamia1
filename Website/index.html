@@ -1,217 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lily Patamia - Portfolio</title>
-    <link rel="stylesheet" href="style.css?v=20">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lily Patamia - Portfolio</title>
+  <link rel="stylesheet" href="style.css?v=20">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <style>
+    /* fade + pop animation */
+    #danger-window {
+      opacity: 0;
+      transform: scale(0.95);
+      transition: opacity 0.6s ease, transform 0.4s ease;
+      display: none; /* start hidden */
+    }
+    #danger-window.visible {
+      display: block;
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
 </head>
 <body>
-    <div id="hearts"></div>
+  <header class="desktop-header">
+    <h1>Lily Patamia's Desktop</h1>
+    <nav>
+      <a href="#about">📄 About_Me.txt</a>
+      <a href="#skills">🛠️ Skills.exe</a>
+      <a href="#projects">📁 Projects</a>
+      <a href="#player">🎵 Now_Playing.exe</a>
+      <a href="#terminal">🤖 Terminal.exe</a>
+      <a href="#contact">✉️ Contact.app</a>
+    </nav>
+  </header>
 
-    <header class="desktop-header">
-        <h1>Lily Patamia's Desktop</h1>
-        <nav>
-            <a href="#about">📄 About_Me.txt</a>
-            <a href="#skills">🛠️ Skills.exe</a>
-            <a href="#projects">📁 Projects</a>
-            <a href="#player">🎵 Now_Playing.exe</a> 
-            <a href="#terminal">🤖 Terminal.exe</a>
-            <a href="#contact">✉️ Contact.app</a>
-        </nav>
-    </header>
-
-    <main id="desktop">
-
-        <section id="about" class="window draggable">
-            <div class="title-bar">
-                <div class="title">About_Me.txt</div>
-                <div class="buttons">
-                    <div class="button btn-minimize">-</div>
-                    <div class="button btn-maximize">□</div>
-                    <div class="button btn-close">×</div>
-                </div>
-            </div>
-            <div class="content">
-                <p>Hello, World! 😄 I recently graduated from <strong>Loyola University Chicago</strong> with a passion for building elegant solutions to complex problems. My journey into tech started in the Pacific Northwest 🌲 and has led me to the vibrant tech scene of Chicago 🏙️. I thrive on the process of creation, whether it's developing a full-stack application or diving deep into a new machine learning model.</p>
-                <p>This portfolio is a curated collection of my work, showcasing my skills in software development and data analysis. I'm driven by a love for learning 🧠, constantly exploring new technologies and enjoying the occasional matcha 🍵 at a new cafe to recharge.</p>
-            </div>
-        </section>
-
-        <section id="skills" class="window draggable">
-            <div class="title-bar">
-                <div class="title">Skills.exe</div>
-                <div class="buttons">
-                    <div class="button btn-minimize">-</div>
-                    <div class="button btn-maximize">□</div>
-                    <div class="button btn-close">×</div>
-                </div>
-            </div>
-            <div class="content">
-                <h3>🗣️ Languages</h3>
-                <div class="badge-group">
-                    <span class="pixel-badge python">🐍 Python</span>
-                    <span class="pixel-badge java">☕ Java</span>
-                    <span class="pixel-badge javascript">🟨 JS</span>
-                    <span class="pixel-badge cpp">C++</span>
-                    <span class="pixel-badge sql">🗄️ SQL</span>
-                    <span class="pixel-badge typescript">TS TypeScript</span>
-                    <span class="pixel-badge kotlin">📱 Kotlin</span>
-                    <span class="pixel-badge go">🐹 Go</span>
-                    <span class="pixel-badge rust">🦀 Rust</span>
-                </div>
-                <h3>🎨 Frontend & Design</h3>
-                <div class="badge-group">
-                    <span class="pixel-badge html">🌐 HTML5</span>
-                    <span class="pixel-badge css">🎨 CSS3</span>
-                    <span class="pixel-badge react">⚛️ React</span>
-                </div>
-                <h3>⚙️ Backend & Databases</h3>
-                <div class="badge-group">
-                    <span class="pixel-badge flask">🧪 Flask</span>
-                    <span class="pixel-badge nodejs">🟢 Node.js</span>
-                    <span class="pixel-badge mysql">🐬 MySQL</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="window draggable">
-            <div class="title-bar">
-                <div class="title">Projects Folder</div>
-                <div class="buttons">
-                    <div class="button btn-minimize">-</div>
-                    <div class="button btn-maximize">□</div>
-                    <div class="button btn-close">×</div>
-                </div>
-            </div>
-            <div class="content">
-                <div class="project-item">
-                    <h3>🎬 Movie Genre Classification</h3>
-                    <p>An ML pipeline using TF-IDF and classifiers to predict movie genres from text. This project was a deep dive into Natural Language Processing, tackling the challenge of converting raw text into meaningful features.</p>
-                </div>
-                <div class="project-item">
-                    <h3>⏱️ Pomodoro Focus Timer</h3>
-                    <p>A responsive web app to enhance focus and productivity. Building this taught me key concepts in JavaScript DOM manipulation and creating an intuitive user interface with pure HTML and CSS.</p>
-                </div>
-                <div class="project-item">
-                    <h3>🎮 Java & Web Games Portfolio</h3>
-                    <p>A collection of graphical web apps and console-based games. This was a fun exploration of game loops, user input, and object-oriented design principles in both Java and JavaScript.</p>
-                </div>
-                <div class="project-item">
-                    <h3>🩺 State Mortality Dashboard</h3>
-                    <p>
-                        An interactive Flask-based data dashboard analyzing mortality trends across U.S. states.
-                        Features choropleth maps, trend visualizations, and insights into cancer and pandemic-related deaths.
-                        Built with real CDC datasets and Plotly for interactivity.
-                    </p>
-                </div>
-                <div class="project-item">
-                    <h3>☁️ DeveloperSkillAPI</h3>
-                    <p>
-                        A RESTful API built with Java Spring Boot for managing developer profiles and skills.
-                        Demonstrates clean backend architecture, OOP design, and JSON data handling with full CRUD functionality.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="player" class="window draggable">
-            <div class="title-bar">
-                <div class="title">Now_Playing.exe</div>
-                <div class="buttons">
-                    <div class="button btn-minimize">-</div>
-                    <div class="button btn-maximize">□</div>
-                    <div class="button btn-close">×</div>
-                </div>
-            </div>
-            <div class="content">
-                <div class="player-body">
-                    <div class="now-playing-display">
-                        <span>Now Playing:</span>
-                        <p id="current-track">Coding Music - Lofi Hip Hop Mix</p>
-                    </div>
-                    <div class="player-controls">
-                        <span class="control-button">⏮️</span>
-                        <span class="control-button">▶️</span>
-                        <span class="control-button">⏹️</span>
-                        <span class="control-button">⏭️</span>
-                    </div>
-                    <ul class="playlist">
-                        <li>▶ Coding Music - Lofi Hip Hop Mix</li>
-                        <li>Lex Fridman Podcast - Episode #323</li>
-                        <li>Syntax.fm - Supper Club</li>
-                        <li>Fireship - 100 Seconds of Code</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="window draggable">
-            <div class="title-bar">
-                <div class="title">Contact.app</div>
-                <div class="buttons">
-                    <div class="button btn-minimize">-</div>
-                    <div class="button btn-maximize">□</div>
-                    <div class="button btn-close">×</div>
-                </div>
-            </div>
-            <div class="content">
-                <h2>Get in Touch!</h2>
-                <p><strong>I'm actively looking for full-time roles in software development and data analysis.</strong> If you think my skills and projects would be a good fit for your team, please don't hesitate to reach out!</p>
-                <div class="contact-buttons">
-                    <a href="https://www.linkedin.com/in/lilyanapatamia" class="pixel-button">💼 LinkedIn</a>
-                    <a href="https://github.com/lpatamia1" class="pixel-button">💻 GitHub</a>
-                    <a href="mailto:lpatamia@luc.edu" class="pixel-button">✉️ Email</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="terminal" class="window draggable">
-            <div class="title-bar">
-                <div class="title">Terminal.exe</div>
-                <div class="buttons">
-                    <div class="button btn-minimize">-</div>
-                    <div class="button btn-maximize">□</div>
-                    <div class="button btn-close">×</div>
-                </div>
-            </div>
-            <div class="content">
-                <div id="terminal-body">
-                    <div id="terminal-output">
-                        <p>L-Patamia-Portfolio [Version 1.0]</p>
-                        <p>(c) 2025 LP Corp. All rights reserved.</p>
-                        <p>Type 'help' to see available commands.</p>
-                    </div>
-                    <div class="terminal-input-line">
-                        <span class="prompt">></span>
-                        <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" autofocus>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div id="danger-window" class="window draggable">
-            <div class="title-bar">
-                <div class="title">Warning.exe</div>
-            </div>
-            <div class="content" style="text-align: center;">
-                <p><strong>DANGER!</strong></p>
-                <p>System integrity is critical. Do not click this button.</p>
-                <button id="danger-button" class="pixel-button">OK</button>
-            </div>
+  <main id="desktop">
+    <!-- === About === -->
+    <section id="about" class="window draggable">
+      <div class="title-bar">
+        <div class="title">About_Me.txt</div>
+        <div class="buttons">
+          <div class="button btn-minimize">-</div>
+          <div class="button btn-maximize">□</div>
+          <div class="button btn-close">×</div>
         </div>
+      </div>
+      <div class="content">
+        <p>Hello, World! 😄 I recently graduated from <strong>Loyola University Chicago</strong> with a passion for building elegant solutions to complex problems. My journey into tech started in the Pacific Northwest 🌲 and has led me to the vibrant tech scene of Chicago 🏙️. I thrive on the process of creation, whether it's developing a full-stack application or diving deep into a new machine learning model.</p>
+        <p>This portfolio is a curated collection of my work, showcasing my skills in software development and data analysis. I'm driven by a love for learning 🧠, constantly exploring new technologies and enjoying the occasional matcha 🍵 at a new cafe to recharge.</p>
+      </div>
+    </section>
 
-        <div id="screensaver" class="hidden">
-            <svg id="dvd-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50" width="150">
-                <text x="50" y="35" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="white">DVD</text>
-            </svg>
+    <!-- === Skills === -->
+    <section id="skills" class="window draggable">
+      <div class="title-bar">
+        <div class="title">Skills.exe</div>
+        <div class="buttons">
+          <div class="button btn-minimize">-</div>
+          <div class="button btn-maximize">□</div>
+          <div class="button btn-close">×</div>
         </div>
-    </main>
+      </div>
+      <div class="content">
+        <h3>🗣️ Languages</h3>
+        <div class="badge-group">
+          <span class="pixel-badge python">🐍 Python</span>
+          <span class="pixel-badge java">☕ Java</span>
+          <span class="pixel-badge javascript">🟨 JS</span>
+          <span class="pixel-badge cpp">C++</span>
+          <span class="pixel-badge sql">🗄️ SQL</span>
+          <span class="pixel-badge typescript">TS TypeScript</span>
+          <span class="pixel-badge kotlin">📱 Kotlin</span>
+          <span class="pixel-badge go">🐹 Go</span>
+          <span class="pixel-badge rust">🦀 Rust</span>
+        </div>
+        <h3>🎨 Frontend & Design</h3>
+        <div class="badge-group">
+          <span class="pixel-badge html">🌐 HTML5</span>
+          <span class="pixel-badge css">🎨 CSS3</span>
+          <span class="pixel-badge react">⚛️ React</span>
+        </div>
+        <h3>⚙️ Backend & Databases</h3>
+        <div class="badge-group">
+          <span class="pixel-badge flask">🧪 Flask</span>
+          <span class="pixel-badge nodejs">🟢 Node.js</span>
+          <span class="pixel-badge mysql">🐬 MySQL</span>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js" defer></script>
+    <!-- === Projects === -->
+    <section id="projects" class="window draggable">
+      <div class="title-bar">
+        <div class="title">Projects Folder</div>
+        <div class="buttons">
+          <div class="button btn-minimize">-</div>
+          <div class="button btn-maximize">□</div>
+          <div class="button btn-close">×</div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="project-item">
+          <h3>🎬 Movie Genre Classification</h3>
+          <p>An ML pipeline using TF-IDF and classifiers to predict movie genres from text. This project was a deep dive into Natural Language Processing, tackling the challenge of converting raw text into meaningful features.</p>
+        </div>
+        <div class="project-item">
+          <h3>⏱️ Pomodoro Focus Timer</h3>
+          <p>A responsive web app to enhance focus and productivity. Building this taught me key concepts in JavaScript DOM manipulation and creating an intuitive user interface with pure HTML and CSS.</p>
+        </div>
+        <div class="project-item">
+          <h3>🎮 Java & Web Games Portfolio</h3>
+          <p>A collection of graphical web apps and console-based games. This was a fun exploration of game loops, user input, and object-oriented design principles in both Java and JavaScript.</p>
+        </div>
+        <div class="project-item">
+          <h3>🩺 State Mortality Dashboard</h3>
+          <p>An interactive Flask-based data dashboard analyzing mortality trends across U.S. states. Features choropleth maps, trend visualizations, and insights into cancer and pandemic-related deaths. Built with real CDC datasets and Plotly for interactivity.</p>
+        </div>
+        <div class="project-item">
+          <h3>☁️ DeveloperSkillAPI</h3>
+          <p>A RESTful API built with Java Spring Boot for managing developer profiles and skills. Demonstrates clean backend architecture, OOP design, and JSON data handling with full CRUD functionality.</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- === Player === -->
+    <section id="player" class="window draggable">
+      <div class="title-bar">
+        <div class="title">Now_Playing.exe</div>
+        <div class="buttons">
+          <div class="button btn-minimize">-</div>
+          <div class="button btn-maximize">□</div>
+          <div class="button btn-close">×</div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="player-body">
+          <div class="now-playing-display">
+            <span>Now Playing:</span>
+            <p id="current-track">Coding Music - Lofi Hip Hop Mix</p>
+          </div>
+          <div class="player-controls">
+            <span class="control-button">⏮️</span>
+            <span class="control-button">▶️</span>
+            <span class="control-button">⏹️</span>
+            <span class="control-button">⏭️</span>
+          </div>
+          <ul class="playlist">
+            <li>▶ Coding Music - Lofi Hip Hop Mix</li>
+            <li>Lex Fridman Podcast - Episode #323</li>
+            <li>Syntax.fm - Supper Club</li>
+            <li>Fireship - 100 Seconds of Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Contact === -->
+    <section id="contact" class="window draggable">
+      <div class="title-bar">
+        <div class="title">Contact.app</div>
+        <div class="buttons">
+          <div class="button btn-minimize">-</div>
+          <div class="button btn-maximize">□</div>
+          <div class="button btn-close">×</div>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Get in Touch!</h2>
+        <p><strong>I'm actively looking for full-time roles in software development and data analysis.</strong> If you think my skills and projects would be a good fit for your team, please don't hesitate to reach out!</p>
+        <div class="contact-buttons">
+          <a href="https://www.linkedin.com/in/lilyanapatamia" class="pixel-button">💼 LinkedIn</a>
+          <a href="https://github.com/lpatamia1" class="pixel-button">💻 GitHub</a>
+          <a href="mailto:lpatamia@luc.edu" class="pixel-button">✉️ Email</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Terminal === -->
+    <section id="terminal" class="window draggable">
+      <div class="title-bar">
+        <div class="title">Terminal.exe</div>
+        <div class="buttons">
+          <div class="button btn-minimize">-</div>
+          <div class="button btn-maximize">□</div>
+          <div class="button btn-close">×</div>
+        </div>
+      </div>
+      <div class="content">
+        <div id="terminal-body">
+          <div id="terminal-output">
+            <p>L-Patamia-Portfolio [Version 1.0]</p>
+            <p>(c) 2025 LP Corp. All rights reserved.</p>
+            <p>Type 'help' to see available commands.</p>
+          </div>
+          <div class="terminal-input-line">
+            <span class="prompt">></span>
+            <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" autofocus>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Warning === -->
+    <div id="danger-window" class="window draggable">
+      <div class="title-bar">
+        <div class="title">Warning.exe</div>
+      </div>
+      <div class="content" style="text-align:center;">
+        <p><strong>DANGER!</strong></p>
+        <p>System integrity is critical. Do not click this button.</p>
+        <button id="danger-button" class="pixel-button">OK</button>
+      </div>
+    </div>
+
+    <!-- === Screensaver === -->
+    <div id="screensaver" class="hidden">
+      <svg id="dvd-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50" width="150">
+        <text x="50" y="35" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="white">DVD</text>
+      </svg>
+    </div>
+  </main>
+
+  <!-- your main JS -->
+  <script src="script.js" defer></script>
+
+  <!-- popup delay script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dangerWindow = document.getElementById('danger-window');
+      dangerWindow.style.display = 'none'; // hidden at start
+
+      // show after 20 seconds
+      setTimeout(() => {
+        dangerWindow.style.display = 'block';
+        // trigger fade-in
+        requestAnimationFrame(() => dangerWindow.classList.add('visible'));
+      }, 20000);
+    });
+  </script>
 </body>
 </html>
