@@ -1,0 +1,465 @@
+/* ===============================
+   Global + Theme
+   =============================== */
+
+/* --- Global Styles & Desktop Background --- */
+html { scroll-behavior: smooth; }
+
+:root {
+  /* Dimensions / layout */
+  --winW: min(560px, 44vw);
+  --col1: clamp(40px, 6vw, 120px);
+  --col2: calc(50% + 60px);
+
+  /* Palette */
+  --bg-grid: #f9dfea;
+  --border-black: #1c1c1c;
+  --text-dark: #2e2e2e;
+  --text-white: #ffffff;
+
+  /* Pinks (single source of truth) */
+  --pink-100: #ffd3e0; /* window bg */
+  --pink-200: #ffbde2;
+  --pink-300: #ff99d1;
+  --pink-400: #ff8fcf;
+  --pink-500: #ff7fc5;
+  --pink-600: #ff69b4; /* accent */
+  --pink-700: #ff5c8a; /* close button base */
+
+  /* Shadows/FX */
+  --shadow-pink: rgba(255, 105, 180, 0.6);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'VT323', monospace;
+  background-color: #fae6f3;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: var(--text-dark);
+  padding: 80px 60px 20px 60px;
+}
+
+/* ===============================
+   Desktop Canvas / Windows
+   =============================== */
+
+#desktop {
+  position: relative;
+  width: 100%;
+  height: 2400px; 
+  padding-top: 100px;
+}
+
+/* --- Manual Window Placement (Y + X axis) --- */
+#about {
+  position: absolute;
+  top: 20px;
+  width: 1350px;
+}
+
+#skills {
+  position: absolute;
+  top: 350px;
+  left: 200px;
+  width: 1000px;
+}
+
+#projects {
+  position: absolute;
+  top: 1000px;
+  width: 700px;
+}
+
+#player {
+  position: absolute;
+  top: 1000px;
+  left: var(--col2);
+  width: var(--winW);
+}
+
+#terminal {
+  position: absolute;
+  top: 1420px;
+  left: var(--col2);
+  width: 500px;
+}
+
+#contact {
+  position: absolute;
+  top: 2100px;
+  width: 1000px;
+  left: 150px;
+  padding-bottom: 30px;
+}
+
+#danger-window {
+  position: absolute;
+  top: 450px;
+  left: 400px;
+  width: var(--winW);
+  min-height: 220px;
+}
+
+.window {
+  background-color: var(--pink-100);
+  border: 2px solid var(--border-black);
+  box-shadow: 4px 4px 0 var(--border-black);
+  resize: both;
+  overflow: auto;
+  transition: transform .18s ease, box-shadow .18s ease;
+  will-change: transform;
+}
+
+.window:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--border-black);
+}
+
+.title-bar {
+  background: linear-gradient(90deg, var(--pink-500), var(--pink-300), var(--pink-200));
+  color: var(--text-white);
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--border-black);
+}
+
+.title { font-weight: bold; font-size: 20px; }
+.buttons { display: flex; gap: 6px; }
+
+.button {
+  width: 22px; height: 22px;
+  border: 2px solid var(--border-black);
+  text-align: center; line-height: 18px;
+  font-weight: bold; font-size: 16px;
+  color: #000; cursor: pointer;
+  background: linear-gradient(180deg, var(--pink-200), var(--pink-400));
+  box-shadow: inset -2px -2px 0 #fff, inset 2px 2px 0 #c56a96;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #ff9fcb, #ff7eb6);
+  color: #fff;
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--border-black), 0 0 10px rgba(255, 105, 180, 0.5);
+}
+
+.button.close {
+  background: linear-gradient(180deg, var(--pink-700), #ff3366);
+  color: #fff;
+}
+.button.close:hover {
+  background: linear-gradient(180deg, #ff174d, #e6004c);
+  box-shadow: 3px 3px 0 var(--border-black), 0 0 10px rgba(255, 80, 120, 0.6);
+}
+
+/* --- Window Content --- */
+.content { padding: 20px; }
+.content h2, .content h3 { margin-top: 0; display: inline-block; }
+.content h2 { font-size: 28px; border-bottom: 2px solid #333; }
+.content h3 { font-size: 22px; }
+.content p, .content .project-item { font-size: 20px; line-height: 1.5; }
+.project-item { margin-bottom: 20px; }
+
+/* Minimized Windows */
+.window.minimized .content { display: none; }
+.window.minimized { height: auto; }
+.window.minimized .title-bar { cursor: pointer; }
+
+/* ===============================
+   Header / Nav
+   =============================== */
+
+.desktop-header {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 75px;
+  background: linear-gradient(90deg, var(--pink-600), var(--pink-400), var(--pink-600));
+  background-size: 200% 100%;
+  animation: pulseGradient 6s ease-in-out infinite;
+  border-bottom: 3px solid #000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0 4px 0 #000, 0 0 15px var(--shadow-pink);
+  z-index: 10000; /* above screensaver default; see screensaver below */
+  color: #fff; overflow: hidden;
+}
+
+@keyframes pulseGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Scanlines overlay */
+.desktop-header::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.05) 0px,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 2px
+  );
+  animation: scan 12s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scan {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100vh; }
+}
+
+.desktop-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #fff;
+  text-shadow: 2px 2px 0 #000, 0 0 10px #ffb6d9;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+/* Nav */
+.desktop-header nav {
+  display: flex; align-items: center; gap: 20px;
+  position: relative; z-index: 2; left: -50px; /* nudge left */
+}
+
+.desktop-header nav a {
+  position: relative; /* needed for :hover::after overlay */
+  background: linear-gradient(90deg, #ffd7eb, #ffb6d9);
+  border: 2px solid var(--border-black);
+  color: var(--border-black);
+  padding: 8px 16px;
+  font-weight: bold;
+  box-shadow: 2px 2px 0 var(--border-black), 0 0 8px rgba(255,105,180,0.4);
+  transition: transform .25s ease, box-shadow .25s ease, color .25s ease, background .25s ease;
+}
+
+.desktop-header nav a:hover {
+  background: linear-gradient(90deg, #ff9fcb, #ff7eb6);
+  color: #fff;
+  box-shadow: 4px 4px 0 var(--border-black), 0 0 12px rgba(255,105,180,0.6);
+  transform: translate(-1px, -1px);
+}
+
+.desktop-header nav a:hover::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(255,255,255,0.3);
+  animation: flicker .25s ease-in-out 2;
+}
+
+@keyframes flicker { 0%,100% { opacity: 0; } 50% { opacity: 1; } }
+
+/* ===============================
+   Badges / Buttons
+   =============================== */
+
+.badge-group {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin-top: 10px; margin-bottom: 25px;
+}
+
+.pixel-badge {
+  display: inline-flex; align-items: center;
+  padding: 8px 12px;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0px #000000;
+  font-size: 16px; font-weight: bold;
+}
+
+/* keep your colors, just compacted */
+.pixel-badge.python { background-color: #b8d2e8; }
+.pixel-badge.java { background-color: #f7e0a2; }
+.pixel-badge.javascript { background-color: #f7df1e; color: #000; }
+.pixel-badge.r { background-color: #a8cce6; }
+.pixel-badge.c { background-color: #d1d8df; }
+.pixel-badge.cpp { background-color: #c9e0ed; }
+.pixel-badge.rust { background-color: #e0b8a2; }
+.pixel-badge.bash { background-color: #c8edc2; }
+.pixel-badge.sql { background-color: #a2b8e0; }
+.pixel-badge.html { background-color: #ffc9a3; }
+.pixel-badge.kotlin { background-color: #ffc9a3; }
+.pixel-badge.css { background-color: #a3c2ff; }
+.pixel-badge.react { background-color: #a3d9ff; }
+.pixel-badge.flask { background-color: #d1d1d1; }
+.pixel-badge.nodejs { background-color: #c8edc2; }
+.pixel-badge.mysql { background-color: #a3c9e8; }
+.pixel-badge.go { background-color: #a3c9e8; }
+.pixel-badge.typescript { background-color: #a3c9e8; }
+
+/* Buttons */
+.pixel-button {
+  background: linear-gradient(180deg, #fff0f6, var(--pink-200));
+  color: var(--border-black);
+  border: 2px solid var(--border-black);
+  box-shadow: 3px 3px 0 var(--border-black), inset -2px -2px 0 #fff;
+  font-weight: bold; font-size: 20px;
+  padding: 14px 28px; border-radius: 0;
+  letter-spacing: .5px;
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+}
+.pixel-button:hover {
+  background: linear-gradient(180deg, var(--pink-200), var(--pink-400));
+  color: #fff;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--border-black);
+}
+
+.contact-buttons { text-align: center; margin-top: 20px; }
+
+/* ===============================
+   Retro Player
+   =============================== */
+
+.player-body {
+  background-color: #333; color: var(--pink-600);
+  padding: 15px; border: 2px solid #000;
+}
+.now-playing-display {
+  background-color: #000; padding: 10px; text-align: center;
+  border: 1px inset #555; margin-bottom: 10px;
+}
+#current-track { margin: 5px 0 0 0; font-size: 20px; font-weight: bold; }
+.player-controls { text-align: center; font-size: 24px; margin-bottom: 15px; }
+.control-button { margin: 0 10px; cursor: pointer; }
+.playlist {
+  list-style: none; padding: 10px; margin: 0; font-size: 18px;
+  max-height: 120px; overflow-y: auto; background-color: #000;
+}
+.playlist li { padding: 5px; border-bottom: 1px dotted #333; cursor: pointer; }
+.playlist li.active { color: var(--pink-600); font-weight: bold; }
+
+/* ===============================
+   Terminal
+   =============================== */
+
+#terminal-body {
+  background-color: #0c0c0c; color: var(--pink-600);
+  padding: 15px; height: 400px;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  box-shadow: inset 0 0 15px rgba(255, 105, 180, 0.3);
+  position: relative; overflow: hidden;
+}
+#terminal-body::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(0deg, rgba(0,0,0,.3) 1px, transparent 1px, transparent 2px);
+  pointer-events: none;
+}
+#terminal-output { flex-grow: 1; overflow-y: auto; }
+#terminal-output p { margin: 0 0 5px 0; line-height: 1.2; font-size: 18px; }
+.terminal-input-line { display: flex; align-items: center; }
+.prompt { margin-right: 8px; font-size: 18px; }
+.terminal-input {
+  background: none; border: none; color: var(--pink-600);
+  font-family: 'VT323', monospace; width: 100%; caret-color: var(--pink-600); font-size: 18px;
+}
+.terminal-input:focus { outline: none; }
+
+/* ===============================
+   Screensaver (kept above everything)
+   =============================== */
+
+#screensaver {
+  position: fixed; inset: 0;
+  width: 100vw; height: 100vh;
+  background-color: #000;
+  z-index: 11000; /* stays above header */
+  display: flex; justify-content: center; align-items: center;
+}
+#screensaver.hidden { display: none; }
+#dvd-logo { position: absolute; width: 150px; }
+
+/* ===============================
+   Responsive
+   =============================== */
+
+@media (max-width: 950px) {
+  .desktop-header {
+    padding-right: 40px;
+    flex-direction: column; justify-content: center;
+    height: auto; padding: 15px 20px;
+  }
+  .desktop-header h1 { font-size: 24px; }
+  .desktop-header nav {
+    display: flex; align-items: center; gap: 15px;
+    position: relative; left: -20px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+  .desktop-header nav a { font-size: 16px; padding: 6px 10px; }
+
+  body { padding-top: 120px; }
+
+  /* On tablet/phone: stack windows instead of absolute layout */
+  .window.draggable { position: static; margin: 40px auto; max-width: 92vw; }
+  #desktop { height: auto; padding-bottom: 200px; }
+
+    /* override manual placements to auto-flow */
+    #about, #skills, #projects, #player, #terminal, #contact {
+    position: static; width: auto; left: auto; top: auto; transform: none;
+    margin: 24px auto; min-height: 600px; padding-bottom: 80px;
+    }
+
+    #danger-window {
+    position: static;
+    width: auto;
+    left: auto;
+    top: auto;
+    margin: 24px auto;
+    padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+  body { padding: 80px 20px 20px 20px; }
+}
+
+/* ===============================
+   Reduced Motion
+   =============================== */
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* Popup styling */
+.popup {
+  background-color: #ffd3e0;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0 #000;
+  font-size: 18px;
+  z-index: 9999;
+  width: 220px;
+  position: fixed;
+}
+
+/* Shake effect for chaos */
+@keyframes shake {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-10px, 5px); }
+  40% { transform: translate(10px, -5px); }
+  60% { transform: translate(-5px, 10px); }
+  80% { transform: translate(5px, -10px); }
+}
+body.shake { animation: shake 0.5s ease-in-out; }
+
+/* === Fade & shrink effect for disappearing windows === */
+@keyframes poofAway {
+  0% { opacity: 1; transform: scale(1) rotate(0deg); }
+  50% { opacity: 0.6; transform: scale(1.05) rotate(3deg); }
+  100% { opacity: 0; transform: scale(0.8) rotate(-5deg); }
+}
+
+.poof {
+  animation: poofAway 0.8s ease-out forwards;
+}
