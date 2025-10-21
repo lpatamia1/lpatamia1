@@ -40,6 +40,7 @@ Every application entry is stored as plain text but formatted cleanly for human 
    - Add a new application
    - Export to README.md
    - Exit gracefully
+```
 
 ## 💻 Example Output
 -----------------------------------------------------------
