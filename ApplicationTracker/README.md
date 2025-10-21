@@ -12,7 +12,7 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
   <h2>💡 Highlights</h2>
 </div>
 
-So far, I've applied to **135 positions** across multiple industries. Currently, **51 applications remain active**, and **54 likely inactive** (older than 60 days), with **1 interview** completed.  
+So far, I've applied to **172 positions** across multiple industries. Currently, **87 applications remain active**, and **54 likely inactive** (older than 60 days), with **1 interview** completed.  
 Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
@@ -24,10 +24,10 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 <tr>
 <td align="left" width="50%">
 
-- **Total Applications:** 135  
-- 🕐 **Active / Pending:** 51  
+- **Total Applications:** 172  
+- 🕐 **Active / Pending:** 87  
 - ⏳ **Likely Inactive:** 54  
-- ❌ **Rejected:** 15  
+- ❌ **Rejected:** 16  
 
 </td>
 <td align="left" width="50%">
@@ -46,14 +46,14 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 
 <table align="center"><tr><td align="left">
 
-- 📈 **Success Rate:** 0.7%  
+- 📈 **Success Rate:** 0.6%  
 - 📦 **Closed:** 15  
 - 🌐 **Top Source:** LinkedIn  
-- ⚡ **Avg Applications per Week:** 5.1  
-- 🕐 **Still Waiting (Applied Only):** 103  
+- ⚡ **Avg Applications per Week:** 6.5  
+- 🕐 **Still Waiting (Applied Only):** 139  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 63 days  
-- 🆕 **Most Recent:** [Application Success – Business Continuity Planner](https://careers.morningstar.com/us/en/applythankyou?status=success&jobSeqNo=MORMORUSAP8200436EXTERNALENUS&jobTitle=Business%20Continuity%20Planner&jobId=AP-8200436&candidateHomeUrl=https://morningstar.wd5.myworkdayjobs.com/Americas/login?Job_Application_ID=JOB_APPLICATION-3-2213667&jobApplicationId=JOB_APPLICATION-3-2213667&candidateId=CANDIDATE-3-1483762) — Business Continuity Planner (10/17/2025)  
+- 📆 **Avg Days Since Application:** 50 days  
+- 🆕 **Most Recent:** [Whole Foods Market – Cashier Team Member (Front End Service) – Part Time](https://careers.wholefoods.com/cashier-team-member-front-end-service-part-time/job/PAF-WFM-06A8B3D9-04AF-4F1D-94C9-50E4A8C14152_1055_1741849885_0?source=BA_LinkedInSponsored&utm_medium=jobboard) — Cashier Team Member (Front End Service) (10/21/2025)  
 </td></tr></table>
 
 <div align="center">
@@ -62,23 +62,25 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 
 <table align="center"><tr><td valign='top' align='left'>
 
-• **IT / Support:** 39<br>
-• **Software / Development:** 26<br>
-• **Animal Care:** 17<br>
-• **AI / Data Science:** 13<br>
-• **Data / Analytics:** 10<br>
-• **Retail / Service:** 9<br>
-• **Administration:** 6<br>
-• **Culinary / Food Service:** 3<br>
+• **IT / Support:** 57<br>
+• **Software / Development:** 28<br>
+• **Animal Care:** 22<br>
+• **AI / Data Science:** 16<br>
+• **Data / Analytics:** 13<br>
+• **Retail / Service:** 10<br>
+• **Administration:** 7<br>
+• **Culinary / Food Service:** 4<br>
+• **Education / Training:** 3<br>
 </td><td valign='top' align='left'>
 
-• **Education / Training:** 3<br>
 • **Environmental / Sustainability:** 2<br>
 • **Other:** 2<br>
+• **Policy / Research:** 2<br>
+• **Automation / Robotics:** 1<br>
+• **Business / Operations:** 1<br>
 • **Engineering:** 1<br>
 • **Finance:** 1<br>
 • **Marketing / Communications:** 1<br>
-• **Policy / Research:** 1<br>
 • **Product / Design:** 1<br>
 </td></tr></table>
 
@@ -109,6 +111,43 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 
 | Company | Role | Type | Location | Status | Date Applied | Source |
 |----------|------|------|-----------|----------|---------------|---------|
+| [Whole Foods Market – Cashier Team Member (Front End Service) – Part Time](https://careers.wholefoods.com/cashier-team-member-front-end-service-part-time/job/PAF-WFM-06A8B3D9-04AF-4F1D-94C9-50E4A8C14152_1055_1741849885_0?source=BA_LinkedInSponsored&utm_medium=jobboard) | Cashier Team Member (Front End Service) | Customer Service / Grocery Store | Chicago, IL | Applied | 10/21/2025 | Company Website |
+| [CyberCoders](https://www.linkedin.com/jobs/view/remote-it-support-70-90k-internal-security-at-cybercoders-4252330489) | Remote IT Support | IT | New York, NY (Remote) | Applied | 10/21/2025 | LinkedIn |
+| [Talkdesk](https://www.linkedin.com/jobs/view/technical-support-engineer-at-talkdesk-4254859703) | Technical Support Engineer | IT / Technical Support | United States (Remote) | Applied | 10/21/2025 | LinkedIn |
+| [Rhythm Software](https://www.linkedin.com/jobs/view/technical-support-engineer-at-rhythm-software-4248793064) | Technical Support Engineer | IT / SaaS | United States (Remote) | Applied | 10/21/2025 | LinkedIn |
+| [AbbVie](https://www.linkedin.com/jobs/view/data-analyst-abbvie-complete-access-onsite-3-days-per-week-at-abbvie-4248778998) | Data Analyst | Data / Supply Chain | Chicago, IL | Applied | 10/21/2025 | LinkedIn |
+| [Q-Centrix](https://www.linkedin.com/jobs/view/junior-ai-engineer-at-q-centrix-4248780563) | Junior AI Engineer | AI / Machine Learning / Healthcare | Chicago, IL (Remote) | Applied | 10/21/2025 | LinkedIn |
+| [Robert Half](https://www.linkedin.com/jobs/view/quality-assurance-developer-at-robert-half-4248785077) | Quality Assurance Developer | QA / Automation | Seattle, WA (Remote) | Applied | 10/21/2025 | LinkedIn |
+| [CyberCoders](https://www.linkedin.com/jobs/view/remote-it-support-70-90k-internal-security-at-cybercoders-4248782688) | Remote IT Support Specialist (Internal, Security) | IT Support / Security / SaaS | Jacksonville, FL (Remote) | Applied | 10/21/2025 | LinkedIn |
+| [TAG – The Aspen Group](https://www.linkedin.com/jobs/view/clinical-application-analyst-at-tag-the-aspen-group-4248787121) | Clinical Application Analyst | Healthcare IT / Application Support | Chicago, IL | Applied | 10/21/2025 | LinkedIn |
+| [Egg Harbor Cafe](https://eggharborcafe.bamboohr.com/careers) | Food/Drink Runner | Hospitality | Chicago, IL | Applied | 10/21/2025 | Company Website |
+| [Estelle’s Cafe & Lounge](https://www.estelleschicago.com/workwithus) | Barback | Hospitality | Chicago, IL | Applied | 10/21/2025 | Indeed |
+| [Eden in Chicago LLC](https://www.edeninchicago.com) | Host | Hospitality | Chicago, IL | Applied | 10/21/2025 | Indeed |
+| [CAVA – Wicker Park](https://cava.com/careers) | Culinary Lead | Culinary | Chicago, IL | Applied | 10/21/2025 | Indeed |
+| [The Doggy Dojo Inc.](https://www.indeed.com/cmp/The-Doggy-Dojo) | Dog Daycare Associate | Animal Care | Chicago, IL | Applied | 10/21/2025 | Indeed |
+| [Found Chicago Boarding & Training Center](https://www.foundtrainingcenter.com) | Dog Handler / Dog Training Apprentice | Animal Care | Chicago, IL | Applied | 10/21/2025 | Indeed |
+| [TeamLogic IT](https://www.teamlogicit.com) | Field IT Technician | IT Support | Chicago, IL (Hybrid) | Applied | 10/21/2025 | Indeed |
+| [Windy City Paws](https://www.windycitypaws.com) | Dog Walker | Animal Care | Chicago, IL | Applied | 10/21/2025 | Indeed |
+| [Chicago Cubs](https://www.mlb.com/cubs) | IT Help Desk Technician | IT Support | Chicago, IL | Applied | 10/21/2025 | Company Website |
+| [The Phoenix Group](https://www.thephoenixgroup.com) | Help Desk Specialist | IT Support / Contract | Chicago, IL (Hybrid) | Applied | 10/21/2025 | LinkedIn |
+| [Northwestern University](https://www.northwestern.edu) | Technical Support Specialist | IT Support | Chicago, IL | Applied | 10/21/2025 | Company Website |
+| [WillHire](https://www.willhire.co) | Cyber Security Intern | Cybersecurity / Internship (Remote) | United States (Remote) | Applied | 10/21/2025 | LinkedIn |
+| [Northwestern University](https://www.northwestern.edu) | Research Study Coordinator | Research | Chicago, IL | Applied | 10/21/2025 | Company Website |
+| [Northwestern University](https://www.northwestern.edu) | Program Assistant 4 | Administrative | Chicago, IL | Applied | 10/21/2025 | Company Website |
+| [Northwestern University](https://www.northwestern.edu) | Data Assistant Associate | Data / Administrative | Chicago, IL | Applied | 10/21/2025 | Company Website |
+| [Tous Les Jours](https://www.tljus.com/) | Barista | Hospitality | Chicago, IL | Applied | 10/21/2025 | Indeed |
+| [Canonical](https://canonical.com/careers) | Engineering Manager | Software / Manager | Chicago, IL (Remote) | Applied | 10/21/2025 | Indeed |
+| [Paws and Claws Cat Rescue](https://www.pawsandclawscatrescue.org/) | Programs and Facilities Assistant | Animal Care / Assistant | Chicago, IL | Applied | 10/21/2025 | Indeed |
+| [Duke Animal Hospital](https://www.dukeanimalhospital.com/) | Veterinary Customer Service Representative | Animal Care | Chicago, IL | Applied | 10/21/2025 | Indeed |
+| [Happy Camper](https://www.happycamper.pizza/) | Bartender | Hospitality | Chicago, IL | Applied | 10/21/2025 | Indeed |
+| [Museum of Ice Cream](https://www.museumoficecream.com/careers) | Service Ambassador | Hospitality | Chicago, IL | Applied | 10/21/2025 | Indeed |
+| [The Peninsula — F&B Back Server Application](https://career10.successfactors.com/portalcareer?_s.crb=pOAhKgrGyC9ca%252b8vumVZ3dFeeNf%252bBXbckKb4n4aQz7s%253d) | Food & Beverage Server | Hospitality / Service / Restaurant | Chicago, IL | Applied | 10/20/2025 | Company Website |
+| [Business Development Sales Representative – Chicago, IL (January 2026 Start)](https://transportationinsight.wd1.myworkdayjobs.com/en-US/TI_NTG_External_Careers) | Business Development Sales Representative | Business / Sales | Chicago, IL | Applied | 10/20/2025 | Company Website |
+| [Insight Global](https://www.insightglobal.com) | Remote Data Analyst | IT / Data Analyst (Contract, Remote) | United States | Applied | 10/20/2025 | LinkedIn |
+| [Synergie Systems Inc.](https://www.synergiesystems.com) | Entry-Level Data Analyst | IT / Data Analytics (Full-Time, Remote) | United States | Applied | 10/20/2025 | LinkedIn |
+| [TELUS Digital AI Data Solutions](https://www.telusinternational.com/solutions/ai-data-solutions) | WFH English Speakers (Online Data Analyst) | AI / Data Annotation (Part-Time, Remote) | Wisconsin, United States | Applied | 10/20/2025 | LinkedIn |
+| [StellarBlue.ai](https://www.stellarblue.ai) | AI-Driven Full-Stack Developer | Software, AI Development | United States (Remote) | Applied | 10/20/2025 | LinkedIn |
+| [CyberCoders – Remote IT Support (Internal, Security)](https://www.linkedin.com/jobs/view/remote-it-support-%2470-%2490k-internal-security-at-cybercoders-3780836962/) | Remote IT Support - Internal & Security | IT Support | Philadelphia, PA (Remote) | Applied | 10/20/2025 | LinkedIn |
 | [Application Success – Business Continuity Planner](https://careers.morningstar.com/us/en/applythankyou?status=success&jobSeqNo=MORMORUSAP8200436EXTERNALENUS&jobTitle=Business%20Continuity%20Planner&jobId=AP-8200436&candidateHomeUrl=https://morningstar.wd5.myworkdayjobs.com/Americas/login?Job_Application_ID=JOB_APPLICATION-3-2213667&jobApplicationId=JOB_APPLICATION-3-2213667&candidateId=CANDIDATE-3-1483762) | Business Continuity Planner | IT / Business | Chicago, IL | Applied | 10/17/2025 | Company Website |
 | [Application Success – MDP Track: Direct Platform (Campus)](https://careers.morningstar.com/us/en/applythankyou?status=success&jobSeqNo=MORMORUSREQ052832EXTERNALENUS&jobTitle=MDP%20Track%3A%20Direct%20Platform%20(Campus)&jobId=REQ-052832&candidateHomeUrl=https://morningstar.wd5.myworkdayjobs.com/Americas/login?Job_Application_ID=JOB_APPLICATION-3-2213663&jobApplicationId=JOB_APPLICATION-3-2213663&candidateId=CANDIDATE-3-1483762) | MDP Track - Direct Platform (Campus) | Full-time (Early Career Program) | Chicago, IL | Applied | 10/17/2025 | Company Website |
 | [Barback — Avli Chicago](https://www.avli.us/careers) | Barback | Hospitality | Chicago, IL | Applied | 10/17/2025 | Indeed |
@@ -120,7 +159,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [Barback — Z Bar, The Hongkong and Shanghai Hotels, Limited (Chicago, IL)](https://www.peninsula.com/en/careers) | Barback | Hospitality | Chicago, IL | Applied | 10/17/2025 | Company Website |
 | [Front Desk Medical Receptionist — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/) | Front Desk Medical Receptionist | Healthcare / Administration | Chicago, IL | Applied | 10/17/2025 | Company Website |
 | Eataly | Cashier | Retail / Service | Chicago, IL | Applied | 10/15/2025 | LinkedIn |
-| [MUSEUM OF ICE CREAM](https://www.museumoficecream.com/careers) | Show Ambassador (Weekends Only) | Retail / Customer Service | Chicago, IL | Applied | 10/15/2025 | LinkedIn |
+| [MUSEUM OF ICE CREAM](https://www.museumoficecream.com/careers) | Show Ambassador (Weekends Only) | Retail / Customer Service | Chicago, IL | Rejected | 10/15/2025 | LinkedIn |
 | [Eataly](https://www.eataly.com/us_en/) | Cheesemonger / Salumi & Formaggi Artisan | Culinary / Retail | Chicago, IL | Applied | 10/15/2025 | LinkedIn |
 | [Eataly](https://www.eataly.com/us_en/) | Cashier / Front End Associate – Seasonal | Retail / Service | Chicago, IL | Applied | 10/15/2025 | LinkedIn |
 | [Comfort Dental Fairwood](https://www.comfortdental.com/) | Office Assistant | Admin / Office Support | Chicago, IL | Applied | 10/15/2025 | ZipRecruiter |
@@ -247,7 +286,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 
 </details>
 
-**Summary:** 📋 135 total — 🕐 51 active — ⏳ 54 likely inactive — ❌ 15 rejected — 💬 1 interviews — ✅ 0 hired.**
+**Summary:** 📋 172 total — 🕐 87 active — ⏳ 54 likely inactive — ❌ 16 rejected — 💬 1 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
