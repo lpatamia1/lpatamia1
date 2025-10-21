@@ -1,36 +1,38 @@
-# Java
+# === Java ===
 *.class
 *.jar
-!ApplicationTracker/xchart-3.8.6.jar
-!ApplicationTracker/checkstyle-*.jar
-ApplicationTracker/spotbugs-*/
-ApplicationTracker/spotbugs-report.txt
-ApplicationTracker/checkstyle-report.txt
-ApplicationTracker/*.bak
+!JobTrackerCLI/lib/*.jar
+*.log
+*.bak
+*.tmp
 
-# Replit
-.replit
-replit.nix
-.config/
-.upm/
-.cache/
-.breakpoints
+# === Build & Tools ===
+JobTrackerCLI/spotbugs-*/
+JobTrackerCLI/checkstyle-*.xml
+JobTrackerCLI/*report.txt
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Python
+# === Python ===
 __pycache__/
 *.py[cod]
-*$py.class
-.Python
 env/
 venv/
 
-# IDE
+# === Jupyter / Colab ===
+.ipynb_checkpoints/
+
+# === Web ===
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
+
+# === Editors ===
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+
+# === OS ===
+.DS_Store
+ehthumbs.db
