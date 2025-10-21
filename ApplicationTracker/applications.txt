@@ -5,7 +5,7 @@
 [Host — Sunda Fulton Market](https://www.sundachicago.com/careers/)|Host|Restaurant / Service|Chicago, IL|Applied|10/17/2025|Indeed
 [Veterinary Receptionist — PAWS Chicago](https://www.pawschicago.org/about-us/careers)|Veterinary Receptionist|Animal Care / Medical|Chicago, IL|Applied|10/17/2025|Indeed
 [Doggy Daycare Attendant / Dog Handler — Urban Pooch Canine Life Center](https://www.urbanpooch.com/employment/)|Doggy Daycare Attendant / Dog Handler|Animal Petcare / Pet Services|Chicago, IL|Applied|10/17/2025|Indeed
-[IT Support Specialist (Hybrid) — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/)|IT Support Specialist (Hybrid)|Healthcare / IT|Chicago, IL|Applied|10/17/2025|Indeed
+[IT Support Specialist (Hybrid) — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/)|IT Support Specialist (Hybrid)|Healthcare / IT|Chicago, IL|Rejected|10/17/2025|Indeed
 [Barback — Z Bar, The Hongkong and Shanghai Hotels, Limited (Chicago, IL)](https://www.peninsula.com/en/careers)|Barback|Hospitality|Chicago, IL|Applied|10/17/2025|Company Website
 [Front Desk Medical Receptionist — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/)|Front Desk Medical Receptionist|Healthcare / Administration|Chicago, IL|Applied|10/17/2025|Company Website
 Eataly|Cashier|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn
@@ -107,7 +107,7 @@ Eataly|Cashier|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn
 [Thornton Tomasetti](https://www.thorntontomasetti.com/careers)|IT Support Technician|IT Support|Chicago, IL|Applied (closed)|07/20/2025|Indeed
 [Lincoln Park Art Gallery](#)|Art Gallery Assistant|Arts / Admin|Chicago, IL|Rejected|07/20/2025|Indeed
 [Advance Spine Rehab Center](#)|IT Personnel — As Needed|IT Support|Chicago, IL|Applied (closed)|07/20/2025|Indeed
-[PAWS Chicago](https://www.pawschicago.org/about-us/careers)|Veterinary Assistant Apprentice|Animal Care / Service|Chicago, IL|Applied|07/20/2025|Indeed
+[PAWS Chicago](https://www.pawschicago.org/about-us/careers)|Veterinary Assistant Apprentice|Animal Care / Service|Chicago, IL|Rejected|07/20/2025|Indeed
 [Lawrence Fish Market](https://ct.lawrencefish.com/)|Sushi Chef Assistant|Culinary|Chicago, IL|Applied|07/20/2025|Indeed
 [New Home Star](https://www.newhomestar.com/careers)|AI Intern|AI / Real Estate|Hybrid / Elmhurst, IL|Applied|07/20/2025|Handshake
 [Energy Solutions](https://energy-solution.com/careers)|Solar Programs Associate|Energy / Environmental|Hybrid / Portland, OR / Oakland, CA|Applied|07/20/2025|Handshake

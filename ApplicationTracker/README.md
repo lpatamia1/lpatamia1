@@ -12,7 +12,7 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
   <h2>💡 Highlights</h2>
 </div>
 
-So far, I've applied to **135 positions** across multiple industries. Currently, **52 applications remain active**, and **55 likely inactive** (older than 60 days), with **1 interview** completed.  
+So far, I've applied to **135 positions** across multiple industries. Currently, **51 applications remain active**, and **54 likely inactive** (older than 60 days), with **1 interview** completed.  
 Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
@@ -25,16 +25,16 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 <td align="left" width="50%">
 
 - **Total Applications:** 135  
-- 🕐 **Active / Pending:** 52  
-- ⏳ **Likely Inactive:** 55  
-- ❌ **Rejected:** 13  
+- 🕐 **Active / Pending:** 51  
+- ⏳ **Likely Inactive:** 54  
+- ❌ **Rejected:** 15  
 
 </td>
 <td align="left" width="50%">
 
 - 💬 **Interviewed:** 1  
 - ✅ **Hired / Offer:** 0  
-- 🗓️ **Last Updated:** October 18, 2025  
+- 🗓️ **Last Updated:** October 21, 2025  
 
 </td>
 </tr>
@@ -49,10 +49,10 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 - 📈 **Success Rate:** 0.7%  
 - 📦 **Closed:** 15  
 - 🌐 **Top Source:** LinkedIn  
-- ⚡ **Avg Applications per Week:** 5.2  
-- 🕐 **Still Waiting (Applied Only):** 105  
+- ⚡ **Avg Applications per Week:** 5.1  
+- 🕐 **Still Waiting (Applied Only):** 103  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 60 days  
+- 📆 **Avg Days Since Application:** 63 days  
 - 🆕 **Most Recent:** [Application Success – Business Continuity Planner](https://careers.morningstar.com/us/en/applythankyou?status=success&jobSeqNo=MORMORUSAP8200436EXTERNALENUS&jobTitle=Business%20Continuity%20Planner&jobId=AP-8200436&candidateHomeUrl=https://morningstar.wd5.myworkdayjobs.com/Americas/login?Job_Application_ID=JOB_APPLICATION-3-2213667&jobApplicationId=JOB_APPLICATION-3-2213667&candidateId=CANDIDATE-3-1483762) — Business Continuity Planner (10/17/2025)  
 </td></tr></table>
 
@@ -116,7 +116,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [Host — Sunda Fulton Market](https://www.sundachicago.com/careers/) | Host | Restaurant / Service | Chicago, IL | Applied | 10/17/2025 | Indeed |
 | [Veterinary Receptionist — PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Veterinary Receptionist | Animal Care / Medical | Chicago, IL | Applied | 10/17/2025 | Indeed |
 | [Doggy Daycare Attendant / Dog Handler — Urban Pooch Canine Life Center](https://www.urbanpooch.com/employment/) | Doggy Daycare Attendant / Dog Handler | Animal Petcare / Pet Services | Chicago, IL | Applied | 10/17/2025 | Indeed |
-| [IT Support Specialist (Hybrid) — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/) | IT Support Specialist (Hybrid) | Healthcare / IT | Chicago, IL | Applied | 10/17/2025 | Indeed |
+| [IT Support Specialist (Hybrid) — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/) | IT Support Specialist (Hybrid) | Healthcare / IT | Chicago, IL | Rejected | 10/17/2025 | Indeed |
 | [Barback — Z Bar, The Hongkong and Shanghai Hotels, Limited (Chicago, IL)](https://www.peninsula.com/en/careers) | Barback | Hospitality | Chicago, IL | Applied | 10/17/2025 | Company Website |
 | [Front Desk Medical Receptionist — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/) | Front Desk Medical Receptionist | Healthcare / Administration | Chicago, IL | Applied | 10/17/2025 | Company Website |
 | Eataly | Cashier | Retail / Service | Chicago, IL | Applied | 10/15/2025 | LinkedIn |
@@ -218,7 +218,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [Thornton Tomasetti](https://www.thorntontomasetti.com/careers) | IT Support Technician | IT Support | Chicago, IL | Applied (closed) | 07/20/2025 | Indeed |
 | [Lincoln Park Art Gallery](#) | Art Gallery Assistant | Arts / Admin | Chicago, IL | Rejected | 07/20/2025 | Indeed |
 | [Advance Spine Rehab Center](#) | IT Personnel — As Needed | IT Support | Chicago, IL | Applied (closed) | 07/20/2025 | Indeed |
-| [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Veterinary Assistant Apprentice | Animal Care / Service | Chicago, IL | Applied | 07/20/2025 | Indeed |
+| [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Veterinary Assistant Apprentice | Animal Care / Service | Chicago, IL | Rejected | 07/20/2025 | Indeed |
 | [Lawrence Fish Market](https://ct.lawrencefish.com/) | Sushi Chef Assistant | Culinary | Chicago, IL | Applied | 07/20/2025 | Indeed |
 | [New Home Star](https://www.newhomestar.com/careers) | AI Intern | AI / Real Estate | Hybrid / Elmhurst, IL | Applied | 07/20/2025 | Handshake |
 | [Energy Solutions](https://energy-solution.com/careers) | Solar Programs Associate | Energy / Environmental | Hybrid / Portland, OR / Oakland, CA | Applied | 07/20/2025 | Handshake |
@@ -247,8 +247,8 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 
 </details>
 
-**Summary:** 📋 135 total — 🕐 52 active — ⏳ 55 likely inactive — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.**
+**Summary:** 📋 135 total — 🕐 51 active — ⏳ 54 likely inactive — ❌ 15 rejected — 💬 1 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
-*Last updated October 18, 2025.*
+*Last updated October 21, 2025.*
