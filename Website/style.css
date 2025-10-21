@@ -66,6 +66,7 @@ body {
 #skills {
   position: absolute;
   top: 350px;
+  left: 200px;
   width: 1000px;
 }
 
@@ -84,22 +85,23 @@ body {
 
 #terminal {
   position: absolute;
-  top: 1440px;
+  top: 1420px;
   left: var(--col2);
-  width: var(--winW);
+  width: 500px;
 }
 
 #contact {
   position: absolute;
   top: 2100px;
-  width: 1350px;
+  width: 1000px;
+  left: 150px;
   padding-bottom: 30px;
 }
 
 #danger-window {
   position: absolute;
   top: 450px;
-  left: var(--col2);
+  left: 400px;
   width: var(--winW);
   min-height: 220px;
 }
