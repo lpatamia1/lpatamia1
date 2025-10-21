@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 isDragging = false;
                 return;
             }
-            
+            win.style.position = 'absolute';
+
             isDragging = true;
             offsetX = e.clientX - win.offsetLeft;
             offsetY = e.clientY - win.offsetTop;
