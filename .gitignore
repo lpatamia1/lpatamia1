@@ -1,0 +1,36 @@
+# Java
+*.class
+*.jar
+!ApplicationTracker/xchart-3.8.6.jar
+!ApplicationTracker/checkstyle-*.jar
+ApplicationTracker/spotbugs-*/
+ApplicationTracker/spotbugs-report.txt
+ApplicationTracker/checkstyle-report.txt
+ApplicationTracker/*.bak
+
+# Replit
+.replit
+replit.nix
+.config/
+.upm/
+.cache/
+.breakpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
