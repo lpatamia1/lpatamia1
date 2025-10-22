@@ -90,26 +90,31 @@ public class JobApplicationTracker {
             String leftCol[] = {
                 "📊  1. View Progress Summary",
                 "📝  2. Add New Job Entry",
-                "🗒️  3. Export Markdown Report",
-                "➕  4. Quick-Add (Batch via Shell)"
+                "🗒️   3. Export Markdown Report",
+                "➕  4. Quick-Add (Batch via Shell)",
+                "📥  5. Import Sample Seed Dataset"
+
             };
 
             String rightCol[] = {
-                " 📥  5. Import Sample Seed Dataset",
-                " 🕒   6. View Recent Applications",
+                " 🕒  6. View Recent Applications",
                 " 🔍  7. Search & Manage (Edit Status / Notes)",
-                "🚪  8. Save and Close Tracker"
+                "   🗑️   8. Remove Application",
+                "🚪  9. Save and Close Tracker"
             };
-            // Print both columns side by side
-            for (int i = 0; i < leftCol.length; i++) {
-                System.out.printf("  %-45s %s%n", leftCol[i], rightCol[i]);
+            // Print both columns side by side (fix ensures option 9 appears)
+            for (int i = 0; i < Math.max(leftCol.length, rightCol.length); i++) {
+                String left  = i < leftCol.length ? leftCol[i] : "";
+                String right = i < rightCol.length ? rightCol[i] : "";
+                System.out.printf("  %-45s %s%n", left, right);
             }
             System.out.println("═".repeat(91) + RESET);
+
 
             System.out.print("> ");
 
             if (!sc.hasNextInt()) {
-                System.out.println("Please enter 1–8.");
+                System.out.println("Please enter 1–9.");
                 sc.nextLine();
                 continue;
             }
@@ -125,7 +130,8 @@ public class JobApplicationTracker {
                 case 3:
                     try {
                         exportMarkdown();
-                        System.out.println("✅ Exported " + README);
+                        exportCSV(); // 👈 added line — keeps dashboard in sync
+                        System.out.println("✅ Exported " + README + " and applications.csv");
                     } catch (IOException e) {
                         System.out.println("Export failed: " + e.getMessage());
                     }
@@ -145,6 +151,9 @@ public class JobApplicationTracker {
                     searchApplications(sc);
                     break;
                 case 8:
+                    removeApplication(sc);
+                    break;
+                case 9:
                     saveApplications();
                     System.out.println(CYAN + "ฅ^•ﻌ•^ฅ Bye-bye human! Career cat curls up for a nap. 💤");
                     return;
@@ -152,6 +161,73 @@ public class JobApplicationTracker {
                     System.out.println("Invalid choice.");
             }
         }
+    }
+
+    // 🗑️ Remove an application (same search style as Search & Manage)
+    private static void removeApplication(Scanner sc) {
+        System.out.print("🔎 Enter keyword to search (company or role): ");
+        String keyword = sc.nextLine().trim().toLowerCase();
+
+        if (keyword.isEmpty()) {
+            System.out.println(ORANGE + "⚠️  No keyword entered." + RESET);
+            return;
+        }
+
+        // Same search logic as Search & Manage
+        List<JobApplication> matches = applications.stream()
+            .filter(a -> a.company.toLowerCase().contains(keyword)
+                    || a.role.toLowerCase().contains(keyword))
+            .sorted(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed())
+            .collect(Collectors.toList());
+
+        if (matches.isEmpty()) {
+            System.out.println(RED + "❌ No matching jobs found for \"" + keyword + "\"." + RESET);
+            return;
+        }
+
+        System.out.println("\n🔍 Found " + matches.size() + " match" + (matches.size() == 1 ? "" : "es") + ":");
+        System.out.println("-------------------------------------------------------------");
+        for (int i = 0; i < matches.size(); i++) {
+            JobApplication a = matches.get(i);
+            System.out.printf("%2d. %-35s | %-25s | %-12s | %s\n",
+                    i + 1, a.company, a.role, a.status,
+                    a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+        }
+        System.out.println("-------------------------------------------------------------");
+
+        System.out.print("\n❓ Enter the number of the job to remove (or press Enter to cancel): ");
+        String input = sc.nextLine().trim();
+        if (input.isEmpty()) {
+            System.out.println(ORANGE + "🕊️  Cancelled." + RESET);
+            return;
+        }
+
+        int index;
+        try {
+            index = Integer.parseInt(input) - 1;
+            if (index < 0 || index >= matches.size()) {
+                System.out.println(RED + "❌ Invalid selection." + RESET);
+                return;
+            }
+        } catch (NumberFormatException e) {
+            System.out.println(RED + "⚠️ Invalid input. Please enter a number." + RESET);
+            return;
+        }
+
+        JobApplication toRemove = matches.get(index);
+        applications.remove(toRemove);
+        saveApplications();
+
+        // Optional: auto-refresh exports
+        try {
+            exportMarkdown();
+            exportCSV();
+            System.out.println(MINT + "🧾 CSV and README updated after deletion." + RESET);
+        } catch (IOException e) {
+            System.out.println(ORANGE + "⚠️ Could not auto-update exports: " + e.getMessage() + RESET);
+        }
+
+        System.out.println(GREEN + "✅ Removed: " + toRemove.company + " — " + toRemove.role + RESET);
     }
 
     // ✍️ Add a new job application interactively via console prompts
@@ -278,6 +354,21 @@ public class JobApplicationTracker {
             System.out.println("Failed to load " + FILE + ": " + e.getMessage());
         }
     }
+    
+    // 💾 Export all applications to a CSV file for the Flask web dashboard
+    private static void exportCSV() {
+        try (PrintWriter pw = new PrintWriter(new FileWriter("applications.csv"))) {
+            pw.println("Company,Role,Type,Location,Status,Date Applied,Source,Notes");
+            for (JobApplication a : applications) {
+                pw.printf("\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"%n",
+                    a.company, a.role, a.type, a.location, a.status.name(),
+                    a.dateApplied, a.source, a.notes.replace("\"", "'"));
+            }
+            System.out.println("✅ Exported applications.csv for web dashboard.");
+        } catch (IOException e) {
+            System.out.println("❌ Failed to export CSV: " + e.getMessage());
+        }
+    }
 
     // 💿 Save all current applications to file with timestamped backups
     private static void saveApplications() {
@@ -379,6 +470,7 @@ public class JobApplicationTracker {
 
         JobApplication a = results.get(index);
 
+        System.out.println("\n──────────────────────────────────────────────────────────────");
         System.out.println("\nDetails:");
         System.out.println("Company:   " + a.company);
         System.out.println("Role:      " + a.role);
@@ -388,19 +480,40 @@ public class JobApplicationTracker {
         System.out.println("Applied:   " + a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         System.out.println("Source:    " + a.source);
         System.out.println("Notes:     " + (a.notes == null || a.notes.isEmpty() ? "—" : a.notes));
+        System.out.println("──────────────────────────────────────────────────────────────");
 
-        System.out.print("\n✏️  Update status? (leave blank to skip): ");
-        String newStatus = sc.nextLine().trim();
-        if (!newStatus.isEmpty()) {
-            a.status = ApplicationStatus.from(newStatus);
+        // ⚙️ Quick Edit Section
+        System.out.print("\n⚙️  Quick Edit this application? (y/n): ");
+        String editChoice = sc.nextLine().trim().toLowerCase();
+
+        if (editChoice.equals("y")) {
+            System.out.print("✏️  New Status (leave blank to keep): ");
+            String newStatus = sc.nextLine().trim();
+            if (!newStatus.isEmpty()) {
+                a.status = ApplicationStatus.from(newStatus);
+            }
+
+            System.out.print("📍 New Location (leave blank to keep): ");
+            String newLocation = sc.nextLine().trim();
+            if (!newLocation.isEmpty()) {
+                a.setLocation(newLocation);
+            }
+
+            System.out.print("📝 New Notes (leave blank to keep): ");
+            String newNotes = sc.nextLine().trim();
+            if (!newNotes.isEmpty()) {
+                a.setNotes(newNotes);
+            }
+
             saveApplications();
-            System.out.println("✅ Status updated and saved.");
+            System.out.println("✅ Application updated and saved.");
 
             try {
                 exportMarkdown();
-                System.out.println("✅ README automatically updated after status change.");
+                exportCSV(); // keep web dashboard in sync
+                System.out.println("✅ README and CSV automatically updated.");
             } catch (IOException e) {
-                System.out.println("⚠️ Could not update README: " + e.getMessage());
+                System.out.println("⚠️ Could not update README or CSV: " + e.getMessage());
             }
         }
 
@@ -947,5 +1060,6 @@ public class JobApplicationTracker {
 
         return "Other";
     }
+
 
 }

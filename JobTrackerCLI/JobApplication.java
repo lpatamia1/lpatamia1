@@ -101,7 +101,6 @@ class JobApplication {
         this.dateApplied = parseFlexible(dateApplied.trim());
     }
 
-    // 🔧 Optional setters
     public void setNotes(String notes) {
         this.notes = notes == null ? "" : notes.trim();
     }
@@ -113,4 +112,10 @@ class JobApplication {
     public void setStatus(ApplicationStatus status) {
         this.status = status; 
     }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+
 }
