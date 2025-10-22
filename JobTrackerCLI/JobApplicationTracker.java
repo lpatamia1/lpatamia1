@@ -145,9 +145,11 @@ public class JobApplicationTracker {
         String date = sc.nextLine();
         System.out.print("Source: ");
         String source = sc.nextLine();
+        System.out.print("Notes (optional): ");
+        String notes = sc.nextLine();
 
         try {
-            JobApplication app = new JobApplication(company, role, type, location, status, date, source);
+            JobApplication app = new JobApplication(company, role, type, location, status, date, source, notes);
             applications.add(app);
             saveApplications();
             System.out.println("✅ Added & saved.");
@@ -161,23 +163,37 @@ public class JobApplicationTracker {
             System.out.println("Seed is empty.");
             return 0;
         }
+
         int before = applications.size();
         String[] lines = md.split("\\r?\\n");
+
         for (String line : lines) {
             String trimmed = line.trim();
             if (!trimmed.startsWith("|")) continue;
-            String row = trimmed.substring(1, trimmed.endsWith("|") ? trimmed.length()-1 : trimmed.length());
+
+            String row = trimmed.substring(1, trimmed.endsWith("|") ? trimmed.length() - 1 : trimmed.length());
             String[] cols = row.split("\\|", -1);
-            if (cols.length != 7) continue;
+            if (cols.length < 7) continue;
+
             for (int i = 0; i < cols.length; i++) cols[i] = cols[i].trim();
+            String notes = cols.length >= 8 ? cols[7] : "";
+
             try {
-                JobApplication a = new JobApplication(cols[0], cols[1], cols[2], cols[3], cols[4], cols[5], cols[6]);
+                JobApplication a = new JobApplication(
+                    cols[0], cols[1], cols[2], cols[3],
+                    cols[4], cols[5], cols[6], notes
+                );
+
                 boolean dup = applications.stream().anyMatch(
-                    x -> x.company.equals(a.company) && x.role.equals(a.role) && x.dateApplied.equals(a.dateApplied)
+                    x -> x.company.equals(a.company) &&
+                        x.role.equals(a.role) &&
+                        x.dateApplied.equals(a.dateApplied)
                 );
                 if (!dup) applications.add(a);
+
             } catch (Exception ignore) {}
         }
+
         return applications.size() - before;
     }
 
@@ -342,6 +358,7 @@ public class JobApplicationTracker {
         System.out.println("Status:    " + a.status);
         System.out.println("Applied:   " + a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         System.out.println("Source:    " + a.source);
+        System.out.println("Notes:     " + (a.notes == null || a.notes.isEmpty() ? "—" : a.notes));
 
         System.out.print("\n✏️  Update status? (leave blank to skip): ");
         String newStatus = sc.nextLine().trim();
@@ -353,6 +370,22 @@ public class JobApplicationTracker {
             try {
                 exportMarkdown();
                 System.out.println("✅ README automatically updated after status change.");
+            } catch (IOException e) {
+                System.out.println("⚠️ Could not update README: " + e.getMessage());
+            }
+        }
+
+        // 📝 Option to update notes after viewing details
+        System.out.print("\n📝 Update notes? (leave blank to skip): ");
+        String newNotes = sc.nextLine().trim();
+        if (!newNotes.isEmpty()) {
+            a.setNotes(newNotes);
+            saveApplications();
+            System.out.println("✅ Notes updated and saved.");
+
+            try {
+                exportMarkdown();
+                System.out.println("✅ README automatically updated after notes change.");
             } catch (IOException e) {
                 System.out.println("⚠️ Could not update README: " + e.getMessage());
             }
@@ -733,8 +766,8 @@ private static void exportMarkdown() throws IOException {
     md.append("  <h2>📋 Master Application Log</h2>\n");
     md.append("</div>\n\n");
     md.append("<details>\n<summary>Click to expand full job application list</summary>\n\n");
-    md.append("| Company | Role | Type | Location | Status | Date Applied | Source |\n");
-    md.append("|----------|------|------|-----------|----------|---------------|---------|\n");
+    md.append("| Company | Role | Type | Location | Status | Date Applied | Source | Notes |\n");
+    md.append("|----------|------|------|-----------|----------|---------------|---------|--------|\n");
 
     for (JobApplication a : applications) {
         md.append(a.toMarkdownRow()).append("\n");
