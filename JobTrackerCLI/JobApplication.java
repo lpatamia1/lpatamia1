@@ -3,7 +3,8 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
 class JobApplication {
-    String company, role, type, location, status, source, notes;
+    String company, role, type, location, source, notes;
+    ApplicationStatus status;
     LocalDate dateApplied;
 
     // 📅 Supported date formats
@@ -23,7 +24,7 @@ class JobApplication {
         this.role = role.trim();
         this.type = type.trim();
         this.location = location.trim();
-        this.status = status.trim();
+        this.status = ApplicationStatus.from(status); // ✅ enum conversion
         this.source = source.trim();
         this.notes = notes == null ? "" : notes.trim();
         this.dateApplied = parseFlexible(dateApplied.trim());
@@ -47,11 +48,11 @@ class JobApplication {
     // 💾 Save to file
     public String toFileLine() {
         return String.join("|",
-                company, role, type, location, status,
+                company, role, type, location, status.name(),  // ✅ use enum name
                 dateApplied.format(MD), source, notes);
     }
 
-    // 📂 Load from file (backward compatible with old 7-field format)
+    // 📂 Load from file
     public static JobApplication fromFileLine(String line) {
         if (line == null || line.isBlank() || line.startsWith("#")) return null;
         String[] p = line.trim().split("\\|", -1);
@@ -60,35 +61,45 @@ class JobApplication {
         return new JobApplication(p[0], p[1], p[2], p[3], p[4], p[5], p[6], notes);
     }
 
-    // 📝 Convert to Markdown row (styled for README)
+    // 📝 Convert to Markdown row
     public String toMarkdownRow() {
+        String displayStatus = status.name().charAt(0) + status.name().substring(1).toLowerCase();
         return String.format(
             "| %s | %s | %s | %s | %s | %s | %s | %s |",
             company,
             role,
             type,
             location,
-            status,
+            displayStatus,
             dateApplied.format(MD),
             source,
             notes.isEmpty() ? "<span style='color:#999;'>—</span>" : notes
         );
     }
 
-    // ✏️ Edit all details interactively or programmatically
+    // ✏️ Edit details
     public void editDetails(String company, String role, String type, String location,
                             String status, String dateApplied, String source, String notes) {
         this.company = company.trim();
         this.role = role.trim();
         this.type = type.trim();
         this.location = location.trim();
-        this.status = status.trim();
+        this.status = ApplicationStatus.from(status); // ✅ convert to enum again
         this.source = source.trim();
         this.notes = notes == null ? "" : notes.trim();
         this.dateApplied = parseFlexible(dateApplied.trim());
     }
 
-    // 🔧 Optional individual field setters
-    public void setNotes(String notes) { this.notes = notes == null ? "" : notes.trim(); }
-    public void setStatus(String status) { this.status = status.trim(); }
+    // 🔧 Optional setters
+    public void setNotes(String notes) {
+        this.notes = notes == null ? "" : notes.trim();
+    }
+
+    public void setStatus(String status) {
+        this.status = ApplicationStatus.from(status); // ✅ convert from string safely
+    }
+
+    public void setStatus(ApplicationStatus status) {
+        this.status = status; // ✅ overload for enum use
+    }
 }

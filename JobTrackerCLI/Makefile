@@ -33,18 +33,20 @@ CLASSES = $(SOURCES:.java=.class)
 # --------------------------------------------------------------
 # Default target: compile everything
 # --------------------------------------------------------------
-all: $(CLASSES)
-
-%.class: %.java
-	@echo "📦 Compiling $< ..."
-	@$(JAVAC) $<
+all:
+	@echo "🧱 Building all Java source files..."
+	@$(JAVAC) $(SOURCES)
+	@echo "✅ All Java files compiled successfully!"
 
 # --------------------------------------------------------------
 # Run the program
 # --------------------------------------------------------------
 run: all
 	@echo "🚀 Launching Job Application Tracker..."
+	@echo "-------------------------------------------"
 	@$(JAVA) $(MAIN)
+	@echo "-------------------------------------------"
+	@echo "🏁 Program exited successfully."
 
 # --------------------------------------------------------------
 # Test build only (no run)
@@ -63,6 +65,7 @@ test:
 	@grep -R "import " *.java | sort | uniq -c | sort -nr || true
 	@echo ""
 	@echo "✅ Test build finished: no compile errors detected."
+	@echo "-------------------------------------------"
 
 # --------------------------------------------------------------
 # 🔍 Run static analysis (SpotBugs)
@@ -81,6 +84,7 @@ static:
 	issues=$$(grep -c "BugInstance" spotbugs-report.txt || true); \
 	echo "✅ Static analysis complete. Report saved to spotbugs-report.txt"; \
 	echo "📊 Potential issues found: $$issues"
+	@echo "-------------------------------------------"
 
 # --------------------------------------------------------------
 # ✨ Run Checkstyle (auto-download + colorized output)
@@ -112,7 +116,7 @@ checkstyle:
 # 🧹 Clean up build files
 # --------------------------------------------------------------
 clean:
-	@echo "🧹 Cleaning up build files..."
+	@echo "🧹 Cleaning up build files... Done! Your workspace is sparkling clean ✨"
 	@rm -f *.class spotbugs-report.txt checkstyle-report.txt
 
 # --------------------------------------------------------------

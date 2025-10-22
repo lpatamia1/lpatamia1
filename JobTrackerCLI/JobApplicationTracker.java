@@ -64,16 +64,16 @@ public class JobApplicationTracker {
 
             // Two-column layout
             String leftCol[] = {
-                "📊  1. View Summary",
-                "📝  2. Add New Application",
-                "📤  3. Export README",
-                "➕  4. Batch-Add Multiple from Shell"
+                "📊  1. View Progress Summary",
+                "📝  2. Add New Job Entry",
+                "🗒️  3. Export Markdown Report",
+                "➕  4. Quick-Add (Batch via Shell)"
             };
 
             String rightCol[] = {
-                " 📥  5. Import Seed Dataset",
-                " ✏️   6. Update Status",
-                " 🔍  7. Search Applications by Keywords",
+                " 📥  5. Import Sample Seed Dataset",
+                " 🕒   6. View Recent Applications",
+                " 🔍  7. Search & Manage (Edit Status / Notes)",
                 "🚪  8. Save and Close Tracker"
             };
             // Print both columns side by side
@@ -115,7 +115,7 @@ public class JobApplicationTracker {
                     System.out.println("✅ Imported " + added + " applications from seed.");
                     break;
                 case 6:
-                    updateStatus(sc);
+                    viewRecentApplications();
                     break;
                 case 7:
                     searchApplications(sc);
@@ -363,7 +363,7 @@ public class JobApplicationTracker {
         System.out.print("\n✏️  Update status? (leave blank to skip): ");
         String newStatus = sc.nextLine().trim();
         if (!newStatus.isEmpty()) {
-            a.status = newStatus;
+            a.status = ApplicationStatus.from(newStatus);
             saveApplications();
             System.out.println("✅ Status updated and saved.");
 
@@ -457,7 +457,7 @@ public class JobApplicationTracker {
             return;
         }
 
-        selected.status = newStatus;
+        selected.status = ApplicationStatus.from(newStatus);
         saveApplications();
         System.out.println("✅ Status updated and saved! 🐱✨ (your career cat approves!)");
 
@@ -467,24 +467,57 @@ public class JobApplicationTracker {
             System.out.println("⚠️ Could not auto-export README: " + e.getMessage());
         }
     }
+private static void viewRecentApplications() {
+    if (applications.isEmpty()) {
+        System.out.println("⚠️  No applications recorded yet.");
+        return;
+    }
+
+    List<JobApplication> recent = applications.stream()
+            .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) <= 3)
+            .sorted(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed())
+            .collect(Collectors.toList());
+
+    System.out.println(LAVENDER + "\n╔═════════════════════════════════════════════════════════════════════════════════════════╗");
+    System.out.println("║                              🕒  RECENT APPLICATIONS (Last 3 Days)                      ║");
+    System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝" + RESET);
+
+    if (recent.isEmpty()) {
+        System.out.println(ORANGE + "🌼 No new applications this week — time to find a few more leads!" + RESET);
+        return;
+    }
+
+    for (JobApplication a : recent) {
+        System.out.printf("%s%-35s%s | %-25s | %-12s | %s\n",
+                CYAN, a.company, RESET, a.role, a.status,
+                a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+    }
+
+    System.out.printf(MINT + "\n🕊️  You’ve applied to %d job%s in the last 7 days.%n" + RESET,
+            recent.size(), recent.size() == 1 ? "" : "s");
+}
 
 private static void showSummary() {
 
     int total = applications.size();
-    long rejected = applications.stream().map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("reject") || s.contains("not selected")).count();
-    long hired = applications.stream().map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("hired") || s.contains("offer")).count();
-    long interviews = applications.stream().map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("interview")).count();
-    long closed = applications.stream().map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("closed")).count();
+    long rejected = applications.stream()
+            .filter(a -> a.status == ApplicationStatus.REJECTED)
+            .count();
+    long hired = applications.stream()
+            .filter(a -> a.status == ApplicationStatus.HIRED)
+            .count();
+    long interviews = applications.stream()
+            .filter(a -> a.status == ApplicationStatus.INTERVIEW)
+            .count();
+    long closed = applications.stream()
+            .filter(a -> a.status == ApplicationStatus.CLOSED)
+            .count();
     long active = total - rejected - hired - closed;
 
     // ⏳ Likely inactive (applied > 60 days ago and still "Applied")
     long stale = applications.stream()
-            .filter(a -> a.status.toLowerCase().contains("applied"))
-            .filter(a -> java.time.temporal.ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) > 60)
+            .filter(a -> a.status == ApplicationStatus.APPLIED)
+            .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) > 60)
             .count();
 
     long trulyActive = active - stale;
@@ -527,7 +560,7 @@ private static void showSummary() {
     double perWeek = total / Math.max(daysSpan / 7.0, 1.0);
     System.out.printf("%s⚡ Avg Applications per Week:%s %.1f%n", GREEN, RESET, perWeek);
     long openApps = applications.stream()
-        .filter(a -> a.status.equalsIgnoreCase("applied"))
+        .filter(a -> a.status == ApplicationStatus.APPLIED)
         .count();
     System.out.printf("%s🕐 Still Waiting (Applied Only):%s %d%n", CYAN, RESET, openApps);
     String topLocation = applications.stream()
@@ -595,27 +628,29 @@ private static void exportMarkdown() throws IOException {
     applications.sort(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed());
 
     int total = applications.size();
-    long rejected = applications.stream().map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("reject") || s.contains("not selected")).count();
-    long hired = applications.stream().map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("hired") || s.contains("offer")).count();
-    long interviews = applications.stream().map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("interview")).count();
-    long closed = applications.stream().map(a -> a.status.toLowerCase())
-            .filter(s -> s.contains("closed")).count();
+    long rejected = applications.stream()
+            .filter(a -> a.status == ApplicationStatus.REJECTED)
+            .count();
+    long hired = applications.stream()
+            .filter(a -> a.status == ApplicationStatus.HIRED)
+            .count();
+    long interviews = applications.stream()
+            .filter(a -> a.status == ApplicationStatus.INTERVIEW)
+            .count();
+    long closed = applications.stream()
+            .filter(a -> a.status == ApplicationStatus.CLOSED)
+            .count();
 
     long active = total - rejected - hired - closed;
 
-    // --- Likely inactive applications (applied > 60 days ago and still marked Applied) ---
     long stale = applications.stream()
-        .filter(a -> a.status.toLowerCase().contains("applied"))
-        .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) > 60)
-        .count();
+            .filter(a -> a.status == ApplicationStatus.APPLIED)
+            .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) > 60)
+            .count();
 
-    // Adjust active to exclude likely inactive ones
     long trulyActive = active - stale;
-    if (trulyActive < 0) trulyActive = 0; // safety clamp\
-    
+    if (trulyActive < 0) trulyActive = 0;
+
     double successRate = total == 0 ? 0 : (double) (hired + interviews) / total * 100;
 
     String today = LocalDate.now().format(HUMAN);
@@ -685,7 +720,7 @@ private static void exportMarkdown() throws IOException {
     double perWeek = total / Math.max(daysSpan / 7.0, 1.0);
 
     long openApps = applications.stream()
-        .filter(a -> a.status.equalsIgnoreCase("applied"))
+        .filter(a -> a.status == ApplicationStatus.APPLIED)
         .count();
 
     String topLocation = applications.stream()
