@@ -98,9 +98,10 @@ public class JobApplicationTracker {
 
             String rightCol[] = {
                 " 🕒  6. View Recent Applications",
-                " 🔍  7. Search & Manage (Edit Status / Notes)",
+                " 🔍  7. Search & Manage (Edit Status/Notes)",
                 "   🗑️   8. Remove Application",
-                "🚪  9. Save and Close Tracker"
+                "📈  9. Visual Dashboard",
+                " 🚪 10. Save and Close Tracker"
             };
             // Print both columns side by side (fix ensures option 9 appears)
             for (int i = 0; i < Math.max(leftCol.length, rightCol.length); i++) {
@@ -154,6 +155,9 @@ public class JobApplicationTracker {
                     removeApplication(sc);
                     break;
                 case 9:
+                    showCareerDashboard();
+                    break;
+                case 10:
                     saveApplications();
                     System.out.println(CYAN + "ฅ^•ﻌ•^ฅ Bye-bye human! Career cat curls up for a nap. 💤");
                     return;
@@ -186,14 +190,14 @@ public class JobApplicationTracker {
         }
 
         System.out.println("\n🔍 Found " + matches.size() + " match" + (matches.size() == 1 ? "" : "es") + ":");
-        System.out.println("-------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
         for (int i = 0; i < matches.size(); i++) {
             JobApplication a = matches.get(i);
             System.out.printf("%2d. %-35s | %-25s | %-12s | %s\n",
                     i + 1, a.company, a.role, a.status,
                     a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         }
-        System.out.println("-------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------------------------");
 
         System.out.print("\n❓ Enter the number of the job to remove (or press Enter to cancel): ");
         String input = sc.nextLine().trim();
@@ -303,7 +307,7 @@ public class JobApplicationTracker {
 
         String pad = " ".repeat(35);
         String[] frames = {
-            CYAN + pad + "  ／l、\n" +
+            "\n" + CYAN + pad + "  ／l、\n" +
             pad + "（=‐ ω ‐=） zzz...\n" +
             pad + "  じしf_, )ノ" + RESET,
 
@@ -443,14 +447,14 @@ public class JobApplicationTracker {
         }
 
         System.out.println("\n🔍 Found " + results.size() + " match" + (results.size() == 1 ? "" : "es") + ":");
-        System.out.println("-------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------------------------");
         for (int i = 0; i < results.size(); i++) {
             JobApplication a = results.get(i);
             System.out.printf("%2d. %-35s | %-25s | %-12s | %s\n",
                     i + 1, a.company, a.role, a.status,
                     a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         }
-        System.out.println("-------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------------------------");
 
         System.out.print("\n💡 View details or update status (enter number, or press Enter to skip): ");
         String input = sc.nextLine().trim();
@@ -637,7 +641,7 @@ public class JobApplicationTracker {
                     a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         }
 
-        System.out.printf(MINT + "\n🕊️  You’ve applied to %d job%s in the last 7 days.%n" + RESET,
+        System.out.printf(MINT + "\n🕊️  You’ve applied to %d job%s in the last 3 days.%n" + RESET,
                 recent.size(), recent.size() == 1 ? "" : "s");
     }
 
@@ -765,6 +769,56 @@ public class JobApplicationTracker {
             System.out.println(ORANGE + " 🌼 No new applications this week — time to find a few more leads!" + RESET);
         }
 
+    }
+
+    // 🎨 Compact visual dashboard before exiting
+    private static void showCareerDashboard() {
+        int total = applications.size();
+        long interviews = applications.stream()
+                .filter(a -> a.status == ApplicationStatus.INTERVIEW)
+                .count();
+        long hired = applications.stream()
+                .filter(a -> a.status == ApplicationStatus.HIRED)
+                .count();
+        long rejected = applications.stream()
+                .filter(a -> a.status == ApplicationStatus.REJECTED)
+                .count();
+
+        double successRate = total == 0 ? 0 : (double)(hired + interviews) / total * 100;
+        int barLength = 40;
+        int filled = (int)(barLength * successRate / 100);
+
+        System.out.println(LAVENDER + "\n╔═════════════════════════════════════════════════════════════════════════════════════════╗");
+        System.out.println("║                             🌈  CAREER DASHBOARD SNAPSHOT  🌈                           ║");
+        System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝" + RESET);
+
+        System.out.printf("%s📁 Total Applications:%s %d%n", CYAN, RESET, total);
+        System.out.printf("%s💬 Interviews:%s %d   %s✅ Hired:%s %d   %s❌ Rejected:%s %d%n",
+                YELLOW, RESET, interviews, GREEN, RESET, hired, RED, RESET, rejected);
+
+        System.out.printf("\n%s📈 Success Rate:%s %.1f%% %s%s%s%n",
+                ORANGE, RESET, successRate, GREEN, "█".repeat(filled) + "░".repeat(barLength - filled), RESET);
+
+        // Highlight last applied job
+        JobApplication latest = applications.stream()
+                .max(Comparator.comparing(a -> a.dateApplied))
+                .orElse(null);
+        if (latest != null) {
+            System.out.println("\n" + PINK + "🌸 Most Recent Application:" + RESET);
+            System.out.printf("%s → %s (%s on %s)%n",
+                    latest.company, latest.role, latest.status,
+                    latest.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+        }
+
+        System.out.println(LAVENDER + "\n──────────────────────────────────────────────────────────────────────────────────────────" + RESET);
+        System.out.println(TEAL + "🐾 Career Cat purrs approvingly — you’re building momentum!" + RESET);
+        System.out.println(PINK + "💾 Saving your progress..." + RESET);
+        saveApplications();
+
+        try { Thread.sleep(1200); } catch (InterruptedException ignored) {}
+
+        System.out.println(CYAN + "\nฅ^•ﻌ•^ฅ  Career Cat curls up for a nap. Keep hustling, human! 💤" + RESET);
+        System.exit(0);
     }
 
 
