@@ -1,3 +1,4 @@
+import java.util.Locale;
 /**
  * Enum for standardized job application statuses.
  * 
@@ -12,8 +13,13 @@
 public enum ApplicationStatus {
     APPLIED, INTERVIEW, REJECTED, HIRED, CLOSED, OTHER;
 
+    /**
+     * Maps a string to a matching status, case-insensitively.
+     * Uses Locale.ROOT for consistent lowercase conversions.
+     */
     public static ApplicationStatus from(String status) {
-        String s = status.toLowerCase();
+        if (status == null || status.isBlank()) return OTHER;
+        String s = status.toLowerCase(Locale.ROOT).trim();
         if (s.contains("interview")) return INTERVIEW;
         if (s.contains("reject")) return REJECTED;
         if (s.contains("hire") || s.contains("offer")) return HIRED;

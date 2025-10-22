@@ -2,6 +2,17 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
+/**
+ * Represents a single job application entry.
+ * Stores key attributes such as company, role, location, and status, 
+ * with flexible data parsing and Markdown/file export helpers.
+ * 
+ * ✅ Highlights:
+ * - Uses {@link ApplicationStatus} enum for type-safe status handling.
+ * - Parses multiple date formats automatically (MM/DD/YYYY, ISO, etc.).
+ * - Converts data seamlessly between file lines and Markdown table rows.
+ */
+
 class JobApplication {
     String company, role, type, location, source, notes;
     ApplicationStatus status;
@@ -24,7 +35,7 @@ class JobApplication {
         this.role = role.trim();
         this.type = type.trim();
         this.location = location.trim();
-        this.status = ApplicationStatus.from(status); // ✅ enum conversion
+        this.status = ApplicationStatus.from(status); 
         this.source = source.trim();
         this.notes = notes == null ? "" : notes.trim();
         this.dateApplied = parseFlexible(dateApplied.trim());
@@ -48,7 +59,7 @@ class JobApplication {
     // 💾 Save to file
     public String toFileLine() {
         return String.join("|",
-                company, role, type, location, status.name(),  // ✅ use enum name
+                company, role, type, location, status.name(),  
                 dateApplied.format(MD), source, notes);
     }
 
@@ -84,7 +95,7 @@ class JobApplication {
         this.role = role.trim();
         this.type = type.trim();
         this.location = location.trim();
-        this.status = ApplicationStatus.from(status); // ✅ convert to enum again
+        this.status = ApplicationStatus.from(status); 
         this.source = source.trim();
         this.notes = notes == null ? "" : notes.trim();
         this.dateApplied = parseFlexible(dateApplied.trim());
@@ -96,10 +107,10 @@ class JobApplication {
     }
 
     public void setStatus(String status) {
-        this.status = ApplicationStatus.from(status); // ✅ convert from string safely
+        this.status = ApplicationStatus.from(status); 
     }
 
     public void setStatus(ApplicationStatus status) {
-        this.status = status; // ✅ overload for enum use
+        this.status = status; 
     }
 }
