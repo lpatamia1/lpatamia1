@@ -1,9 +1,10 @@
 // 🌸 Job Application Tracker CLI — v3.0
-
-import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.time.temporal.ChronoUnit;
@@ -28,29 +29,8 @@ import java.time.temporal.ChronoUnit;
  */
 
 public class JobApplicationTracker {
-    public static final String FILE   = "applications.txt";
-    public static final String README = "README.md";
     public static final DateTimeFormatter HUMAN = DateTimeFormatter.ofPattern("MMMM d, yyyy");
-
-    // 🎨 ANSI color constants for CLI styling (improves readability & UX)
-    public static final String RESET  = "\u001B[0m";
-    public static final String BLACK  = "\u001B[30m";
-    public static final String RED    = "\u001B[31m";
-    public static final String GREEN  = "\u001B[32m";
-    public static final String YELLOW = "\u001B[33m";
-    public static final String BLUE   = "\u001B[34m";
-    public static final String PURPLE = "\u001B[35m";
-    public static final String CYAN   = "\u001B[36m";
-    public static final String WHITE  = "\u001B[37m";
-
-    // 💅 Custom pastel color palette for aesthetics
-    public static final String ORANGE = "\u001B[38;2;255;165;0m";
-    public static final String PEACH  = "\u001B[38;2;255;200;150m";
-    public static final String PINK   = "\u001B[38;2;255;105;180m";
-    public static final String BRIGHT_ORANGE = "\u001B[38;2;255;200;60m";    // lighter bright orange-gold
-    public static final String LAVENDER      = "\u001B[38;2;200;160;255m";   // soft purple
-    public static final String MINT  = "\u001B[38;2;152;255;204m"; // soft mint green
-    public static final String TEAL  = "\u001B[38;2;0;191;188m";   // calm teal blue
+    public static final String README = "README.md";
 
     // 📦 Preloaded Markdown seed data for first-time use
     public static final String SEED_MARKDOWN = SeedData.SEED_MARKDOWN;
@@ -60,11 +40,11 @@ public class JobApplicationTracker {
     
     // 🚀 Entry point: loads existing data, shows ASCII intro, then launches the CLI
     public static void main(String[] args) {
-        loadApplications();
+        FileManager.loadApplications(applications);
         if (applications.isEmpty()) {
             System.out.println("ℹ️ No applications found. You can import your seeded rows via option 5.");
         }
-        catIntro(); // Display ASCII cat intro animation
+        UIHelper.catIntro(); // Display ASCII cat intro animation
         showMenu(); // Launch interactive menu
     }
 
@@ -81,7 +61,7 @@ public class JobApplicationTracker {
         System.out.println("───────────────────────────────────────────────────────────────────────────────────────────");
 
         while (true) {
-            System.out.println(BLUE +
+            System.out.println(UIHelper.BLUE +
             "╭─────────────────────────────────────────────────────────────────────────────────────────╮\n" +
             "│                                 JOB APPLICATION TRACKER                                 │\n" +
             "╰─────────────────────────────────────────────────────────────────────────────────────────╯" );
@@ -109,7 +89,7 @@ public class JobApplicationTracker {
                 String right = i < rightCol.length ? rightCol[i] : "";
                 System.out.printf("  %-45s %s%n", left, right);
             }
-            System.out.println("═".repeat(91) + RESET);
+            System.out.println("═".repeat(91) + UIHelper.RESET);
 
 
             System.out.print("> ");
@@ -131,18 +111,18 @@ public class JobApplicationTracker {
                 case 3:
                     try {
                         exportMarkdown();
-                        exportCSV(); // 👈 added line — keeps dashboard in sync
+                        FileManager.exportCSV(applications);
                         System.out.println("✅ Exported " + README + " and applications.csv");
                     } catch (IOException e) {
                         System.out.println("Export failed: " + e.getMessage());
                     }
                     break;
                 case 4:
-                    printEchoInstructions();
+                    UIHelper.printEchoInstructions();
                     break;
                 case 5:
                     int added = importFromSeedMarkdown(SEED_MARKDOWN);
-                    saveApplications();
+                    FileManager.saveApplications(applications);
                     System.out.println("✅ Imported " + added + " applications from seed.");
                     break;
                 case 6:
@@ -158,8 +138,8 @@ public class JobApplicationTracker {
                     showCareerDashboard();
                     break;
                 case 10:
-                    saveApplications();
-                    System.out.println(CYAN + "ฅ^•ﻌ•^ฅ Bye-bye human! Career cat curls up for a nap. 💤");
+                    FileManager.saveApplications(applications);
+                    System.out.println(UIHelper.CYAN + "ฅ^•ﻌ•^ฅ Bye-bye human! Career cat curls up for a nap. 💤");
                     return;
                 default:
                     System.out.println("Invalid choice.");
@@ -173,7 +153,7 @@ public class JobApplicationTracker {
         String keyword = sc.nextLine().trim().toLowerCase();
 
         if (keyword.isEmpty()) {
-            System.out.println(ORANGE + "⚠️  No keyword entered." + RESET);
+            System.out.println(UIHelper.ORANGE + "⚠️  No keyword entered." + UIHelper.RESET);
             return;
         }
 
@@ -185,7 +165,7 @@ public class JobApplicationTracker {
             .collect(Collectors.toList());
 
         if (matches.isEmpty()) {
-            System.out.println(RED + "❌ No matching jobs found for \"" + keyword + "\"." + RESET);
+            System.out.println(UIHelper.RED + "❌ No matching jobs found for \"" + keyword + "\"." + UIHelper.RESET);
             return;
         }
 
@@ -202,7 +182,7 @@ public class JobApplicationTracker {
         System.out.print("\n❓ Enter the number of the job to remove (or press Enter to cancel): ");
         String input = sc.nextLine().trim();
         if (input.isEmpty()) {
-            System.out.println(ORANGE + "🕊️  Cancelled." + RESET);
+            System.out.println(UIHelper.ORANGE + "🕊️  Cancelled." + UIHelper.RESET);
             return;
         }
 
@@ -210,28 +190,28 @@ public class JobApplicationTracker {
         try {
             index = Integer.parseInt(input) - 1;
             if (index < 0 || index >= matches.size()) {
-                System.out.println(RED + "❌ Invalid selection." + RESET);
+                System.out.println(UIHelper.RED + "❌ Invalid selection." + UIHelper.RESET);
                 return;
             }
         } catch (NumberFormatException e) {
-            System.out.println(RED + "⚠️ Invalid input. Please enter a number." + RESET);
+            System.out.println(UIHelper.RED + "⚠️ Invalid input. Please enter a number." + UIHelper.RESET);
             return;
         }
 
         JobApplication toRemove = matches.get(index);
         applications.remove(toRemove);
-        saveApplications();
+        FileManager.saveApplications(applications);
 
         // Optional: auto-refresh exports
         try {
             exportMarkdown();
-            exportCSV();
-            System.out.println(MINT + "🧾 CSV and README updated after deletion." + RESET);
+            FileManager.exportCSV(applications);
+            System.out.println(UIHelper.MINT + "🧾 CSV and README updated after deletion." + UIHelper.RESET);
         } catch (IOException e) {
-            System.out.println(ORANGE + "⚠️ Could not auto-update exports: " + e.getMessage() + RESET);
+            System.out.println(UIHelper.ORANGE + "⚠️ Could not auto-update exports: " + e.getMessage() + UIHelper.RESET);
         }
 
-        System.out.println(GREEN + "✅ Removed: " + toRemove.company + " — " + toRemove.role + RESET);
+        System.out.println(UIHelper.GREEN + "✅ Removed: " + toRemove.company + " — " + toRemove.role + UIHelper.RESET);
     }
 
     // ✍️ Add a new job application interactively via console prompts
@@ -256,7 +236,7 @@ public class JobApplicationTracker {
         try {
             JobApplication app = new JobApplication(company, role, type, location, status, date, source, notes);
             applications.add(app);
-            saveApplications();
+            FileManager.saveApplications(applications);
             System.out.println("✅ Added & saved.");
         } catch (Exception ex) {
             System.out.println("❌ Could not add application: " + ex.getMessage());
@@ -302,128 +282,6 @@ public class JobApplicationTracker {
 
         return applications.size() - before;
     }
-
-    private static void catIntro() {
-
-        String pad = " ".repeat(35);
-        String[] frames = {
-            "\n" + CYAN + pad + "  ／l、\n" +
-            pad + "（=‐ ω ‐=） zzz...\n" +
-            pad + "  じしf_, )ノ" + RESET,
-
-            CYAN + pad + "  ／l、\n" +
-            pad + "（=・ω・=） blink blink\n" +
-            pad + "  じしf_, )ノ" + RESET,
-
-            CYAN + pad + "  ／l、\n" +
-            pad + "（=｀ω´ =） ready to work!\n" +
-            pad + "  じしf_, )ノ" + RESET
-        };
-
-        for (String frame : frames) {
-            // Move cursor up and erase previous 3 lines before drawing the next frame
-            System.out.print("\r\033[3A\033[J");
-            System.out.println(frame);
-            try { Thread.sleep(800); } catch (InterruptedException ignored) {}
-        }
-
-        // Clean up final cat before menu appears
-        System.out.print("\r\033[3A\033[J");
-        System.out.println(PINK +
-        "\n╭─────────────────────────────────────────────────────────────────────────────────────────╮\n" +
-        "│                        🐾 Meow! Time to check your job hunt 💼                          │\n" +
-        "╰─────────────────────────────────────────────────────────────────────────────────────────╯" +
-        RESET);
-    }
-
-    // 💾 Load saved applications from file (skips comments and blank lines)
-    private static void loadApplications() {
-        File f = new File(FILE);
-        if (!f.exists()) {
-            System.out.println("No existing file found, starting fresh.");
-            return;
-        }
-        int count = 0;
-        try (BufferedReader br = new BufferedReader(new FileReader(f))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                JobApplication app = JobApplication.fromFileLine(line);
-                if (app != null) {
-                    applications.add(app);
-                    count++;
-                }
-            }
-            System.out.println("📂 Loaded " + count + " applications.");
-        } catch (IOException e) {
-            System.out.println("Failed to load " + FILE + ": " + e.getMessage());
-        }
-    }
-    
-    // 💾 Export all applications to a CSV file for the Flask web dashboard
-    private static void exportCSV() {
-        try (PrintWriter pw = new PrintWriter(new FileWriter("applications.csv"))) {
-            pw.println("Company,Role,Type,Location,Status,Date Applied,Source,Notes");
-            for (JobApplication a : applications) {
-                pw.printf("\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"%n",
-                    a.company, a.role, a.type, a.location, a.status.name(),
-                    a.dateApplied, a.source, a.notes.replace("\"", "'"));
-            }
-            System.out.println("✅ Exported applications.csv for web dashboard.");
-        } catch (IOException e) {
-            System.out.println("❌ Failed to export CSV: " + e.getMessage());
-        }
-    }
-
-    // 💿 Save all current applications to file with timestamped backups
-    private static void saveApplications() {
-        // 🔒 Safety: Create a timestamped backup before overwriting
-        File original = new File(FILE);
-        if (original.exists()) {
-            String timestamp = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"));
-            File backup = new File(FILE.replace(".txt", "_" + timestamp + ".bak"));
-            if (backup.exists()) backup.delete(); // replace same-day backup
-            boolean renamed = original.renameTo(backup);
-            if (renamed) {
-                System.out.println("📦 Backup created: " + backup.getName());
-            } else {
-                System.out.println("⚠️ Warning: Could not create backup file.");
-            }
-        }
-
-        // 📝 Write all applications to the main file
-        try (PrintWriter pw = new PrintWriter(new FileWriter(FILE))) {
-            for (JobApplication a : applications) {
-                pw.println(a.toFileLine());
-            }
-            System.out.printf("💾 Saved %d applications to %s at %s%n",
-                    applications.size(), FILE,
-                    LocalDate.now().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
-        } catch (IOException e) {
-            System.out.println("❌ Failed to save " + FILE + ": " + e.getMessage());
-        }
-        
-        // 🧹 Cleanup old backups (keep only 5 most recent)
-        cleanupOldBackups();
-    }
-
-    // --- Optional cleanup: keep only 5 most recent backups ---
-    private static void cleanupOldBackups() {
-        File dir = new File("."); // current working directory
-        File[] backups = dir.listFiles((d, name) -> name.startsWith("applications_") && name.endsWith(".bak"));
-        if (backups == null || backups.length <= 5) return;
-
-        // Sort backups by last modified date (oldest first)
-        Arrays.sort(backups, Comparator.comparingLong(File::lastModified));
-
-        int filesToDelete = backups.length - 5;
-        for (int i = 0; i < filesToDelete; i++) {
-            if (backups[i].delete()) {
-                System.out.println("🧹 Deleted old backup: " + backups[i].getName());
-            } else {
-                System.out.println("⚠️ Could not delete: " + backups[i].getName());
-            }
-        }
-    }
     
     // 🔎 Search and edit applications by company or role
     private static void searchApplications(Scanner sc) {
@@ -446,7 +304,13 @@ public class JobApplicationTracker {
             return;
         }
 
-        System.out.println("\n🔍 Found " + results.size() + " match" + (results.size() == 1 ? "" : "es") + ":");
+        System.out.println(UIHelper.GREEN +
+        "\n╔═════════════════════════════════════════════════════════════════════════════════════════╗");
+        System.out.println("║                                      SEARCH RESULTS                                     ║");
+        System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝"
+        + UIHelper.RESET);
+
+        System.out.println("🔍 Found " + results.size() + " match" + (results.size() == 1 ? "" : "es") + ":");
         System.out.println("------------------------------------------------------------------------------------------");
         for (int i = 0; i < results.size(); i++) {
             JobApplication a = results.get(i);
@@ -509,12 +373,12 @@ public class JobApplicationTracker {
                 a.setNotes(newNotes);
             }
 
-            saveApplications();
+            FileManager.saveApplications(applications);
             System.out.println("✅ Application updated and saved.");
 
             try {
                 exportMarkdown();
-                exportCSV(); // keep web dashboard in sync
+                FileManager.exportCSV(applications);
                 System.out.println("✅ README and CSV automatically updated.");
             } catch (IOException e) {
                 System.out.println("⚠️ Could not update README or CSV: " + e.getMessage());
@@ -526,7 +390,7 @@ public class JobApplicationTracker {
         String newNotes = sc.nextLine().trim();
         if (!newNotes.isEmpty()) {
             a.setNotes(newNotes);
-            saveApplications();
+            FileManager.saveApplications(applications);
             System.out.println("✅ Notes updated and saved.");
 
             try {
@@ -549,71 +413,6 @@ public class JobApplicationTracker {
         }
     }
 
-    private static void updateStatus(Scanner sc) {
-        if (applications.isEmpty()) {
-            System.out.println("No applications to update.");
-            return;
-        }
-
-        System.out.print("Enter part of the company or role name to search: ");
-        String query = sc.nextLine().trim().toLowerCase();
-
-        // Find matches
-        List<JobApplication> matches = new ArrayList<>();
-        for (JobApplication a : applications) {
-            if (a.company.toLowerCase().contains(query) || a.role.toLowerCase().contains(query)) {
-                matches.add(a);
-            }
-        }
-
-        if (matches.isEmpty()) {
-            System.out.println("No matching applications found.");
-            return;
-        }
-
-        // Display matches
-        System.out.println("\nMatches found:");
-        for (int i = 0; i < matches.size(); i++) {
-            JobApplication a = matches.get(i);
-            System.out.printf("%d. %s — %s (%s) [%s]\n",
-                    i + 1, a.company, a.role, a.location, a.status);
-        }
-
-        System.out.print("\nEnter the number of the job to update: ");
-        int choice;
-        try {
-            choice = Integer.parseInt(sc.nextLine());
-            if (choice < 1 || choice > matches.size()) {
-                System.out.println("Invalid selection.");
-                return;
-            }
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid input.");
-            return;
-        }
-
-        JobApplication selected = matches.get(choice - 1);
-        System.out.printf("Current status for %s — %s: %s\n",
-                selected.company, selected.role, selected.status);
-        System.out.print("Enter new status (e.g. Rejected, Interviewed, Offer, Hired, Applied (closed)): ");
-        String newStatus = sc.nextLine().trim();
-
-        if (newStatus.isEmpty()) {
-            System.out.println("No status entered. Cancelled.");
-            return;
-        }
-
-        selected.status = ApplicationStatus.from(newStatus);
-        saveApplications();
-        System.out.println("✅ Status updated and saved! 🐱✨ (your career cat approves!)");
-
-        try { exportMarkdown();
-        System.out.println("✅ README automatically updated after status change.");
-        } catch (IOException e) {
-            System.out.println("⚠️ Could not auto-export README: " + e.getMessage());
-        }
-    }
-
     // 🗂️ View recent (≤3-day) applications for quick progress tracking
     private static void viewRecentApplications() {
         if (applications.isEmpty()) {
@@ -626,28 +425,28 @@ public class JobApplicationTracker {
                 .sorted(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed())
                 .collect(Collectors.toList());
 
-        System.out.println(LAVENDER + "\n╔═════════════════════════════════════════════════════════════════════════════════════════╗");
+        System.out.println(UIHelper.LAVENDER + "\n╔═════════════════════════════════════════════════════════════════════════════════════════╗");
         System.out.println("║                              🕒  RECENT APPLICATIONS (Last 3 Days)                      ║");
-        System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝" + RESET);
+        System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝" + UIHelper.RESET);
 
         if (recent.isEmpty()) {
-            System.out.println(ORANGE + "🌼 No new applications this week — time to find a few more leads!" + RESET);
+            System.out.println(UIHelper.ORANGE + "🌼 No new applications this week — time to find a few more leads!" + UIHelper.RESET);
             return;
         }
 
         for (JobApplication a : recent) {
             System.out.printf("%s%-35s%s | %-25s | %-12s | %s\n",
-                    CYAN, a.company, RESET, a.role, a.status,
+                    UIHelper.CYAN, a.company, UIHelper.RESET, a.role, a.status,
                     a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         }
 
-        System.out.printf(MINT + "\n🕊️  You’ve applied to %d job%s in the last 3 days.%n" + RESET,
+        System.out.printf(UIHelper.MINT + "\n🕊️  You’ve applied to %d job%s in the last 3 days.%n" + UIHelper.RESET,
                 recent.size(), recent.size() == 1 ? "" : "s");
     }
 
     private static void showSummary() {
         if (applications.isEmpty()) {
-            System.out.println(ORANGE + "⚠️  No applications recorded yet." + RESET);
+            System.out.println(UIHelper.ORANGE + "⚠️  No applications recorded yet." + UIHelper.RESET);
             return;
         }
         Stats s = Stats.compute(applications);
@@ -657,7 +456,7 @@ public class JobApplicationTracker {
     // 🎨 Compact visual dashboard before exiting
     private static void showCareerDashboard() {
         if (applications.isEmpty()) {
-            System.out.println(ORANGE + "⚠️  No applications recorded yet." + RESET);
+            System.out.println(UIHelper.ORANGE + "⚠️  No applications recorded yet." + UIHelper.RESET);
             return;
         }
         Stats s = Stats.compute(applications);
@@ -818,13 +617,6 @@ public class JobApplicationTracker {
         System.out.printf("✅ README updated successfully with %d jobs (%d active, %d rejected).%n",
                 s.total, s.trulyActive, s.rejected);
     }
-
-        private static void printEchoInstructions() {
-            System.out.println("\n💡 To append new jobs from the shell (outside the program):\n");
-            System.out.println("echo \"[Eataly](https://www.eataly.com/us_en/)|Cashier / Front End Associate – Seasonal|Retail / Service|Chicago, IL|Applied|10/15/2025|LinkedIn\" >> applications.txt");
-            System.out.println("echo \"[MUSEUM OF ICE CREAM](https://www.museumoficecream.com/careers)|Show Ambassador (Weekends Only)|Retail / Customer Service|Chicago, IL|Applied|10/15/2025|LinkedIn\" >> applications.txt");
-            System.out.println("\nThen run option 3 in the tracker menu to regenerate the README.\n");
-        }
 
     // --- Helper function for simplifying job types ---
     private static String simplifyType(String rawType) {
