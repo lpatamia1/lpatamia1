@@ -44,10 +44,18 @@ public class JobApplicationTracker {
     public static void main(String[] args) {
         FileManager.loadApplications(applications);
         menu = new MenuHandler(applications);
+
         if (applications.isEmpty()) {
             System.out.println("ℹ️ No applications found. You can import your seeded rows via option 5.");
         }
+
         UIHelper.catIntro(); // Display ASCII cat intro animation
+
+        // 💾 Show how many backups exist
+        File[] backups = new File(".").listFiles((d, n) -> n.endsWith(".bak"));
+        int backupCount = (backups == null) ? 0 : backups.length;
+        System.out.printf(UIHelper.MINT + "💾 %d backups found%n" + UIHelper.RESET, backupCount);
+
         showMenu(); // Launch interactive menu
     }
 
@@ -126,6 +134,7 @@ public class JobApplicationTracker {
                 case 5:
                     int added = menu.importFromSeedMarkdown(SEED_MARKDOWN);
                     FileManager.saveApplications(applications);
+                    FileManager.exportCSV(applications);
                     System.out.println("✅ Imported " + added + " applications from seed.");
                     break;
                 case 6:
@@ -136,12 +145,14 @@ public class JobApplicationTracker {
                     break;
                 case 8:
                     menu.removeApplication(sc);
+                    FileManager.exportCSV(applications);
                     break;
                 case 9:
                     showCareerDashboard();
                     break;
                 case 10:
                     FileManager.saveApplications(applications);
+                    FileManager.exportCSV(applications);
                     System.out.println(UIHelper.CYAN + "ฅ^•ﻌ•^ฅ Bye-bye human! Career cat curls up for a nap. 💤");
                     return;
                 default:
@@ -173,6 +184,7 @@ public class JobApplicationTracker {
             JobApplication app = new JobApplication(company, role, type, location, status, date, source, notes);
             applications.add(app);
             FileManager.saveApplications(applications);
+            FileManager.exportCSV(applications);
             System.out.println("✅ Added & saved.");
         } catch (Exception ex) {
             System.out.println("❌ Could not add application: " + ex.getMessage());

@@ -293,6 +293,10 @@ def dashboard():
             <h2>Weekly Application Trend</h2>
             <div class="chart">{fig_trend.to_html(full_html=False, include_plotlyjs=False)}</div>
         </div>
+        <script>
+            // 🔄 auto-refresh the dashboard every 30 seconds
+            setTimeout(() => location.reload(), 30000);
+        </script>
     </body>
     </html>
     """
