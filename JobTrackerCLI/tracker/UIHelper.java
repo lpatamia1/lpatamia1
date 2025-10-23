@@ -1,4 +1,6 @@
 // 🌸 UIHelper.java — color palette + ASCII UI elements
+package tracker;
+
 public class UIHelper {
 
     // 🎨 CLI Colors

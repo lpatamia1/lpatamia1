@@ -1,4 +1,6 @@
   // SEED: 103 entries (original 100 + 3 new: Museum of Ice Cream, Eataly x2, Comfort Dental)
+package tracker;
+
 public class SeedData {
     public static final String SEED_MARKDOWN = 
         "| [MUSEUM OF ICE CREAM](https://www.museumoficecream.com/careers) | Show Ambassador (Weekends Only) | Retail / Customer Service | Chicago, IL | Applied | 10/15/2025 | LinkedIn |\n" +

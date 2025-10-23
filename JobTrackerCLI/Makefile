@@ -1,11 +1,12 @@
 # ==============================================================
 # 🧭 Job Application Tracker - Makefile
-# Automates compilation, testing, and static analysis
+# Compiles, runs, and checks Java source files under /java
 # ==============================================================
 
 # Java compiler and main class
 JAVAC = javac
-JAVA = java
+JAVA  = java
+SRC_DIR = tracker
 MAIN = JobApplicationTracker
 
 # --------------------------------------------------------------
@@ -25,16 +26,16 @@ CHECKSTYLE_JAR = checkstyle-$(CHECKSTYLE_VERSION)-all.jar
 GOOGLE_CHECKS = google_checks.xml
 
 # --------------------------------------------------------------
-# All Java source files
+# All Java source files (recursive under /java)
 # --------------------------------------------------------------
-SOURCES = $(wildcard *.java)
-CLASSES = $(SOURCES:.java=.class)
+SOURCES := $(wildcard $(SRC_DIR)/*.java)
+CLASSES := $(SOURCES:.java=.class)
 
 # --------------------------------------------------------------
 # Default target: compile everything
 # --------------------------------------------------------------
 all:
-	@echo "🧱 Building all Java source files..."
+	@echo "🧱 Building all Java source files from $(SRC_DIR)/..."
 	@$(JAVAC) $(SOURCES)
 	@echo "✅ All Java files compiled successfully!"
 
@@ -44,87 +45,59 @@ all:
 run: all
 	@echo "🚀 Launching Job Application Tracker..."
 	@echo "-------------------------------------------"
-	@$(JAVA) $(MAIN)
+	@$(JAVA) -cp . $(SRC_DIR).$(MAIN)
 	@echo "-------------------------------------------"
 	@echo "🏁 Program exited successfully."
 
 # --------------------------------------------------------------
-# Test build only (no run)
+# 🧪 Test build
 # --------------------------------------------------------------
 test:
 	@echo "🧪 Running extended Java tests..."
-	@echo "1️⃣  Cleaning old builds..."
-	@rm -f *.class
-	@echo "2️⃣  Compiling all Java files with detailed diagnostics..."
+	@rm -f $(SRC_DIR)/*.class
 	@$(JAVAC) -Xlint:all -Xdiags:verbose $(SOURCES)
-	@echo ""
-	@echo "3️⃣  Counting source files and lines of code..."
-	@find . -name "*.java" -exec wc -l {} \; | sort -nr
-	@echo ""
-	@echo "4️⃣  Checking for missing or unused imports..."
-	@grep -R "import " *.java | sort | uniq -c | sort -nr || true
-	@echo ""
-	@echo "✅ Test build finished: no compile errors detected."
-	@echo "-------------------------------------------"
+	@find $(SRC_DIR) -name "*.java" -exec wc -l {} \; | sort -nr
+	@echo "✅ Test build finished successfully."
 
 # --------------------------------------------------------------
-# 🔍 Run static analysis (SpotBugs)
+# 🔍 Static analysis
 # --------------------------------------------------------------
 static:
-	@echo "🔍 Running static analysis..."
+	@echo "🔍 Running SpotBugs analysis..."
 	@if [ ! -f "$(SPOTBUGS_JAR)" ]; then \
-		echo "⚙️  SpotBugs not found — downloading version $(SPOTBUGS_VERSION)..."; \
+		echo "⚙️  Downloading SpotBugs $(SPOTBUGS_VERSION)..."; \
 		curl -L "$(SPOTBUGS_URL)" -o spotbugs.zip; \
-		unzip -q spotbugs.zip; \
-		rm spotbugs.zip; \
-		echo "✅ SpotBugs installed locally in ./$(SPOTBUGS_DIR)"; \
+		unzip -q spotbugs.zip; rm spotbugs.zip; \
 	fi; \
-	echo "🐞 Running SpotBugs scan..."; \
-	java -jar $(SPOTBUGS_JAR) -textui -low . > spotbugs-report.txt || true; \
-	issues=$$(grep -c "BugInstance" spotbugs-report.txt || true); \
-	echo "✅ Static analysis complete. Report saved to spotbugs-report.txt"; \
-	echo "📊 Potential issues found: $$issues"
-	@echo "-------------------------------------------"
+	java -jar $(SPOTBUGS_JAR) -textui -low $(SRC_DIR) > spotbugs-report.txt || true; \
+	echo "✅ Static analysis complete → spotbugs-report.txt"
 
 # --------------------------------------------------------------
-# ✨ Run Checkstyle (auto-download + colorized output)
+# ✨ Checkstyle
 # --------------------------------------------------------------
 checkstyle:
 	@echo "✨ Running Checkstyle..."
 	@if [ ! -f "$(CHECKSTYLE_JAR)" ]; then \
-		echo "⚙️  Checkstyle not found — downloading version $(CHECKSTYLE_VERSION)..."; \
+		echo "⚙️  Downloading Checkstyle $(CHECKSTYLE_VERSION)..."; \
 		curl -L "$(CHECKSTYLE_URL)" -o "$(CHECKSTYLE_JAR)"; \
-		echo "✅ Checkstyle installed locally."; \
 	fi; \
 	if [ ! -f "$(GOOGLE_CHECKS)" ]; then \
-		echo "⚙️  Google style config missing — downloading..."; \
 		curl -L "https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml" -o "$(GOOGLE_CHECKS)"; \
-		echo "✅ Google style config downloaded."; \
 	fi; \
-	echo "💅 Checking Java source style..."; \
 	java -jar "$(CHECKSTYLE_JAR)" -c "$(GOOGLE_CHECKS)" $(SOURCES) > checkstyle-report.txt || true; \
-	violations=$$(grep -c "Starting audit" checkstyle-report.txt >/dev/null 2>&1; grep -c "ERROR" checkstyle-report.txt || echo 0); \
-	if [ "$$violations" -gt 0 ]; then \
-		echo "\033[1;31m⚠️  Style violations found: $$violations\033[0m"; \
-		grep --color=always "ERROR" checkstyle-report.txt || true; \
-	else \
-		echo "\033[1;32m✅ No Checkstyle violations detected!\033[0m"; \
-	fi; \
-	echo "📄 Full report saved to checkstyle-report.txt"
+	echo "📄 Report saved to checkstyle-report.txt"
 
 # --------------------------------------------------------------
-# 🧹 Clean up build files
+# 🧹 Clean
 # --------------------------------------------------------------
 clean:
-	@echo "🧹 Cleaning up build files... Done! Your workspace is sparkling clean ✨"
-	@rm -f *.class spotbugs-report.txt checkstyle-report.txt
+	@echo "🧹 Cleaning compiled class files..."
+	@rm -f $(SRC_DIR)/*.class spotbugs-report.txt checkstyle-report.txt
+	@echo "✨ Clean complete!"
 
 # --------------------------------------------------------------
-# 🔄 Rebuild everything from scratch
+# 🔄 Rebuild
 # --------------------------------------------------------------
 rebuild: clean all
 
-# --------------------------------------------------------------
-# 📜 Phony targets
-# --------------------------------------------------------------
 .PHONY: all run clean rebuild static checkstyle test

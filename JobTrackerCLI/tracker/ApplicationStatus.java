@@ -1,3 +1,5 @@
+package tracker;
+
 import java.util.Locale;
 /**
  * Enum for standardized job application statuses.

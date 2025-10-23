@@ -1,4 +1,6 @@
 // 🌸 Job Application Tracker CLI — v3.0
+package tracker;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
