@@ -28,35 +28,35 @@ import java.time.temporal.ChronoUnit;
  */
 
 public class JobApplicationTracker {
-    private static final String FILE   = "applications.txt";
-    private static final String README = "README.md";
-    private static final DateTimeFormatter HUMAN = DateTimeFormatter.ofPattern("MMMM d, yyyy");
+    public static final String FILE   = "applications.txt";
+    public static final String README = "README.md";
+    public static final DateTimeFormatter HUMAN = DateTimeFormatter.ofPattern("MMMM d, yyyy");
 
     // 🎨 ANSI color constants for CLI styling (improves readability & UX)
-    private static final String RESET  = "\u001B[0m";
-    private static final String BLACK  = "\u001B[30m";
-    private static final String RED    = "\u001B[31m";
-    private static final String GREEN  = "\u001B[32m";
-    private static final String YELLOW = "\u001B[33m";
-    private static final String BLUE   = "\u001B[34m";
-    private static final String PURPLE = "\u001B[35m";
-    private static final String CYAN   = "\u001B[36m";
-    private static final String WHITE  = "\u001B[37m";
+    public static final String RESET  = "\u001B[0m";
+    public static final String BLACK  = "\u001B[30m";
+    public static final String RED    = "\u001B[31m";
+    public static final String GREEN  = "\u001B[32m";
+    public static final String YELLOW = "\u001B[33m";
+    public static final String BLUE   = "\u001B[34m";
+    public static final String PURPLE = "\u001B[35m";
+    public static final String CYAN   = "\u001B[36m";
+    public static final String WHITE  = "\u001B[37m";
 
     // 💅 Custom pastel color palette for aesthetics
-    private static final String ORANGE = "\u001B[38;2;255;165;0m";
-    private static final String PEACH  = "\u001B[38;2;255;200;150m";
-    private static final String PINK   = "\u001B[38;2;255;105;180m";
-    private static final String BRIGHT_ORANGE = "\u001B[38;2;255;200;60m";    // lighter bright orange-gold
-    private static final String LAVENDER      = "\u001B[38;2;200;160;255m";   // soft purple
-    private static final String MINT  = "\u001B[38;2;152;255;204m"; // soft mint green
-    private static final String TEAL  = "\u001B[38;2;0;191;188m";   // calm teal blue
+    public static final String ORANGE = "\u001B[38;2;255;165;0m";
+    public static final String PEACH  = "\u001B[38;2;255;200;150m";
+    public static final String PINK   = "\u001B[38;2;255;105;180m";
+    public static final String BRIGHT_ORANGE = "\u001B[38;2;255;200;60m";    // lighter bright orange-gold
+    public static final String LAVENDER      = "\u001B[38;2;200;160;255m";   // soft purple
+    public static final String MINT  = "\u001B[38;2;152;255;204m"; // soft mint green
+    public static final String TEAL  = "\u001B[38;2;0;191;188m";   // calm teal blue
 
     // 📦 Preloaded Markdown seed data for first-time use
-    private static final String SEED_MARKDOWN = SeedData.SEED_MARKDOWN;
+    public static final String SEED_MARKDOWN = SeedData.SEED_MARKDOWN;
 
     // 🧾 Central in-memory list storing all job applications
-    private static final List<JobApplication> applications = new ArrayList<>();
+    public static final List<JobApplication> applications = new ArrayList<>();
     
     // 🚀 Entry point: loads existing data, shows ASCII intro, then launches the CLI
     public static void main(String[] args) {
@@ -650,85 +650,8 @@ public class JobApplicationTracker {
             System.out.println(ORANGE + "⚠️  No applications recorded yet." + RESET);
             return;
         }
-
-        // 🧮 Compute all stats from Stats.java
         Stats s = Stats.compute(applications);
-
-        // 🐾 Top section with colors
-        System.out.println(LAVENDER + "╔═════════════════════════════════════════════════════════════════════════════════════════╗");
-        System.out.println("║                               🌸  APPLICATION SUMMARY  🌸                               ║");
-        System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝" + RESET);
-
-        System.out.printf(
-            "  %sTotal:%s %-3d  %sActive:%s %-3d  %sLikely Inactive:%s %-3d  %sRejected:%s %-3d  %sInterviews:%s %-3d  %sHired:%s %-3d%n",
-            CYAN, RESET, s.total,
-            GREEN, RESET, s.trulyActive,
-            ORANGE, RESET, s.stale,
-            RED, RESET, s.rejected,
-            YELLOW, RESET, s.interviews,
-            PINK, RESET, s.hired
-        );
-        System.out.println(LAVENDER + "-".repeat(91) + RESET);
-
-        // 📈 Success rate bar
-        int barLength = 30;
-        int filled = (int) (barLength * s.successRate / 100);
-        String bar = "█".repeat(filled) + "░".repeat(barLength - filled);
-
-        System.out.println();
-        System.out.printf("%s📈 Success Rate:%s %.1f%% %s%s%s%n", ORANGE, RESET, s.successRate, GREEN, bar, RESET);
-        System.out.printf("%s📦 Closed:%s %d%n", CYAN, RESET, s.closed);
-        System.out.printf("%s🌐 Top Source:%s %s%n", CYAN, RESET, s.topSource);
-        System.out.printf("%s⚡ Avg Applications per Week:%s %.1f%n", GREEN, RESET, s.perWeek);
-        System.out.printf("%s🕐 Still Waiting (Applied Only):%s %d%n", CYAN, RESET, s.openApps);
-        System.out.printf("%s📍 Top Location:%s %s%n", GREEN, RESET, s.topLocation);
-
-        if (s.latest != null)
-            System.out.printf("%s🆕 Most Recent:%s %s — %s (%s)%n",
-                PINK, RESET, s.latest.company, s.latest.role,
-                s.latest.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
-
-        // 💼 Breakdown by type
-        Map<String, Long> byType = applications.stream()
-            .collect(Collectors.groupingBy(a -> simplifyType(a.type), TreeMap::new, Collectors.counting()));
-
-        System.out.println(LAVENDER + "-".repeat(91));
-        System.out.println("                                    Breakdown by Type:");
-        System.out.println("-".repeat(91));
-
-        // Sort from largest → smallest
-        List<Map.Entry<String, Long>> entries = new ArrayList<>(byType.entrySet());
-        entries.sort((a, b) -> Long.compare(b.getValue(), a.getValue()));
-
-        int colWidth = 37;
-        for (int i = 0; i < entries.size(); i += 2) {
-            String left = String.format("• %-"+colWidth+"s %3d",
-                entries.get(i).getKey(), entries.get(i).getValue());
-
-            String right = (i + 1 < entries.size())
-                ? String.format("   • %-"+colWidth+"s %3d",
-                    entries.get(i + 1).getKey(), entries.get(i + 1).getValue())
-                : "";
-
-            System.out.println(CYAN + left + right + RESET);
-        }
-
-        System.out.print(LAVENDER + "-".repeat(91));
-        System.out.printf(MINT + "\n📬 %d applications logged — %d active, %.1f%% showing progress.%n" + RESET,
-            s.total, s.trulyActive, s.successRate);
-        System.out.println(TEAL + "🐾 Career Cat: you’re doing great — keep applying!" + RESET);
-
-        // 💫 Recently applied stats (within the last 7 days)
-        long recent = applications.stream()
-            .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) <= 7)
-            .count();
-
-        if (recent > 0) {
-            System.out.printf(MINT + "🕊️  You’ve applied to %d job%s in the last 7 days.%n" + RESET,
-                recent, recent == 1 ? "" : "s");
-        } else {
-            System.out.println(ORANGE + " 🌼 No new applications this week — time to find a few more leads!" + RESET);
-        }
+        s.printSummary();
     }
 
     // 🎨 Compact visual dashboard before exiting
@@ -737,39 +660,8 @@ public class JobApplicationTracker {
             System.out.println(ORANGE + "⚠️  No applications recorded yet." + RESET);
             return;
         }
-
         Stats s = Stats.compute(applications);
-
-        System.out.println(LAVENDER + "\n╔═════════════════════════════════════════════════════════════════════════════════════════╗");
-        System.out.println("║                             🌈  CAREER DASHBOARD SNAPSHOT  🌈                           ║");
-        System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝" + RESET);
-
-        System.out.printf("%s📁 Total Applications:%s %d%n", CYAN, RESET, s.total);
-        System.out.printf("%s💬 Interviews:%s %d   %s✅ Hired:%s %d   %s❌ Rejected:%s %d%n",
-                YELLOW, RESET, s.interviews, GREEN, RESET, s.hired, RED, RESET, s.rejected);
-
-        int barLength = 40;
-        int filled = (int)(barLength * s.successRate / 100);
-        String bar = "█".repeat(filled) + "░".repeat(barLength - filled);
-
-        System.out.printf("\n%s📈 Success Rate:%s %.1f%% %s%s%s%n",
-                ORANGE, RESET, s.successRate, GREEN, bar, RESET);
-
-        if (s.latest != null) {
-            System.out.println("\n" + PINK + "🌸 Most Recent Application:" + RESET);
-            System.out.printf("%s → %s (%s on %s)%n",
-                    s.latest.company, s.latest.role, s.latest.status,
-                    s.latest.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
-        }
-
-        System.out.println(LAVENDER + "\n──────────────────────────────────────────────────────────────────────────────────────────" + RESET);
-        System.out.println(TEAL + "🐾 Career Cat purrs approvingly — you’re building momentum!" + RESET);
-        System.out.println(PINK + "💾 Saving your progress..." + RESET);
-        saveApplications();
-
-        try { Thread.sleep(1200); } catch (InterruptedException ignored) {}
-
-        System.out.println(CYAN + "\nฅ^•ﻌ•^ฅ Career Cat sharpens its claws — new opportunities await tomorrow! 💪" + RESET);
+        s.printDashboard();
     }
 
     private static void exportMarkdown() throws IOException {

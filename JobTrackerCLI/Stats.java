@@ -82,6 +82,7 @@ public class Stats {
                         .min(LocalDate::compareTo)
                         .orElse(LocalDate.now()),
                 LocalDate.now());
+
         double perWeek = total / Math.max(daysSpan / 7.0, 1.0);
 
         long openApps = applications.stream()
@@ -94,5 +95,77 @@ public class Stats {
 
         return new Stats(total, rejected, hired, interviews, closed, active, stale, trulyActive,
                 successRate, perWeek, openApps, topSource, topLocation, latest);
+    }
+
+    // 🧭 Compact console summary (Option 1)
+    public void printSummary() {
+        System.out.println(JobApplicationTracker.LAVENDER +
+            "╔═════════════════════════════════════════════════════════════════════════════════════════╗");
+        System.out.println("║                               🌸  APPLICATION SUMMARY  🌸                               ║");
+        System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝"
+                + JobApplicationTracker.RESET);
+
+        System.out.printf(
+            "  %sTotal:%s %-3d  %sActive:%s %-3d  %sStale:%s %-3d  %sRejected:%s %-3d  %sInterviews:%s %-3d  %sHired:%s %-3d%n",
+            JobApplicationTracker.CYAN, JobApplicationTracker.RESET, total,
+            JobApplicationTracker.GREEN, JobApplicationTracker.RESET, trulyActive,
+            JobApplicationTracker.ORANGE, JobApplicationTracker.RESET, stale,
+            JobApplicationTracker.RED, JobApplicationTracker.RESET, rejected,
+            JobApplicationTracker.YELLOW, JobApplicationTracker.RESET, interviews,
+            JobApplicationTracker.PINK, JobApplicationTracker.RESET, hired
+        );
+
+        String bar = progressBar(successRate, 30);
+        System.out.printf("%s📈 Success Rate:%s %.1f%% %s%s%s%n",
+            JobApplicationTracker.ORANGE, JobApplicationTracker.RESET, successRate,
+            JobApplicationTracker.GREEN, bar, JobApplicationTracker.RESET);
+
+        System.out.printf("%s⚡ Avg per Week:%s %.1f%n",
+            JobApplicationTracker.GREEN, JobApplicationTracker.RESET, perWeek);
+        System.out.printf("%s📍 Top Location:%s %s%n",
+            JobApplicationTracker.GREEN, JobApplicationTracker.RESET, topLocation);
+
+        if (latest != null)
+            System.out.printf("%s🆕 Most Recent:%s %s — %s (%s)%n",
+                JobApplicationTracker.PINK, JobApplicationTracker.RESET,
+                latest.company, latest.role, latest.dateApplied);
+    }
+
+    // 🌈 Dashboard Snapshot (Option 9)
+    public void printDashboard() {
+        System.out.println(JobApplicationTracker.LAVENDER +
+            "\n╔═════════════════════════════════════════════════════════════════════════════════════════╗");
+        System.out.println("║                             🌈  CAREER DASHBOARD SNAPSHOT  🌈                           ║");
+        System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝"
+                + JobApplicationTracker.RESET);
+
+        System.out.printf("%s📁 Total Applications:%s %d%n",
+            JobApplicationTracker.CYAN, JobApplicationTracker.RESET, total);
+        System.out.printf("%s💬 Interviews:%s %d   %s✅ Hired:%s %d   %s❌ Rejected:%s %d%n",
+            JobApplicationTracker.YELLOW, JobApplicationTracker.RESET, interviews,
+            JobApplicationTracker.GREEN, JobApplicationTracker.RESET, hired,
+            JobApplicationTracker.RED, JobApplicationTracker.RESET, rejected);
+
+        String bar = progressBar(successRate, 40);
+        System.out.printf("\n%s📈 Success Rate:%s %.1f%% %s%s%s%n",
+            JobApplicationTracker.ORANGE, JobApplicationTracker.RESET, successRate,
+            JobApplicationTracker.GREEN, bar, JobApplicationTracker.RESET);
+
+        if (latest != null) {
+            System.out.println("\n" + JobApplicationTracker.PINK +
+                "🌸 Most Recent Application:" + JobApplicationTracker.RESET);
+            System.out.printf("%s → %s (%s on %s)%n",
+                latest.company, latest.role, latest.status, latest.dateApplied);
+        }
+
+        System.out.println(JobApplicationTracker.TEAL +
+            "\n🐾 Career Cat purrs approvingly — you’re building momentum!" +
+            JobApplicationTracker.RESET);
+    }
+
+    // 🧩 Simple helper for bars
+    private String progressBar(double percent, int length) {
+        int filled = (int)(length * percent / 100);
+        return "█".repeat(filled) + "░".repeat(length - filled);
     }
 }
