@@ -4,6 +4,7 @@
 # ==============================================================
 JAVAC = javac
 JAVA  = java
+JAVA_VERSION = --release 17
 SRC_DIR = tracker
 MAIN = tracker.JobApplicationTracker
 JUNIT_JAR = lib/junit-platform-console-standalone.jar

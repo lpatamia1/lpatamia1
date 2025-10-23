@@ -13,40 +13,31 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-169-blue" alt="Total">   <img src="https://img.shields.io/badge/Active-99-green" alt="Active">   <img src="https://img.shields.io/badge/Rejected-14-red" alt="Rejected">   <img src="https://img.shields.io/badge/Interviews-1-yellow" alt="Interviews">
+  <img src="https://img.shields.io/badge/Total-169-blue">   <img src="https://img.shields.io/badge/Active-99-green">   <img src="https://img.shields.io/badge/Rejected-14-red">   <img src="https://img.shields.io/badge/Interviews-1-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **169 positions** across multiple industries. Currently, **99 applications remain active**, and **41 likely inactive** (older than 60 days), with **1 interview** completed.  
-
-Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  
-
-This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
+So far, I've applied to **169 positions** across multiple industries. Currently, **99 applications remain active**, and **41 likely inactive**, with **1 interview** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
 </div>
 
-<table align="center">
-<tr>
-<td align="left" width="50%">
+<table align="center"><tr><td align="left" width="50%">
 
 - **Total Applications:** 169  
 - 🕐 **Active / Pending:** 99  
 - ⏳ **Likely Inactive:** 41  
 - ❌ **Rejected:** 14  
 
-</td>
-<td align="left" width="50%">
+</td><td align="left" width="50%">
 
 - 💬 **Interviewed:** 1  
 - ✅ **Hired / Offer:** 0  
 - 🗓️ **Last Updated:** October 23, 2025  
 
-</td>
-</tr>
-</table>
+</td></tr></table>
 
 <div align="center">
   <h2>📈 Additional Insights</h2>
@@ -92,46 +83,6 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 • **Marketing / Communications:** 1<br>
 • **Product / Design:** 1<br>
 </td></tr></table>
-
-<div align="center">
-  <h2>💻 About This Tracker</h2>
-</div>
-
-Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. The tracker calculates dynamic statistics, success rates, and updates this file in real-time.
-
-<div align="center">
-  <h2>🏗️ Object-Oriented Architecture</h2>
-</div>
-
-The tracker follows a modular **OOP design** for clarity, maintainability, and scalability.  
-- **tracker.core** — Handles main program flow, data management, and Markdown export.  
-- **tracker.data** — Contains the `JobApplication` class and `ApplicationStatus` enum for clean data modeling.  
-- **tracker.ui** — Provides the colorful CLI menus and input handling via `MenuHandler` and `UIHelper`.  
-- **tracker.utils** — Adds analytics, formatting, and file utilities for modular structure.  
-
-Each class encapsulates a single responsibility, making the codebase easy to extend and debug while maintaining strong encapsulation and abstraction.
-
-<div align="center">
-  <h2>🧪 Testing & Reliability</h2>
-</div>
-
-Extensive **JUnit 5 tests** validate all critical components of the tracker:  
-- ✅ `JobApplicationTest.java` — Confirms constructors, getters/setters, Markdown export, and file line parsing.  
-- 🧾 `FileManagerTest.java` — Tests save/load reliability, ensuring data integrity between sessions.  
-- 📊 `StatsTest.java` — Verifies analytics such as success rate, inactive detection, and category summaries.  
-All tests are automated through the included `Makefile` (`make test`) and print detailed colored results in the console.
-
-<div align="center">
-  <h2>⚙️ How to Use</h2>
-</div>
-
-This CLI tool built in **Java 17** automatically stores job data in `applications.txt`, allowing you to:
-1. Add new applications interactively
-2. Import a pre-seeded dataset (option 5)
-3. Search, update, and export to this Markdown report (option 3)
-4. Generate timestamped backups each time the file is saved
-
-To refresh this README, run **Option 3: Export README** from the main menu.
 
 <div align="center">
   <h2>📋 Master Application Log</h2>
