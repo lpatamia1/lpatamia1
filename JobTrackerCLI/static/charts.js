@@ -120,11 +120,10 @@ const SOURCE_COLORS = [
 // 💗 WEEKLY TREND
 {
   const ctx = document.getElementById('timelineChart').getContext('2d');
-  const labels = Object.keys(weeklyData).map(d => {
-    const date = new Date(d);
-    return date.toLocaleString('default', { month: 'short' });
-  });
-  const data = Object.values(weeklyData);
+
+  const labels = window.timelineLabels; // ✅ already sorted & formatted (e.g., "Oct 2025")
+  const data = window.timelineData;
+
   const g = makeGradient(ctx, 'rgba(236,72,153,0.4)', 'rgba(236,72,153,0.1)');
 
   new Chart(ctx, {
@@ -149,7 +148,7 @@ const SOURCE_COLORS = [
       plugins: {
         title: {
           display: true,
-          text: '📅 Weekly Application Trend',
+          text: '📅 Application Trends',
           color: '#333',
           font: { size: 24, weight: 600 },
           align: 'center',
@@ -168,10 +167,12 @@ const SOURCE_COLORS = [
       },
       scales: {
         x: {
-          ticks: { color: '#444', font: { size: 13 } },
+          ticks: { color: '#444', font: { size: 13 }, autoSkip: false }, // ✅ all months visible
           grid: { display: false }
         },
         y: {
+          beginAtZero: true,
+          grace: '5%',
           ticks: { color: '#666', font: { size: 12 } },
           grid: { color: 'rgba(0,0,0,0.05)' }
         }
@@ -179,6 +180,7 @@ const SOURCE_COLORS = [
     }
   });
 }
+
 
 // 🌀 Responsive resizing
 window.addEventListener('resize', () => {
