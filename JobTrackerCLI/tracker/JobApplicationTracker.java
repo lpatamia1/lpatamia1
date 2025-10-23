@@ -106,7 +106,7 @@ public class JobApplicationTracker {
             System.out.print("> ");
 
             if (!sc.hasNextInt()) {
-                System.out.println("Please enter 1–9.");
+                System.out.println("Please enter 1–10.");
                 sc.nextLine();
                 continue;
             }

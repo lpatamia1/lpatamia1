@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-170-blue" alt="Total">   <img src="https://img.shields.io/badge/Active-100-green" alt="Active">   <img src="https://img.shields.io/badge/Rejected-14-red" alt="Rejected">   <img src="https://img.shields.io/badge/Interviews-1-yellow" alt="Interviews">
+  <img src="https://img.shields.io/badge/Total-169-blue" alt="Total">   <img src="https://img.shields.io/badge/Active-99-green" alt="Active">   <img src="https://img.shields.io/badge/Rejected-14-red" alt="Rejected">   <img src="https://img.shields.io/badge/Interviews-1-yellow" alt="Interviews">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **170 positions** across multiple industries. Currently, **100 applications remain active**, and **41 likely inactive** (older than 60 days), with **1 interview** completed.  
+So far, I've applied to **169 positions** across multiple industries. Currently, **99 applications remain active**, and **41 likely inactive** (older than 60 days), with **1 interview** completed.  
 Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
@@ -30,8 +30,8 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 <tr>
 <td align="left" width="50%">
 
-- **Total Applications:** 170  
-- 🕐 **Active / Pending:** 100  
+- **Total Applications:** 169  
+- 🕐 **Active / Pending:** 99  
 - ⏳ **Likely Inactive:** 41  
 - ❌ **Rejected:** 14  
 
@@ -56,7 +56,7 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 - 📦 **Closed:** 15  
 - 🌐 **Top Source:** LinkedIn  
 - ⚡ **Avg Applications per Week:** 6.3  
-- 🕐 **Still Waiting (Applied Only):** 134  
+- 🕐 **Still Waiting (Applied Only):** 133  
 - 📍 **Top Location:** Chicago, IL  
 - 📆 **Avg Days Since Application:** 52 days  
 - 🆕 **Most Recent:** [Tubman Technologies Inc.](https://www.tubmantech.com/) — Java with Gen AI Developer (10/22/2025)  
@@ -68,7 +68,7 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 
 <table align="center"><tr><td valign='top' align='left'>
 
-• **IT / Support:** 57<br>
+• **IT / Support:** 56<br>
 • **Software / Development:** 28<br>
 • **Animal Care:** 22<br>
 • **AI / Data Science:** 14<br>
@@ -121,41 +121,40 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [Tubman Technologies Inc.](https://www.tubmantech.com/) | Java with Gen AI Developer | AI | Chicago, IL / Madison, WI (Remote, Hybrid, Onsite) | Applied | 10/22/2025 | Handshake | Provide digital training and e-learning solutions, learn Gen AI tools for Java development and deployment. |
 | [Impact Advisors](https://www.impact-advisors.com/) | Entry Level Consultant | Healthcare / Consulting | Chicago, IL (Hybrid) | Applied | 10/22/2025 | Handshake | Work with health-care organizations to improve operational performance, strategy, and technology. |
 | [Whole Foods Market – Cashier Team Member (Front End Service) – Part Time](https://careers.wholefoods.com/cashier-team-member-front-end-service-part-time/job/PAF-WFM-06A8B3D9-04AF-4F1D-94C9-50E4A8C14152_1055_1741849885_0?source=BA_LinkedInSponsored&utm_medium=jobboard) | Cashier Team Member (Front End Service) | Customer Service / Grocery Store | North Side, Chicago, IL | Applied | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
-| [CyberCoders](https://www.linkedin.com/jobs/view/remote-it-support-70-90k-internal-security-at-cybercoders-4252330489) | Remote IT Support | IT | New York, NY (Remote) | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Talkdesk](https://www.linkedin.com/jobs/view/technical-support-engineer-at-talkdesk-4254859703) | Technical Support Engineer | IT / Technical Support | United States (Remote) | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Rhythm Software](https://www.linkedin.com/jobs/view/technical-support-engineer-at-rhythm-software-4248793064) | Technical Support Engineer | IT / SaaS | United States (Remote) | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [AbbVie](https://www.linkedin.com/jobs/view/data-analyst-abbvie-complete-access-onsite-3-days-per-week-at-abbvie-4248778998) | Data Analyst | Data / Supply Chain | Chicago, IL | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Q-Centrix](https://www.linkedin.com/jobs/view/junior-ai-engineer-at-q-centrix-4248780563) | Junior AI Engineer | AI / Machine Learning / Healthcare | Chicago, IL (Remote) | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Robert Half](https://www.linkedin.com/jobs/view/quality-assurance-developer-at-robert-half-4248785077) | Quality Assurance Developer | QA / Automation | Seattle, WA (Remote) | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
-| [CyberCoders](https://www.linkedin.com/jobs/view/remote-it-support-70-90k-internal-security-at-cybercoders-4248782688) | Remote IT Support Specialist (Internal, Security) | IT Support / Security / SaaS | Jacksonville, FL (Remote) | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
-| [TAG – The Aspen Group](https://www.linkedin.com/jobs/view/clinical-application-analyst-at-tag-the-aspen-group-4248787121) | Clinical Application Analyst | Healthcare IT / Application Support | Chicago, IL | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
+| [CyberCoders](https://www.linkedin.com/jobs/view/remote-it-support-70-90k-internal-security-at-cybercoders-4248782688) | Remote IT Support Specialist (Internal, Security) | IT Support / Security / SaaS | Remote - US (Philadelphia-based company) | Applied | 10/21/2025 | LinkedIn | IT support with a security focus; emphasizes system maintenance and access control. |
+| [TAG – The Aspen Group](https://www.linkedin.com/jobs/view/clinical-application-analyst-at-tag-the-aspen-group-4248787121) | Clinical Application Analyst | Healthcare IT / Application Support | Chicago, IL | Applied | 10/21/2025 | LinkedIn | Merges healthcare systems with IT support |
 | [Egg Harbor Cafe](https://eggharborcafe.bamboohr.com/careers) | Food/Drink Runner | Hospitality | Streeterville, Chicago, IL | Applied | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [Estelle’s Cafe & Lounge](https://www.estelleschicago.com/workwithus) | Barback | Hospitality | Wicker Park, Chicago, IL | Applied | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Eden in Chicago LLC](https://www.edeninchicago.com) | Host | Hospitality | Chicago, IL | Applied | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Eden in Chicago LLC](https://www.edeninchicago.com) | Host | Hospitality | Chicago, IL | Applied | 10/21/2025 | Indeed | Front-of-house hospitality; builds confidence and customer service presence. |
 | [CAVA – Wicker Park](https://cava.com/careers) | Culinary Lead | Culinary | Wicker Park, Chicago, IL | Applied | 10/21/2025 | Indeed | Busy fast-casual kitchen, good for leadership in service. |
-| [The Doggy Dojo Inc.](https://www.indeed.com/cmp/The-Doggy-Dojo) | Dog Daycare Associate | Animal Care | Chicago, IL | Applied | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [The Doggy Dojo Inc.](https://www.indeed.com/cmp/The-Doggy-Dojo) | Dog Daycare Associate | Animal Care | Chicago, IL | Applied | 10/21/2025 | Indeed | Animal care teamwork; nurturing and safety-focused environment. |
 | [Found Chicago Boarding & Training Center](https://www.foundtrainingcenter.com) | Dog Handler / Dog Training Apprentice | Animal Care | Chicago, IL | Applied | 10/21/2025 | Indeed | Experience handling large breeds and maintaining safe play groups. |
-| [TeamLogic IT](https://www.teamlogicit.com) | Field IT Technician | IT Support | Chicago, IL (Hybrid) | Applied | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [TeamLogic IT](https://www.teamlogicit.com) | Field IT Technician | IT Support | Chicago, IL (Hybrid with Suburban Client Visits) | Applied | 10/21/2025 | Indeed | Clarified hybrid field structure; hands-on IT troubleshooting across local client sites. |
 | [Windy City Paws](https://www.windycitypaws.com) | Dog Walker | Animal Care | Lakeview, Chicago, IL | Applied | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Chicago Cubs](https://www.mlb.com/cubs) | IT Help Desk Technician | IT Support | The Loop, Chicago, IL | Applied | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
+| [Chicago Cubs](https://www.mlb.com/cubs) | IT Help Desk Technician | IT Support | The Loop, Chicago, IL | Applied | 10/21/2025 | Company Website | Public-facing IT support; strong addition for well-known organization experience. |
 | [The Phoenix Group](https://www.thephoenixgroup.com) | Help Desk Specialist | IT Support / Contract | River North, Chicago, IL (Hybrid) | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Northwestern University](https://www.northwestern.edu) | Technical Support Specialist | IT Support | Evanston, IL | Applied | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [WillHire](https://www.willhire.co) | Cyber Security Intern | Cybersecurity / Internship (Remote) | United States (Remote) | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Northwestern University](https://www.northwestern.edu) | Research Study Coordinator | Research | Evanston, IL | Applied | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [Northwestern University](https://www.northwestern.edu) | Program Assistant 4 | Administrative | Evanston, IL | Applied | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [Northwestern University](https://www.northwestern.edu) | Data Assistant Associate | Data / Administrative | Evanston, IL | Applied | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
-| [Tous Les Jours](https://www.tljus.com/) | Barista | Hospitality | Lakeview, Chicago, IL | Applied | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Tous Les Jours](https://www.tljus.com/) | Barista | Hospitality | Lakeview, Chicago, IL | Applied | 10/21/2025 | Indeed | Customer-facing role; fast-paced cafe. |
 | [Canonical](https://canonical.com/careers) | Engineering Manager | Software / Manager | Chicago, IL (Remote) | Applied | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Paws and Claws Cat Rescue](https://www.pawsandclawscatrescue.org/) | Programs and Facilities Assistant | Animal Care / Assistant | Evanston, IL | Applied | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Duke Animal Hospital](https://www.dukeanimalhospital.com/) | Veterinary Customer Service Representative | Animal Care | Chicago, IL | Applied | 10/21/2025 | Indeed | Combines communication skills with animal-care experience. Suited for fast-paced, client-facing environments. |
-| [Happy Camper](https://www.happycamper.pizza/) | Bartender | Hospitality | Chicago, IL | Applied | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Paws and Claws Cat Rescue](https://www.pawsandclawscatrescue.org/) | Programs and Facilities Assistant | Animal Care / Assistant | Evanston, IL | Applied | 10/21/2025 | Indeed | Animal care and operational support; emphasizes compassion and responsibility. |
+| [Duke Animal Hospital](https://www.dukeanimalhospital.com/) | Veterinary Customer Service Representative | Animal Care | Roscoe Village, Chicago, IL | Applied | 10/21/2025 | Indeed | Combines client communication with pet care coordination; ideal for empathy and multitasking. |
+| [Happy Camper](https://www.happycamper.pizza/) | Bartender | Hospitality | River North, Chicago, IL | Applied | 10/21/2025 | Indeed | Upbeat nightlife role emphasizing multitasking and customer engagement. |
 | [Museum of Ice Cream](https://www.museumoficecream.com/careers) | Service Ambassador | Hospitality | Chicago, IL | Rejected | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Capgemini](https://www.capgemini.com/) | Junior Data Analyst | Data Analyst | Chicago, IL / New York City, NY | Applied | 10/21/2025 | Handshake | Scientific and tech consulting |
-| [The Peninsula — F&B Back Server Application](https://career10.successfactors.com/portalcareer?_s.crb=pOAhKgrGyC9ca%252b8vumVZ3dFeeNf%252bBXbckKb4n4aQz7s%253d) | Food & Beverage Server | Hospitality / Service / Restaurant | Chicago, IL | Applied | 10/20/2025 | Company Website | <span style='color:#999;'>—</span> |
+| [The Peninsula — F&B Back Server Application](https://career10.successfactors.com/portalcareer?_s.crb=pOAhKgrGyC9ca%252b8vumVZ3dFeeNf%252bBXbckKb4n4aQz7s%253d) | Food & Beverage Server | Hospitality / Service / Restaurant | Magnificent Mile, Chicago, IL | Applied | 10/20/2025 | Company Website | High-end hospitality with attention to detail. |
 | [Business Development Sales Representative – Chicago, IL (January 2026 Start)](https://transportationinsight.wd1.myworkdayjobs.com/en-US/TI_NTG_External_Careers) | Business Development Sales Representative | Business / Sales | Chicago, IL | Applied | 10/20/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [Insight Global](https://www.insightglobal.com) | Remote Data Analyst | IT / Data Analyst (Contract, Remote) | United States | Applied | 10/20/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Synergie Systems Inc.](https://www.synergiesystems.com) | Entry-Level Data Analyst | IT / Data Analytics (Full-Time, Remote) | United States | Applied | 10/20/2025 | LinkedIn | <span style='color:#999;'>—</span> |
-| [TELUS Digital AI Data Solutions](https://www.telusinternational.com/solutions/ai-data-solutions) | WFH English Speakers (Online Data Analyst) | AI / Data Annotation (Part-Time, Remote) | Wisconsin, United States | Applied | 10/20/2025 | LinkedIn | <span style='color:#999;'>—</span> |
+| [TELUS Digital AI Data Solutions](https://www.telusinternational.com/solutions/ai-data-solutions) | WFH English Speakers (Online Data Analyst) | AI / Data Annotation (Part-Time, Remote) | Remote - US (Wisconsin listing, but fully remote) | Applied | 10/20/2025 | LinkedIn | AI-driven data annotation work; flexible remote role for side experience with AI systems. |
 | [StellarBlue.ai](https://www.stellarblue.ai) | AI-Driven Full-Stack Developer | Software, AI Development | United States (Remote) | Applied | 10/20/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [CyberCoders – Remote IT Support (Internal, Security)](https://www.linkedin.com/jobs/view/remote-it-support-%2470-%2490k-internal-security-at-cybercoders-3780836962/) | Remote IT Support - Internal & Security | IT Support | Philadelphia, PA (Remote) | Applied | 10/20/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Application Success – Business Continuity Planner](https://careers.morningstar.com/us/en/applythankyou?status=success&jobSeqNo=MORMORUSAP8200436EXTERNALENUS&jobTitle=Business%20Continuity%20Planner&jobId=AP-8200436&candidateHomeUrl=https://morningstar.wd5.myworkdayjobs.com/Americas/login?Job_Application_ID=JOB_APPLICATION-3-2213667&jobApplicationId=JOB_APPLICATION-3-2213667&candidateId=CANDIDATE-3-1483762) | Business Continuity Planner | IT / Business | Chicago, IL | Rejected | 10/17/2025 | Company Website | <span style='color:#999;'>—</span> |
@@ -216,9 +215,9 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [AESLIN Pup Hub](#) | Dog Daycare & Boarding Handler | Animal Care | Chicago, IL | Closed | 09/05/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [My Net Security, Inc.](#) | IT Technician | IT Support | Chicago, IL | Applied | 09/04/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Taylor Farms Illinois](https://www.taylorfarms.com/careers/) | Label Room Technician | Manufacturing / Ops | Chicago, IL | Applied | 09/04/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Creative Tech](#) | IT Field Technician | IT Support | Skokie, IL | Other | 09/04/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Creative Tech](#) | IT Field Technician | IT Support | Skokie, IL (North Suburbs) | Other | 09/04/2025 | Indeed | Fieldwork across Chicagoland supporting client IT systems. |
 | [Fernwood Property Mgmt](#) | Maintenance Admin Intern | Admin / Operations | Chicago, IL | Applied | 09/04/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Trump Intl. Hotel Chicago](https://www.trumphotels.com/chicago/careers) | Security Intern | Security / Ops | Chicago, IL | Rejected | 09/04/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Trump Intl. Hotel Chicago](https://www.trumphotels.com/chicago/careers) | Security Intern | Security / Ops | River North, Chicago, IL | Rejected | 09/04/2025 | Indeed | Exposure to luxury property security operations. |
 | [Green Paws Chicago](https://greenpawschicago.com/) | Dog Walker & Pet Sitter | Animal Care | Chicago, IL | Closed | 09/04/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Capgemini](https://www.capgemini.com/careers) | Business Analyst | Business / IT | Remote | Applied | 09/01/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Momotaro](https://www.bokagrp.com/careers) | Food Runner | Service | Fulton Market, Chicago, IL | Applied | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
@@ -244,7 +243,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [AA Software & Networking](https://aasoftware.com/) | Java Developer | Software | Remote | Applied | 07/25/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Tubman Technologies](#) | Java Developer | Software | Remote | Applied | 07/25/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Chicago Youth Centers](https://chicagoyouthcenters.org/careers) | STEAM Intern | Education / Nonprofit | Chicago, IL | Applied | 07/25/2025 | LinkedIn | <span style='color:#999;'>—</span> |
-| [The Bridge Teen Center](https://thebridgeteencenter.org/) | Horticulture Plant Propagation Intern | Environmental / Education | Orland Park, IL | Applied | 07/25/2025 | LinkedIn | <span style='color:#999;'>—</span> |
+| [The Bridge Teen Center](https://thebridgeteencenter.org/) | Horticulture Plant Propagation Intern | Environmental / Education | Orland Park, IL | Applied | 07/25/2025 | LinkedIn | Environmental education internship supporting teen programs. |
 | [American Red Cross](https://www.redcross.org/about-us/careers.html) | Fundraising & Strategy Intern | Nonprofit / Strategy | Remote | Applied | 07/25/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [SCB Global](https://www.scbglobal.com/) | Data Support Engineer | IT Support | Remote / Chicago, IL | Applied | 07/25/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [ifm efector inc](https://www.ifm.com/) | Software Developer, SAP Applications | Software | Remote / Chicago, IL | Applied | 07/25/2025 | Handshake | <span style='color:#999;'>—</span> |
@@ -256,9 +255,9 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [Eataly North America](https://www.eataly.com/us_en/) | Fishmonger — Raw Bar & Oyster | Culinary | Chicago, IL | Closed | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [City Winery Chicago](https://citywinery.com/chicago) | Service Assistant | Service | Chicago, IL | Closed | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Cadinho Bakery & Cafe](#) | Food Service Associate | Food Service | Chicago, IL | Closed | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Montelimar Bread Co.](#) | Farmers Market Vendor | Food Service | Evanston, IL | Closed | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Montelimar Bread Co.](#) | Farmers Market Vendor | Food Service | Evanston, IL (Local Market Booth) | Closed | 07/20/2025 | Indeed | Clarified market-based work; customer interaction and local business engagement. |
 | [Anti-Cruelty Society](https://anticruelty.org/careers) | Animal Care Specialist | Animal Care | Chicago, IL | Closed | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Fire Hydrant Pet Sitting Co.](https://www.firehydrantpetsitting.com/) | Overnight Pet Care Specialist | Animal Care | Chicago, IL | Rejected | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Fire Hydrant Pet Sitting Co.](https://www.firehydrantpetsitting.com/) | Overnight Pet Care Specialist | Animal Care | Bucktown / Logan Square, IL | Rejected | 07/20/2025 | Indeed | Overnight care role requiring reliability and independence. |
 | [Thornton Tomasetti](https://www.thorntontomasetti.com/careers) | IT Support Technician | IT Support | Chicago, IL | Closed | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Lincoln Park Art Gallery](#) | Art Gallery Assistant | Arts / Admin | Chicago, IL | Rejected | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Advance Spine Rehab Center](#) | IT Personnel — As Needed | IT Support | Chicago, IL | Closed | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
@@ -291,7 +290,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 
 </details>
 
-**Summary:** 📋 170 total — 🕐 100 active — ⏳ 41 likely inactive — ❌ 14 rejected — 💬 1 interviews — ✅ 0 hired.**
+**Summary:** 📋 169 total — 🕐 99 active — ⏳ 41 likely inactive — ❌ 14 rejected — 💬 1 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
