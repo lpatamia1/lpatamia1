@@ -1,3 +1,9 @@
+/**
+ * 🧭 MenuController — handles user navigation and CLI menu flow.
+ * Coordinates user choices, delegating logic to MenuPrinter, InputHandler,
+ * DashboardPrinter, and FileManager.
+ */
+
 package tracker.ui;
 
 import tracker.core.*;

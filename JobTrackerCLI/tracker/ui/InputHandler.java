@@ -1,3 +1,10 @@
+/**
+ * ✍️ InputHandler — manages user prompts and data entry.
+ *
+ * Collects and validates user input to create
+ * {@link JobApplication} objects for the tracker.
+ */
+
 package tracker.ui;
 
 import tracker.data.*;

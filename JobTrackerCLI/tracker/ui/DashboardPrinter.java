@@ -1,3 +1,10 @@
+/**
+ * 📊 DashboardPrinter — prints job summaries and analytics.
+ *
+ * Handles formatted console output for progress summaries
+ * and dashboards using {@link Stats} and {@link UIHelper}.
+ */
+
 package tracker.ui;
 
 import tracker.core.*;

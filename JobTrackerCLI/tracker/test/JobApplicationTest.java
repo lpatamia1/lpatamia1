@@ -1,16 +1,20 @@
+/**
+ * ✅ JobApplicationTest — JUnit 5 tests for JobApplication model.
+ *
+ * Covers constructor behavior, setters, file I/O, markdown export,
+ * enum handling, and data consistency across save/load operations.
+ */
+
 package tracker.test;
 
 import tracker.data.JobApplication;
 import tracker.core.ApplicationStatus;
-import tracker.core.FileManager;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.LocalDate;
 import java.util.List;
 import java.io.File;
-
-import java.time.LocalDate;
 
 public class JobApplicationTest {
 

@@ -66,7 +66,7 @@ public class JobApplication {
         try {
             return LocalDate.parse(t.replace('/', '-'), ISO);
         } catch (DateTimeParseException e) {
-            System.out.println("⚠️ Invalid date format: " + s + " → defaulting to today");
+            System.out.println("⚠️  Invalid date format: " + s + " → defaulting to today");
             return LocalDate.now(); // graceful fallback
         }
     }
