@@ -217,12 +217,15 @@ public class JobApplicationTracker {
         md.append("<div align=\"center\">\n");
         md.append("  <h2>💡 Highlights</h2>\n");
         md.append("</div>\n\n");
-        
+
         // Status badges
         md.append(String.format(
-        "![Active](https://img.shields.io/badge/Active-%d-brightgreen) " +
-        "![Rejected](https://img.shields.io/badge/Rejected-%d-red) " +
-        "![Interviews](https://img.shields.io/badge/Interviews-%d-yellow)\n\n",
+        "  <p>\n" +
+        "    <img src=\"https://img.shields.io/badge/Active-%d-brightgreen\" alt=\"Active\"> " +
+        "    <img src=\"https://img.shields.io/badge/Rejected-%d-red\" alt=\"Rejected\"> " +
+        "    <img src=\"https://img.shields.io/badge/Interviews-%d-blue\" alt=\"Interviews\">\n" +
+        "  </p>\n" +
+        "</div>\n\n",
         s.trulyActive, s.rejected, s.interviews));
 
         md.append(String.format(
