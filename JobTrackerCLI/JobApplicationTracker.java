@@ -646,32 +646,13 @@ public class JobApplicationTracker {
     }
 
     private static void showSummary() {
+        if (applications.isEmpty()) {
+            System.out.println(ORANGE + "⚠️  No applications recorded yet." + RESET);
+            return;
+        }
 
-        int total = applications.size();
-        long rejected = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.REJECTED)
-                .count();
-        long hired = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.HIRED)
-                .count();
-        long interviews = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.INTERVIEW)
-                .count();
-        long closed = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.CLOSED)
-                .count();
-        long active = total - rejected - hired - closed;
-
-        // ⏳ Likely inactive (applied > 60 days ago and still "Applied")
-        long stale = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.APPLIED)
-                .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) > 60)
-                .count();
-
-        long trulyActive = active - stale;
-        if (trulyActive < 0) trulyActive = 0;
-        
-        double successRate = total == 0 ? 0 : (double) (hired + interviews) / total * 100;
+        // 🧮 Compute all stats from Stats.java
+        Stats s = Stats.compute(applications);
 
         // 🐾 Top section with colors
         System.out.println(LAVENDER + "╔═════════════════════════════════════════════════════════════════════════════════════════╗");
@@ -680,56 +661,36 @@ public class JobApplicationTracker {
 
         System.out.printf(
             "  %sTotal:%s %-3d  %sActive:%s %-3d  %sLikely Inactive:%s %-3d  %sRejected:%s %-3d  %sInterviews:%s %-3d  %sHired:%s %-3d%n",
-                CYAN, RESET, total,
-                GREEN, RESET, trulyActive,
-                ORANGE, RESET, stale,
-                RED, RESET, rejected,
-                YELLOW, RESET, interviews,
-                PINK, RESET, hired);
+            CYAN, RESET, s.total,
+            GREEN, RESET, s.trulyActive,
+            ORANGE, RESET, s.stale,
+            RED, RESET, s.rejected,
+            YELLOW, RESET, s.interviews,
+            PINK, RESET, s.hired
+        );
         System.out.println(LAVENDER + "-".repeat(91) + RESET);
-        
-        // Success rate and closed count
-        int barLength = 30;
-        int filled = (int) (barLength * successRate / 100);
-        String bar = "█".repeat(filled) + "░".repeat(barLength - filled);
-        System.out.println();
-        System.out.printf("%s📈 Success Rate:%s %.1f%% %s%s%s%n", ORANGE, RESET, successRate, GREEN, bar, RESET);
-        System.out.printf("%s📦 Closed:%s %d%n", CYAN, RESET, closed);
-        String topSource = applications.stream()
-            .collect(Collectors.groupingBy(a -> a.source, Collectors.counting()))
-            .entrySet().stream()
-            .max(Map.Entry.comparingByValue())
-            .map(Map.Entry::getKey)
-            .orElse("Unknown");
-        System.out.printf("%s🌐 Top Source:%s %s%n", CYAN, RESET, topSource);
-        long daysSpan = ChronoUnit.DAYS.between(
-            applications.stream().map(a -> a.dateApplied).min(LocalDate::compareTo).orElse(LocalDate.now()),
-            LocalDate.now());
-        double perWeek = total / Math.max(daysSpan / 7.0, 1.0);
-        System.out.printf("%s⚡ Avg Applications per Week:%s %.1f%n", GREEN, RESET, perWeek);
-        long openApps = applications.stream()
-            .filter(a -> a.status == ApplicationStatus.APPLIED)
-            .count();
-        System.out.printf("%s🕐 Still Waiting (Applied Only):%s %d%n", CYAN, RESET, openApps);
-        String topLocation = applications.stream()
-            .collect(Collectors.groupingBy(a -> a.location, Collectors.counting()))
-            .entrySet().stream()
-            .max(Map.Entry.comparingByValue())
-            .map(Map.Entry::getKey)
-            .orElse("Unknown");
-        System.out.printf("%s📍 Top Location:%s %s%n", GREEN, RESET, topLocation);
-        JobApplication latest = applications.stream()
-            .max(Comparator.comparing(a -> a.dateApplied))
-            .orElse(null);
-        if (latest != null)
-            System.out.printf("%s🆕 Most Recent:%s %s — %s (%s)%n",
-                PINK, RESET, latest.company, latest.role,
-                latest.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
 
-        // Breakdown
+        // 📈 Success rate bar
+        int barLength = 30;
+        int filled = (int) (barLength * s.successRate / 100);
+        String bar = "█".repeat(filled) + "░".repeat(barLength - filled);
+
+        System.out.println();
+        System.out.printf("%s📈 Success Rate:%s %.1f%% %s%s%s%n", ORANGE, RESET, s.successRate, GREEN, bar, RESET);
+        System.out.printf("%s📦 Closed:%s %d%n", CYAN, RESET, s.closed);
+        System.out.printf("%s🌐 Top Source:%s %s%n", CYAN, RESET, s.topSource);
+        System.out.printf("%s⚡ Avg Applications per Week:%s %.1f%n", GREEN, RESET, s.perWeek);
+        System.out.printf("%s🕐 Still Waiting (Applied Only):%s %d%n", CYAN, RESET, s.openApps);
+        System.out.printf("%s📍 Top Location:%s %s%n", GREEN, RESET, s.topLocation);
+
+        if (s.latest != null)
+            System.out.printf("%s🆕 Most Recent:%s %s — %s (%s)%n",
+                PINK, RESET, s.latest.company, s.latest.role,
+                s.latest.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+
         // 💼 Breakdown by type
         Map<String, Long> byType = applications.stream()
-            .collect(Collectors.groupingBy(a -> simplifyBroadCategory(a.type), TreeMap::new, Collectors.counting()));
+            .collect(Collectors.groupingBy(a -> simplifyType(a.type), TreeMap::new, Collectors.counting()));
 
         System.out.println(LAVENDER + "-".repeat(91));
         System.out.println("                                    Breakdown by Type:");
@@ -739,24 +700,24 @@ public class JobApplicationTracker {
         List<Map.Entry<String, Long>> entries = new ArrayList<>(byType.entrySet());
         entries.sort((a, b) -> Long.compare(b.getValue(), a.getValue()));
 
-        int colWidth = 37; // fits nicely in 91-char width terminals
-
+        int colWidth = 37;
         for (int i = 0; i < entries.size(); i += 2) {
-            String left = String.format("• %-"+colWidth+"s %3d", 
+            String left = String.format("• %-"+colWidth+"s %3d",
                 entries.get(i).getKey(), entries.get(i).getValue());
 
             String right = (i + 1 < entries.size())
-                ? String.format("   • %-"+colWidth+"s %3d", 
+                ? String.format("   • %-"+colWidth+"s %3d",
                     entries.get(i + 1).getKey(), entries.get(i + 1).getValue())
                 : "";
 
             System.out.println(CYAN + left + right + RESET);
         }
+
         System.out.print(LAVENDER + "-".repeat(91));
-        System.out.printf(MINT + "\n📬 %d applications logged — %d active, %.1f%% showing progress.%n" + RESET, 
-            total, trulyActive, successRate);
+        System.out.printf(MINT + "\n📬 %d applications logged — %d active, %.1f%% showing progress.%n" + RESET,
+            s.total, s.trulyActive, s.successRate);
         System.out.println(TEAL + "🐾 Career Cat: you’re doing great — keep applying!" + RESET);
-        
+
         // 💫 Recently applied stats (within the last 7 days)
         long recent = applications.stream()
             .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) <= 7)
@@ -768,46 +729,37 @@ public class JobApplicationTracker {
         } else {
             System.out.println(ORANGE + " 🌼 No new applications this week — time to find a few more leads!" + RESET);
         }
-
     }
 
     // 🎨 Compact visual dashboard before exiting
     private static void showCareerDashboard() {
-        int total = applications.size();
-        long interviews = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.INTERVIEW)
-                .count();
-        long hired = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.HIRED)
-                .count();
-        long rejected = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.REJECTED)
-                .count();
+        if (applications.isEmpty()) {
+            System.out.println(ORANGE + "⚠️  No applications recorded yet." + RESET);
+            return;
+        }
 
-        double successRate = total == 0 ? 0 : (double)(hired + interviews) / total * 100;
-        int barLength = 40;
-        int filled = (int)(barLength * successRate / 100);
+        Stats s = Stats.compute(applications);
 
         System.out.println(LAVENDER + "\n╔═════════════════════════════════════════════════════════════════════════════════════════╗");
         System.out.println("║                             🌈  CAREER DASHBOARD SNAPSHOT  🌈                           ║");
         System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝" + RESET);
 
-        System.out.printf("%s📁 Total Applications:%s %d%n", CYAN, RESET, total);
+        System.out.printf("%s📁 Total Applications:%s %d%n", CYAN, RESET, s.total);
         System.out.printf("%s💬 Interviews:%s %d   %s✅ Hired:%s %d   %s❌ Rejected:%s %d%n",
-                YELLOW, RESET, interviews, GREEN, RESET, hired, RED, RESET, rejected);
+                YELLOW, RESET, s.interviews, GREEN, RESET, s.hired, RED, RESET, s.rejected);
+
+        int barLength = 40;
+        int filled = (int)(barLength * s.successRate / 100);
+        String bar = "█".repeat(filled) + "░".repeat(barLength - filled);
 
         System.out.printf("\n%s📈 Success Rate:%s %.1f%% %s%s%s%n",
-                ORANGE, RESET, successRate, GREEN, "█".repeat(filled) + "░".repeat(barLength - filled), RESET);
+                ORANGE, RESET, s.successRate, GREEN, bar, RESET);
 
-        // Highlight last applied job
-        JobApplication latest = applications.stream()
-                .max(Comparator.comparing(a -> a.dateApplied))
-                .orElse(null);
-        if (latest != null) {
+        if (s.latest != null) {
             System.out.println("\n" + PINK + "🌸 Most Recent Application:" + RESET);
             System.out.printf("%s → %s (%s on %s)%n",
-                    latest.company, latest.role, latest.status,
-                    latest.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+                    s.latest.company, s.latest.role, s.latest.status,
+                    s.latest.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         }
 
         System.out.println(LAVENDER + "\n──────────────────────────────────────────────────────────────────────────────────────────" + RESET);
@@ -817,40 +769,12 @@ public class JobApplicationTracker {
 
         try { Thread.sleep(1200); } catch (InterruptedException ignored) {}
 
-        System.out.println(CYAN + "\nฅ^•ﻌ•^ฅ  Career Cat curls up for a nap. Keep hustling, human! 💤" + RESET);
-        System.exit(0);
+        System.out.println(CYAN + "\nฅ^•ﻌ•^ฅ Career Cat sharpens its claws — new opportunities await tomorrow! 💪" + RESET);
     }
-
 
     private static void exportMarkdown() throws IOException {
         applications.sort(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed());
-
-        int total = applications.size();
-        long rejected = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.REJECTED)
-                .count();
-        long hired = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.HIRED)
-                .count();
-        long interviews = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.INTERVIEW)
-                .count();
-        long closed = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.CLOSED)
-                .count();
-
-        long active = total - rejected - hired - closed;
-
-        long stale = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.APPLIED)
-                .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) > 60)
-                .count();
-
-        long trulyActive = active - stale;
-        if (trulyActive < 0) trulyActive = 0;
-
-        double successRate = total == 0 ? 0 : (double) (hired + interviews) / total * 100;
-
+        Stats s = Stats.compute(applications);
         String today = LocalDate.now().format(HUMAN);
 
         StringBuilder md = new StringBuilder();
@@ -866,34 +790,35 @@ public class JobApplicationTracker {
         // --- HIGHLIGHTS ---
         md.append("<div align=\"center\">\n");
         md.append("  <h2>💡 Highlights</h2>\n");
-        md.append("</div>\n\n");    
+        md.append("</div>\n\n");
         md.append(String.format(
             "So far, I've applied to **%d positions** across multiple industries. Currently, **%d applications remain active**, " +
             "and **%d likely inactive** (older than 60 days), with **%d interview%s** completed.  \n" +
             "Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  \n" +
             "This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.\n\n",
-            total, trulyActive, stale, interviews, interviews == 1 ? "" : "s"
+            s.total, s.trulyActive, s.stale, s.interviews, s.interviews == 1 ? "" : "s"
         ));
 
         // --- APPLICATION OVERVIEW ---
         md.append("<div align=\"center\">\n");
         md.append("  <h2>📊 Application Overview</h2>\n");
-        md.append("</div>\n\n");    
+        md.append("</div>\n\n");
         md.append("<table align=\"center\">\n");
         md.append("<tr>\n");
         md.append("<td align=\"left\" width=\"50%\">\n\n");
-        md.append("- **Total Applications:** ").append(total).append("  \n");
-        md.append("- 🕐 **Active / Pending:** ").append(trulyActive).append("  \n");
-        md.append("- ⏳ **Likely Inactive:** ").append(stale).append("  \n");
-        md.append("- ❌ **Rejected:** ").append(rejected).append("  \n\n");
+        md.append("- **Total Applications:** ").append(s.total).append("  \n");
+        md.append("- 🕐 **Active / Pending:** ").append(s.trulyActive).append("  \n");
+        md.append("- ⏳ **Likely Inactive:** ").append(s.stale).append("  \n");
+        md.append("- ❌ **Rejected:** ").append(s.rejected).append("  \n\n");
         md.append("</td>\n");
         md.append("<td align=\"left\" width=\"50%\">\n\n");
-        md.append("- 💬 **Interviewed:** ").append(interviews).append("  \n");
-        md.append("- ✅ **Hired / Offer:** ").append(hired).append("  \n");
+        md.append("- 💬 **Interviewed:** ").append(s.interviews).append("  \n");
+        md.append("- ✅ **Hired / Offer:** ").append(s.hired).append("  \n");
         md.append("- 🗓️ **Last Updated:** ").append(today).append("  \n\n");
         md.append("</td>\n");
         md.append("</tr>\n");
         md.append("</table>\n\n");
+
         // --- ADDITIONAL INSIGHTS ---
         md.append("<div align=\"center\">\n");
         md.append("  <h2>📈 Additional Insights</h2>\n");
@@ -905,46 +830,19 @@ public class JobApplicationTracker {
             .average()
             .orElse(0);
 
-        String topSource = applications.stream()
-            .collect(Collectors.groupingBy(a -> a.source, Collectors.counting()))
-            .entrySet().stream()
-            .max(Map.Entry.comparingByValue())
-            .map(Map.Entry::getKey)
-            .orElse("Unknown");
-
-        long daysSpan = ChronoUnit.DAYS.between(
-            applications.stream().map(a -> a.dateApplied).min(LocalDate::compareTo).orElse(LocalDate.now()),
-            LocalDate.now());
-        double perWeek = total / Math.max(daysSpan / 7.0, 1.0);
-
-        long openApps = applications.stream()
-            .filter(a -> a.status == ApplicationStatus.APPLIED)
-            .count();
-
-        String topLocation = applications.stream()
-            .collect(Collectors.groupingBy(a -> a.location, Collectors.counting()))
-            .entrySet().stream()
-            .max(Map.Entry.comparingByValue())
-            .map(Map.Entry::getKey)
-            .orElse("Unknown");
-
-        JobApplication latest = applications.stream()
-            .max(Comparator.comparing(a -> a.dateApplied))
-            .orElse(null);
-
         // 🪄 Append stats to Markdown
         md.append("<table align=\"center\"><tr><td align=\"left\">\n\n");
-        md.append(String.format("- 📈 **Success Rate:** %.1f%%  \n", successRate));
-        md.append(String.format("- 📦 **Closed:** %d  \n", closed));
-        md.append(String.format("- 🌐 **Top Source:** %s  \n", topSource));
-        md.append(String.format("- ⚡ **Avg Applications per Week:** %.1f  \n", perWeek));
-        md.append(String.format("- 🕐 **Still Waiting (Applied Only):** %d  \n", openApps));
-        md.append(String.format("- 📍 **Top Location:** %s  \n", topLocation));
+        md.append(String.format("- 📈 **Success Rate:** %.1f%%  \n", s.successRate));
+        md.append(String.format("- 📦 **Closed:** %d  \n", s.closed));
+        md.append(String.format("- 🌐 **Top Source:** %s  \n", s.topSource));
+        md.append(String.format("- ⚡ **Avg Applications per Week:** %.1f  \n", s.perWeek));
+        md.append(String.format("- 🕐 **Still Waiting (Applied Only):** %d  \n", s.openApps));
+        md.append(String.format("- 📍 **Top Location:** %s  \n", s.topLocation));
         md.append(String.format("- 📆 **Avg Days Since Application:** %d days  \n", avgDays));
-        if (latest != null)
+        if (s.latest != null)
             md.append(String.format("- 🆕 **Most Recent:** %s — %s (%s)  \n",
-                latest.company, latest.role,
-                latest.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"))));
+                s.latest.company, s.latest.role,
+                s.latest.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"))));
         md.append("</td></tr></table>\n\n");
 
         // --- CATEGORY SUMMARY ---
@@ -982,7 +880,7 @@ public class JobApplicationTracker {
         md.append("Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. ");
         md.append("It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. ");
         md.append("The tracker calculates dynamic statistics, success rates, and updates this file in real-time.\n\n");
-        
+
         // --- HOW TO USE ---
         md.append("<div align=\"center\">\n");
         md.append("  <h2>⚙️ How to Use</h2>\n");
@@ -993,7 +891,7 @@ public class JobApplicationTracker {
         md.append("3. Search, update, and export to this Markdown report (option 3)\n");
         md.append("4. Generate timestamped backups each time the file is saved\n\n");
         md.append("To refresh this README, run **Option 3: Export README** from the main menu.\n\n");
-    
+
         // --- MASTER LOG ---
         md.append("<div align=\"center\">\n");
         md.append("  <h2>📋 Master Application Log</h2>\n");
@@ -1009,7 +907,7 @@ public class JobApplicationTracker {
         md.append("\n</details>\n\n");
         md.append(String.format(
             "**Summary:** 📋 %d total — 🕐 %d active — ⏳ %d likely inactive — ❌ %d rejected — 💬 %d interviews — ✅ %d hired.**\n\n",
-            total, trulyActive, stale, rejected, interviews, hired
+            s.total, s.trulyActive, s.stale, s.rejected, s.interviews, s.hired
         ));
 
         md.append("---\n");
@@ -1026,7 +924,7 @@ public class JobApplicationTracker {
         System.out.printf("📝 Markdown length: %d characters (%d lines)%n",
                 md.length(), md.toString().split("\n").length);
         System.out.printf("✅ README updated successfully with %d jobs (%d active, %d rejected).%n",
-                total, active, rejected);
+                s.total, s.trulyActive, s.rejected);
     }
 
         private static void printEchoInstructions() {
@@ -1035,54 +933,6 @@ public class JobApplicationTracker {
             System.out.println("echo \"[MUSEUM OF ICE CREAM](https://www.museumoficecream.com/careers)|Show Ambassador (Weekends Only)|Retail / Customer Service|Chicago, IL|Applied|10/15/2025|LinkedIn\" >> applications.txt");
             System.out.println("\nThen run option 3 in the tracker menu to regenerate the README.\n");
         }
-
-    // --- Simplify subtypes into broader job categories ---
-    private static String simplifyBroadCategory(String rawType) {
-        String t = rawType.toLowerCase();
-
-        if (t.contains("software") || t.contains("developer") || t.contains("engineer"))
-            return "Software / Development";
-        if (t.contains("it") || t.contains("support") || t.contains("infrastructure"))
-            return "IT & Tech Support";
-        if (t.contains("data") || t.contains("ai") || t.contains("analytics") || t.contains("machine learning"))
-            return "Data & AI";
-        if (t.contains("admin") || t.contains("office") || t.contains("operations"))
-            return "Administration & Operations";
-        if (t.contains("business"))
-            return "Business & Strategy";
-        if (t.contains("finance") || t.contains("insurance"))
-            return "Finance";
-        if (t.contains("security") || t.contains("cyber"))
-            return "Cybersecurity";
-        if (t.contains("education") || t.contains("teaching"))
-            return "Education";
-        if (t.contains("animal"))
-            return "Animal Care";
-        if (t.contains("healthcare") || t.contains("medical") || t.contains("biotech"))
-            return "Healthcare & Life Sciences";
-        if (t.contains("policy") || t.contains("research"))
-            return "Policy & Research";
-        if (t.contains("retail") || t.contains("service") || t.contains("customer"))
-            return "Retail & Service";
-        if (t.contains("environmental") || t.contains("energy") || t.contains("gis"))
-            return "Environmental & Sustainability";
-        if (t.contains("marketing") || t.contains("communications"))
-            return "Marketing & Communications";
-        if (t.contains("nonprofit") || t.contains("community"))
-            return "Nonprofit & Outreach";
-        if (t.contains("culinary") || t.contains("food"))
-            return "Culinary & Food Service";
-        if (t.contains("arts") || t.contains("design"))
-            return "Arts & Design";
-        if (t.contains("product"))
-            return "Product Management";
-        if (t.contains("automation") || t.contains("robotics"))
-            return "Automation & Robotics";
-        if (t.contains("engineering"))
-            return "Engineering";
-
-        return "Other";
-    }
 
     // --- Helper function for simplifying job types ---
     private static String simplifyType(String rawType) {

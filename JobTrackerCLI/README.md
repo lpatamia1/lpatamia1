@@ -12,7 +12,7 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
   <h2>💡 Highlights</h2>
 </div>
 
-So far, I've applied to **163 positions** across multiple industries. Currently, **95 applications remain active**, and **42 likely inactive** (older than 60 days), with **1 interview** completed.  
+So far, I've applied to **170 positions** across multiple industries. Currently, **100 applications remain active**, and **42 likely inactive** (older than 60 days), with **1 interview** completed.  
 Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
@@ -24,8 +24,8 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 <tr>
 <td align="left" width="50%">
 
-- **Total Applications:** 163  
-- 🕐 **Active / Pending:** 95  
+- **Total Applications:** 170  
+- 🕐 **Active / Pending:** 100  
 - ⏳ **Likely Inactive:** 42  
 - ❌ **Rejected:** 13  
 
@@ -34,7 +34,7 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 
 - 💬 **Interviewed:** 1  
 - ✅ **Hired / Offer:** 0  
-- 🗓️ **Last Updated:** October 22, 2025  
+- 🗓️ **Last Updated:** October 23, 2025  
 
 </td>
 </tr>
@@ -47,13 +47,13 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 <table align="center"><tr><td align="left">
 
 - 📈 **Success Rate:** 0.6%  
-- 📦 **Closed:** 13  
+- 📦 **Closed:** 15  
 - 🌐 **Top Source:** LinkedIn  
-- ⚡ **Avg Applications per Week:** 6.1  
-- 🕐 **Still Waiting (Applied Only):** 131  
+- ⚡ **Avg Applications per Week:** 6.3  
+- 🕐 **Still Waiting (Applied Only):** 135  
 - 📍 **Top Location:** Chicago, IL  
 - 📆 **Avg Days Since Application:** 52 days  
-- 🆕 **Most Recent:** [Whole Foods Market – Cashier Team Member (Front End Service) – Part Time](https://careers.wholefoods.com/cashier-team-member-front-end-service-part-time/job/PAF-WFM-06A8B3D9-04AF-4F1D-94C9-50E4A8C14152_1055_1741849885_0?source=BA_LinkedInSponsored&utm_medium=jobboard) — Cashier Team Member (Front End Service) (10/21/2025)  
+- 🆕 **Most Recent:** [Tubman Technologies Inc.](https://www.tubmantech.com/) — Java with Gen AI Developer (10/22/2025)  
 </td></tr></table>
 
 <div align="center">
@@ -64,22 +64,23 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 
 • **IT / Support:** 57<br>
 • **Software / Development:** 28<br>
-• **Animal Care:** 19<br>
-• **AI / Data Science:** 13<br>
-• **Data / Analytics:** 13<br>
-• **Retail / Service:** 8<br>
+• **Animal Care:** 22<br>
+• **AI / Data Science:** 14<br>
+• **Data / Analytics:** 14<br>
+• **Retail / Service:** 9<br>
 • **Administration:** 6<br>
 • **Culinary / Food Service:** 4<br>
 • **Education / Training:** 3<br>
+• **Environmental / Sustainability:** 2<br>
 </td><td valign='top' align='left'>
 
-• **Environmental / Sustainability:** 2<br>
 • **Other:** 2<br>
 • **Policy / Research:** 2<br>
 • **Automation / Robotics:** 1<br>
 • **Business / Operations:** 1<br>
 • **Engineering:** 1<br>
 • **Finance:** 1<br>
+• **Healthcare / Life Sciences:** 1<br>
 • **Marketing / Communications:** 1<br>
 • **Product / Design:** 1<br>
 </td></tr></table>
@@ -111,6 +112,8 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 
 | Company | Role | Type | Location | Status | Date Applied | Source | Notes |
 |----------|------|------|-----------|----------|---------------|---------|--------|
+| [Tubman Technologies Inc.](https://www.tubmantech.com/) | Java with Gen AI Developer | AI | Chicago, IL / Madison, WI (Remote, Hybrid, Onsite) | Applied | 10/22/2025 | Handshake | Provide digital training and e-learning solutions, learn Gen AI tools for Java development and deployment. |
+| [Impact Advisors](https://www.impact-advisors.com/) | Entry Level Consultant | Healthcare / Consulting | Chicago, IL (Hybrid) | Applied | 10/22/2025 | Handshake | Work with health-care organizations to improve operational performance, strategy, and technology. |
 | [Whole Foods Market – Cashier Team Member (Front End Service) – Part Time](https://careers.wholefoods.com/cashier-team-member-front-end-service-part-time/job/PAF-WFM-06A8B3D9-04AF-4F1D-94C9-50E4A8C14152_1055_1741849885_0?source=BA_LinkedInSponsored&utm_medium=jobboard) | Cashier Team Member (Front End Service) | Customer Service / Grocery Store | North Side, Chicago, IL | Applied | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [CyberCoders](https://www.linkedin.com/jobs/view/remote-it-support-70-90k-internal-security-at-cybercoders-4252330489) | Remote IT Support | IT | New York, NY (Remote) | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Talkdesk](https://www.linkedin.com/jobs/view/technical-support-engineer-at-talkdesk-4254859703) | Technical Support Engineer | IT / Technical Support | United States (Remote) | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -141,6 +144,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [Duke Animal Hospital](https://www.dukeanimalhospital.com/) | Veterinary Customer Service Representative | Animal Care | Chicago, IL | Applied | 10/21/2025 | Indeed | Combines communication skills with animal-care experience. Suited for fast-paced, client-facing environments. |
 | [Happy Camper](https://www.happycamper.pizza/) | Bartender | Hospitality | Chicago, IL | Applied | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Museum of Ice Cream](https://www.museumoficecream.com/careers) | Service Ambassador | Hospitality | Chicago, IL | Rejected | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Capgemini](https://www.capgemini.com/) | Junior Data Analyst | Data Analyst | Chicago, IL / New York City, NY | Applied | 10/21/2025 | Handshake | Scientific and tech consulting |
 | [The Peninsula — F&B Back Server Application](https://career10.successfactors.com/portalcareer?_s.crb=pOAhKgrGyC9ca%252b8vumVZ3dFeeNf%252bBXbckKb4n4aQz7s%253d) | Food & Beverage Server | Hospitality / Service / Restaurant | Chicago, IL | Applied | 10/20/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [Business Development Sales Representative – Chicago, IL (January 2026 Start)](https://transportationinsight.wd1.myworkdayjobs.com/en-US/TI_NTG_External_Careers) | Business Development Sales Representative | Business / Sales | Chicago, IL | Applied | 10/20/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [Insight Global](https://www.insightglobal.com) | Remote Data Analyst | IT / Data Analyst (Contract, Remote) | United States | Applied | 10/20/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -174,6 +178,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [Robert Half](https://www.roberthalf.com/jobs) | Help Desk Analyst | IT Support | Chicago, IL | Applied | 10/03/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [AllJoined](https://alljoined.com) | Software Engineering Research Intern | Software / Research | Remote | Applied | 10/02/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Bark Bark Club](https://www.barkbarkclub.com/) | Dog Daycare Attendant | Animal Care | Chicago, IL | Applied | 09/23/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Bark Bark Club](https://www.barkbarkclub.com/) | Dog Daycare Attendant (Full-Time) | Animal Care | Chicago, IL | Other | 09/23/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Mercor](https://www.mercor.io/) | English Support | IT / Support | Remote | Applied | 09/19/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Mercor](https://www.mercor.io/) | Enterprise Cloud Domain Support | Cloud / IT | Remote | Applied | 09/19/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Mercor](https://www.mercor.io/) | Intelligent Identity Engineer | Security / IT | Remote | Applied | 09/19/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -185,6 +190,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [Datadog](https://www.datadoghq.com/careers/) | Product Manager Intern | Product | Chicago, IL | Rejected | 09/10/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Capgemini (France)](https://www.capgemini.com/careers/) | Apprenticeship | Software | France | Rejected | 09/08/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Ravenswoof](https://www.ravenswoof.com/?gad_source=1&gad_campaignid=22676922603&gbraid=0AAAAAqwvntwaAuii5WDQFzZqKpMl_f7ry&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qdE4YxOPjDwyfsH15ohUFJVWXrIDCo2LDEYh-97qlAet5LVunlU0LhoCB3sQAvD_BwE) | Pet Bather | Animal Care | Chicago, IL | Applied | 09/07/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Ravenswoof](#) | Pet Bather | Animal Care | Chicago, IL | Closed | 09/07/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Robert Half](https://www.roberthalf.com/jobs) | Desk Support Technician | IT Support | Chicago, IL | Applied | 09/06/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Optimum Healthcare IT](https://www.optimumhit.com/careers) | Entry-Level Healthcare IT Analyst | IT / Healthcare | Remote | Applied | 09/06/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [GreenLoop IT Solutions](https://www.greenloopit.com/careers) | IT Support Specialist | IT Support | Remote | Applied | 09/06/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -201,6 +207,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [SPAATECH, Inc](https://www.spaatech.com/) | Business Development Representative – Technology Solutions | Business / IT | Chicago, IL | Applied | 09/05/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Green Paws Chicago](https://greenpawschicago.com/) | Dog Walker & Pet Sitter | Animal Care | Chicago, IL | Applied | 09/05/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [AESLIN Pup Hub](https://aeslin.com/) | Dog Daycare & Boarding Handler | Animal Care | Chicago, IL | Applied | 09/05/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [AESLIN Pup Hub](#) | Dog Daycare & Boarding Handler | Animal Care | Chicago, IL | Closed | 09/05/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [My Net Security, Inc.](#) | IT Technician | IT Support | Chicago, IL | Applied | 09/04/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Taylor Farms Illinois](https://www.taylorfarms.com/careers/) | Label Room Technician | Manufacturing / Ops | Chicago, IL | Applied | 09/04/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Creative Tech](#) | IT Field Technician | IT Support | Skokie, IL | Other | 09/04/2025 | Indeed | <span style='color:#999;'>—</span> |
@@ -212,6 +219,7 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Veterinary Assistant Apprentice | Animal Care | Little Italy / Medical District, Chicago, IL | Rejected | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Wakamono](https://www.wakamonosush) | Food Runner | Service | Chicago, IL | Applied | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Adoption Services Associate | Animal Care / Service | Chicago, IL | Applied | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Wakamono](#) | Food Runner | Service | Chicago, IL | Applied | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [METTLER TOLEDO](https://www.mt.com/us/en/home/careers.html) | Software Engineer | Software | Changzhou Shi, China | Applied | 08/07/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Supernova Companies](https://www.supernovacompanies.com/careers) | Entry Level Software Engineer | Software | Chicago, IL | Applied | 08/07/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Supernova Companies](https://www.supernovacompanies.com/careers) | Data Analyst | Data | Chicago, IL | Applied | 08/07/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -277,8 +285,8 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 
 </details>
 
-**Summary:** 📋 163 total — 🕐 95 active — ⏳ 42 likely inactive — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.**
+**Summary:** 📋 170 total — 🕐 100 active — ⏳ 42 likely inactive — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
-*Last updated October 22, 2025.*
+*Last updated October 23, 2025.*
