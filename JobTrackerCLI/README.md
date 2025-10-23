@@ -19,7 +19,9 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
 So far, I've applied to **169 positions** across multiple industries. Currently, **99 applications remain active**, and **41 likely inactive** (older than 60 days), with **1 interview** completed.  
+
 Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  
+
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
 <div align="center">
@@ -96,6 +98,28 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 </div>
 
 Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. The tracker calculates dynamic statistics, success rates, and updates this file in real-time.
+
+<div align="center">
+  <h2>🏗️ Object-Oriented Architecture</h2>
+</div>
+
+The tracker follows a modular **OOP design** for clarity, maintainability, and scalability.  
+- **tracker.core** — Handles main program flow, data management, and Markdown export.  
+- **tracker.data** — Contains the `JobApplication` class and `ApplicationStatus` enum for clean data modeling.  
+- **tracker.ui** — Provides the colorful CLI menus and input handling via `MenuHandler` and `UIHelper`.  
+- **tracker.utils** — Adds analytics, formatting, and file utilities for modular structure.  
+
+Each class encapsulates a single responsibility, making the codebase easy to extend and debug while maintaining strong encapsulation and abstraction.
+
+<div align="center">
+  <h2>🧪 Testing & Reliability</h2>
+</div>
+
+Extensive **JUnit 5 tests** validate all critical components of the tracker:  
+- ✅ `JobApplicationTest.java` — Confirms constructors, getters/setters, Markdown export, and file line parsing.  
+- 🧾 `FileManagerTest.java` — Tests save/load reliability, ensuring data integrity between sessions.  
+- 📊 `StatsTest.java` — Verifies analytics such as success rate, inactive detection, and category summaries.  
+All tests are automated through the included `Makefile` (`make test`) and print detailed colored results in the console.
 
 <div align="center">
   <h2>⚙️ How to Use</h2>

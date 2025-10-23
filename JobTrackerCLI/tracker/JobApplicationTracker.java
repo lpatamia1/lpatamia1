@@ -245,8 +245,8 @@ public class JobApplicationTracker {
 
         md.append(String.format(
             "So far, I've applied to **%d positions** across multiple industries. Currently, **%d applications remain active**, " +
-            "and **%d likely inactive** (older than 60 days), with **%d interview%s** completed.  \n" +
-            "Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  \n" +
+            "and **%d likely inactive** (older than 60 days), with **%d interview%s** completed.  \n\n" +
+            "Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  \n\n" +
             "This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.\n\n",
             s.total, s.trulyActive, s.stale, s.interviews, s.interviews == 1 ? "" : "s"
         ));
@@ -332,6 +332,26 @@ public class JobApplicationTracker {
         md.append("Built with **Java 17**, this app demonstrates file handling, date parsing, Markdown generation, and console-based UI design. ");
         md.append("It helps organize applications efficiently while serving as both a **career log** and a **personal software project**. ");
         md.append("The tracker calculates dynamic statistics, success rates, and updates this file in real-time.\n\n");
+        
+        // --- OOP ARCHITECTURE & TESTING SECTION ---
+        md.append("<div align=\"center\">\n");
+        md.append("  <h2>🏗️ Object-Oriented Architecture</h2>\n");
+        md.append("</div>\n\n");
+        md.append("The tracker follows a modular **OOP design** for clarity, maintainability, and scalability.  \n");
+        md.append("- **tracker.core** — Handles main program flow, data management, and Markdown export.  \n");
+        md.append("- **tracker.data** — Contains the `JobApplication` class and `ApplicationStatus` enum for clean data modeling.  \n");
+        md.append("- **tracker.ui** — Provides the colorful CLI menus and input handling via `MenuHandler` and `UIHelper`.  \n");
+        md.append("- **tracker.utils** — Adds analytics, formatting, and file utilities for modular structure.  \n\n");
+        md.append("Each class encapsulates a single responsibility, making the codebase easy to extend and debug while maintaining strong encapsulation and abstraction.\n\n");
+
+        md.append("<div align=\"center\">\n");
+        md.append("  <h2>🧪 Testing & Reliability</h2>\n");
+        md.append("</div>\n\n");
+        md.append("Extensive **JUnit 5 tests** validate all critical components of the tracker:  \n");
+        md.append("- ✅ `JobApplicationTest.java` — Confirms constructors, getters/setters, Markdown export, and file line parsing.  \n");
+        md.append("- 🧾 `FileManagerTest.java` — Tests save/load reliability, ensuring data integrity between sessions.  \n");
+        md.append("- 📊 `StatsTest.java` — Verifies analytics such as success rate, inactive detection, and category summaries.  \n");
+        md.append("All tests are automated through the included `Makefile` (`make test`) and print detailed colored results in the console.\n\n");
 
         // --- HOW TO USE ---
         md.append("<div align=\"center\">\n");
