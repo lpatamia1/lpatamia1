@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-169-blue">   <img src="https://img.shields.io/badge/Active-99-green">   <img src="https://img.shields.io/badge/Rejected-14-red">   <img src="https://img.shields.io/badge/Interviews-1-yellow">
+  <img src="https://img.shields.io/badge/Total-168-blue">   <img src="https://img.shields.io/badge/Active-98-green">   <img src="https://img.shields.io/badge/Rejected-14-red">   <img src="https://img.shields.io/badge/Interviews-1-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **169 positions** across multiple industries. Currently, **99 applications remain active**, and **41 likely inactive**, with **1 interview** completed.
+So far, I've applied to **168 positions** across multiple industries. Currently, **98 applications remain active**, and **41 likely inactive**, with **1 interview** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -26,8 +26,8 @@ So far, I've applied to **169 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left" width="50%">
 
-- **Total Applications:** 169  
-- 🕐 **Active / Pending:** 99  
+- **Total Applications:** 168  
+- 🕐 **Active / Pending:** 98  
 - ⏳ **Likely Inactive:** 41  
 - ❌ **Rejected:** 14  
 
@@ -49,7 +49,7 @@ So far, I've applied to **169 positions** across multiple industries. Currently,
 - 📦 **Closed:** 15  
 - 🌐 **Top Source:** LinkedIn  
 - ⚡ **Avg Applications per Week:** 6.3  
-- 🕐 **Still Waiting (Applied Only):** 133  
+- 🕐 **Still Waiting (Applied Only):** 132  
 - 📍 **Top Location:** Chicago, IL  
 - 📆 **Avg Days Since Application:** 52 days  
 - 🆕 **Most Recent:** [Tubman Technologies Inc.](https://www.tubmantech.com/) — Java with Gen AI Developer (10/22/2025)  
@@ -73,7 +73,6 @@ So far, I've applied to **169 positions** across multiple industries. Currently,
 • **Environmental / Sustainability:** 2<br>
 </td><td valign='top' align='left'>
 
-• **Other:** 2<br>
 • **Policy / Research:** 2<br>
 • **Automation / Robotics:** 1<br>
 • **Business / Operations:** 1<br>
@@ -81,6 +80,7 @@ So far, I've applied to **169 positions** across multiple industries. Currently,
 • **Finance:** 1<br>
 • **Healthcare / Life Sciences:** 1<br>
 • **Marketing / Communications:** 1<br>
+• **Other:** 1<br>
 • **Product / Design:** 1<br>
 </td></tr></table>
 
@@ -133,7 +133,6 @@ So far, I've applied to **169 positions** across multiple industries. Currently,
 | [StellarBlue.ai](https://www.stellarblue.ai) | AI-Driven Full-Stack Developer | Software, AI Development | Remote - US (Wisconsin HQ) | Applied | 10/20/2025 | LinkedIn | Builds AI-powered web apps using modern stacks; merges software engineering with applied machine learning. |
 | [CyberCoders – Remote IT Support (Internal, Security)](https://www.linkedin.com/jobs/view/remote-it-support-%2470-%2490k-internal-security-at-cybercoders-3780836962/) | Remote IT Support - Internal & Security | IT Support | Remote - US (HQ in Irvine, CA) | Applied | 10/20/2025 | LinkedIn | Fully remote |
 | [Application Success – Business Continuity Planner](https://careers.morningstar.com/us/en/applythankyou?status=success&jobSeqNo=MORMORUSAP8200436EXTERNALENUS&jobTitle=Business%20Continuity%20Planner&jobId=AP-8200436&candidateHomeUrl=https://morningstar.wd5.myworkdayjobs.com/Americas/login?Job_Application_ID=JOB_APPLICATION-3-2213667&jobApplicationId=JOB_APPLICATION-3-2213667&candidateId=CANDIDATE-3-1483762) | Business Continuity Planner | IT / Business | Chicago, IL | Rejected | 10/17/2025 | Company Website | <span style='color:#999;'>—</span> |
-| [Application Success – MDP Track: Direct Platform (Campus)](https://careers.morningstar.com/us/en/applythankyou?status=success&jobSeqNo=MORMORUSREQ052832EXTERNALENUS&jobTitle=MDP%20Track%3A%20Direct%20Platform%20(Campus)&jobId=REQ-052832&candidateHomeUrl=https://morningstar.wd5.myworkdayjobs.com/Americas/login?Job_Application_ID=JOB_APPLICATION-3-2213663&jobApplicationId=JOB_APPLICATION-3-2213663&candidateId=CANDIDATE-3-1483762) | MDP Track - Direct Platform (Campus) | Full-time (Early Career Program) | Chicago, IL | Applied | 10/17/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [Barback — Avli Chicago](https://www.avli.us/careers) | Barback | Hospitality | Chicago, IL | Applied | 10/17/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Server — Avli Chicago](https://www.avli.us/careers) | Server | Hospitality | Chicago, IL | Applied | 10/17/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Host — Sunda Fulton Market](https://www.sundachicago.com/careers/) | Host | Restaurant / Service | Fulton Market, Chicago, IL | Applied | 10/17/2025 | Indeed | <span style='color:#999;'>—</span> |
@@ -265,7 +264,7 @@ So far, I've applied to **169 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 169 total — 🕐 99 active — ⏳ 41 likely inactive — ❌ 14 rejected — 💬 1 interviews — ✅ 0 hired.**
+**Summary:** 📋 168 total — 🕐 98 active — ⏳ 41 likely inactive — ❌ 14 rejected — 💬 1 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
