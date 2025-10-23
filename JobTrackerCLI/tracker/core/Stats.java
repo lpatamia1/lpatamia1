@@ -51,40 +51,40 @@ public class Stats {
         int total = applications.size();
 
         long rejected = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.REJECTED)
+                .filter(a -> a.getStatus() == ApplicationStatus.REJECTED)
                 .count();
 
         long hired = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.HIRED)
+                .filter(a -> a.getStatus() == ApplicationStatus.HIRED)
                 .count();
 
         long interviews = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.INTERVIEW)
+                .filter(a -> a.getStatus() == ApplicationStatus.INTERVIEW)
                 .count();
 
         long closed = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.CLOSED)
+                .filter(a -> a.getStatus() == ApplicationStatus.CLOSED)
                 .count();
 
         long active = total - rejected - hired - closed;
 
         long stale = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.APPLIED)
-                .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) > 60)
+                .filter(a -> a.getStatus() == ApplicationStatus.APPLIED)
+                .filter(a -> ChronoUnit.DAYS.between(a.getDateApplied(), LocalDate.now()) > 60)
                 .count();
 
         long trulyActive = Math.max(0, active - stale);
         double successRate = total == 0 ? 0 : (double) (hired + interviews) / total * 100;
 
         String topSource = applications.stream()
-                .collect(Collectors.groupingBy(a -> a.source, Collectors.counting()))
+                .collect(Collectors.groupingBy(a -> a.getSource(), Collectors.counting()))
                 .entrySet().stream()
                 .max(Map.Entry.comparingByValue())
                 .map(Map.Entry::getKey)
                 .orElse("Unknown");
 
         String topLocation = applications.stream()
-                .collect(Collectors.groupingBy(a -> a.location, Collectors.counting()))
+                .collect(Collectors.groupingBy(a -> a.getLocation(), Collectors.counting()))
                 .entrySet().stream()
                 .max(Map.Entry.comparingByValue())
                 .map(Map.Entry::getKey)
@@ -92,7 +92,7 @@ public class Stats {
 
         long daysSpan = ChronoUnit.DAYS.between(
                 applications.stream()
-                        .map(a -> a.dateApplied)
+                        .map(a -> a.getDateApplied())
                         .min(LocalDate::compareTo)
                         .orElse(LocalDate.now()),
                 LocalDate.now());
@@ -100,11 +100,11 @@ public class Stats {
         double perWeek = total / Math.max(daysSpan / 7.0, 1.0);
 
         long openApps = applications.stream()
-                .filter(a -> a.status == ApplicationStatus.APPLIED)
+                .filter(a -> a.getStatus() == ApplicationStatus.APPLIED)
                 .count();
 
         JobApplication latest = applications.stream()
-                .max(Comparator.comparing(a -> a.dateApplied))
+                .max(Comparator.comparing(a -> a.getDateApplied()))
                 .orElse(null);
 
         return new Stats(total, rejected, hired, interviews, closed, active, stale, trulyActive,
@@ -142,7 +142,7 @@ public class Stats {
         if (latest != null)
             System.out.printf("%s🆕 Most Recent:%s %s — %s (%s)%n",
                 UIHelper.PINK, UIHelper.RESET,
-                latest.company, latest.role, latest.dateApplied);
+                latest.getCompany(), latest.getRole(), latest.getDateApplied());
     }
 
     // 🌈 Dashboard Snapshot (Option 9)
@@ -169,7 +169,7 @@ public class Stats {
             System.out.println("\n" + UIHelper.PINK +
                 "🌸 Most Recent Application:" + UIHelper.RESET);
             System.out.printf("%s → %s (%s on %s)%n",
-                latest.company, latest.role, latest.status, latest.dateApplied);
+                latest.getCompany(), latest.getRole(), latest.getStatus(), latest.getDateApplied());
         }
 
         System.out.println(UIHelper.TEAL +

@@ -122,22 +122,27 @@ public class FileManager {
             new OutputStreamWriter(
                 new FileOutputStream(csvFile), 
                 java.nio.charset.StandardCharsets.UTF_8))) {
-                    
+
             pw.println("Company,Role,Type,Location,Status,Date Applied,Source,Notes");
 
-            for (JobApplication a : applications) {
-                // 🧼 Clean data for CSV safety
-                String safeCompany  = (a.company == null)  ? "" : a.company.replace(",", ";").replace("\"", "'");
-                String safeRole     = (a.role == null)     ? "" : a.role.replace(",", ";").replace("\"", "'");
-                String safeType     = (a.type == null)     ? "" : a.type.replace(",", ";").replace("\"", "'");
-                String safeLocation = (a.location == null) ? "" : a.location.replace(",", ";").replace("\"", "'");
-                String safeSource   = (a.source == null)   ? "" : a.source.replace(",", ";").replace("\"", "'");
-                String safeNotes    = (a.notes == null)    ? "" : a.notes.replace(",", ";").replace("\"", "'");
+        for (JobApplication a : applications) {
+            String safeCompany  = clean(a.getCompany());
+            String safeRole     = clean(a.getRole());
+            String safeType     = clean(a.getType());
+            String safeLocation = clean(a.getLocation());
+            String safeSource   = clean(a.getSource());
+            String safeNotes    = clean(a.getNotes());
 
-                pw.printf("\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"%n",
-                        safeCompany, safeRole, safeType, safeLocation, a.status.name(),
-                        a.dateApplied, safeSource, safeNotes);
-            }
+            pw.printf("\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"%n",
+                    safeCompany,
+                    safeRole,
+                    safeType,
+                    safeLocation,
+                    a.getStatus().name(),
+                    a.getDateApplied().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")),
+                    safeSource,
+                    safeNotes);
+        }
 
             System.out.println(UIHelper.GREEN + "✅ Exported applications.csv for web dashboard." + UIHelper.RESET);
             System.out.println(UIHelper.MINT +
@@ -147,4 +152,10 @@ public class FileManager {
             System.out.println(UIHelper.RED + "❌ Failed to export CSV: " + e.getMessage() + UIHelper.RESET);
         }
     }
+    // 🧼 Helper to sanitize text for CSV
+    private static String clean(String value) {
+        if (value == null) return "";
+        return value.replace(",", ";").replace("\"", "'").trim();
+    }
+
 }

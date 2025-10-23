@@ -211,7 +211,7 @@ public class JobApplicationTracker {
     }
 
     private static void exportMarkdown() throws IOException {
-        applications.sort(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed());
+        applications.sort(Comparator.comparing((JobApplication a) -> a.getDateApplied()).reversed());
         Stats s = Stats.compute(applications);
         String today = LocalDate.now().format(HUMAN);
 
@@ -278,7 +278,7 @@ public class JobApplicationTracker {
 
         // 🧮 Calculate extra stats
         long avgDays = (long) applications.stream()
-            .mapToLong(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()))
+            .mapToLong(a -> ChronoUnit.DAYS.between(a.getDateApplied(), LocalDate.now()))
             .average()
             .orElse(0);
 
@@ -293,8 +293,8 @@ public class JobApplicationTracker {
         md.append(String.format("- 📆 **Avg Days Since Application:** %d days  \n", avgDays));
         if (s.latest != null)
             md.append(String.format("- 🆕 **Most Recent:** %s — %s (%s)  \n",
-                s.latest.company, s.latest.role,
-                s.latest.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"))));
+                s.latest.getCompany(), s.latest.getRole(),
+                s.latest.getDateApplied().format(DateTimeFormatter.ofPattern("MM/dd/yyyy"))));
         md.append("</td></tr></table>\n\n");
 
         // --- CATEGORY SUMMARY ---
@@ -303,7 +303,7 @@ public class JobApplicationTracker {
         md.append("</div>\n\n");
 
         Map<String, Long> byCategory = applications.stream()
-            .collect(Collectors.groupingBy(a -> simplifyType(a.type), TreeMap::new, Collectors.counting()));
+            .collect(Collectors.groupingBy(a -> simplifyType(a.getType()), TreeMap::new, Collectors.counting()));
 
         List<Map.Entry<String, Long>> entries = new ArrayList<>(byCategory.entrySet());
         entries.sort((a, b) -> Long.compare(b.getValue(), a.getValue())); // biggest first

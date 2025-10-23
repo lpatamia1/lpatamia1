@@ -17,21 +17,22 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
 public class JobApplication {
-    public String company;
-    public String role;
-    public String type;
-    public String location;
-    public String source;
-    public String notes;
-    public ApplicationStatus status;
-    public LocalDate dateApplied;
+    // 🧱 Private fields (encapsulated)
+    private String company;
+    private String role;
+    private String type;
+    private String location;
+    private String source;
+    private String notes;
+    private ApplicationStatus status;
+    private LocalDate dateApplied;
 
     // 📅 Supported date formats
     private static final DateTimeFormatter ISO = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     private static final DateTimeFormatter MD = DateTimeFormatter.ofPattern("MM/dd/yyyy");
     private static final DateTimeFormatter MD_DASH = DateTimeFormatter.ofPattern("MM-dd-yyyy");
 
-    // 🧱 Constructors
+    // 🧩 Constructors
     public JobApplication(String company, String role, String type, String location,
                           String status, String dateApplied, String source) {
         this(company, role, type, location, status, dateApplied, source, "");
@@ -43,7 +44,7 @@ public class JobApplication {
         this.role = role.trim();
         this.type = type.trim();
         this.location = location.trim();
-        this.status = ApplicationStatus.from(status); 
+        this.status = ApplicationStatus.from(status);
         this.source = source.trim();
         this.notes = notes == null ? "" : notes.trim();
         this.dateApplied = parseFlexible(dateApplied.trim());
@@ -64,10 +65,43 @@ public class JobApplication {
         }
     }
 
-    // 💾 Save to file
+    // 🪞 Getters (public read-only access)
+    public String getCompany()       { return company; }
+    public String getRole()          { return role; }
+    public String getType()          { return type; }
+    public String getLocation()      { return location; }
+    public String getSource()        { return source; }
+    public String getNotes()         { return notes; }
+    public ApplicationStatus getStatus() { return status; }
+    public LocalDate getDateApplied(){ return dateApplied; }
+
+    // 🛠️ Setters (controlled modification)
+    public void setCompany(String v)       { this.company = v; }
+    public void setRole(String v)          { this.role = v; }
+    public void setType(String v)          { this.type = v; }
+    public void setLocation(String v)      { this.location = v; }
+    public void setSource(String v)        { this.source = v; }
+    public void setNotes(String v)         { this.notes = v == null ? "" : v.trim(); }
+    public void setStatus(ApplicationStatus v) { this.status = v; }
+    public void setDateApplied(LocalDate v){ this.dateApplied = v; }
+
+    // ✏️ Edit all details at once
+    public void editDetails(String company, String role, String type, String location,
+                            String status, String dateApplied, String source, String notes) {
+        this.company = company.trim();
+        this.role = role.trim();
+        this.type = type.trim();
+        this.location = location.trim();
+        this.status = ApplicationStatus.from(status);
+        this.source = source.trim();
+        this.notes = notes == null ? "" : notes.trim();
+        this.dateApplied = parseFlexible(dateApplied.trim());
+    }
+
+    // 💾 Save to file format
     public String toFileLine() {
         return String.join("|",
-                company, role, type, location, status.name(),  
+                company, role, type, location, status.name(),
                 dateApplied.format(MD), source, notes);
     }
 
@@ -80,7 +114,7 @@ public class JobApplication {
         return new JobApplication(p[0], p[1], p[2], p[3], p[4], p[5], p[6], notes);
     }
 
-    // 📝 Convert to Markdown row
+    // 📝 Convert to Markdown table row
     public String toMarkdownRow() {
         String displayStatus = status.name().charAt(0) + status.name().substring(1).toLowerCase();
         return String.format(
@@ -96,34 +130,11 @@ public class JobApplication {
         );
     }
 
-    // ✏️ Edit details
-    public void editDetails(String company, String role, String type, String location,
-                            String status, String dateApplied, String source, String notes) {
-        this.company = company.trim();
-        this.role = role.trim();
-        this.type = type.trim();
-        this.location = location.trim();
-        this.status = ApplicationStatus.from(status); 
-        this.source = source.trim();
-        this.notes = notes == null ? "" : notes.trim();
-        this.dateApplied = parseFlexible(dateApplied.trim());
+    // 🧩 Debug print helper
+    @Override
+    public String toString() {
+        return String.format("%s - %s (%s, %s)",
+                company, role, status.name(),
+                dateApplied.format(MD));
     }
-
-    public void setNotes(String notes) {
-        this.notes = notes == null ? "" : notes.trim();
-    }
-
-    public void setStatus(String status) {
-        this.status = ApplicationStatus.from(status); 
-    }
-
-    public void setStatus(ApplicationStatus status) {
-        this.status = status; 
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-
 }

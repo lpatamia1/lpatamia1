@@ -39,9 +39,9 @@ public class MenuHandler {
         }
 
         List<JobApplication> results = applications.stream()
-                .filter(a -> a.company.toLowerCase().contains(keyword)
-                        || a.role.toLowerCase().contains(keyword))
-                .sorted(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed())
+                .filter(a -> a.getCompany().toLowerCase().contains(keyword)
+                        || a.getRole().toLowerCase().contains(keyword))
+                .sorted(Comparator.comparing((JobApplication a) -> a.getDateApplied()).reversed())
                 .collect(Collectors.toList());
 
         if (results.isEmpty()) {
@@ -58,8 +58,8 @@ public class MenuHandler {
         for (int i = 0; i < results.size(); i++) {
             JobApplication a = results.get(i);
             System.out.printf("%2d. %-35s | %-25s | %-12s | %s\n",
-                    i + 1, a.company, a.role, a.status,
-                    a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+                    i + 1, a.getCompany(), a.getRole(), a.getStatus(),
+                    a.getDateApplied().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         }
 
         System.out.print("\n💡 View details or update status (enter number, or press Enter to skip): ");
@@ -81,12 +81,12 @@ public class MenuHandler {
         JobApplication a = results.get(index);
 
         System.out.println("\n──────────────────────────────────────────────────────────────");
-        System.out.println("Company:   " + a.company);
-        System.out.println("Role:      " + a.role);
-        System.out.println("Status:    " + a.status);
-        System.out.println("Applied:   " + a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
-        System.out.println("Source:    " + a.source);
-        System.out.println("Notes:     " + (a.notes == null || a.notes.isEmpty() ? "—" : a.notes));
+        System.out.println("Company:   " + a.getCompany());
+        System.out.println("Role:      " + a.getRole());
+        System.out.println("Status:    " + a.getStatus());
+        System.out.println("Applied:   " + a.getDateApplied().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+        System.out.println("Source:    " + a.getSource());
+        System.out.println("Notes:     " + (a.getNotes() == null || a.getNotes().isEmpty() ? "—" : a.getNotes()));
         System.out.println("──────────────────────────────────────────────────────────────");
 
         System.out.print("\n⚙️  Quick Edit this application? (y/n): ");
@@ -94,7 +94,7 @@ public class MenuHandler {
         if (editChoice.equals("y")) {
             System.out.print("✏️  New Status (leave blank to keep): ");
             String newStatus = sc.nextLine().trim();
-            if (!newStatus.isEmpty()) a.status = ApplicationStatus.from(newStatus);
+            if (!newStatus.isEmpty()) a.setStatus(ApplicationStatus.from(newStatus));
 
             System.out.print("📍 New Location (leave blank to keep): ");
             String newLocation = sc.nextLine().trim();
@@ -119,9 +119,9 @@ public class MenuHandler {
         }
 
         List<JobApplication> matches = applications.stream()
-                .filter(a -> a.company.toLowerCase().contains(keyword)
-                        || a.role.toLowerCase().contains(keyword))
-                .sorted(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed())
+                .filter(a -> a.getCompany().toLowerCase().contains(keyword)
+                        || a.getRole().toLowerCase().contains(keyword))
+                .sorted(Comparator.comparing((JobApplication a) -> a.getDateApplied()).reversed())
                 .collect(Collectors.toList());
 
         if (matches.isEmpty()) {
@@ -133,8 +133,8 @@ public class MenuHandler {
         for (int i = 0; i < matches.size(); i++) {
             JobApplication a = matches.get(i);
             System.out.printf("%2d. %-35s | %-25s | %-12s | %s\n",
-                    i + 1, a.company, a.role, a.status,
-                    a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+                    i + 1, a.getCompany(), a.getRole(), a.getStatus(),
+                    a.getDateApplied().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         }
 
         System.out.print("\n❓ Enter the number of the job to remove (or press Enter to cancel): ");
@@ -150,7 +150,8 @@ public class MenuHandler {
             JobApplication toRemove = matches.get(index);
             applications.remove(toRemove);
             FileManager.saveApplications(applications);
-            System.out.println(UIHelper.GREEN + "✅ Removed: " + toRemove.company + " — " + toRemove.role + UIHelper.RESET);
+            System.out.println(UIHelper.GREEN + 
+                "✅ Removed: " + toRemove.getCompany() + " — " + toRemove.getRole() + UIHelper.RESET);
         } catch (NumberFormatException e) {
             System.out.println(UIHelper.RED + "⚠️ Invalid input. Please enter a number." + UIHelper.RESET);
         }
@@ -159,8 +160,8 @@ public class MenuHandler {
     // 🕒 View recent applications (<= 3 days)
     public void viewRecentApplications() {
         List<JobApplication> recent = applications.stream()
-                .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) <= 3)
-                .sorted(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed())
+                .filter(a -> ChronoUnit.DAYS.between(a.getDateApplied(), LocalDate.now()) <= 3)
+                .sorted(Comparator.comparing((JobApplication a) -> a.getDateApplied()).reversed())
                 .collect(Collectors.toList());
 
         System.out.println(UIHelper.LAVENDER + "\n╔═════════════════════════════════════════════════════════════════════════════════════════╗");
@@ -174,8 +175,8 @@ public class MenuHandler {
 
         for (JobApplication a : recent) {
             System.out.printf("%s%-35s%s | %-25s | %-12s | %s\n",
-                    UIHelper.CYAN, a.company, UIHelper.RESET, a.role, a.status,
-                    a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+                    UIHelper.CYAN, a.getCompany(), UIHelper.RESET, a.getRole(), a.getStatus(),
+                    a.getDateApplied().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         }
 
         System.out.printf(UIHelper.MINT + "\n🕊️  You’ve applied to %d job%s in the last 3 days.%n" + UIHelper.RESET,
@@ -209,9 +210,9 @@ public class MenuHandler {
                         cols[4], cols[5], cols[6], notes
                 );
                 boolean dup = applications.stream().anyMatch(
-                        x -> x.company.equals(a.company)
-                                && x.role.equals(a.role)
-                                && x.dateApplied.equals(a.dateApplied)
+                        x -> x.getCompany().equals(a.getCompany())
+                                && x.getRole().equals(a.getRole())
+                                && x.getDateApplied().equals(a.getDateApplied())
                 );
                 if (!dup) applications.add(a);
             } catch (Exception ignore) {}
