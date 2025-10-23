@@ -12,7 +12,10 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
   <h2>💡 Highlights</h2>
 </div>
 
-![Active](https://img.shields.io/badge/Active-100-brightgreen) ![Rejected](https://img.shields.io/badge/Rejected-13-red) ![Interviews](https://img.shields.io/badge/Interviews-1-yellow)
+  <p>
+    <img src="https://img.shields.io/badge/Active-100-brightgreen" alt="Active">     <img src="https://img.shields.io/badge/Rejected-13-red" alt="Rejected">     <img src="https://img.shields.io/badge/Interviews-1-blue" alt="Interviews">
+  </p>
+</div>
 
 So far, I've applied to **170 positions** across multiple industries. Currently, **100 applications remain active**, and **42 likely inactive** (older than 60 days), with **1 interview** completed.  
 Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  
