@@ -1,4 +1,21 @@
-// 🌸 Job Application Tracker CLI — v3.0
+/**
+ * 🌸 Job Application Tracker CLI — v3.0
+ * 
+ * 💖 Purpose:
+ * The main entry point for the Job Application Tracker CLI.  
+ * Handles loading, saving, menu navigation, and Markdown/CSV exports.
+ *
+ * 🧭 Notes:
+ * - Uses {@link FileManager}, {@link MenuHandler}, and {@link Stats} for modularity.
+ * - Generates colorful ASCII dashboards via {@link UIHelper}.
+ * - Supports Markdown export with career analytics and data summaries.
+ * - Built for reproducibility and GitHub portfolio integration.
+ * 
+ * ✨ Author: Lily Patamia
+ * 📦 Package: tracker
+ * 🕒 Version: 3.0
+ */
+
 package tracker;
 
 import tracker.core.*;
@@ -11,10 +28,6 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.stream.Collectors;
-
-/**
- * Main class for the Job Application Tracker CLI.
- */
 
 public class JobApplicationTracker {
     public static final DateTimeFormatter HUMAN = DateTimeFormatter.ofPattern("MMMM d, yyyy");
@@ -204,6 +217,14 @@ public class JobApplicationTracker {
         md.append("<div align=\"center\">\n");
         md.append("  <h2>💡 Highlights</h2>\n");
         md.append("</div>\n\n");
+        
+        // Status badges
+        md.append(String.format(
+        "![Active](https://img.shields.io/badge/Active-%d-brightgreen) " +
+        "![Rejected](https://img.shields.io/badge/Rejected-%d-red) " +
+        "![Interviews](https://img.shields.io/badge/Interviews-%d-yellow)\n\n",
+        s.trulyActive, s.rejected, s.interviews));
+
         md.append(String.format(
             "So far, I've applied to **%d positions** across multiple industries. Currently, **%d applications remain active**, " +
             "and **%d likely inactive** (older than 60 days), with **%d interview%s** completed.  \n" +
