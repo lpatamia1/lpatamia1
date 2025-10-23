@@ -1,4 +1,4 @@
-package tracker;
+package tracker.core;
 
 import java.util.Locale;
 /**

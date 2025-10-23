@@ -1,5 +1,5 @@
   // SEED: 103 entries (original 100 + 3 new: Museum of Ice Cream, Eataly x2, Comfort Dental)
-package tracker;
+package tracker.data;
 
 public class SeedData {
     public static final String SEED_MARKDOWN = 

@@ -1,10 +1,10 @@
-package tracker;
+package tracker.core;
 
+import tracker.data.JobApplication;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * Handles all file operations for the Job Application Tracker:

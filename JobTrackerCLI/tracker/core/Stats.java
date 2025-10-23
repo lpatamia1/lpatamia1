@@ -1,10 +1,10 @@
-package tracker;
+package tracker.core;
 
+import tracker.data.JobApplication;
+import tracker.ui.UIHelper;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
-import java.time.*;
-import java.time.format.DateTimeFormatter;
 import java.util.stream.Collectors;
 
 // 📊 Encapsulates analytics computed from job applications

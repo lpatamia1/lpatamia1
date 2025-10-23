@@ -1,5 +1,6 @@
-package tracker;
+package tracker.data;
 
+import tracker.core.ApplicationStatus;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -15,10 +16,15 @@ import java.time.format.DateTimeParseException;
  * - Converts data seamlessly between file lines and Markdown table rows.
  */
 
-class JobApplication {
-    String company, role, type, location, source, notes;
-    ApplicationStatus status;
-    LocalDate dateApplied;
+public class JobApplication {
+    public String company;
+    public String role;
+    public String type;
+    public String location;
+    public String source;
+    public String notes;
+    public ApplicationStatus status;
+    public LocalDate dateApplied;
 
     // 📅 Supported date formats
     private static final DateTimeFormatter ISO = DateTimeFormatter.ofPattern("yyyy-MM-dd");

@@ -1,5 +1,5 @@
 // 🌸 UIHelper.java — color palette + ASCII UI elements
-package tracker;
+package tracker.ui;
 
 public class UIHelper {
 

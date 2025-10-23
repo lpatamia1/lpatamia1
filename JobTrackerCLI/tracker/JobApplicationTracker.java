@@ -1,16 +1,16 @@
 // 🌸 Job Application Tracker CLI — v3.0
 package tracker;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.time.LocalDate;
+import tracker.core.*;
+import tracker.ui.*;
+import tracker.data.*;
+
+import java.io.*;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.time.temporal.ChronoUnit;
-import tracker.MenuHandler;
 
 /**
  * Main class for the Job Application Tracker CLI.
