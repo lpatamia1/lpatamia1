@@ -59,3 +59,10 @@ clean:
 rebuild: clean all
 
 .PHONY: all run clean rebuild test
+
+# --------------------------------------------------------------
+# APP
+# --------------------------------------------------------------
+serve:
+	@echo "🌐 Starting Flask dashboard on http://127.0.0.1:5000"
+	@python3 app.py
