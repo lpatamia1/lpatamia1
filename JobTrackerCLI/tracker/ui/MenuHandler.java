@@ -82,6 +82,7 @@ public class MenuHandler {
 
         System.out.println("\n──────────────────────────────────────────────────────────────");
         System.out.println("Company:   " + a.getCompany());
+        System.out.println("Location:  " + a.getLocation());
         System.out.println("Role:      " + a.getRole());
         System.out.println("Status:    " + a.getStatus());
         System.out.println("Applied:   " + a.getDateApplied().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
