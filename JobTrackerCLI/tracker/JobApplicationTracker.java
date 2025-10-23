@@ -218,15 +218,18 @@ public class JobApplicationTracker {
         md.append("  <h2>💡 Highlights</h2>\n");
         md.append("</div>\n\n");
 
-        // Status badges
+        // 🌈 Centered status badges (render perfectly on GitHub)
         md.append("<p align=\"center\">\n");
         md.append(String.format(
         "  <img src=\"https://img.shields.io/badge/Total-%d-blue\" alt=\"Total\"> " +
-        "  <img src=\"https://img.shields.io/badge/Active-%d-brightgreen\" alt=\"Active\"> " +
+        "  <img src=\"https://img.shields.io/badge/Active-%d-green\" alt=\"Active\"> " +
         "  <img src=\"https://img.shields.io/badge/Rejected-%d-red\" alt=\"Rejected\"> " +
-        "  <img src=\"https://img.shields.io/badge/Interviews-%d-blue\" alt=\"Interviews\">\n",
+        "  <img src=\"https://img.shields.io/badge/Interviews-%d-yellow\" alt=\"Interviews\">\n",
         s.total, s.trulyActive, s.rejected, s.interviews));
         md.append("</p>\n\n");
+
+        // 💅 Optional: soft divider line
+        md.append("<hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>\n\n");
 
         md.append(String.format(
             "So far, I've applied to **%d positions** across multiple industries. Currently, **%d applications remain active**, " +
