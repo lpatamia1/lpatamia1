@@ -1,16 +1,17 @@
 # ==============================================================
-# 🧭 Job Application Tracker - Makefile (v3.0)
-# Compiles, runs, and checks all Java sources recursively
+# 🧭 Job Application Tracker - Makefile (v3.1)
+# Compiles, runs, and tests all Java sources recursively
 # ==============================================================
 JAVAC = javac
 JAVA  = java
 SRC_DIR = tracker
 MAIN = tracker.JobApplicationTracker
+JUNIT_JAR = lib/junit-platform-console-standalone.jar
 
 # --------------------------------------------------------------
-# 🧩 Source files (recursive)
+# 🧩 Source files (recursive, excluding tests)
 # --------------------------------------------------------------
-SOURCES := $(shell find $(SRC_DIR) -name "*.java")
+SOURCES := $(shell find $(SRC_DIR) -name "*.java" ! -path "*/test/*")
 CLASSES := $(SOURCES:.java=.class)
 
 # --------------------------------------------------------------
@@ -32,6 +33,17 @@ run: all
 	@echo "🏁 Program exited successfully."
 
 # --------------------------------------------------------------
+# 🧪 Run JUnit 5 Tests
+# --------------------------------------------------------------
+test:
+	@echo "🧪 Compiling source and test files with JUnit..."
+	@$(JAVAC) -cp .:$(JUNIT_JAR) -d . $(shell find tracker -name "*.java")
+	@echo "✅ Compilation successful!"
+	@echo "🔍 Running automated JUnit tests..."
+	@$(JAVA) -jar $(JUNIT_JAR) --class-path . --scan-class-path
+	@echo "✅ All tests executed successfully!"
+
+# --------------------------------------------------------------
 # 🧹 Clean build artifacts
 # --------------------------------------------------------------
 clean:
@@ -44,13 +56,5 @@ clean:
 # 🔄 Rebuild everything
 # --------------------------------------------------------------
 rebuild: clean all
-
-# --------------------------------------------------------------
-# 🧪 Test compilation (verbose)
-# --------------------------------------------------------------
-test:
-	@echo "🧪 Test compiling with detailed warnings..."
-	@$(JAVAC) -Xlint:all -Xdiags:verbose -d . $(SOURCES)
-	@echo "✅ Test build finished successfully."
 
 .PHONY: all run clean rebuild test

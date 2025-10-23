@@ -166,5 +166,5 @@ Eataly|Cashier|Retail / Service|River North, Chicago, IL|APPLIED|10/15/2025|Link
 [APCIA](https://www.apci.org/)|IT Systems Support Intern|IT Support|Chicago, IL|CLOSED|05/08/2025|Indeed|
 [C4 Chicago](https://www.c4chicago.org/)|Development Intern|Nonprofit / Dev|Chicago, IL|CLOSED|05/08/2025|Indeed|
 [Blueera Technologies, Inc.](https://blueeratech.com/careers)|DevOps Engineer|Software / IT|Remote / Indiana / TX|APPLIED|05/07/2025|Handshake|
-[The Public Interest Network Creative Team](https://publicinterestnetwork.org/jobs/)|Web & Digital Content Intern|Communications / Web|Remote / Chicago, IL / Boston, MA|APPLIED|05/07/2025|Handshake|
+[The Public Interest Network Creative Team](https://publicinterestnetwork.org/jobs/)|Web & Digital Content Intern|Communications / Web|Remote / Chicago, IL / Boston, MA|REJECTED|05/07/2025|Handshake|
 [Bark Bark Club](https://www.barkbarkclub.com/)|Dog Daycare Attendant (Part-Time)|Animal Care|Chicago, IL|CLOSED|04/18/2025|Indeed|

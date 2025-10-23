@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-170-blue" alt="Total">   <img src="https://img.shields.io/badge/Active-100-green" alt="Active">   <img src="https://img.shields.io/badge/Rejected-13-red" alt="Rejected">   <img src="https://img.shields.io/badge/Interviews-1-yellow" alt="Interviews">
+  <img src="https://img.shields.io/badge/Total-170-blue" alt="Total">   <img src="https://img.shields.io/badge/Active-100-green" alt="Active">   <img src="https://img.shields.io/badge/Rejected-14-red" alt="Rejected">   <img src="https://img.shields.io/badge/Interviews-1-yellow" alt="Interviews">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **170 positions** across multiple industries. Currently, **100 applications remain active**, and **42 likely inactive** (older than 60 days), with **1 interview** completed.  
+So far, I've applied to **170 positions** across multiple industries. Currently, **100 applications remain active**, and **41 likely inactive** (older than 60 days), with **1 interview** completed.  
 Most applications came through LinkedIn and Handshake, spanning software, IT, and data roles.  
 This tracker provides a transparent snapshot of growth, persistence, and progress through the 2025 job season.
 
@@ -32,8 +32,8 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 
 - **Total Applications:** 170  
 - 🕐 **Active / Pending:** 100  
-- ⏳ **Likely Inactive:** 42  
-- ❌ **Rejected:** 13  
+- ⏳ **Likely Inactive:** 41  
+- ❌ **Rejected:** 14  
 
 </td>
 <td align="left" width="50%">
@@ -56,7 +56,7 @@ This tracker provides a transparent snapshot of growth, persistence, and progres
 - 📦 **Closed:** 15  
 - 🌐 **Top Source:** LinkedIn  
 - ⚡ **Avg Applications per Week:** 6.3  
-- 🕐 **Still Waiting (Applied Only):** 135  
+- 🕐 **Still Waiting (Applied Only):** 134  
 - 📍 **Top Location:** Chicago, IL  
 - 📆 **Avg Days Since Application:** 52 days  
 - 🆕 **Most Recent:** [Tubman Technologies Inc.](https://www.tubmantech.com/) — Java with Gen AI Developer (10/22/2025)  
@@ -286,12 +286,12 @@ To refresh this README, run **Option 3: Export README** from the main menu.
 | [APCIA](https://www.apci.org/) | IT Systems Support Intern | IT Support | Chicago, IL | Closed | 05/08/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [C4 Chicago](https://www.c4chicago.org/) | Development Intern | Nonprofit / Dev | Chicago, IL | Closed | 05/08/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Blueera Technologies, Inc.](https://blueeratech.com/careers) | DevOps Engineer | Software / IT | Remote / Indiana / TX | Applied | 05/07/2025 | Handshake | <span style='color:#999;'>—</span> |
-| [The Public Interest Network Creative Team](https://publicinterestnetwork.org/jobs/) | Web & Digital Content Intern | Communications / Web | Remote / Chicago, IL / Boston, MA | Applied | 05/07/2025 | Handshake | <span style='color:#999;'>—</span> |
+| [The Public Interest Network Creative Team](https://publicinterestnetwork.org/jobs/) | Web & Digital Content Intern | Communications / Web | Remote / Chicago, IL / Boston, MA | Rejected | 05/07/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [Bark Bark Club](https://www.barkbarkclub.com/) | Dog Daycare Attendant (Part-Time) | Animal Care | Chicago, IL | Closed | 04/18/2025 | Indeed | <span style='color:#999;'>—</span> |
 
 </details>
 
-**Summary:** 📋 170 total — 🕐 100 active — ⏳ 42 likely inactive — ❌ 13 rejected — 💬 1 interviews — ✅ 0 hired.**
+**Summary:** 📋 170 total — 🕐 100 active — ⏳ 41 likely inactive — ❌ 14 rejected — 💬 1 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*

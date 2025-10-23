@@ -50,18 +50,24 @@ public class JobApplication {
         this.dateApplied = parseFlexible(dateApplied.trim());
     }
 
-    // 🗓️ Flexible date parsing
+    // 🗓️ Flexible date parsing with safe fallback
     private static LocalDate parseFlexible(String s) {
+        if (s == null || s.isBlank()) return LocalDate.now();
         String t = s.trim();
-        try { return LocalDate.parse(t, MD); }
-        catch (DateTimeParseException ignore) {}
-        try { return LocalDate.parse(t, ISO); }
-        catch (DateTimeParseException ignore) {}
-        try { return LocalDate.parse(t, MD_DASH); }
-        catch (DateTimeParseException ignore) {}
-        try { return LocalDate.parse(t.replace('/', '-'), ISO); }
-        catch (DateTimeParseException e) {
-            throw new IllegalArgumentException("Invalid date: " + s);
+
+        // Try common formats in order
+        DateTimeFormatter[] formats = { MD, ISO, MD_DASH };
+        for (DateTimeFormatter fmt : formats) {
+            try {
+                return LocalDate.parse(t, fmt);
+            } catch (DateTimeParseException ignored) {}
+        }
+
+        try {
+            return LocalDate.parse(t.replace('/', '-'), ISO);
+        } catch (DateTimeParseException e) {
+            System.out.println("⚠️ Invalid date format: " + s + " → defaulting to today");
+            return LocalDate.now(); // graceful fallback
         }
     }
 

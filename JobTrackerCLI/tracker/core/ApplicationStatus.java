@@ -14,7 +14,12 @@ package tracker.core;
 import java.util.Locale;
 
 public enum ApplicationStatus {
-    APPLIED, INTERVIEW, REJECTED, HIRED, CLOSED, OTHER;
+    APPLIED, 
+    INTERVIEW, 
+    REJECTED, 
+    HIRED, 
+    CLOSED, 
+    OTHER;
 
     /**
      * Maps a string to a matching status, case-insensitively.
@@ -29,6 +34,14 @@ public enum ApplicationStatus {
         if (s.contains("closed")) return CLOSED;
         if (s.contains("applied")) return APPLIED;
         return OTHER;
+    }
 
+    /**
+     * Formats enum names into human-friendly titles (e.g. HIRED → Hired).
+     */
+    @Override
+    public String toString() {
+        String lower = name().toLowerCase(Locale.ROOT);
+        return Character.toUpperCase(lower.charAt(0)) + lower.substring(1);
     }
 }
