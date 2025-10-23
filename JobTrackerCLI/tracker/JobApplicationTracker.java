@@ -10,24 +10,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.time.temporal.ChronoUnit;
+import tracker.MenuHandler;
 
 /**
  * Main class for the Job Application Tracker CLI.
- * 
- * Handles loading, saving, displaying, and exporting job applications 
- * using color-coded console output and Markdown report generation.
- * 
- * ✅ Key Features:
- * - Persistent data storage via `applications.txt` with auto-backups.
- * - Enum-based status handling (ApplicationStatus) for type safety.
- * - Markdown README export with live analytics and category summaries.
- * - Interactive CLI menu for adding, searching, and updating applications.
- *
- * 💡 Design Notes:
- * - Uses Java Streams for concise filtering and analytics.
- * - Employs `ChronoUnit` for date calculations (e.g., recent apps, inactivity).
- * - Produces dynamic Markdown reports for GitHub portfolio integration.
- * - Built with Java 17 for cross-platform CLI compatibility.
  */
 
 public class JobApplicationTracker {
@@ -39,10 +25,12 @@ public class JobApplicationTracker {
 
     // 🧾 Central in-memory list storing all job applications
     public static final List<JobApplication> applications = new ArrayList<>();
-    
+    private static MenuHandler menu;
+
     // 🚀 Entry point: loads existing data, shows ASCII intro, then launches the CLI
     public static void main(String[] args) {
         FileManager.loadApplications(applications);
+        menu = new MenuHandler(applications);
         if (applications.isEmpty()) {
             System.out.println("ℹ️ No applications found. You can import your seeded rows via option 5.");
         }
@@ -123,18 +111,18 @@ public class JobApplicationTracker {
                     UIHelper.printEchoInstructions();
                     break;
                 case 5:
-                    int added = importFromSeedMarkdown(SEED_MARKDOWN);
+                    int added = menu.importFromSeedMarkdown(SEED_MARKDOWN);
                     FileManager.saveApplications(applications);
                     System.out.println("✅ Imported " + added + " applications from seed.");
                     break;
                 case 6:
-                    viewRecentApplications();
+                    menu.viewRecentApplications();
                     break;
                 case 7:
-                    searchApplications(sc);
+                    menu.searchApplications(sc);
                     break;
                 case 8:
-                    removeApplication(sc);
+                    menu.removeApplication(sc);
                     break;
                 case 9:
                     showCareerDashboard();
@@ -147,73 +135,6 @@ public class JobApplicationTracker {
                     System.out.println("Invalid choice.");
             }
         }
-    }
-
-    // 🗑️ Remove an application (same search style as Search & Manage)
-    private static void removeApplication(Scanner sc) {
-        System.out.print("🔎 Enter keyword to search (company or role): ");
-        String keyword = sc.nextLine().trim().toLowerCase();
-
-        if (keyword.isEmpty()) {
-            System.out.println(UIHelper.ORANGE + "⚠️  No keyword entered." + UIHelper.RESET);
-            return;
-        }
-
-        // Same search logic as Search & Manage
-        List<JobApplication> matches = applications.stream()
-            .filter(a -> a.company.toLowerCase().contains(keyword)
-                    || a.role.toLowerCase().contains(keyword))
-            .sorted(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed())
-            .collect(Collectors.toList());
-
-        if (matches.isEmpty()) {
-            System.out.println(UIHelper.RED + "❌ No matching jobs found for \"" + keyword + "\"." + UIHelper.RESET);
-            return;
-        }
-
-        System.out.println("\n🔍 Found " + matches.size() + " match" + (matches.size() == 1 ? "" : "es") + ":");
-        System.out.println("---------------------------------------------------------------------------------------");
-        for (int i = 0; i < matches.size(); i++) {
-            JobApplication a = matches.get(i);
-            System.out.printf("%2d. %-35s | %-25s | %-12s | %s\n",
-                    i + 1, a.company, a.role, a.status,
-                    a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
-        }
-        System.out.println("------------------------------------------------------------------------------------------");
-
-        System.out.print("\n❓ Enter the number of the job to remove (or press Enter to cancel): ");
-        String input = sc.nextLine().trim();
-        if (input.isEmpty()) {
-            System.out.println(UIHelper.ORANGE + "🕊️  Cancelled." + UIHelper.RESET);
-            return;
-        }
-
-        int index;
-        try {
-            index = Integer.parseInt(input) - 1;
-            if (index < 0 || index >= matches.size()) {
-                System.out.println(UIHelper.RED + "❌ Invalid selection." + UIHelper.RESET);
-                return;
-            }
-        } catch (NumberFormatException e) {
-            System.out.println(UIHelper.RED + "⚠️ Invalid input. Please enter a number." + UIHelper.RESET);
-            return;
-        }
-
-        JobApplication toRemove = matches.get(index);
-        applications.remove(toRemove);
-        FileManager.saveApplications(applications);
-
-        // Optional: auto-refresh exports
-        try {
-            exportMarkdown();
-            FileManager.exportCSV(applications);
-            System.out.println(UIHelper.MINT + "🧾 CSV and README updated after deletion." + UIHelper.RESET);
-        } catch (IOException e) {
-            System.out.println(UIHelper.ORANGE + "⚠️ Could not auto-update exports: " + e.getMessage() + UIHelper.RESET);
-        }
-
-        System.out.println(UIHelper.GREEN + "✅ Removed: " + toRemove.company + " — " + toRemove.role + UIHelper.RESET);
     }
 
     // ✍️ Add a new job application interactively via console prompts
@@ -243,207 +164,6 @@ public class JobApplicationTracker {
         } catch (Exception ex) {
             System.out.println("❌ Could not add application: " + ex.getMessage());
         }
-    }
-
-    // 📥 Import seed dataset (Markdown table rows) into the tracker
-    private static int importFromSeedMarkdown(String md) {
-        if (md == null || md.trim().isEmpty()) {
-            System.out.println("Seed is empty.");
-            return 0;
-        }
-
-        int before = applications.size();
-        String[] lines = md.split("\\r?\\n");
-
-        for (String line : lines) {
-            String trimmed = line.trim();
-            if (!trimmed.startsWith("|")) continue;
-
-            String row = trimmed.substring(1, trimmed.endsWith("|") ? trimmed.length() - 1 : trimmed.length());
-            String[] cols = row.split("\\|", -1);
-            if (cols.length < 7) continue;
-
-            for (int i = 0; i < cols.length; i++) cols[i] = cols[i].trim();
-            String notes = cols.length >= 8 ? cols[7] : "";
-
-            try {
-                JobApplication a = new JobApplication(
-                    cols[0], cols[1], cols[2], cols[3],
-                    cols[4], cols[5], cols[6], notes
-                );
-
-                boolean dup = applications.stream().anyMatch(
-                    x -> x.company.equals(a.company) &&
-                        x.role.equals(a.role) &&
-                        x.dateApplied.equals(a.dateApplied)
-                );
-                if (!dup) applications.add(a);
-
-            } catch (Exception ignore) {}
-        }
-
-        return applications.size() - before;
-    }
-    
-    // 🔎 Search and edit applications by company or role
-    private static void searchApplications(Scanner sc) {
-        System.out.print("🔎 Enter keyword to search (company or role): ");
-        String keyword = sc.nextLine().trim().toLowerCase();
-
-        if (keyword.isEmpty()) {
-            System.out.println("⚠️  No keyword entered.");
-            return;
-        }
-
-        List<JobApplication> results = applications.stream()
-                .filter(a -> a.company.toLowerCase().contains(keyword)
-                        || a.role.toLowerCase().contains(keyword))
-                .sorted(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed())
-                .collect(Collectors.toList());
-
-        if (results.isEmpty()) {
-            System.out.println("❌ No matching applications found for \"" + keyword + "\".");
-            return;
-        }
-
-        System.out.println(UIHelper.GREEN +
-        "\n╔═════════════════════════════════════════════════════════════════════════════════════════╗");
-        System.out.println("║                                      SEARCH RESULTS                                     ║");
-        System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝"
-        + UIHelper.RESET);
-
-        System.out.println("🔍 Found " + results.size() + " match" + (results.size() == 1 ? "" : "es") + ":");
-        System.out.println("------------------------------------------------------------------------------------------");
-        for (int i = 0; i < results.size(); i++) {
-            JobApplication a = results.get(i);
-            System.out.printf("%2d. %-35s | %-25s | %-12s | %s\n",
-                    i + 1, a.company, a.role, a.status,
-                    a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
-        }
-        System.out.println("------------------------------------------------------------------------------------------");
-
-        System.out.print("\n💡 View details or update status (enter number, or press Enter to skip): ");
-        String input = sc.nextLine().trim();
-        if (input.isEmpty()) return;
-
-        int index;
-        try {
-            index = Integer.parseInt(input) - 1;
-            if (index < 0 || index >= results.size()) {
-                System.out.println("Invalid number.");
-                return;
-            }
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid input.");
-            return;
-        }
-
-        JobApplication a = results.get(index);
-
-        System.out.println("\n──────────────────────────────────────────────────────────────");
-        System.out.println("\nDetails:");
-        System.out.println("Company:   " + a.company);
-        System.out.println("Role:      " + a.role);
-        System.out.println("Type:      " + a.type);
-        System.out.println("Location:  " + a.location);
-        System.out.println("Status:    " + a.status);
-        System.out.println("Applied:   " + a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
-        System.out.println("Source:    " + a.source);
-        System.out.println("Notes:     " + (a.notes == null || a.notes.isEmpty() ? "—" : a.notes));
-        System.out.println("──────────────────────────────────────────────────────────────");
-
-        // ⚙️ Quick Edit Section
-        System.out.print("\n⚙️  Quick Edit this application? (y/n): ");
-        String editChoice = sc.nextLine().trim().toLowerCase();
-
-        if (editChoice.equals("y")) {
-            System.out.print("✏️  New Status (leave blank to keep): ");
-            String newStatus = sc.nextLine().trim();
-            if (!newStatus.isEmpty()) {
-                a.status = ApplicationStatus.from(newStatus);
-            }
-
-            System.out.print("📍 New Location (leave blank to keep): ");
-            String newLocation = sc.nextLine().trim();
-            if (!newLocation.isEmpty()) {
-                a.setLocation(newLocation);
-            }
-
-            System.out.print("📝 New Notes (leave blank to keep): ");
-            String newNotes = sc.nextLine().trim();
-            if (!newNotes.isEmpty()) {
-                a.setNotes(newNotes);
-            }
-
-            FileManager.saveApplications(applications);
-            System.out.println("✅ Application updated and saved.");
-
-            try {
-                exportMarkdown();
-                FileManager.exportCSV(applications);
-                System.out.println("✅ README and CSV automatically updated.");
-            } catch (IOException e) {
-                System.out.println("⚠️ Could not update README or CSV: " + e.getMessage());
-            }
-        }
-
-        // 📝 Option to update notes after viewing details
-        System.out.print("\n📝 Update notes? (leave blank to skip): ");
-        String newNotes = sc.nextLine().trim();
-        if (!newNotes.isEmpty()) {
-            a.setNotes(newNotes);
-            FileManager.saveApplications(applications);
-            System.out.println("✅ Notes updated and saved.");
-
-            try {
-                exportMarkdown();
-                System.out.println("✅ README automatically updated after notes change.");
-            } catch (IOException e) {
-                System.out.println("⚠️ Could not update README: " + e.getMessage());
-            }
-        }
-
-        System.out.print("\n📝 Export these search results to file? (y/n): ");
-        String export = sc.nextLine().trim().toLowerCase();
-        if (export.equals("y")) {
-            try (PrintWriter pw = new PrintWriter(new FileWriter("search_results.txt"))) {
-                for (JobApplication j : results) pw.println(j.toFileLine());
-                System.out.println("✅ Saved results to search_results.txt");
-            } catch (IOException e) {
-                System.out.println("⚠️ Failed to export results: " + e.getMessage());
-            }
-        }
-    }
-
-    // 🗂️ View recent (≤3-day) applications for quick progress tracking
-    private static void viewRecentApplications() {
-        if (applications.isEmpty()) {
-            System.out.println("⚠️  No applications recorded yet.");
-            return;
-        }
-
-        List<JobApplication> recent = applications.stream()
-                .filter(a -> ChronoUnit.DAYS.between(a.dateApplied, LocalDate.now()) <= 3)
-                .sorted(Comparator.comparing((JobApplication a) -> a.dateApplied).reversed())
-                .collect(Collectors.toList());
-
-        System.out.println(UIHelper.LAVENDER + "\n╔═════════════════════════════════════════════════════════════════════════════════════════╗");
-        System.out.println("║                              🕒  RECENT APPLICATIONS (Last 3 Days)                      ║");
-        System.out.println("╚═════════════════════════════════════════════════════════════════════════════════════════╝" + UIHelper.RESET);
-
-        if (recent.isEmpty()) {
-            System.out.println(UIHelper.ORANGE + "🌼 No new applications this week — time to find a few more leads!" + UIHelper.RESET);
-            return;
-        }
-
-        for (JobApplication a : recent) {
-            System.out.printf("%s%-35s%s | %-25s | %-12s | %s\n",
-                    UIHelper.CYAN, a.company, UIHelper.RESET, a.role, a.status,
-                    a.dateApplied.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
-        }
-
-        System.out.printf(UIHelper.MINT + "\n🕊️  You’ve applied to %d job%s in the last 3 days.%n" + UIHelper.RESET,
-                recent.size(), recent.size() == 1 ? "" : "s");
     }
 
     private static void showSummary() {
