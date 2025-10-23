@@ -1,3 +1,15 @@
+/**
+ * Handles all user-facing menu actions for the Job Application Tracker CLI.
+ * Provides an interactive interface for searching, editing, deleting,
+ * viewing recent applications, and importing seed datasets.
+ * 
+ * - Uses {@link JobApplication}, {@link FileManager}, and {@link UIHelper} 
+ *   to perform user actions with clean visual feedback.
+ * - Implements keyword-based search with optional quick edit mode.
+ * - Includes safety prompts and colorful console UI elements.
+ * - Automatically saves edits and deletions via FileManager.
+ * - Supports importing Markdown-based seed data for bulk loading.
+ */
 package tracker.ui;
 
 import tracker.data.*;
@@ -8,12 +20,6 @@ import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * Handles user-facing menu actions for the Job Application Tracker.
- * 
- * Responsible for searching, deleting, viewing recent applications,
- * and importing seed datasets.
- */
 public class MenuHandler {
 
     private final List<JobApplication> applications;

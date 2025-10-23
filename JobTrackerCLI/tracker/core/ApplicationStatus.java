@@ -1,6 +1,3 @@
-package tracker.core;
-
-import java.util.Locale;
 /**
  * Enum for standardized job application statuses.
  * 
@@ -11,6 +8,10 @@ import java.util.Locale;
  * Example:
  *   ApplicationStatus.from("Interview scheduled") → INTERVIEW
  */
+
+package tracker.core;
+
+import java.util.Locale;
 
 public enum ApplicationStatus {
     APPLIED, INTERVIEW, REJECTED, HIRED, CLOSED, OTHER;

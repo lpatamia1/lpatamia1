@@ -1,3 +1,13 @@
+/**
+ * Provides analytics and dashboard summaries for the Job Application Tracker.
+ * Computes key statistics like total, success rate, active vs. stale applications,
+ * and generates clean, color-coded console summaries.
+ * 
+ * - Uses Java Streams for efficient aggregation and filtering.
+ * - Leverages {@link ApplicationStatus} for status-based calculations.
+ * - Generates formatted dashboards via {@link UIHelper}.
+ * - Supports Markdown export compatibility for GitHub profiles. 
+ */
 package tracker.core;
 
 import tracker.data.JobApplication;
@@ -7,7 +17,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.stream.Collectors;
 
-// 📊 Encapsulates analytics computed from job applications
+
 public class Stats {
 
     public int total;

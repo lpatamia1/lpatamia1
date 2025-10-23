@@ -1,4 +1,15 @@
-  // SEED: 103 entries (original 100 + 3 new: Museum of Ice Cream, Eataly x2, Comfort Dental)
+/**
+ * Provides static seed data used for initializing or repopulating the 
+ * Job Application Tracker. Contains Markdown-formatted job entries that 
+ * simulate realistic application records for analytics testing, 
+ * report generation, and CLI preview.
+ *
+ * - Each row follows the Markdown table format used by the tracker export.
+ * - Useful for README regeneration or demo output validation.
+ * - Ensures consistent structure for analytics via {@link tracker.core.Stats}.
+ */
+// SEED: 103 entries (original 100 + 3 new: Museum of Ice Cream, Eataly x2, Comfort Dental)
+
 package tracker.data;
 
 public class SeedData {

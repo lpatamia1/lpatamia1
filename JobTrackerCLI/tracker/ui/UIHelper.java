@@ -1,4 +1,16 @@
-// 🌸 UIHelper.java — color palette + ASCII UI elements
+/**
+ * 🌸 UIHelper.java — color palette + ASCII UI element
+ * 
+ * Centralized helper for CLI colors and ASCII-based UI elements
+ * used across the Job Application Tracker. Keeps the interface visually
+ * consistent, readable, and fun.
+ * 
+ * - Stores reusable color codes (ANSI + RGB pastel).
+ * - Provides animated cat intro sequence (`catIntro()`).
+ * - Prints example echo commands for appending data.
+ * - Designed for cross-platform CLI display (best on Unix/macOS).
+ */
+
 package tracker.ui;
 
 public class UIHelper {

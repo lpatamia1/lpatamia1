@@ -1,10 +1,3 @@
-package tracker.data;
-
-import tracker.core.ApplicationStatus;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
-
 /**
  * Represents a single job application entry.
  * Stores key attributes such as company, role, location, and status, 
@@ -15,6 +8,13 @@ import java.time.format.DateTimeParseException;
  * - Parses multiple date formats automatically (MM/DD/YYYY, ISO, etc.).
  * - Converts data seamlessly between file lines and Markdown table rows.
  */
+
+package tracker.data;
+
+import tracker.core.ApplicationStatus;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 
 public class JobApplication {
     public String company;

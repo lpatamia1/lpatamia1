@@ -1,3 +1,10 @@
+/**
+ * Handles all file operations for the Job Application Tracker:
+ * - Loading & saving applications
+ * - Exporting CSVs
+ * - Cleaning up old backups
+ */
+
 package tracker.core;
 
 import tracker.data.JobApplication;
@@ -6,12 +13,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-/**
- * Handles all file operations for the Job Application Tracker:
- * - Loading & saving applications
- * - Exporting CSVs
- * - Cleaning up old backups
- */
 public class FileManager {
 
     public static final String FILE = "applications.txt";
