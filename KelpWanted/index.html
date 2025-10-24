@@ -33,7 +33,7 @@
   <section id="about" class="section">
     <h2>About Us</h2>
     <div class="about-content">
-      <img src="images/interior.jpg" alt="Kelp Wanted Interior" />
+      <img src="images/IMG_aboutus.jpeg" alt="Kelp Wanted Interior" class="about-photo"/>
       <div>
         <p>
           Welcome to <strong>Kelp Wanted</strong>, a small, sea-inspired haven created to capture
@@ -68,10 +68,37 @@
   <section id="gallery" class="section">
     <h2>Gallery</h2>
     <div class="gallery-grid">
-      <img src="images/livingroom.jpg" alt="Living Room" />
-      <img src="images/kitchen.jpg" alt="Kitchen" />
-      <img src="images/bedroom.jpg" alt="Bedroom" />
-      <img src="images/beach.jpg" alt="Nearby Beach" />
+      <img src="images/IMG_front.jpeg" alt="Front" />
+      <img src="images/IMG_front2.jpeg" alt="Front" />
+      <img src="images/IMG_livingroom.jpeg" alt="Living Room" />
+      <img src="images/IMG_livingroomdog.jpeg" alt="Living Room" />
+      <img src="images/IMG_kitchen.jpeg" alt="Kitchen" />
+      <img src="images/IMG_master.jpeg" alt="Master Bedroom" />
+      <img src="images/IMG_bedroom2.jpeg" alt="Bedroom" />
+      <img src="images/IMG_beachsunrise.webp" alt="Nearby Beach" />
+    </div>
+  </section>
+
+  <!-- 📸 Gallery Carousel -->
+  <section id="gallery-carousel" class="gallery-section">
+    <h2>Gallery</h2>
+
+    <div class="carousel">
+      <div class="carousel-track">
+        <img src="images/IMG_front.jpeg" alt="Front of Kelp Wanted" class="active" />
+        <img src="images/IMG_front2.jpeg" alt="Front Angle" />
+        <img src="images/IMG_livingroom.jpeg" alt="Living Room" />
+        <img src="images/IMG_livingroomdog.jpeg" alt="Living Room with Dog" />
+        <img src="images/IMG_kitchen.jpeg" alt="Kitchen" />
+        <img src="images/IMG_master.jpeg" alt="Master Bedroom" />
+        <img src="images/IMG_bedroom2.jpeg" alt="Bedroom Two" />
+        <img src="images/IMG_beachsunrise.webp" alt="Nearby Beach" />
+      </div>
+
+      <button class="carousel-btn prev">❮</button>
+      <button class="carousel-btn next">❯</button>
+
+      <div class="carousel-dots"></div>
     </div>
   </section>
 
@@ -79,17 +106,31 @@
   <section id="book" class="section book">
     <h2>Book Your Stay</h2>
     <p>Reserve your visit through Airbnb and enjoy a relaxing coastal escape.</p>
-    <a href="#" target="_blank" class="cta-btn">Book on Airbnb ↗</a>
+    <a href="https://www.seabrookwa.com/vrp/unit/kelp-wanted" 
+      target="_blank" 
+      class="cta-btn">
+      Book on Seabrook ↗
+    </a>
   </section>
 
   <!-- 💌 Contact -->
   <section id="contact" class="section contact">
     <h2>Contact the Owners</h2>
     <p>Have a question before booking? We’d love to hear from you.</p>
+    
+    <!-- direct email link -->
+    <p>
+      Email us at
+      <a href="mailto:patamia2000@yahoo.com?subject=Kelp%20Wanted%20Inquiry">
+        patamia2000@yahoo.com
+      </a>
+    </p>
 
-    <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="_replyto" placeholder="Your Email" required />
+    <!-- mailto form -->
+    <form action="mailto:patamia2000@yahoo.com" method="POST" enctype="text/plain">
+      <input type="hidden" name="subject" value="Kelp Wanted Inquiry" />
+      <input type="text"   name="name"      placeholder="Your Name" required />
+      <input type="email"  name="email"     placeholder="Your Email" required />
       <textarea name="message" rows="5" placeholder="Your Message"></textarea>
       <button type="submit">Send Message</button>
     </form>
@@ -99,5 +140,8 @@
   <footer>
     <p>© 2025 Kelp Wanted • Seabrook, WA • With Love, the Patamias • Designed with 🌿 by Lily</p>
   </footer>
+
+  <script src="carousel.js"></script>
+
 </body>
 </html>
