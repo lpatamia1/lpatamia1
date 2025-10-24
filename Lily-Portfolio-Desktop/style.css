@@ -38,12 +38,33 @@ body {
   font-family: 'VT323', monospace;
   background-color: #fae6f3;
   background-image:
-    linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
   background-size: 20px 20px;
   color: var(--text-dark);
   padding: 80px 60px 20px 60px;
+
+  /* ✨ Subtle Glow + Depth ✨ */
+  box-shadow: inset 0 0 80px rgba(255, 182, 219, 0.3),
+              inset 0 0 200px rgba(255, 182, 219, 0.25),
+              0 0 40px rgba(255, 192, 203, 0.25);
+  animation: ambientGlow 10s ease-in-out infinite alternate;
+  transition: background 0.5s ease;
 }
+
+@keyframes ambientGlow {
+  0% {
+    box-shadow: inset 0 0 80px rgba(255, 182, 219, 0.3),
+                inset 0 0 200px rgba(255, 182, 219, 0.25),
+                0 0 40px rgba(255, 192, 203, 0.25);
+  }
+  100% {
+    box-shadow: inset 0 0 100px rgba(255, 182, 219, 0.45),
+                inset 0 0 250px rgba(255, 182, 219, 0.3),
+                0 0 60px rgba(255, 192, 203, 0.4);
+  }
+}
+
 
 /* ===============================
    Desktop Canvas / Windows
@@ -51,9 +72,14 @@ body {
 
 #desktop {
   position: relative;
-  width: 100%;
-  height: 2400px; 
-  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  min-height: 5000px;
+}
+#desktop > .window {
+  position: static; /* allows normal flow */
+  margin: 0 auto;
 }
 
 /* --- Manual Window Placement (Y + X axis) --- */
@@ -92,9 +118,9 @@ body {
 
 #contact {
   position: absolute;
-  top: 2100px;
+  top: 2800px;
   width: 1000px;
-  left: 150px;
+  left: var(--col2);
   padding-bottom: 30px;
 }
 
@@ -109,9 +135,10 @@ body {
 .window {
   background-color: var(--pink-100);
   border: 2px solid var(--border-black);
+  border-top: none;
   box-shadow: 4px 4px 0 var(--border-black);
   resize: both;
-  overflow: auto;
+  overflow: hidden;
   transition: transform .18s ease, box-shadow .18s ease;
   will-change: transform;
 }
@@ -128,7 +155,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--border-black);
 }
 
 .title { font-weight: bold; font-size: 20px; }
@@ -173,6 +199,31 @@ body {
 .window.minimized .content { display: none; }
 .window.minimized { height: auto; }
 .window.minimized .title-bar { cursor: pointer; }
+
+/* --- Fix for project spacing and icon cleanup --- */
+
+/* Removes unnecessary gap between project titles and paragraphs */
+.project-item h3 {
+  margin-bottom: 6px; /* smaller gap below titles */
+  margin-top: 0; /* removes top spacing */
+}
+
+/* Tightens spacing between each project block */
+.project-item {
+  margin-bottom: 14px; /* smaller than your previous 20px */
+}
+
+/* Optional: make icons and titles vertically aligned nicer */
+.project-item h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Removes any leftover question mark or stray icon spacing */
+.content p:first-child::before {
+  content: none !important;
+}
 
 /* ===============================
    Header / Nav
@@ -462,4 +513,36 @@ body.shake { animation: shake 0.5s ease-in-out; }
 
 .poof {
   animation: poofAway 0.8s ease-out forwards;
+}
+/* ===============================
+   Overlay
+   =============================== */
+
+.crt-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 20000;
+  background:
+    repeating-linear-gradient(
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 2px
+    ),
+    radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, transparent 80%);
+  mix-blend-mode: overlay;
+  animation: flicker 4s infinite;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 0.98; }
+  20%, 24%, 55% { opacity: 1; }
+}
+
+#scroll-space {
+  position: absolute;
+  top: 4500px; /* place below everything */
+  height: 1000px; /* scroll area */
+  width: 100%;
+  background: transparent;
 }
