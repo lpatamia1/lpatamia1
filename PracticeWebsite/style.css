@@ -1,0 +1,104 @@
+body {
+    font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+    background-color: #fff7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #637ed7;
+    margin-top: 2rem;
+}
+
+main {
+    margin: 2rem auto;
+}
+
+#jobsTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    table-layout: fixed;
+}
+
+th {
+  background: #f8bbd0;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ffe6f0;
+  transition: 0.3s;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+td:empty::after {
+  content: '—';
+  color: #aaa;
+  font-style: italic;
+}
+
+#searchContainer {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+#searchInput {
+  width: 60%;
+  max-width: 500px;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+#searchInput:focus {
+  border-color: #a2bfa3;
+  box-shadow: 0 0 6px rgba(162, 191, 163, 0.4);
+}
+
+#searchContainer {
+  margin: 1rem auto 1.5rem;
+  text-align: center;
+}
+
+#searchInput {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 14px;
+  border: 1px solid #e5c7d2;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff7fa;
+  outline: none;
+}
+
+#searchInput:focus {
+  border-color: #f28bb0;
+  box-shadow: 0 0 5px #f3c3d7;
+}
+
+#resultCount {
+  margin-top: 0.6rem;
+  color: #777;
+  font-size: 0.95rem;
+}
