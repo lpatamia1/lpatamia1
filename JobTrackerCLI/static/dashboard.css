@@ -112,6 +112,8 @@ section {
   margin-bottom: 1.5rem;
   box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  flex-direction: column;   /* ✅ stack title + chart vertically */
+  align-items: center;    
   overflow: hidden;
   display: flex;
 }
@@ -141,18 +143,16 @@ canvas {
   max-width: 650px;
 }
 
-/* 💼 Job Applications Section */
+/* 💼 Job Applications Section (centered + even spacing) */
 #jobListSection {
   background: rgba(217, 216, 238, 0.92);
   border-radius: 18px;
-  padding: 2.2rem 1.5rem 2.5rem;
-  margin: 3rem auto;
+  padding: 2rem 2rem 2.4rem;
+  margin: 2rem auto;            
   max-width: 850px;
+  width: 90%;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.07);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: block;                 
 }
 
 .job-header {
@@ -342,3 +342,73 @@ canvas {
   color: var(--text);
 }
 
+/* 🌟 Center chart section titles */
+main section h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #4f4848;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+/* 📘 Learning Log Styling */
+#learningLog {
+  margin-top: 1.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#learningLog h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #3b3b3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+#learningLog table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+#learningLog th {
+  background: linear-gradient(90deg, #c084fc33, #a78bfa33);
+  color: #4f4848;
+  text-align: left;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+}
+
+#learningLog td {
+  background: #fff;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: #444;
+}
+
+#learningLog tr:last-child td {
+  border-bottom: none;
+}
+
+#learningLog tr:hover td {
+  background: rgba(192, 132, 252, 0.07);
+  transition: background 0.2s ease;
+}

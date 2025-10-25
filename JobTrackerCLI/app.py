@@ -1,5 +1,7 @@
 from flask import Flask, render_template
 import pandas as pd
+import numpy as np
+import re
 
 app = Flask(__name__)
 
@@ -14,8 +16,6 @@ def dashboard():
     df = df.fillna("")
 
     # 🔗 Convert Markdown-style [Text](URL) → clickable <a> link
-    import re
-    
     def convert_markdown_links(text):
         if isinstance(text, str):
             return re.sub(
@@ -44,7 +44,7 @@ def dashboard():
     by_source = df['Source'].value_counts().nlargest(8).to_dict()
     print("📄 CSV Columns:", list(df.columns))
 
-    # 💗 Monthly trend — formatted for chart alignment & includes October
+    # 💗 Monthly trend
     weekly_apps = {}
     if 'Date Applied' in df.columns:
         dates = pd.to_datetime(
@@ -55,35 +55,55 @@ def dashboard():
         ).dropna()
 
         if not dates.empty:
-            # Convert to monthly periods
             periods = dates.dt.to_period('M')
-
-            # Force full continuous range (start → latest parsed or current month)
             today_p = pd.Period(pd.Timestamp.today(), freq='M')
             start_p = periods.min()
             end_p = max(periods.max(), today_p)
             full_range = pd.period_range(start=start_p, end=end_p, freq='M')
 
-            # Count occurrences and include missing months as 0
             counts = periods.value_counts().reindex(full_range, fill_value=0).sort_index()
 
-            # 🔥 Explicitly print to verify October count
-            print("📊 Monthly counts:")
-            print(counts)
-
-            # ✅ Create ordered dict with pretty month labels (e.g., "Apr 2025")
             weekly_apps = {
                 p.to_timestamp().strftime('%b %Y'): int(counts[p])
                 for p in full_range
             }
 
-    # 🧾 Job list for search section
+    # 🧾 Job list
     jobs = df.to_dict(orient='records')
-
-    # 🪄 Sort by chronological key to preserve order in the chart
     weekly_apps = dict(sorted(weekly_apps.items(), key=lambda x: x[0]))
 
-    # 🎨 Render all to dashboard
+    # ⭐ Skill match star chart
+    skill_match = {
+        "Python": 8,
+        "Java": 7,
+        "Flask": 6,
+        "SQL": 5,
+        "React": 4,
+        "Git": 9
+    }
+
+    # 🧠 Technical prep tracker
+    tech_prep = {
+        "Data Structures": 70,
+        "System Design": 40,
+        "LeetCode Practice": 60,
+        "Behavioral Prep": 80,
+        "Portfolio Updates": 50
+    }
+
+    # 🔥 Skill heatmap
+    skills = list(skill_match.keys())
+    companies = [j['Company'] for j in jobs[:6]] if jobs else []
+    heatmap_values = np.random.randint(40, 100, size=(len(skills), len(companies))).tolist() if companies else []
+
+    # 📝 Learning log
+    learning_log = [
+        {"Date": "2025-10-01", "Topic": "SQL Joins Review", "Hours": 2, "Reflection": "Improved efficiency using subqueries"},
+        {"Date": "2025-10-08", "Topic": "Flask Blueprints", "Hours": 3, "Reflection": "Modularized dashboard routes"},
+        {"Date": "2025-10-14", "Topic": "Chart.js Customization", "Hours": 1, "Reflection": "Learned gradient fills"},
+    ]
+
+    # 🎨 Render to dashboard (✅ now includes all new data)
     return render_template(
         'index.html',
         total=total,
@@ -94,7 +114,13 @@ def dashboard():
         by_status=by_status,
         by_source=by_source,
         weekly_apps=weekly_apps,
-        jobs=jobs
+        jobs=jobs,
+        skill_match=skill_match,
+        tech_prep=tech_prep,
+        heatmap_values=heatmap_values,
+        skills=skills,
+        companies=companies,
+        learning_log=learning_log
     )
 
 

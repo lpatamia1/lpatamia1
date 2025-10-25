@@ -121,10 +121,10 @@ const SOURCE_COLORS = [
 {
   const ctx = document.getElementById('timelineChart').getContext('2d');
 
-  const labels = window.timelineLabels; // ✅ already sorted & formatted (e.g., "Oct 2025")
+  const labels = window.timelineLabels; 
   const data = window.timelineData;
 
-  const g = makeGradient(ctx, 'rgba(236,72,153,0.4)', 'rgba(236,72,153,0.1)');
+  const g = makeGradient(ctx, 'rgba(72, 162, 236, 0.4)', 'rgba(72, 129, 236, 0.1)');
 
   new Chart(ctx, {
     type: 'line',
@@ -135,10 +135,10 @@ const SOURCE_COLORS = [
         data,
         fill: true,
         tension: 0.35,
-        borderColor: '#ec4899',
+        borderColor: '#4894ecff',
         backgroundColor: g,
         pointRadius: 4,
-        pointBackgroundColor: '#ec4899'
+        pointBackgroundColor: '#488aec96'
       }]
     },
     options: {
@@ -189,3 +189,139 @@ window.addEventListener('resize', () => {
     chart.update();
   });
 });
+
+// ⭐ Skill Radar Chart
+{
+  const radarCanvas = document.getElementById('skillRadar');
+  if (radarCanvas) {
+    const ctx = radarCanvas.getContext('2d');
+    new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: Object.keys(skillMatch),
+        datasets: [{
+          label: 'Skill Proficiency',
+          data: Object.values(skillMatch),
+          backgroundColor: 'rgba(239,68,68,0.25)', 
+          borderColor: '#ec488cd5',
+          borderWidth: 2,
+          pointBackgroundColor: '#ec487fff'
+        }]
+      },
+      options: {
+        scales: { r: { suggestedMin: 0, suggestedMax: 10 } },
+        plugins: {
+
+        }
+      }
+    });
+  }
+}
+
+// 🧠 Technical Prep Progress (blue gradient 💙)
+{
+  const prepCanvas = document.getElementById('prepBar');
+  if (prepCanvas) {
+    const ctx = prepCanvas.getContext('2d');
+    const g = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
+    g.addColorStop(0, 'rgba(59, 130, 246, 0.9)');  // sky blue top (#3b82f6)
+    g.addColorStop(1, 'rgba(147, 197, 253, 0.85)'); // light periwinkle fade (#93c5fd)
+
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: Object.keys(techPrep),
+        datasets: [{
+          label: 'Completion %',
+          data: Object.values(techPrep),
+          backgroundColor: g,
+          borderWidth: 0,  // clean, no outline
+          borderRadius: 8
+        }]
+      },
+      options: {
+        scales: {
+          y: { beginAtZero: true, max: 100 },
+          x: { grid: { display: false } }
+        },
+        plugins: {
+
+          legend: { display: false }
+        }
+      }
+    });
+  }
+}
+
+// 🔥 Skill Match Heatmap (stacked-bar style)
+// 🔥 Skill Match Heatmap (stacked-bar style, red theme ❤️)
+{
+  const heatCanvas = document.getElementById('heatmap');
+  if (heatCanvas) {
+    const ctx = heatCanvas.getContext('2d');
+
+    // ❤️ Smooth red gradients (deep → soft)
+    const reds = [
+      ['#b91c1c', '#f87171'], // Python
+      ['#dc2626', '#fca5a5'], // Java
+      ['#e11d48', '#fda4af'], // Flask
+      ['#be123c', '#fecaca'], // SQL
+      ['#ef4444', '#fca5a5'], // React
+      ['#f43f5e', '#fda4af']  // Git
+    ];
+
+    const data = {
+      labels: companies.map(c => c.replace(/<[^>]*>/g, '')),  // 🧼 strips HTML tags
+      datasets: skills.map((skill, i) => {
+        const g = ctx.createLinearGradient(0, 0, ctx.canvas.width, 0);
+        g.addColorStop(0, reds[i % reds.length][0]);
+        g.addColorStop(1, reds[i % reds.length][1]);
+        return {
+          label: skill,
+          data: heatmapValues[i],
+          backgroundColor: g,
+          borderRadius: 5
+        };
+      })
+    };
+
+    new Chart(ctx, {
+      type: 'bar',
+      data,
+      options: {
+        indexAxis: 'y',
+        plugins: {
+          title: {
+            display: true,
+            color: '#7f1d1d',
+            font: { size: 20, weight: 700 },
+            padding: { bottom: 10 }
+          },
+          legend: {
+            position: 'bottom',
+            labels: {
+              color: '#991b1b',
+              font: { size: 13, weight: 500 },
+              usePointStyle: true,
+              boxWidth: 10
+            }
+          }
+        },
+        scales: {
+          x: {
+            stacked: true,
+            max: 100,
+            grid: { color: 'rgba(0,0,0,0.05)' },
+            ticks: { color: '#7f1d1d', font: { size: 12 } }
+          },
+          y: {
+            stacked: true,
+            grid: { display: false },
+            ticks: { color: '#991b1b', font: { size: 12, weight: 600 } }
+          }
+        }
+      }
+    });
+  }
+}
+

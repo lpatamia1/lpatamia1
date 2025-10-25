@@ -28,6 +28,44 @@
     <section><canvas id="statusChart"></canvas></section>
     <section><canvas id="sourceChart" height="300"></canvas></section>
     <section><canvas id="timelineChart" height="200"></canvas></section>
+
+    <section>
+      <h2>⭐ Skill Match Overview</h2>
+      <canvas id="skillRadar" height="300"></canvas>
+    </section>
+
+    <section>
+      <h2>🧠 Technical Prep Progress</h2>
+      <canvas id="prepBar" height="250"></canvas>
+    </section>
+
+    <section>
+      <h2>🔥 Skill Match Heatmap</h2>
+      <canvas id="heatmap" height="300"></canvas>
+</section>
+<section>
+      <div id="learningLog">
+        <h3>📘 Learning Log</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th><th>Topic</th><th>Hours</th><th>Reflection</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for entry in learning_log %}
+              <tr>
+                <td>{{ entry.Date }}</td>
+                <td>{{ entry.Topic }}</td>
+                <td>{{ entry.Hours }}</td>
+                <td>{{ entry.Reflection }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
   </main>
 
   <section id="jobListSection">
@@ -79,6 +117,14 @@
     // ✅ Expose for charts.js
     window.timelineLabels = labels;
     window.timelineData = data;
+  </script>
+  <!-- 🧠 Data injection for new charts -->
+  <script>
+    const skillMatch = {{ skill_match | tojson }};
+    const techPrep = {{ tech_prep | tojson }};
+    const heatmapValues = {{ heatmap_values | tojson }};
+    const skills = {{ skills | tojson }};
+    const companies = {{ companies | tojson }};
   </script>
 
   <script src="{{ url_for('static', filename='charts.js') }}"></script>
