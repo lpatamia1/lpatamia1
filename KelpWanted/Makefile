@@ -1,4 +1,4 @@
-# Simple Makefile to launch a local web server for PracticeWebsite
+# Simple Makefile to launch a local web server
 
 run:
 	@echo "🚀 Starting local server at http://localhost:8000 ..."
