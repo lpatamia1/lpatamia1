@@ -14,47 +14,26 @@ function getChartPadding() {
   return { top: 10, bottom: 20, left: 6, right: 6 };
 }
 
-// 🎨 Palettes
-const COLORS = {
-  Applied: ['#c084fc', '#d4bcedff'],
-  Interview: ['#60a5fa', '#a5c9f6ff'],
-  Closed: ['#facc15', '#fef9c3'],
-  Rejected: ['#fb7185', '#e3949dff'],
-  Hired: ['#34d399', '#a7f3d0'],
-  Other: ['#14b8a6', '#99f6e4']
-};
-
-const SOURCE_COLORS = [
-  ['#3b7650ff', '#75a284ff'],
-  ['#3b82f6', '#bfdbfe'],
-  ['#a855f7', '#e9d5ff'],
-  ['#f97316', '#fed7aa'],
-  ['#ec4899', '#fbcfe8'],
-  ['#14b8a6', '#99f6e4'],
-  ['#eab308', '#fef08a'],
-  ['#10b981', '#a7f3d0']
-];
-
 // 🟣 STATUS CHART
 {
   const ctx = document.getElementById('statusChart').getContext('2d');
   const labels = Object.keys(statusData);
   const data = Object.values(statusData);
-  const bgColors = labels.map(l => {
-    const k = Object.keys(COLORS).find(c =>
-      l.toUpperCase().includes(c.toUpperCase())
-    ) || 'Other';
-    return makeGradient(ctx, ...COLORS[k]);
-  });
+
+  const gradientStatus = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
+  gradientStatus.addColorStop(0, '#60a5fa'); // solid
+  gradientStatus.addColorStop(1, '#a5c9f6'); // solid
 
   new Chart(ctx, {
     type: 'bar',
-    data: { 
-      labels, 
-      datasets: [{ 
-        data, 
-        backgroundColor: bgColors, 
-        borderRadius: 6 }] },
+    data: {
+      labels,
+      datasets: [{
+        data,
+        backgroundColor: gradientStatus,
+        borderRadius: 10
+      }]
+    },
     options: {
       responsive: true,
       maintainAspectRatio: false,
@@ -68,12 +47,20 @@ const SOURCE_COLORS = [
           align: 'center',
           padding: { top: 10, bottom: 20 }
         },
-        legend: {
-          display: false
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: function(ctx) {
+              const total = ctx.dataset.data.reduce((a, b) => a + b, 0);
+              const value = ctx.raw;
+              const percent = ((value / total) * 100).toFixed(1);
+              return `${ctx.label}: ${value} (${percent}%)`;
+            }
+          }
         }
       },
       scales: {
-        x: { ticks: { color: '#777' }, grid: { color: 'rgba(0,0,0,0.05)' } },
+        x: { ticks: { color: '#777' }, grid: { display: false } },
         y: { ticks: { color: '#777' }, grid: { color: 'rgba(0,0,0,0.05)' } }
       }
     }
@@ -85,13 +72,21 @@ const SOURCE_COLORS = [
   const ctx = document.getElementById('sourceChart').getContext('2d');
   const labels = Object.keys(sourceData);
   const data = Object.values(sourceData);
-  const bgColors = labels.map((_, i) =>
-    makeGradient(ctx, ...SOURCE_COLORS[i % SOURCE_COLORS.length])
-  );
+
+  const gradientSources = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
+  gradientSources.addColorStop(0, '#fca684ff');  // vibrant lilac
+  gradientSources.addColorStop(1, '#ffe2d5ff');  // soft lavender haze
 
   new Chart(ctx, {
     type: 'bar',
-    data: { labels, datasets: [{ data, backgroundColor: bgColors, borderRadius: 6 }] },
+    data: {
+      labels,
+      datasets: [{
+        data,
+        backgroundColor: gradientSources,
+        borderRadius: 10
+      }]
+    },
     options: {
       responsive: true,
       maintainAspectRatio: false,
@@ -105,12 +100,10 @@ const SOURCE_COLORS = [
           align: 'center',
           padding: { top: 10, bottom: 20 }
         },
-        legend: {
-          display: false
-        }
+        legend: { display: false }
       },
       scales: {
-        x: { ticks: { color: '#777' }, grid: { color: 'rgba(0,0,0,0.05)' } },
+        x: { ticks: { color: '#777' }, grid: { display: false } },
         y: { ticks: { color: '#777' }, grid: { color: 'rgba(0,0,0,0.05)' } }
       }
     }
@@ -181,7 +174,6 @@ const SOURCE_COLORS = [
   });
 }
 
-
 // 🌀 Responsive resizing
 window.addEventListener('resize', () => {
   Object.values(Chart.instances).forEach(chart => {
@@ -190,43 +182,15 @@ window.addEventListener('resize', () => {
   });
 });
 
-// ⭐ Skill Radar Chart
-{
-  const radarCanvas = document.getElementById('skillRadar');
-  if (radarCanvas) {
-    const ctx = radarCanvas.getContext('2d');
-    new Chart(ctx, {
-      type: 'radar',
-      data: {
-        labels: Object.keys(skillMatch),
-        datasets: [{
-          label: 'Skill Proficiency',
-          data: Object.values(skillMatch),
-          backgroundColor: 'rgba(239,68,68,0.25)', 
-          borderColor: '#ec488cd5',
-          borderWidth: 2,
-          pointBackgroundColor: '#ec487fff'
-        }]
-      },
-      options: {
-        scales: { r: { suggestedMin: 0, suggestedMax: 10 } },
-        plugins: {
-
-        }
-      }
-    });
-  }
-}
-
-// 🧠 Technical Prep Progress (blue gradient 💙)
+// 🧠 Technical Prep Progress 
 {
   const prepCanvas = document.getElementById('prepBar');
   if (prepCanvas) {
     const ctx = prepCanvas.getContext('2d');
     const g = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
     g.addColorStop(0, 'rgba(59, 130, 246, 0.9)');  // sky blue top (#3b82f6)
-    g.addColorStop(1, 'rgba(147, 197, 253, 0.85)'); // light periwinkle fade (#93c5fd)
-
+    g.addColorStop(0, '#3b82f6'); // solid sky blue
+    g.addColorStop(1, '#93c5fd'); // solid periwinkle
     new Chart(ctx, {
       type: 'bar',
       data: {
@@ -253,75 +217,77 @@ window.addEventListener('resize', () => {
   }
 }
 
-// 🔥 Skill Match Heatmap (stacked-bar style)
-// 🔥 Skill Match Heatmap (stacked-bar style, red theme ❤️)
+// ⭐ Skill Match Radar Chart — smooth fill + glow + curved animation
 {
-  const heatCanvas = document.getElementById('heatmap');
-  if (heatCanvas) {
-    const ctx = heatCanvas.getContext('2d');
+  const radarCanvas = document.getElementById('skillRadar');
+  if (radarCanvas) {
+    const ctx = radarCanvas.getContext('2d');
 
-    // ❤️ Smooth red gradients (deep → soft)
-    const reds = [
-      ['#b91c1c', '#f87171'], // Python
-      ['#dc2626', '#fca5a5'], // Java
-      ['#e11d48', '#fda4af'], // Flask
-      ['#be123c', '#fecaca'], // SQL
-      ['#ef4444', '#fca5a5'], // React
-      ['#f43f5e', '#fda4af']  // Git
-    ];
-
-    const data = {
-      labels: companies.map(c => c.replace(/<[^>]*>/g, '')),  // 🧼 strips HTML tags
-      datasets: skills.map((skill, i) => {
-        const g = ctx.createLinearGradient(0, 0, ctx.canvas.width, 0);
-        g.addColorStop(0, reds[i % reds.length][0]);
-        g.addColorStop(1, reds[i % reds.length][1]);
-        return {
-          label: skill,
-          data: heatmapValues[i],
-          backgroundColor: g,
-          borderRadius: 5
-        };
-      })
-    };
+    const gradientFill = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
+    gradientFill.addColorStop(0, "rgba(255,105,180,0.3)");
+    gradientFill.addColorStop(1, "rgba(255,105,180,0.05)");
 
     new Chart(ctx, {
-      type: 'bar',
-      data,
+      type: 'radar',
+      data: {
+        labels: Object.keys(skillMatch),
+        datasets: [{
+          label: 'Skill Proficiency',
+          data: Object.values(skillMatch),
+          fill: true,
+          backgroundColor: gradientFill,
+          borderColor: '#ff2f72',
+          pointBackgroundColor: '#ff2f72',
+          pointBorderColor: "#ffffff",
+          borderWidth: 3,
+          pointRadius: 5,
+          tension: 0.32 // ✅ smooth curves
+        }]
+      },
       options: {
-        indexAxis: 'y',
+        responsive: true,
+        animation: {
+          duration: 2000,
+          easing: 'easeOutQuart'
+        },
         plugins: {
-          title: {
-            display: true,
-            color: '#7f1d1d',
-            font: { size: 20, weight: 700 },
-            padding: { bottom: 10 }
-          },
           legend: {
-            position: 'bottom',
+            display: true,
+            position: "top",
             labels: {
-              color: '#991b1b',
-              font: { size: 13, weight: 500 },
-              usePointStyle: true,
-              boxWidth: 10
+              color: "#4b4343",
+              font: { size: 14, weight: 600 }
+            }
+          },
+          tooltip: {
+            callbacks: {
+              label: ctx => `${ctx.label}: ${ctx.raw}/10`
             }
           }
         },
         scales: {
-          x: {
-            stacked: true,
-            max: 100,
-            grid: { color: 'rgba(0,0,0,0.05)' },
-            ticks: { color: '#7f1d1d', font: { size: 12 } }
-          },
-          y: {
-            stacked: true,
-            grid: { display: false },
-            ticks: { color: '#991b1b', font: { size: 12, weight: 600 } }
+          r: {
+            suggestedMin: 0,
+            suggestedMax: 10,
+            grid: {
+              color: "rgba(0,0,0,0.06)"
+            },
+            angleLines: {
+              color: "rgba(0,0,0,0.08)"
+            },
+            ticks: {
+              showLabelBackdrop: false,
+              color: "#777",
+              font: { size: 12 }
+            },
+            pointLabels: {
+              color: "#2f2d2d",
+              font: { size: 15, weight: 600 },
+              padding: 10
+            }
           }
         }
       }
     });
   }
 }
-

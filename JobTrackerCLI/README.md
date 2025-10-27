@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-183-blue">   <img src="https://img.shields.io/badge/Active-105-green">   <img src="https://img.shields.io/badge/Rejected-23-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
+  <img src="https://img.shields.io/badge/Total-203-blue">   <img src="https://img.shields.io/badge/Active-125-green">   <img src="https://img.shields.io/badge/Rejected-23-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **183 positions** across multiple industries. Currently, **105 applications remain active**, and **41 likely inactive**, with **3 interviews** completed.
+So far, I've applied to **203 positions** across multiple industries. Currently, **125 applications remain active**, and **41 likely inactive**, with **3 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -26,8 +26,8 @@ So far, I've applied to **183 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left" width="50%">
 
-- **Total Applications:** 183  
-- 🕐 **Active / Pending:** 105  
+- **Total Applications:** 203  
+- 🕐 **Active / Pending:** 125  
 - ⏳ **Likely Inactive:** 41  
 - ❌ **Rejected:** 23  
 
@@ -45,14 +45,14 @@ So far, I've applied to **183 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left">
 
-- 📈 **Success Rate:** 1.6%  
+- 📈 **Success Rate:** 1.5%  
 - 📦 **Closed:** 14  
 - 🌐 **Top Source:** LinkedIn  
-- ⚡ **Avg Applications per Week:** 6.7  
-- 🕐 **Still Waiting (Applied Only):** 137  
+- ⚡ **Avg Applications per Week:** 7.4  
+- 🕐 **Still Waiting (Applied Only):** 157  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 52 days  
-- 🆕 **Most Recent:** [Benmore](https://benmore.tech) — Forward-Deployed Software Engineer (10/25/2025)  
+- 📆 **Avg Days Since Application:** 47 days  
+- 🆕 **Most Recent:** [PAWS Chicago](https://www.pawschicago.org/about-us/careers) — Animal Care Associate (10/27/2025)  
 </td></tr></table>
 
 <div align="center">
@@ -61,16 +61,16 @@ So far, I've applied to **183 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td valign='top' align='left'>
 
-• **IT / Support:** 64<br>
+• **IT / Support:** 74<br>
 • **Software / Development:** 32<br>
-• **Animal Care:** 21<br>
-• **AI / Data Science:** 15<br>
+• **Animal Care:** 24<br>
+• **AI / Data Science:** 16<br>
 • **Data / Analytics:** 14<br>
 • **Retail / Service:** 10<br>
+• **Other:** 9<br>
 • **Administration:** 6<br>
 • **Culinary / Food Service:** 4<br>
 • **Education / Training:** 3<br>
-• **Other:** 3<br>
 </td><td valign='top' align='left'>
 
 • **Environmental / Sustainability:** 2<br>
@@ -93,6 +93,26 @@ So far, I've applied to **183 positions** across multiple industries. Currently,
 
 | Company | Role | Type | Location | Status | Date Applied | Source | Notes |
 |----------|------|------|-----------|----------|---------------|---------|--------|
+| [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Animal Care Associate | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Daily feeding, cleaning, enrichment, medication logging, and maintaining clean kennel and common areas for dogs and cats in a shelter environment. |
+| [The Dog Stop – Bucktown](https://www.thedogstop.com/locations/chicago-bucktown/) | Dog Handler and Daycare Attendant | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Supervise playgroups, ensure dog safety and enrichment, maintain clean kennels and play areas, assist with feeding and meds, and document behavior and health observations. |
+| [Wag Hotels – Dog Service Specialist (Seasonal)](https://waghotels.com/locations/chicago-il/) | Dog Service Specialist - Part Time - Seasonal | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Supports dog play sessions, monitors behavior, cleans and maintains rooms/play areas, documents notes on dogs, and assists with weekend/holiday coverage in a fast-paced pet hotel environment. |
+| [Lincoln Park Preschool & Kindergarten – Substitute Teacher Assistant](https://www.lppschools.com/careers) | Substitute Teacher Assistant | Teaching | Chicago, IL | Applied | 10/27/2025 | Indeed | Classroom support helping young children with activities and daily routines. No teaching license required. |
+| [FTS, Inc.](https://ftsco.com) | Help Desk Support Technician | IT Support | Chicago, IL | Applied | 10/26/2025 | LinkedIn | IT support via ticketing system, phone, chat, and in person. Troubleshoot and resolve issues using systems like Active Directory, ServiceNow, and Office 365 Admin. |
+| [Old Republic Professional](https://www.oldrepublicpro.com) | Associate IT Quality Assurance Analyst | Analyst | Chicago, IL (Hybrid) | Applied | 10/26/2025 | LinkedIn | Entry-level or early-career role responsible for ensuring and maintaining the quality, accuracy, and stability of underwriting, billing, claims. and reporting systems. |
+| [Caboodle Media](https://caboodle.media/) | AI Operational Specialist | AI | United States (Remote) | Applied | 10/26/2025 | LinkedIn | Remote, part-time position focusing on using AI tools to solve technical challenges, support agency projects, and help build and launch an AI-powered SaaS product in a fast-paced startup environment. |
+| [CAI](https://careers.cai.io/us/en/apply?jobSeqNo=CAICAIUSR6485EXTERNALENUS&utm_source=linkedin&utm_medium=phenom-feeds&step=1&stepname=personalInformation) | Administrative Support Worker | IT Support | Evanston, IL | Applied | 10/26/2025 | Company Website | Provide administrative support for scholarship programs including reviewing applications, maintaining student records, managing correspondence, and assisting with general office operations on-site. |
+| [CAI](https://www.linkedin.com/jobs/view/4017049324/) | Network and Systems Administrator | IT operations | Evanston, IL | Applied | 10/26/2025 | Company Website | Support, configure, and maintain network infrastructure and Windows server systems, ensuring reliable performance, troubleshooting issues, deploying updates, and assisting IT operations on-site. |
+| [Addison Public Library](https://www.ziprecruiter.com/c/Addison-Public-Library/Job/IT-Services-Associate/-in-Addison,IL) | IT Services Associate | IT Support | Addison, IL | Applied | 10/26/2025 | ZipRecruiter | Provide in-person technology support and circulation assistance for staf and library patrons, troubleshooting devices, maintaining equipment, and helping ensure smooth daily operations. |
+| [SPS North America](https://www.ziprecruiter.com/c/SPS-North-America/Job/AV-IT-Support/-in-Chicago,IL) | AV/IT Support Technician | IT Support | Chicago, IL | Applied | 10/26/2025 | ZipRecruiter | Responsible for the operation, maintenance, and troubleshooting of audio-visual equipment to support meetings, events, and day-to-day business needs. |
+| [Constellation Brands](https://www.ziprecruiter.com/c/Constellation-Brands/Job/Intern,-Information-Technology/-in-Chicago,IL) | Information Technology Intern | IT | Chicago, IL | Applied | 10/26/2025 | Company Website | Support IT operations at Constellation Brands' Chicago office, assisting with technical troubleshoorting, device setup, and systems administration while gaining hands-on industry experience. |
+| [Ignite Medical Resorts](https://www.ziprecruiter.com/c/Ignite-Medical-Resorts/Job/Help-Desk-Support-Specialist/-in-Park-Ridge,IL) | Help Desk Support Specialist | IT | Park Ridge, IL | Applied | 10/26/2025 | Company Website | Full-time help desk support role at Ignite Medical Resorts, Park Ridge, IL 60068; diagnosing and resolving technical issues, managing hardware & software support, and serving campus users. |
+| [F3 Technologies](https://www.indeed.com/viewjob?jk=0b2d9a2a74359e2a) | Field Implementation Technician - Restaurant POS Systems | Field Technician | Chicago, IL | Applied | 10/26/2025 | Indeed | Install, troubleshoot, and support point-of-sale (POS) technology at restaurant locations across Chicagoland, providing hands-on technical fixes and customer assistance. |
+| [Advantage Dental Care](https://www.indeed.com/viewjob?jk=8c16d9dd3c3c7bb6) | Receptionist | Hospitality | Chicago, IL | Applied | 10/26/2025 | Indeed | Full-time front desk role assisting patients, scheduling, processing payments, and maintaining records at a Chicago dental office. Spanish fluency required. Training provided. |
+| [Community Assistance Programs](https://www.indeed.com/viewjob?jk=9f2f303ae8dbb65f) | Program Office Assistant | Assistant | Chicago, IL | Applied | 10/26/2025 | Indeed | Full-time office support role assisting with client intake, data entry, eligibility documentation, and administrative support for employment programs serving underserved communities. |
+| [Beyond Yoga](https://www.indeed.com/viewjob?jk=bfb3c0a460cfaec5) | Seasonal Part Time Associate | Hospitality | Skokie, IL | Applied | 10/26/2025 | Indeed | Part-time retail role at Old Orchard Mall assisting customers, handling inventory, and driving sales of activewear during the holiday season. Evenings and weekends required. |
+| [The Langham Chicago](https://www.indeed.com/viewjob?jk=7c7a0e9ea5e39dc0) | Seasonal Pavilion Restaurant Server | Hospitality | Chicago, IL | Applied | 10/26/2025 | Indeed | Serve guests in a luxury hotel restaurant, maintain high hospitality standards, and assist with beverage/food service during busy seasonal hours. Includes part-time hours and tips. |
+| [My Vet Animal Hospital](https://www.indeed.com/viewjob?jk=20663a3c42ef02d3) | Client Care Coordinator | Pet Care | Chicago, IL | Applied | 10/26/2025 | Indeed | Full-time client-facing support role helping pet owners with scheduling, patient records, payments, and communication while supporting veterinary staff in a fast-paced clinic environment. Passion for animals required, vet experience optional. |
+| [Alby Pet Care](https://www.indeed.com/viewjob?jk=20663a3c42ef02d3) | Pet Sitter / Dog Walker | Pet Care | Chicago, IL | Applied | 10/26/2025 | Indeed | Daily pet care including walks, feeding, and medication support with flexible scheduling across Northside neighborhoods. Requires car access and weekday daytime availability. |
 | [Benmore](https://benmore.tech) | Forward-Deployed Software Engineer | Software | Chicago, IL | Applied | 10/25/2025 | LinkedIn | Chicago-based technical consulting firm that partners with startups and small businesses to bring software ideas from concept to MVP and beyond. |
 | [Titan Security Group](https://www.titan-security.com/) | Junior Software Support Specialist | Software | Chicago, IL | Applied | 10/25/2025 | LinkedIn | Security group based in Chicago, privately-held security solutions provider offering services like security staffing and electronic security systems. |
 | [Resource Innovations](https://resource-innovations.com/) | Energy Efficiency Intern | Sustainability / Tech | Chicago, IL (Hybrid) | Applied | 10/25/2025 | LinkedIn | Woman-led energy transformation company that partners with utilities, governments, and businesses to design and implement energy efficiency and sustainability programs. |
@@ -279,7 +299,7 @@ So far, I've applied to **183 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 183 total — 🕐 105 active — ⏳ 41 likely inactive — ❌ 23 rejected — 💬 3 interviews — ✅ 0 hired.**
+**Summary:** 📋 203 total — 🕐 125 active — ⏳ 41 likely inactive — ❌ 23 rejected — 💬 3 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
