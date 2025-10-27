@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-183-blue">   <img src="https://img.shields.io/badge/Active-107-green">   <img src="https://img.shields.io/badge/Rejected-21-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
+  <img src="https://img.shields.io/badge/Total-183-blue">   <img src="https://img.shields.io/badge/Active-105-green">   <img src="https://img.shields.io/badge/Rejected-23-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **183 positions** across multiple industries. Currently, **107 applications remain active**, and **41 likely inactive**, with **3 interviews** completed.
+So far, I've applied to **183 positions** across multiple industries. Currently, **105 applications remain active**, and **41 likely inactive**, with **3 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -27,15 +27,15 @@ So far, I've applied to **183 positions** across multiple industries. Currently,
 <table align="center"><tr><td align="left" width="50%">
 
 - **Total Applications:** 183  
-- 🕐 **Active / Pending:** 107  
+- 🕐 **Active / Pending:** 105  
 - ⏳ **Likely Inactive:** 41  
-- ❌ **Rejected:** 21  
+- ❌ **Rejected:** 23  
 
 </td><td align="left" width="50%">
 
 - 💬 **Interviewed:** 3  
 - ✅ **Hired / Offer:** 0  
-- 🗓️ **Last Updated:** October 25, 2025  
+- 🗓️ **Last Updated:** October 27, 2025  
 
 </td></tr></table>
 
@@ -49,9 +49,9 @@ So far, I've applied to **183 positions** across multiple industries. Currently,
 - 📦 **Closed:** 14  
 - 🌐 **Top Source:** LinkedIn  
 - ⚡ **Avg Applications per Week:** 6.7  
-- 🕐 **Still Waiting (Applied Only):** 139  
+- 🕐 **Still Waiting (Applied Only):** 137  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 50 days  
+- 📆 **Avg Days Since Application:** 52 days  
 - 🆕 **Most Recent:** [Benmore](https://benmore.tech) — Forward-Deployed Software Engineer (10/25/2025)  
 </td></tr></table>
 
@@ -103,7 +103,7 @@ So far, I've applied to **183 positions** across multiple industries. Currently,
 | [The Langham, Chicago](https://www.langhamhotels.com/en/the-langham/chicago/?utm_campaign=tlchi&utm_medium=ppc&utm_source=google&utm_content=na&utm_id=brand_en_local) | Seasonal Host / Hostess | Hospitality | Chicago, IL | Applied | 10/24/2025 | Indeed | Luxury five-star hotel known for its fine dining and exceptional guest service. Welcome guests, manage reservations, and maintain a polished, high-end dining experience. |
 | [Qiao Lin Hotpot – Streeterville](https://www.choosechicago.com/listing/qiao-lin-hotpot-streeterville/) | Host | Hospitality / Food Service | Streeterville, Chicago, IL | Applied | 10/24/2025 | Indeed | Authentic Chongqing-style hot port restaurant offering a vibrant and high-volume dining experience. |
 | [Happy Camper Pizza – Old Town](https://www.happycamper.pizza/old-town/) | Host | Hospitality | Old Town, Chicago, IL | Applied | 10/24/2025 | Indeed | High-energy pizzeria and bar in Chicago's Old Town neighborhood. Welcome guests, manage reservations and waitlists, coordinate seating, and support servers and managers. |
-| [Software Engineer – Python – Cloud (Graduate Level)](https://canonical.com/careers/3002734/software-engineer-python-cloud-graduate-level) | Software Engineer | Software | Chicago, IL (Remote) | Applied | 10/24/2025 | Indeed | Global open-source software company that publishes Unbuntu, one of the world's most popular Linux distributions. Role focuses on developing, testing, and releasing improvements to Unbuntu cloud images across major public clouds. |
+| [Software Engineer – Python – Cloud (Graduate Level)](https://canonical.com/careers/3002734/software-engineer-python-cloud-graduate-level) | Software Engineer | Software | Chicago, IL (Remote) | Rejected | 10/24/2025 | Indeed | Global open-source software company that publishes Unbuntu, one of the world's most popular Linux distributions. Role focuses on developing, testing, and releasing improvements to Unbuntu cloud images across major public clouds. |
 | [Software Developer Intern – Group One Trading](https://www.group1.com/careers/) | Software Developer Intern | Intern / Software | Chicago, IL | Applied | 10/24/2025 | Indeed | Group One Trading is a proprietary trading firm that develops and deploys advanced trading systems and software to support options and equity markets. As a Software Developer Intern, you’ll collaborate with senior engineers to design, code, and optimize real-time trading infrastructure using modern programming languages like C++ and Python, while gaining exposure to data-driven decision-making in financial markets. |
 | [Multimedia & Digital Design Intern – That’s So Creative, LLC](https://thatssocreative.com/) | Multimedia & Digital Design Intern | Intern / Digital Design | Chicago, IL (Hybrid) | Applied | 10/24/2025 | Indeed | That's So Creative, LLC is a growing creative agency offering a hands-on internship focused on multimedia, branding, and digital design. As an intern, you'll collaborate with senior designers to create  graphics, videos, and digital marketing assets for corporate, nonprofit, and small business clients, gaining real-world experience in Adobe Creative Cloud, social media content, and UX/UI design while building a professional portfolio. |
 | [Phoenix Group](https://www.thephoenixgroup.com/) | Information Technology Support Specialist | IT | Chicago, IL (Hybrid) | Applied | 10/24/2025 | LinkedIn | Supports with retirement, savings, and life-insurance services. |
@@ -154,7 +154,7 @@ So far, I've applied to **183 positions** across multiple industries. Currently,
 | [Veterinary Receptionist — PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Veterinary Receptionist | Animal Care / Medical | Chicago, IL | Rejected | 10/17/2025 | Indeed | Chicago-based pet care company. |
 | [Doggy Daycare Attendant / Dog Handler — Urban Pooch Canine Life Center](https://www.urbanpooch.com/employment/) | Doggy Daycare Attendant / Dog Handler | Animal Petcare / Pet Services | Chicago, IL | Rejected | 10/17/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [IT Support Specialist (Hybrid) — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/) | IT Support Specialist (Hybrid) | Healthcare / IT | Chicago, IL | Rejected | 10/17/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Barback — Z Bar, The Hongkong and Shanghai Hotels, Limited (Chicago, IL)](https://www.peninsula.com/en/careers) | Barback | Hospitality | Chicago, IL | Applied | 10/17/2025 | Company Website | <span style='color:#999;'>—</span> |
+| [Barback — Z Bar, The Hongkong and Shanghai Hotels, Limited (Chicago, IL)](https://www.peninsula.com/en/careers) | Barback | Hospitality | Chicago, IL | Rejected | 10/17/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [Front Desk Medical Receptionist — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/) | Front Desk Medical Receptionist | Healthcare / Administration | Chicago, IL | Applied | 10/17/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [East Bank Club](https://www.eastbankclub.com/) | Receptionist | Customer Service | Chicago, IL | Rejected | 10/17/2025 | Indeed | Fitness and social club. |
 | Eataly | Cashier | Retail / Service | River North, Chicago, IL | Applied | 10/15/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -279,8 +279,8 @@ So far, I've applied to **183 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 183 total — 🕐 107 active — ⏳ 41 likely inactive — ❌ 21 rejected — 💬 3 interviews — ✅ 0 hired.**
+**Summary:** 📋 183 total — 🕐 105 active — ⏳ 41 likely inactive — ❌ 23 rejected — 💬 3 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
-*Last updated October 25, 2025.*
+*Last updated October 27, 2025.*
