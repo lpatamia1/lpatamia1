@@ -100,7 +100,7 @@ header h1 {
 
 /* 📊 Chart Sections */
 main {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 1rem auto 40px auto;
   padding: 0 1rem 35px;
   border-bottom: 1px solid #e0d6ea;

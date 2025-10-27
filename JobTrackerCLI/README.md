@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-203-blue">   <img src="https://img.shields.io/badge/Active-125-green">   <img src="https://img.shields.io/badge/Rejected-23-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
+  <img src="https://img.shields.io/badge/Total-203-blue">   <img src="https://img.shields.io/badge/Active-122-green">   <img src="https://img.shields.io/badge/Rejected-26-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **203 positions** across multiple industries. Currently, **125 applications remain active**, and **41 likely inactive**, with **3 interviews** completed.
+So far, I've applied to **203 positions** across multiple industries. Currently, **122 applications remain active**, and **41 likely inactive**, with **3 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -27,9 +27,9 @@ So far, I've applied to **203 positions** across multiple industries. Currently,
 <table align="center"><tr><td align="left" width="50%">
 
 - **Total Applications:** 203  
-- 🕐 **Active / Pending:** 125  
+- 🕐 **Active / Pending:** 122  
 - ⏳ **Likely Inactive:** 41  
-- ❌ **Rejected:** 23  
+- ❌ **Rejected:** 26  
 
 </td><td align="left" width="50%">
 
@@ -49,7 +49,7 @@ So far, I've applied to **203 positions** across multiple industries. Currently,
 - 📦 **Closed:** 14  
 - 🌐 **Top Source:** LinkedIn  
 - ⚡ **Avg Applications per Week:** 7.4  
-- 🕐 **Still Waiting (Applied Only):** 157  
+- 🕐 **Still Waiting (Applied Only):** 154  
 - 📍 **Top Location:** Chicago, IL  
 - 📆 **Avg Days Since Application:** 47 days  
 - 🆕 **Most Recent:** [PAWS Chicago](https://www.pawschicago.org/about-us/careers) — Animal Care Associate (10/27/2025)  
@@ -100,8 +100,8 @@ So far, I've applied to **203 positions** across multiple industries. Currently,
 | [FTS, Inc.](https://ftsco.com) | Help Desk Support Technician | IT Support | Chicago, IL | Applied | 10/26/2025 | LinkedIn | IT support via ticketing system, phone, chat, and in person. Troubleshoot and resolve issues using systems like Active Directory, ServiceNow, and Office 365 Admin. |
 | [Old Republic Professional](https://www.oldrepublicpro.com) | Associate IT Quality Assurance Analyst | Analyst | Chicago, IL (Hybrid) | Applied | 10/26/2025 | LinkedIn | Entry-level or early-career role responsible for ensuring and maintaining the quality, accuracy, and stability of underwriting, billing, claims. and reporting systems. |
 | [Caboodle Media](https://caboodle.media/) | AI Operational Specialist | AI | United States (Remote) | Applied | 10/26/2025 | LinkedIn | Remote, part-time position focusing on using AI tools to solve technical challenges, support agency projects, and help build and launch an AI-powered SaaS product in a fast-paced startup environment. |
-| [CAI](https://careers.cai.io/us/en/apply?jobSeqNo=CAICAIUSR6485EXTERNALENUS&utm_source=linkedin&utm_medium=phenom-feeds&step=1&stepname=personalInformation) | Administrative Support Worker | IT Support | Evanston, IL | Applied | 10/26/2025 | Company Website | Provide administrative support for scholarship programs including reviewing applications, maintaining student records, managing correspondence, and assisting with general office operations on-site. |
-| [CAI](https://www.linkedin.com/jobs/view/4017049324/) | Network and Systems Administrator | IT operations | Evanston, IL | Applied | 10/26/2025 | Company Website | Support, configure, and maintain network infrastructure and Windows server systems, ensuring reliable performance, troubleshooting issues, deploying updates, and assisting IT operations on-site. |
+| [CAI](https://careers.cai.io/us/en/apply?jobSeqNo=CAICAIUSR6485EXTERNALENUS&utm_source=linkedin&utm_medium=phenom-feeds&step=1&stepname=personalInformation) | Administrative Support Worker | IT Support | Evanston, IL | Rejected | 10/26/2025 | Company Website | Provide administrative support for scholarship programs including reviewing applications, maintaining student records, managing correspondence, and assisting with general office operations on-site. |
+| [CAI](https://www.linkedin.com/jobs/view/4017049324/) | Network and Systems Administrator | IT operations | Evanston, IL | Rejected | 10/26/2025 | Company Website | Support, configure, and maintain network infrastructure and Windows server systems, ensuring reliable performance, troubleshooting issues, deploying updates, and assisting IT operations on-site. |
 | [Addison Public Library](https://www.ziprecruiter.com/c/Addison-Public-Library/Job/IT-Services-Associate/-in-Addison,IL) | IT Services Associate | IT Support | Addison, IL | Applied | 10/26/2025 | ZipRecruiter | Provide in-person technology support and circulation assistance for staf and library patrons, troubleshooting devices, maintaining equipment, and helping ensure smooth daily operations. |
 | [SPS North America](https://www.ziprecruiter.com/c/SPS-North-America/Job/AV-IT-Support/-in-Chicago,IL) | AV/IT Support Technician | IT Support | Chicago, IL | Applied | 10/26/2025 | ZipRecruiter | Responsible for the operation, maintenance, and troubleshooting of audio-visual equipment to support meetings, events, and day-to-day business needs. |
 | [Constellation Brands](https://www.ziprecruiter.com/c/Constellation-Brands/Job/Intern,-Information-Technology/-in-Chicago,IL) | Information Technology Intern | IT | Chicago, IL | Applied | 10/26/2025 | Company Website | Support IT operations at Constellation Brands' Chicago office, assisting with technical troubleshoorting, device setup, and systems administration while gaining hands-on industry experience. |
@@ -182,7 +182,7 @@ So far, I've applied to **203 positions** across multiple industries. Currently,
 | [Eataly](https://www.eataly.com/us_en/) | Cheesemonger / Salumi & Formaggi Artisan | Culinary / Retail | River North, Chicago, IL | Applied | 10/15/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Eataly](https://www.eataly.com/us_en/) | Cashier / Front End Associate – Seasonal | Retail / Service | River North, Chicago, IL | Applied | 10/15/2025 | LinkedIn | Retail role; international food market. |
 | [Comfort Dental Fairwood](https://www.comfortdental.com/) | Office Assistant | Admin / Office Support | South Side, Chicago, IL | Applied | 10/15/2025 | ZipRecruiter | Front-office coordination; experience with maintaining patient scheduling and administrative systems. |
-| [TDS](https://tdstelecom.com/careers) | GIS Intern | GIS / Environmental | Remote | Applied | 10/13/2025 | LinkedIn | Developrs spatial-data visualization and mapping analysis in environmental contexts. |
+| [TDS](https://tdstelecom.com/careers) | GIS Intern | GIS / Environmental | Remote | Rejected | 10/13/2025 | LinkedIn | Developrs spatial-data visualization and mapping analysis in environmental contexts. |
 | [LeoLabs](https://www.leolabs.space/careers) | Electrical Engineer | Engineering | Remote | Applied | 10/13/2025 | LinkedIn | Involves satellite tracking and radar systems; strengthens applied physics and hardware knowledge. |
 | [Robert Half](https://www.roberthalf.com/jobs) | Part-Time Admin Assistant | Admin | Chicago, IL | Applied | 10/03/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Robert Half](https://www.roberthalf.com/jobs) | Medical Coder | Healthcare / IT | Chicago, IL | Applied | 10/03/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -299,7 +299,7 @@ So far, I've applied to **203 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 203 total — 🕐 125 active — ⏳ 41 likely inactive — ❌ 23 rejected — 💬 3 interviews — ✅ 0 hired.**
+**Summary:** 📋 203 total — 🕐 122 active — ⏳ 41 likely inactive — ❌ 26 rejected — 💬 3 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*

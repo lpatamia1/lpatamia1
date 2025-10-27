@@ -42,30 +42,29 @@
     <section>
       <h2>🔥 Skill Match Heatmap</h2>
       <canvas id="heatmap" height="300"></canvas>
-</section>
-<section>
-      <div id="learningLog">
-        <h3>📘 Learning Log</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Date</th><th>Topic</th><th>Hours</th><th>Reflection</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for entry in learning_log %}
-              <tr>
-                <td>{{ entry.Date }}</td>
-                <td>{{ entry.Topic }}</td>
-                <td>{{ entry.Hours }}</td>
-                <td>{{ entry.Reflection }}</td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
     </section>
-
+    <section>
+          <div id="learningLog">
+            <h3>📘 Learning Log</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th><th>Topic</th><th>Hours</th><th>Reflection</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for entry in learning_log %}
+                  <tr>
+                    <td>{{ entry.Date }}</td>
+                    <td>{{ entry.Topic }}</td>
+                    <td>{{ entry.Hours }}</td>
+                    <td>{{ entry.Reflection }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+    </section>
   </main>
 
   <section id="jobListSection">
