@@ -15,16 +15,7 @@
   <header>
     <h1>📈 Job Application Dashboard</h1>
     <p class="subtitle">Tracking progress, insights, and wins 🌟</p>
-  <!-- ✅ Metric Cards -->
-    <div class="metric-cards">
-      <div class="metric-card"><h3>Total Applications</h3><p>{{ total }}</p></div>
-      <div class="metric-card"><h3>Interviews</h3><p>{{ interviews }}</p></div>
-      <div class="metric-card"><h3>Rejected</h3><p>{{ rejected }}</p></div>
-      <div class="metric-card"><h3>Hired</h3><p>{{ hired }}</p></div>
-    </div>
-  
-
-  <!-- ✅ Move streak card here -->
+    <!-- ✅ Move streak card here -->
   <div id="streakCard" class="streak-card">
     🔥 <strong>{{ streak }}</strong>-Day Streak!
     <span class="streak-msg">
@@ -35,6 +26,13 @@
       {% endif %}
     </span>
   </div>
+  <!-- ✅ Metric Cards -->
+    <div class="metric-cards">
+      <div class="metric-card"><h3>Total Applications</h3><p>{{ total }}</p></div>
+      <div class="metric-card"><h3>Interviews</h3><p>{{ interviews }}</p></div>
+      <div class="metric-card"><h3>Rejected</h3><p>{{ rejected }}</p></div>
+      <div class="metric-card"><h3>Hired</h3><p>{{ hired }}</p></div>
+    </div>
 
   <div id="badgeSection" class="badges"></div>
   <!-- End Metric Cards -->

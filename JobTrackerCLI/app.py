@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import pandas as pd
 import numpy as np
 import re
-
+# 🚀 Initialize Flask app
 app = Flask(__name__)
 @app.route('/')
 def dashboard():
