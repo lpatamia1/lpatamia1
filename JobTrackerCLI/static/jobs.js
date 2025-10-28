@@ -1,90 +1,89 @@
-// static/jobs.js
-console.log("✅ jobs.js loaded");
+console.log("✅ jobs.js synced");
+
+// 🧾 Convert markdown links to text + URL
+function extractUrl(markdown) {
+  const match = markdown.match(/\((https?:\/\/.*?)\)/);
+  return match ? match[1] : "#";
+}
+function extractText(markdown) {
+  const match = markdown.match(/\[(.*?)\]/);
+  return match ? match[1] : markdown;
+}
 
 const jobList = document.getElementById("jobList");
 const searchBox = document.getElementById("jobSearch");
 
-// 🧾 Render all jobs
-function renderJobs(list) {
+function renderJobs(list = jobs) {
   jobList.innerHTML = "";
 
-  if (!list || list.length === 0) {
-    jobList.innerHTML = "<p style='text-align:center; color:#888;'>No matches found.</p>";
-    return;
-  }
-
   list.forEach(job => {
-  const card = document.createElement("div");
-  card.classList.add("job-card");
+    const companyText = extractText(job.Company);
+    const companyUrl = extractUrl(job.Company);
 
-  // The Company column already has clickable <a> links (from Flask)
-  card.innerHTML = `
-    <h3 style="margin:0 0 0.3rem; color:#4f4848;">${job.Company}</h3>
-    <p><strong>Role:</strong> ${job.Role}</p>
-    <p><strong>Status:</strong> ${job.Status}</p>
-    <p><strong>Location:</strong> ${job.Location || "—"}</p>
-    <p><strong>Source:</strong> ${job.Source}</p>
-    <p><strong>Date Applied:</strong> ${job["Date Applied"] || "—"}</p>
+    const card = document.createElement("div");
+    card.classList.add("job-card");
 
-    ${
-      job["Job Type"] || job.Keywords
-        ? `
-          <div class="badge-row" style="margin:0.4rem 0 0.6rem;">
-            ${
-              job["Job Type"]
-                ? `<span style="
-                    background:#e0f2f1;
-                    color:#00695c;
-                    padding:0.25rem 0.6rem;
-                    border-radius:8px;
-                    font-size:0.8rem;
-                    margin-right:0.3rem;
-                    font-weight:500;">
-                    💼 ${job["Job Type"]}
-                  </span>`
-                : ""
-            }
-            ${
-              job.Keywords
-                ? job.Keywords.split(/[,;]+/)
-                    .map(k => `<span style="
-                      background:#ede9fe;
-                      color:#5b21b6;
-                      padding:0.25rem 0.6rem;
-                      border-radius:8px;
-                      font-size:0.8rem;
-                      margin-right:0.3rem;
-                      font-weight:500;">🏷️ ${k.trim()}</span>`)
-                    .join(" ")
-                : ""
-            }
-          </div>
-        `
-        : ""
-    }
+    // ✅ Set all data needed for modal
+    card.dataset.company = companyText;
+    card.dataset.role = job.Role || "";
+    card.dataset.status = job.Status || "";
+    card.dataset.type = job.Type || "";
+    card.dataset.location = job.Location || "";
+    card.dataset.date = job["Date Applied"] || "";
+    card.dataset.source = job.Source || "";
+    card.dataset.notes = job.Notes || "";
 
-    ${
-      job.Notes
-        ? `<p style="font-size:0.9rem; color:#777;">📝 ${job.Notes}</p>`
-        : ""
-    }
-  `;
+    card.innerHTML = `
+      <h3><a class="company-link" href="${companyUrl}" target="_blank">${companyText}</a></h3>
+      <p><strong>Role:</strong> ${job.Role}</p>
+      <p><strong>Status:</strong> ${job.Status}</p>
+      <p><strong>Location:</strong> ${job.Location}</p>
+      <p><strong>Date:</strong> ${job["Date Applied"]}</p>
+    `;
 
-  jobList.appendChild(card);
-});
+    jobList.appendChild(card);
+  });
 
+  attachModalListeners(); // ✅ rebind clicks to new cards
 }
 
-// 🔍 Search bar
+// 🔍 Search listener
 searchBox.addEventListener("input", () => {
-  const term = searchBox.value.toLowerCase();
+  const input = searchBox.value.toLowerCase();
   const filtered = jobs.filter(j =>
-    (j.Company && j.Company.toLowerCase().includes(term)) ||
-    (j.Role && j.Role.toLowerCase().includes(term)) ||
-    (j.Status && j.Status.toLowerCase().includes(term))
+    (j.Company && j.Company.toLowerCase().includes(input)) ||
+    (j.Role && j.Role.toLowerCase().includes(input)) ||
+    (j.Status && j.Status.toLowerCase().includes(input))
   );
   renderJobs(filtered);
 });
 
+// 🐱 Modal trigger for cards
+function attachModalListeners() {
+  document.querySelectorAll(".job-card").forEach(card => {
+    card.addEventListener("click", () => {
+      modalCompany.innerText = card.dataset.company;
+      modalRole.innerText = card.dataset.role;
+      modalStatus.innerText = card.dataset.status;
+      modalType.innerText = card.dataset.type;
+      modalLocation.innerText = card.dataset.location;
+      modalDate.innerText = card.dataset.date;
+      modalSource.innerText = card.dataset.source;
+      modalNotes.innerText = card.dataset.notes;
+
+      const catMessages = [
+        "ฅ^•ﻌ•^ฅ You’re one application closer!",
+        "(=＾ᆺ＾=) Keep going!",
+        "૮ ˃⤙˂ ა Proud of you.",
+        "=^._.^= You make progress look cute.",
+        "(*ฅ́˘ฅ̀*)♡ You totally got this."
+      ];
+      catHelper.innerText = catMessages[Math.floor(Math.random() * catMessages.length)];
+
+      jobModal.style.display = "flex";
+    });
+  });
+}
+
 // 🚀 Initial load
-renderJobs(jobs);
+renderJobs();

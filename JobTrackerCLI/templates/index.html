@@ -38,11 +38,6 @@
       <h2>🧠 Technical Prep Progress</h2>
       <canvas id="prepBar" height="250"></canvas>
     </section>
-
-    <section>
-      <h2>🔥 Skill Match Heatmap</h2>
-      <canvas id="heatmap" height="300"></canvas>
-    </section>
     <section>
           <div id="learningLog">
             <h3>📘 Learning Log</h3>
@@ -83,6 +78,7 @@
     <script>
       const jobs = {{ jobs | tojson | safe }};
     </script>
+    
   </section>
 
   <footer>
@@ -128,5 +124,73 @@
 
   <script src="{{ url_for('static', filename='charts.js') }}"></script>
   <script src="{{ url_for('static', filename='jobs.js') }}"></script>
+
+  <!-- 🐱 Job Details Modal -->
+  <div id="jobModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="modal-header">
+        <h2 id="modalCompany"></h2>
+        <p id="modalRole"></p>
+      </div>
+
+      <div class="modal-body">
+        <p><strong>Status:</strong> <span id="modalStatus"></span></p>
+        <p><strong>Type:</strong> <span id="modalType"></span></p>
+        <p><strong>Location:</strong> <span id="modalLocation"></span></p>
+        <p><strong>Date Applied:</strong> <span id="modalDate"></span></p>
+        <p><strong>Source:</strong> <span id="modalSource"></span></p>
+        <p class="notes"><span id="modalNotes"></span></p>
+      </div>
+
+      <div id="catHelper" class="cat-box"></div>
+    </div>
+  </div>
+<script>
+// 🐾 Cat Encourager messages
+const catMessages = [
+  'ฅ^•ﻌ•^ฅ You’re one application closer.',
+  '(=＾ᆺ＾=) Keep going.',
+  '૮ ˶ᵔ ᵕ ᵔ˶ ა You’re doing great.',
+  '=^._.^= I believe in you.',
+  '(*ฅ́˘ฅ̀*)♡ They would be lucky to have you.'
+];
+
+// ✅ Attach events once job cards exist
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    document.querySelectorAll('.job-card').forEach(card => {
+      card.addEventListener('click', () => {
+        document.getElementById('modalCompany').innerHTML = card.dataset.company;
+        document.getElementById('modalRole').innerText = card.dataset.role;
+        document.getElementById('modalStatus').innerText = card.dataset.status;
+        document.getElementById('modalType').innerText = card.dataset.type;
+        document.getElementById('modalLocation').innerText = card.dataset.location;
+        document.getElementById('modalDate').innerText = card.dataset.date;
+        document.getElementById('modalSource').innerText = card.dataset.source;
+        document.getElementById('modalNotes').innerText = card.dataset.notes;
+
+        // Random cat encouragement
+        document.getElementById('catHelper').innerText =
+          catMessages[Math.floor(Math.random() * catMessages.length)];
+
+        document.getElementById('jobModal').style.display = 'flex';
+      });
+    });
+  }, 200);
+});
+
+// ✅ Close modal
+document.querySelector('.modal').addEventListener('click', e => {
+  if (e.target.classList.contains('modal')) {
+    e.target.style.display = 'none';
+  }
+});
+document.querySelector('.close').addEventListener('click', () => {
+  document.getElementById('jobModal').style.display = 'none';
+});
+</script>
+
 </body>
 </html>

@@ -111,8 +111,8 @@ main > section {
   border-radius: 12px;
   padding: 1.1rem 1.2rem 1.4rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.377);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 6px 18px rgba(96, 69, 118, 0.13),
+              0 2px 5px rgba(96, 69, 118, 0.06);  transition: transform 0.25s ease, box-shadow 0.25s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,9 +135,9 @@ main > section {
   }
 }
 
-
 main > section:hover {
   transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
 }
 
 canvas {
@@ -150,24 +150,16 @@ canvas {
   filter: contrast(1.08);
 }
 
-/* 💼 Job Applications Section (centered + even spacing) */
-#jobListSection {
-  background: rgba(217, 216, 238, 0.92);
-  border-radius: 18px;
-  padding: 2rem 2rem 2.4rem;
-  margin: 2rem auto;            
-  max-width: 850px;
-  width: 90%;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.07);
-  display: block;                 
-}
-
 .job-header {
   width: 100%;
   text-align: center;
   margin-bottom: 1rem;
 }
-
+#jobListSection:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(96, 69, 118, 0.17),
+              0 4px 10px rgba(96, 69, 118, 0.08);
+}
 #jobListSection h2 {
   display: flex;
   align-items: center;
@@ -219,16 +211,18 @@ canvas {
   background: #fff;
   border-radius: 16px;
   padding: 1.3rem 1.4rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
-  border: 1.8px solid rgba(192, 132, 252, 0.2);
-  transition: all 0.25s ease;
+  border: 1.8px solid rgba(192, 132, 252, 0.28);
+  box-shadow: 0 6px 18px rgba(96, 69, 118, 0.13),
+              0 2px 5px rgba(96, 69, 118, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   position: relative;
 }
 
 .job-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  border-color: rgba(192, 132, 252, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(96, 69, 118, 0.17),
+              0 4px 10px rgba(96, 69, 118, 0.08);
+  border-color: rgba(192, 132, 252, 0.55);
 }
 
 /* 🏢 Company Link */
@@ -438,4 +432,79 @@ footer span {
   margin: 0 4px;
 }
 
+#jobListSection {
+  background: rgba(217, 216, 238, 0.95); /* identical to chart boxes */
+  border-radius: 18px;
+  padding: 2rem 2rem 2.4rem;
+  margin: 2rem auto;
+  max-width: 850px;
+  width: 90%;
+  box-shadow:
+    0 4px 10px rgba(96, 69, 118, 0.12),
+    0 1px 4px rgba(96, 69, 118, 0.06);
 
+  /* Same shadow + lift behavior */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  /* Same fadeUp animation */
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: .6s;
+}
+
+#jobListSection:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+}
+
+/* 🌙 Modal Backdrop */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* 📦 Modal Container */
+.modal-content {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 1.8rem;
+  max-width: 540px;
+  width: 92%;
+  box-shadow: 0 12px 38px rgba(96, 69, 118, 0.25);
+  animation: popIn 0.35s ease forwards;
+  position: relative;
+}
+
+@keyframes popIn {
+  from { transform: scale(.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* ❌ Close button */
+.close {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  font-size: 1.7rem;
+  color: #555;
+  cursor: pointer;
+}
+
+/* 🐱 Cat Encourager */
+.cat-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(192,132,252,0.1);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.05rem;
+  color: #3b3b3b;
+  font-family: "Segoe UI Emoji", "Inter", sans-serif;
+}
