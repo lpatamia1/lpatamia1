@@ -4,7 +4,6 @@ import numpy as np
 import re
 
 app = Flask(__name__)
-
 @app.route('/')
 def dashboard():
     try:
@@ -44,6 +43,16 @@ def dashboard():
     by_source = df['Source'].value_counts().nlargest(8).to_dict()
     print("📄 CSV Columns:", list(df.columns))
 
+    # 🔍 Count research-related applications
+    research_keywords = ["Research", "R&D", "Scientist"]
+    research_count = df['Role'].str.contains('|'.join(research_keywords), case=False, na=False).sum()
+
+    # 📅 Max applications submitted in a single day
+    if 'Date Applied' in df.columns:
+        max_single_day = df['Date Applied'].value_counts().max()
+    else:
+        max_single_day = 0
+
     # 💗 Monthly trend
     weekly_apps = {}
     if 'Date Applied' in df.columns:
@@ -67,6 +76,20 @@ def dashboard():
                 p.to_timestamp().strftime('%b %Y'): int(counts[p])
                 for p in full_range
             }
+
+    # 🔥 Streak calculation
+    streak = 0
+    last_dates = sorted(pd.to_datetime(df['Date Applied'], errors='coerce').dropna().unique(), reverse=True)
+
+    if last_dates:
+        today = pd.Timestamp.today().normalize()
+        current = today
+        for d in last_dates:
+            if d == current or d == current - pd.Timedelta(days=1):
+                streak += 1
+                current = d
+            else:
+                break
 
     # 🧾 Job list
     jobs = df.to_dict(orient='records')
@@ -106,6 +129,9 @@ def dashboard():
     # 🎨 Render to dashboard (✅ now includes all new data)
     return render_template(
         'index.html',
+        streak=streak,
+        research_count=research_count,
+        max_single_day=max_single_day,
         total=total,
         interviews=interviews,
         rejected=rejected,

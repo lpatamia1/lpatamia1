@@ -9,7 +9,7 @@ function extractText(markdown) {
   const match = markdown.match(/\[(.*?)\]/);
   return match ? match[1] : markdown;
 }
-
+// 🐱 Modal elements
 const jobList = document.getElementById("jobList");
 const searchBox = document.getElementById("jobSearch");
 
@@ -32,7 +32,7 @@ function renderJobs(list = jobs) {
     card.dataset.date = job["Date Applied"] || "";
     card.dataset.source = job.Source || "";
     card.dataset.notes = job.Notes || "";
-
+    // ✅ Card inner HTML
     card.innerHTML = `
       <h3><a class="company-link" href="${companyUrl}" target="_blank">${companyText}</a></h3>
       <p><strong>Role:</strong> ${job.Role}</p>
@@ -70,7 +70,7 @@ function attachModalListeners() {
       modalDate.innerText = card.dataset.date;
       modalSource.innerText = card.dataset.source;
       modalNotes.innerText = card.dataset.notes;
-
+      // 🐱 Fun cat message
       const catMessages = [
         "ฅ^•ﻌ•^ฅ You’re one application closer!",
         "(=＾ᆺ＾=) Keep going!",
@@ -87,3 +87,17 @@ function attachModalListeners() {
 
 // 🚀 Initial load
 renderJobs();
+
+// 📍 Scroll progress tracking
+const jobListSection = document.getElementById("jobListSection");
+const progressBar = document.getElementById("progressBar");
+
+// 📍 Update progress bar width
+function updateScrollProgress() {
+  const max = jobListSection.scrollHeight - window.innerHeight;
+  const percent = Math.min(100, (window.scrollY / max) * 100);
+  progressBar.style.width = percent + "%";
+}
+
+// 📍 Bind scroll event
+window.addEventListener("scroll", updateScrollProgress);

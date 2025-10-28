@@ -1,3 +1,4 @@
+<!-- ✅ Improved Dashboard HTML Structure -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,34 +11,53 @@
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
   <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
 </head>
-
 <body>
   <header>
     <h1>📈 Job Application Dashboard</h1>
     <p class="subtitle">Tracking progress, insights, and wins 🌟</p>
-
+  <!-- ✅ Metric Cards -->
     <div class="metric-cards">
       <div class="metric-card"><h3>Total Applications</h3><p>{{ total }}</p></div>
       <div class="metric-card"><h3>Interviews</h3><p>{{ interviews }}</p></div>
       <div class="metric-card"><h3>Rejected</h3><p>{{ rejected }}</p></div>
       <div class="metric-card"><h3>Hired</h3><p>{{ hired }}</p></div>
     </div>
-  </header>
+  
 
+  <!-- ✅ Move streak card here -->
+  <div id="streakCard" class="streak-card">
+    🔥 <strong>{{ streak }}</strong>-Day Streak!
+    <span class="streak-msg">
+      {% if streak >= 2 %}
+        Keep the chain going ✨
+      {% else %}
+        A fresh start today 🌱
+      {% endif %}
+    </span>
+  </div>
+
+  <div id="badgeSection" class="badges"></div>
+  <!-- End Metric Cards -->
+  </header>
   <main>
+    <!-- ✅ Charts Section -->
     <section><canvas id="statusChart"></canvas></section>
     <section><canvas id="sourceChart" height="300"></canvas></section>
     <section><canvas id="timelineChart" height="200"></canvas></section>
-
+    
+    <!-- ✅ Heatmap Section -->
     <section>
       <h2>⭐ Skill Match Overview</h2>
       <canvas id="skillRadar" height="300"></canvas>
     </section>
 
+    <!-- ✅ Tech Prep Section -->
     <section>
       <h2>🧠 Technical Prep Progress</h2>
       <canvas id="prepBar" height="250"></canvas>
     </section>
+
+    <!-- ✅ Learning Log Section -->
     <section>
           <div id="learningLog">
             <h3>📘 Learning Log</h3>
@@ -62,6 +82,7 @@
     </section>
   </main>
 
+  <!-- ✅ Job List Section -->
   <section id="jobListSection">
     <div class="job-header">
       <h2>💼 Job Applications</h2>
@@ -81,6 +102,12 @@
     
   </section>
 
+  <!-- ✅ Scroll Progress Bar -->
+  <div id="progressContainer">
+    <div id="progressBar"></div>
+  </div>
+
+<!-- 🦶 Footer -->
   <footer>
     <p>
       <span style="color:#b17897;">💻</span> Built with care by 
@@ -105,11 +132,9 @@
       const [mb, yb] = b[0].split(" ");
       return parseInt(ya) - parseInt(yb) || monthOrder.indexOf(ma) - monthOrder.indexOf(mb);
     });
-
     const labels = ordered.map(([k]) => k);
     const data = ordered.map(([_, v]) => v);
 
-    // ✅ Expose for charts.js
     window.timelineLabels = labels;
     window.timelineData = data;
   </script>
@@ -134,7 +159,7 @@
         <h2 id="modalCompany"></h2>
         <p id="modalRole"></p>
       </div>
-
+  <!-- ✅ Modal Body -->
       <div class="modal-body">
         <p><strong>Status:</strong> <span id="modalStatus"></span></p>
         <p><strong>Type:</strong> <span id="modalType"></span></p>
@@ -145,52 +170,101 @@
       </div>
 
       <div id="catHelper" class="cat-box"></div>
+      </div>
     </div>
-  </div>
-<script>
-// 🐾 Cat Encourager messages
-const catMessages = [
-  'ฅ^•ﻌ•^ฅ You’re one application closer.',
-  '(=＾ᆺ＾=) Keep going.',
-  '૮ ˶ᵔ ᵕ ᵔ˶ ა You’re doing great.',
-  '=^._.^= I believe in you.',
-  '(*ฅ́˘ฅ̀*)♡ They would be lucky to have you.'
-];
+  <script>
+  const catMessages = [
+    'ฅ^•ﻌ•^ฅ You’re one application closer.',
+    '(=＾ᆺ＾=) Keep going.',
+    '૮ ˶ᵔ ᵕ ᵔ˶ ა You’re doing great.',
+    '=^._.^= I believe in you.',
+    '(*ฅ́˘ฅ̀*)♡ They would be lucky to have you.'
+  ];
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      document.querySelectorAll('.job-card').forEach(card => {
+        card.addEventListener('click', () => {
+          document.getElementById('modalCompany').innerHTML = card.dataset.company;
+          document.getElementById('modalRole').innerText = card.dataset.role;
+          document.getElementById('modalStatus').innerText = card.dataset.status;
+          document.getElementById('modalType').innerText = card.dataset.type;
+          document.getElementById('modalLocation').innerText = card.dataset.location;
+          document.getElementById('modalDate').innerText = card.dataset.date;
+          document.getElementById('modalSource').innerText = card.dataset.source;
+          document.getElementById('modalNotes').innerText = card.dataset.notes;
 
-// ✅ Attach events once job cards exist
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
-    document.querySelectorAll('.job-card').forEach(card => {
-      card.addEventListener('click', () => {
-        document.getElementById('modalCompany').innerHTML = card.dataset.company;
-        document.getElementById('modalRole').innerText = card.dataset.role;
-        document.getElementById('modalStatus').innerText = card.dataset.status;
-        document.getElementById('modalType').innerText = card.dataset.type;
-        document.getElementById('modalLocation').innerText = card.dataset.location;
-        document.getElementById('modalDate').innerText = card.dataset.date;
-        document.getElementById('modalSource').innerText = card.dataset.source;
-        document.getElementById('modalNotes').innerText = card.dataset.notes;
+          document.getElementById('catHelper').innerText =
+            catMessages[Math.floor(Math.random() * catMessages.length)];
 
-        // Random cat encouragement
-        document.getElementById('catHelper').innerText =
-          catMessages[Math.floor(Math.random() * catMessages.length)];
-
-        document.getElementById('jobModal').style.display = 'flex';
+          document.getElementById('jobModal').style.display = 'flex';
+        });
       });
-    });
-  }, 200);
-});
+    }, 200);
+  });
 
-// ✅ Close modal
-document.querySelector('.modal').addEventListener('click', e => {
-  if (e.target.classList.contains('modal')) {
-    e.target.style.display = 'none';
+  // <!-- 🐱 Modal close logic -->
+  document.querySelector('.modal').addEventListener('click', e => {
+    if (e.target.classList.contains('modal')) {
+      e.target.style.display = 'none';
+    }
+  });
+  document.querySelector('.close').addEventListener('click', () => {
+    document.getElementById('jobModal').style.display = 'none';
+  });
+  // 🏅 Success Badge Logic
+  function updateBadges() {
+    const badges = [];
+
+    // ✅ Applications (only highest badge)
+    const total = {{ total }};
+    if (total >= 500) badges.push("🏆 Legendary Job Seeker");
+    else if (total >= 300) badges.push("🧠 Iron Will Applicant 300+");
+    else if (total >= 200) badges.push("👑 Job Hunting Royalty 200+");
+    else if (total >= 100) badges.push("💥 Triple-Digits Club 100+");
+    else if (total >= 50) badges.push("🌟 50+ Applications");
+    else if (total >= 20) badges.push("🚀 20+ Applications");
+
+    // ✅ Interviews (only highest badge)
+    const interviews = {{ interviews }};
+    if (interviews >= 20) badges.push("🏅 Interview Pro");
+    else if (interviews >= 10) badges.push("🔥 Interview Magnet");
+    else if (interviews >= 5) badges.push("🎯 In Demand");
+    else if (interviews >= 1) badges.push("🎤 First Interview!");
+
+      // ✅ Rejections (highest badge only)
+    const rejected = {{ rejected }};
+    if (rejected >= 50) badges.push("😾 They Can’t Ignore Me Forever");
+    else if ({{ rejected }} >= 25) badges.push("🛡️ Resilience Master");
+    else if (rejected >= 10) badges.push("💪 Still Showing Up");
+    
+    // ✅ “Ghosted Survivor” — Applied but no update
+    const ghosted = {{ active }};
+    if (ghosted >= 100) badges.push("🥲 Ghosted Survivor");
+    else if (ghosted >= 50) badges.push("👻 Ghosted but Unfazed");
+    else if (ghosted >= 20) badges.push("🕵️‍♂️ Ghost Hunter");
+
+    // ✅ Hired (only one badge)
+    if ({{ hired }} >= 1) badges.push("🏆 Hired!");
+
+    // ✅ “Research Mode Activated” — Needs preprocessing in Flask
+    const researchCount = {{ research_count or 0 }};
+    if (researchCount >= 5) badges.push("🧪 Research Mode Activated");
+
+    // ✅ “I Applied Everywhere” — if >10 in a single day
+    const oneDayMax = {{ max_single_day or 0 }};
+    if (oneDayMax >= 10) badges.push("📎 I Applied Everywhere");
+
+    // ✅ Render badges
+    const badgeSection = document.getElementById("badgeSection");
+    badgeSection.innerHTML = badges.length 
+      ? badges.map(b => `<span class="badge">${b}</span>`).join("")
+      : `<p style="color:#fff; font-size:0.9rem;">Earn badges as you progress ✨</p>`;
   }
-});
-document.querySelector('.close').addEventListener('click', () => {
-  document.getElementById('jobModal').style.display = 'none';
-});
-</script>
+
+  // Run on load
+  updateBadges();
+
+  </script>
 
 </body>
 </html>
