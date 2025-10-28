@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-203-blue">   <img src="https://img.shields.io/badge/Active-122-green">   <img src="https://img.shields.io/badge/Rejected-26-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
+  <img src="https://img.shields.io/badge/Total-214-blue">   <img src="https://img.shields.io/badge/Active-133-green">   <img src="https://img.shields.io/badge/Rejected-26-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **203 positions** across multiple industries. Currently, **122 applications remain active**, and **41 likely inactive**, with **3 interviews** completed.
+So far, I've applied to **214 positions** across multiple industries. Currently, **133 applications remain active**, and **41 likely inactive**, with **3 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -26,8 +26,8 @@ So far, I've applied to **203 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left" width="50%">
 
-- **Total Applications:** 203  
-- 🕐 **Active / Pending:** 122  
+- **Total Applications:** 214  
+- 🕐 **Active / Pending:** 133  
 - ⏳ **Likely Inactive:** 41  
 - ❌ **Rejected:** 26  
 
@@ -35,7 +35,7 @@ So far, I've applied to **203 positions** across multiple industries. Currently,
 
 - 💬 **Interviewed:** 3  
 - ✅ **Hired / Offer:** 0  
-- 🗓️ **Last Updated:** October 27, 2025  
+- 🗓️ **Last Updated:** October 28, 2025  
 
 </td></tr></table>
 
@@ -45,14 +45,14 @@ So far, I've applied to **203 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left">
 
-- 📈 **Success Rate:** 1.5%  
+- 📈 **Success Rate:** 1.4%  
 - 📦 **Closed:** 14  
-- 🌐 **Top Source:** LinkedIn  
-- ⚡ **Avg Applications per Week:** 7.4  
-- 🕐 **Still Waiting (Applied Only):** 154  
+- 🌐 **Top Source:** Indeed  
+- ⚡ **Avg Applications per Week:** 7.8  
+- 🕐 **Still Waiting (Applied Only):** 165  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 47 days  
-- 🆕 **Most Recent:** [PAWS Chicago](https://www.pawschicago.org/about-us/careers) — Animal Care Associate (10/27/2025)  
+- 📆 **Avg Days Since Application:** 45 days  
+- 🆕 **Most Recent:** [CHC Wellness](https://www.chcw.com/) — Help Desk Support Specialist - Tier 1 (10/28/2025)  
 </td></tr></table>
 
 <div align="center">
@@ -61,14 +61,14 @@ So far, I've applied to **203 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td valign='top' align='left'>
 
-• **IT / Support:** 74<br>
+• **IT / Support:** 83<br>
 • **Software / Development:** 32<br>
 • **Animal Care:** 24<br>
-• **AI / Data Science:** 16<br>
+• **AI / Data Science:** 17<br>
 • **Data / Analytics:** 14<br>
 • **Retail / Service:** 10<br>
 • **Other:** 9<br>
-• **Administration:** 6<br>
+• **Administration:** 7<br>
 • **Culinary / Food Service:** 4<br>
 • **Education / Training:** 3<br>
 </td><td valign='top' align='left'>
@@ -93,6 +93,17 @@ So far, I've applied to **203 positions** across multiple industries. Currently,
 
 | Company | Role | Type | Location | Status | Date Applied | Source | Notes |
 |----------|------|------|-----------|----------|---------------|---------|--------|
+| [CHC Wellness](https://www.chcw.com/) | Help Desk Support Specialist - Tier 1 | IT | Chicago, IL | Applied | 10/28/2025 | Indeed | As a Help Desk Support Specialist at CHC Wellbeing, you’ll be the first point of contact for technical issues, helping both internal staff and program participants troubleshoot IT-and-software problems while supporting the company’s wellbeing technology infrastructure so everyone can focus on thriving rather than fighting tools. |
+| [Raden Wellness](https://www.radenwellness.com/) | Receptionist | Healthcare / Admin | Chicago, IL | Applied | 10/28/2025 | Indeed | First point of contact for patients with phone triage, appointment scheduling, and front-desk support in a functional wellness clinic focused on health optimization. |
+| [The Goddess and Grocer – Gold Coast](https://www.thegoddessandgrocer.com/) | Front of House Staff | Hospitality / Food Service | Chicago, IL | Applied | 10/28/2025 | Indeed | Full-time FOH role handling barista duties, guest service, counter operations and maintaining beautiful store displays in a gourmet food market setting. |
+| [Colectivo Coffee Roasters](https://colectivocoffee.com/) | Cafe Co-Worker | Hospitality / Barista | Ravenswood, Chicago, IL | Applied | 10/28/2025 | Indeed | Front-facing cafe role preparing coffee and food, providing customer service, handling cash, and maintaining cleanliness in a busy neighborhood location. |
+| [Colectivo Coffee Roasters](https://colectivocoffee.com/) | Cafe Co-Worker - Seasonal | Hospitality / Barista | Ravenswood, Chicago, IL | Applied | 10/28/2025 | Indeed | Part-time seasonal barista role providing customer service, preparing drinks and food, handling cash, and maintaining a clean cafe environment. |
+| [Monos](https://www.monos.com/) | Retail Host | Retail / Hospitality | Chicago, IL | Applied | 10/28/2025 | Indeed | Customer-focused retail host role delivering warm service, demonstrating premium travel products, handling POS, and supporting merchandising in a sustainability-focused brand environment. |
+| [Itoko – Boka Restaurant Group](https://www.bokagrp.com/) | Server | Hospitality / Restaurant | Chicago, IL | Applied | 10/28/2025 | Indeed | Full-time server role delivering high-level guest service, proper food and beverage standards, and efficient service flow at a sushi and robata concept from a James Beard Award-winning restaurant group. |
+| [Mei’s](https://www.meischicago.com/) | Server | Hospitality / Restaurant | Chicago, IL | Applied | 10/28/2025 | Indeed | Part-time server position taking orders, delivering food and drinks, handling payments, and ensuring a positive dining experience at a Michigan Avenue restaurant. |
+| [Happy Camper – Wrigley](https://www.happycamper.pizza/) | Server | Hospitality / Restaurant | Chicago, IL | Applied | 10/28/2025 | Indeed | High-energy server role delivering friendly, fast service and managing multiple tables in a popular Clark Street pizzeria with strong tips and flexible scheduling. |
+| [SDI Presence](https://sdipresence.com/) | Apprentice (ServiceNow & Power BI) | IT / Apprenticeship | Chicago, IL (Hybrid) | Applied | 10/28/2025 | Indeed | Early-career hybrid role supporting Agile workflows, translating requirements, and coordinating between ServiceNow and Power BI teams for enterprise software integration projects. |
+| [Murgado Automotive Group](https://www.murgadoautomotivegroup.com/) | IT Helpdesk Technician | IT Support | Chicago, IL | Applied | 10/28/2025 | Indeed | Full-time help desk role providing first-line technical support, resolving hardware/software issues, managing accounts, and supporting users across Chicago dealership locations. |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Animal Care Associate | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Daily feeding, cleaning, enrichment, medication logging, and maintaining clean kennel and common areas for dogs and cats in a shelter environment. |
 | [The Dog Stop – Bucktown](https://www.thedogstop.com/locations/chicago-bucktown/) | Dog Handler and Daycare Attendant | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Supervise playgroups, ensure dog safety and enrichment, maintain clean kennels and play areas, assist with feeding and meds, and document behavior and health observations. |
 | [Wag Hotels – Dog Service Specialist (Seasonal)](https://waghotels.com/locations/chicago-il/) | Dog Service Specialist - Part Time - Seasonal | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Supports dog play sessions, monitors behavior, cleans and maintains rooms/play areas, documents notes on dogs, and assists with weekend/holiday coverage in a fast-paced pet hotel environment. |
@@ -299,8 +310,8 @@ So far, I've applied to **203 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 203 total — 🕐 122 active — ⏳ 41 likely inactive — ❌ 26 rejected — 💬 3 interviews — ✅ 0 hired.**
+**Summary:** 📋 214 total — 🕐 133 active — ⏳ 41 likely inactive — ❌ 26 rejected — 💬 3 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
-*Last updated October 27, 2025.*
+*Last updated October 28, 2025.*
