@@ -654,7 +654,7 @@ footer span {
     width: auto;
   }
 }
-
+ 
 @media (max-width: 500px) {
   .streak-card {
     padding: 0.5rem 0.8rem;
