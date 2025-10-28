@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-214-blue">   <img src="https://img.shields.io/badge/Active-133-green">   <img src="https://img.shields.io/badge/Rejected-26-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
+  <img src="https://img.shields.io/badge/Total-220-blue">   <img src="https://img.shields.io/badge/Active-118-green">   <img src="https://img.shields.io/badge/Rejected-43-red">   <img src="https://img.shields.io/badge/Interviews-2-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **214 positions** across multiple industries. Currently, **133 applications remain active**, and **41 likely inactive**, with **3 interviews** completed.
+So far, I've applied to **220 positions** across multiple industries. Currently, **118 applications remain active**, and **40 likely inactive**, with **2 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -26,14 +26,14 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left" width="50%">
 
-- **Total Applications:** 214  
-- 🕐 **Active / Pending:** 133  
-- ⏳ **Likely Inactive:** 41  
-- ❌ **Rejected:** 26  
+- **Total Applications:** 220  
+- 🕐 **Active / Pending:** 118  
+- ⏳ **Likely Inactive:** 40  
+- ❌ **Rejected:** 43  
 
 </td><td align="left" width="50%">
 
-- 💬 **Interviewed:** 3  
+- 💬 **Interviewed:** 2  
 - ✅ **Hired / Offer:** 0  
 - 🗓️ **Last Updated:** October 28, 2025  
 
@@ -45,11 +45,11 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left">
 
-- 📈 **Success Rate:** 1.4%  
-- 📦 **Closed:** 14  
+- 📈 **Success Rate:** 0.9%  
+- 📦 **Closed:** 19  
 - 🌐 **Top Source:** Indeed  
-- ⚡ **Avg Applications per Week:** 7.8  
-- 🕐 **Still Waiting (Applied Only):** 165  
+- ⚡ **Avg Applications per Week:** 8.0  
+- 🕐 **Still Waiting (Applied Only):** 154  
 - 📍 **Top Location:** Chicago, IL  
 - 📆 **Avg Days Since Application:** 45 days  
 - 🆕 **Most Recent:** [CHC Wellness](https://www.chcw.com/) — Help Desk Support Specialist - Tier 1 (10/28/2025)  
@@ -61,14 +61,14 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td valign='top' align='left'>
 
-• **IT / Support:** 83<br>
-• **Software / Development:** 32<br>
+• **IT / Support:** 88<br>
+• **Software / Development:** 33<br>
 • **Animal Care:** 24<br>
 • **AI / Data Science:** 17<br>
 • **Data / Analytics:** 14<br>
-• **Retail / Service:** 10<br>
+• **Retail / Service:** 11<br>
 • **Other:** 9<br>
-• **Administration:** 7<br>
+• **Administration:** 6<br>
 • **Culinary / Food Service:** 4<br>
 • **Education / Training:** 3<br>
 </td><td valign='top' align='left'>
@@ -104,10 +104,11 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [Happy Camper – Wrigley](https://www.happycamper.pizza/) | Server | Hospitality / Restaurant | Chicago, IL | Applied | 10/28/2025 | Indeed | High-energy server role delivering friendly, fast service and managing multiple tables in a popular Clark Street pizzeria with strong tips and flexible scheduling. |
 | [SDI Presence](https://sdipresence.com/) | Apprentice (ServiceNow & Power BI) | IT / Apprenticeship | Chicago, IL (Hybrid) | Applied | 10/28/2025 | Indeed | Early-career hybrid role supporting Agile workflows, translating requirements, and coordinating between ServiceNow and Power BI teams for enterprise software integration projects. |
 | [Murgado Automotive Group](https://www.murgadoautomotivegroup.com/) | IT Helpdesk Technician | IT Support | Chicago, IL | Applied | 10/28/2025 | Indeed | Full-time help desk role providing first-line technical support, resolving hardware/software issues, managing accounts, and supporting users across Chicago dealership locations. |
+| [Supernova Technology](https://www.supernovacompanies.com/careers) | Junior Software Engineer | Software | Chicago, IL | Applied | 10/28/2025 | LinkedIn | Full-time engineering role building and maintaining software features. Opportunity to grow technical skills in an on-site collaborative environment at a Chicago fintech company. |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Animal Care Associate | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Daily feeding, cleaning, enrichment, medication logging, and maintaining clean kennel and common areas for dogs and cats in a shelter environment. |
 | [The Dog Stop – Bucktown](https://www.thedogstop.com/locations/chicago-bucktown/) | Dog Handler and Daycare Attendant | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Supervise playgroups, ensure dog safety and enrichment, maintain clean kennels and play areas, assist with feeding and meds, and document behavior and health observations. |
 | [Wag Hotels – Dog Service Specialist (Seasonal)](https://waghotels.com/locations/chicago-il/) | Dog Service Specialist - Part Time - Seasonal | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Supports dog play sessions, monitors behavior, cleans and maintains rooms/play areas, documents notes on dogs, and assists with weekend/holiday coverage in a fast-paced pet hotel environment. |
-| [Lincoln Park Preschool & Kindergarten – Substitute Teacher Assistant](https://www.lppschools.com/careers) | Substitute Teacher Assistant | Teaching | Chicago, IL | Applied | 10/27/2025 | Indeed | Classroom support helping young children with activities and daily routines. No teaching license required. |
+| [Lincoln Park Preschool & Kindergarten – Substitute Teacher Assistant](https://www.lppschools.com/careers) | Substitute Teacher Assistant | Teaching | Chicago, IL | Rejected | 10/27/2025 | Indeed | Classroom support helping young children with activities and daily routines. No teaching license required. |
 | [FTS, Inc.](https://ftsco.com) | Help Desk Support Technician | IT Support | Chicago, IL | Applied | 10/26/2025 | LinkedIn | IT support via ticketing system, phone, chat, and in person. Troubleshoot and resolve issues using systems like Active Directory, ServiceNow, and Office 365 Admin. |
 | [Old Republic Professional](https://www.oldrepublicpro.com) | Associate IT Quality Assurance Analyst | Analyst | Chicago, IL (Hybrid) | Applied | 10/26/2025 | LinkedIn | Entry-level or early-career role responsible for ensuring and maintaining the quality, accuracy, and stability of underwriting, billing, claims. and reporting systems. |
 | [Caboodle Media](https://caboodle.media/) | AI Operational Specialist | AI | United States (Remote) | Applied | 10/26/2025 | LinkedIn | Remote, part-time position focusing on using AI tools to solve technical challenges, support agency projects, and help build and launch an AI-powered SaaS product in a fast-paced startup environment. |
@@ -117,12 +118,12 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [SPS North America](https://www.ziprecruiter.com/c/SPS-North-America/Job/AV-IT-Support/-in-Chicago,IL) | AV/IT Support Technician | IT Support | Chicago, IL | Applied | 10/26/2025 | ZipRecruiter | Responsible for the operation, maintenance, and troubleshooting of audio-visual equipment to support meetings, events, and day-to-day business needs. |
 | [Constellation Brands](https://www.ziprecruiter.com/c/Constellation-Brands/Job/Intern,-Information-Technology/-in-Chicago,IL) | Information Technology Intern | IT | Chicago, IL | Applied | 10/26/2025 | Company Website | Support IT operations at Constellation Brands' Chicago office, assisting with technical troubleshoorting, device setup, and systems administration while gaining hands-on industry experience. |
 | [Ignite Medical Resorts](https://www.ziprecruiter.com/c/Ignite-Medical-Resorts/Job/Help-Desk-Support-Specialist/-in-Park-Ridge,IL) | Help Desk Support Specialist | IT | Park Ridge, IL | Applied | 10/26/2025 | Company Website | Full-time help desk support role at Ignite Medical Resorts, Park Ridge, IL 60068; diagnosing and resolving technical issues, managing hardware & software support, and serving campus users. |
-| [F3 Technologies](https://www.indeed.com/viewjob?jk=0b2d9a2a74359e2a) | Field Implementation Technician - Restaurant POS Systems | Field Technician | Chicago, IL | Applied | 10/26/2025 | Indeed | Install, troubleshoot, and support point-of-sale (POS) technology at restaurant locations across Chicagoland, providing hands-on technical fixes and customer assistance. |
-| [Advantage Dental Care](https://www.indeed.com/viewjob?jk=8c16d9dd3c3c7bb6) | Receptionist | Hospitality | Chicago, IL | Applied | 10/26/2025 | Indeed | Full-time front desk role assisting patients, scheduling, processing payments, and maintaining records at a Chicago dental office. Spanish fluency required. Training provided. |
+| [F3 Technologies](https://www.indeed.com/viewjob?jk=0b2d9a2a74359e2a) | Field Implementation Technician - Restaurant POS Systems | Field Technician | Chicago, IL | Rejected | 10/26/2025 | Indeed | Install, troubleshoot, and support point-of-sale (POS) technology at restaurant locations across Chicagoland, providing hands-on technical fixes and customer assistance. |
+| [Advantage Dental Care](https://www.indeed.com/viewjob?jk=8c16d9dd3c3c7bb6) | Receptionist | Hospitality | Chicago, IL | Rejected | 10/26/2025 | Indeed | Full-time front desk role assisting patients, scheduling, processing payments, and maintaining records at a Chicago dental office. Spanish fluency required. Training provided. |
 | [Community Assistance Programs](https://www.indeed.com/viewjob?jk=9f2f303ae8dbb65f) | Program Office Assistant | Assistant | Chicago, IL | Applied | 10/26/2025 | Indeed | Full-time office support role assisting with client intake, data entry, eligibility documentation, and administrative support for employment programs serving underserved communities. |
 | [Beyond Yoga](https://www.indeed.com/viewjob?jk=bfb3c0a460cfaec5) | Seasonal Part Time Associate | Hospitality | Skokie, IL | Applied | 10/26/2025 | Indeed | Part-time retail role at Old Orchard Mall assisting customers, handling inventory, and driving sales of activewear during the holiday season. Evenings and weekends required. |
 | [The Langham Chicago](https://www.indeed.com/viewjob?jk=7c7a0e9ea5e39dc0) | Seasonal Pavilion Restaurant Server | Hospitality | Chicago, IL | Applied | 10/26/2025 | Indeed | Serve guests in a luxury hotel restaurant, maintain high hospitality standards, and assist with beverage/food service during busy seasonal hours. Includes part-time hours and tips. |
-| [My Vet Animal Hospital](https://www.indeed.com/viewjob?jk=20663a3c42ef02d3) | Client Care Coordinator | Pet Care | Chicago, IL | Applied | 10/26/2025 | Indeed | Full-time client-facing support role helping pet owners with scheduling, patient records, payments, and communication while supporting veterinary staff in a fast-paced clinic environment. Passion for animals required, vet experience optional. |
+| [My Vet Animal Hospital](https://www.indeed.com/viewjob?jk=20663a3c42ef02d3) | Client Care Coordinator | Pet Care | Chicago, IL | Rejected | 10/26/2025 | Indeed | Full-time client-facing support role helping pet owners with scheduling, patient records, payments, and communication while supporting veterinary staff in a fast-paced clinic environment. Passion for animals required, vet experience optional. |
 | [Alby Pet Care](https://www.indeed.com/viewjob?jk=20663a3c42ef02d3) | Pet Sitter / Dog Walker | Pet Care | Chicago, IL | Applied | 10/26/2025 | Indeed | Daily pet care including walks, feeding, and medication support with flexible scheduling across Northside neighborhoods. Requires car access and weekday daytime availability. |
 | [Benmore](https://benmore.tech) | Forward-Deployed Software Engineer | Software | Chicago, IL | Applied | 10/25/2025 | LinkedIn | Chicago-based technical consulting firm that partners with startups and small businesses to bring software ideas from concept to MVP and beyond. |
 | [Titan Security Group](https://www.titan-security.com/) | Junior Software Support Specialist | Software | Chicago, IL | Applied | 10/25/2025 | LinkedIn | Security group based in Chicago, privately-held security solutions provider offering services like security staffing and electronic security systems. |
@@ -130,7 +131,7 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [TurnUp](https://www.turnup.us/) | Youth Activism Internship | Internship | Remote | Applied | 10/24/2025 | Company Website | Remote program to amplify civic engagement and address social justice issues. |
 | [HANA Center](https://www.hanacenter.org/) | Community Volunteer | Volunteer | Chicago, IL | Applied | 10/24/2025 | Company Website | Nonprofit empowering Korean, Asian American, and multiethnic immigrant communities through education, social services, culture, and community organizing. |
 | [Sarah’s Circle](https://sarahs-circle.org/) | Shelter Staff | Community Outreach / Nonprofit | Chicago, IL | Applied | 10/24/2025 | Indeed | Support day-to-day operations of the women's emergency and interim housing programs. |
-| [SWATware LLC](https://swatware.com/) | It Specialist | IT | Chicago, IL | Applied | 10/24/2025 | Indeed | Support clients in maintaining, securing, and optimizing their IT environments by providing help-desk and technical support for end-users and network operations. |
+| [SWATware LLC](https://swatware.com/) | It Specialist | IT | Chicago, IL | Rejected | 10/24/2025 | Indeed | Support clients in maintaining, securing, and optimizing their IT environments by providing help-desk and technical support for end-users and network operations. |
 | [The Langham, Chicago](https://www.langhamhotels.com/en/the-langham/chicago/?utm_campaign=tlchi&utm_medium=ppc&utm_source=google&utm_content=na&utm_id=brand_en_local) | Seasonal Host / Hostess | Hospitality | Chicago, IL | Applied | 10/24/2025 | Indeed | Luxury five-star hotel known for its fine dining and exceptional guest service. Welcome guests, manage reservations, and maintain a polished, high-end dining experience. |
 | [Qiao Lin Hotpot – Streeterville](https://www.choosechicago.com/listing/qiao-lin-hotpot-streeterville/) | Host | Hospitality / Food Service | Streeterville, Chicago, IL | Applied | 10/24/2025 | Indeed | Authentic Chongqing-style hot port restaurant offering a vibrant and high-volume dining experience. |
 | [Happy Camper Pizza – Old Town](https://www.happycamper.pizza/old-town/) | Host | Hospitality | Old Town, Chicago, IL | Applied | 10/24/2025 | Indeed | High-energy pizzeria and bar in Chicago's Old Town neighborhood. Welcome guests, manage reservations and waitlists, coordinate seating, and support servers and managers. |
@@ -140,7 +141,7 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [Phoenix Group](https://www.thephoenixgroup.com/) | Information Technology Support Specialist | IT | Chicago, IL (Hybrid) | Applied | 10/24/2025 | LinkedIn | Supports with retirement, savings, and life-insurance services. |
 | [Tubman Technologies Inc.](https://www.tubmantech.com/) | Java with Gen AI Developer | AI | Chicago, IL / Madison, WI (Remote, Hybrid, Onsite) | Applied | 10/22/2025 | Handshake | Provide digital training and e-learning solutions, learn Gen AI tools for Java development and deployment. |
 | [Impact Advisors](https://www.impact-advisors.com/) | Entry Level Consultant | Healthcare / Consulting | Naperville / Chicago, IL (Hybrid) | Applied | 10/22/2025 | Handshake | Work with health-care organizations to improve operational performance, strategy, and technology. |
-| [Whole Foods Market – Cashier Team Member (Front End Service) – Part Time](https://careers.wholefoods.com/cashier-team-member-front-end-service-part-time/job/PAF-WFM-06A8B3D9-04AF-4F1D-94C9-50E4A8C14152_1055_1741849885_0?source=BA_LinkedInSponsored&utm_medium=jobboard) | Cashier Team Member (Front End Service) | Customer Service / Grocery Store | North Side, Chicago, IL | Applied | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
+| [Whole Foods Market – Cashier Team Member (Front End Service) – Part Time](https://careers.wholefoods.com/cashier-team-member-front-end-service-part-time/job/PAF-WFM-06A8B3D9-04AF-4F1D-94C9-50E4A8C14152_1055_1741849885_0?source=BA_LinkedInSponsored&utm_medium=jobboard) | Cashier Team Member (Front End Service) | Customer Service / Grocery Store | North Side, Chicago, IL | Rejected | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [Talkdesk](https://www.linkedin.com/jobs/view/technical-support-engineer-at-talkdesk-4254859703) | Technical Support Engineer | IT / Technical Support | United States (Remote) | Applied | 10/21/2025 | LinkedIn | Cloud-based contact-center support. |
 | [Rhythm Software](https://www.linkedin.com/jobs/view/technical-support-engineer-at-rhythm-software-4248793064) | Technical Support Engineer | IT / SaaS | United States (Remote) | Applied | 10/21/2025 | LinkedIn | SaaS support role; builds customer communication and technical troubleshoorting experience. |
 | [AbbVie](https://www.linkedin.com/jobs/view/data-analyst-abbvie-complete-access-onsite-3-days-per-week-at-abbvie-4248778998) | Data Analyst | Data / Supply Chain | North Chicago, IL | Applied | 10/21/2025 | LinkedIn | Global pharmaceutical data role; good for supply-chain analytics and Excel/Python reporting. |
@@ -153,7 +154,7 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [Eden in Chicago LLC](https://www.edeninchicago.com) | Host | Hospitality | West Lake District, Chicago, IL | Applied | 10/21/2025 | Indeed | Front-of-house hospitality; builds confidence and customer service presence. |
 | [CAVA – Wicker Park](https://cava.com/careers) | Culinary Lead | Culinary | Wicker Park, Chicago, IL | Applied | 10/21/2025 | Indeed | Busy fast-casual kitchen, good for leadership in service. |
 | [The Doggy Dojo Inc.](https://www.indeed.com/cmp/The-Doggy-Dojo) | Dog Daycare Associate | Animal Care | Chicago, IL | Rejected | 10/21/2025 | Indeed | Animal care teamwork; nurturing and safety-focused environment. |
-| [Found Chicago Boarding & Training Center](https://www.foundtrainingcenter.com) | Dog Handler / Dog Training Apprentice | Animal Care | Chicago, IL | Interview | 10/21/2025 | Indeed | Experience handling large breeds and maintaining safe play groups. |
+| [Found Chicago Boarding & Training Center](https://www.foundtrainingcenter.com) | Dog Handler / Dog Training Apprentice | Animal Care | Chicago, IL | Rejected | 10/21/2025 | Indeed | Experience handling large breeds and maintaining safe play groups. |
 | [TeamLogic IT](https://www.teamlogicit.com) | Field IT Technician | IT Support | Chicago, IL (Hybrid with Suburban Client Visits) | Applied | 10/21/2025 | Indeed | Clarified hybrid field structure; hands-on IT troubleshooting across local client sites. |
 | [Windy City Paws](https://www.windycitypaws.com) | Dog Walker | Animal Care | Lakeview, Chicago, IL | Rejected | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Chicago Cubs](https://www.mlb.com/cubs) | IT Help Desk Technician | IT Support | The Loop, Chicago, IL | Applied | 10/21/2025 | Company Website | Public-facing IT support; strong addition for well-known organization experience. |
@@ -165,7 +166,7 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [Northwestern University](https://www.northwestern.edu) | Data Assistant Associate | Data / Administrative | Evanston, IL | Applied | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [Tous Les Jours](https://www.tljus.com/) | Barista | Hospitality | Lakeview, Chicago, IL | Applied | 10/21/2025 | Indeed | Customer-facing role; fast-paced cafe. |
 | [Canonical](https://canonical.com/careers) | Engineering Manager | Software / Manager | Chicago, IL (Remote) | Rejected | 10/21/2025 | Indeed | Exposure to open-source leadership; demonstrates familiarity with distributed software teams. |
-| [Paws and Claws Cat Rescue](https://www.pawsandclawscatrescue.org/) | Programs and Facilities Assistant | Animal Care / Assistant | Evanston, IL | Applied | 10/21/2025 | Indeed | Animal care and operational support; emphasizes compassion and responsibility. |
+| [Paws and Claws Cat Rescue](https://www.pawsandclawscatrescue.org/) | Programs and Facilities Assistant | Animal Care / Assistant | Evanston, IL | Rejected | 10/21/2025 | Indeed | Animal care and operational support; emphasizes compassion and responsibility. |
 | [Duke Animal Hospital](https://www.dukeanimalhospital.com/) | Veterinary Customer Service Representative | Animal Care | Roscoe Village, Chicago, IL | Applied | 10/21/2025 | Indeed | Combines client communication with pet care coordination; ideal for empathy and multitasking. |
 | [Happy Camper](https://www.happycamper.pizza/) | Bartender | Hospitality | River North, Chicago, IL | Applied | 10/21/2025 | Indeed | Upbeat nightlife role emphasizing multitasking and customer engagement. |
 | [Museum of Ice Cream](https://www.museumoficecream.com/careers) | Service Ambassador | Hospitality | Chicago, IL | Rejected | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
@@ -193,6 +194,10 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [Eataly](https://www.eataly.com/us_en/) | Cheesemonger / Salumi & Formaggi Artisan | Culinary / Retail | River North, Chicago, IL | Applied | 10/15/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Eataly](https://www.eataly.com/us_en/) | Cashier / Front End Associate – Seasonal | Retail / Service | River North, Chicago, IL | Applied | 10/15/2025 | LinkedIn | Retail role; international food market. |
 | [Comfort Dental Fairwood](https://www.comfortdental.com/) | Office Assistant | Admin / Office Support | South Side, Chicago, IL | Applied | 10/15/2025 | ZipRecruiter | Front-office coordination; experience with maintaining patient scheduling and administrative systems. |
+| [Wrigleyville Veterinary Center](https://www.wrigleyvillevet.com/) | Veterinary Client Care Coordinator / Veterinary Assistant | Animal Care | Chicago, IL | Rejected | 10/15/2025 | Indeed | Client-facing vet clinic role combining reception, scheduling, and hands-on pet assistance. |
+| [Club Support Inc](https://www.clubsupportinc.com/) | IT Support Technician | IT Support | Chicago, IL | Rejected | 10/15/2025 | Indeed | Standard IT support role involving troubleshooting, end‐user support, and system maintenance. |
+| [Astreya Partners](https://www.astreya.com/careers) | Service Desk Specialist | IT Support | Chicago, IL | Rejected | 10/15/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Data Integrity Computer Systems](https://www.dataintegrity-computer.com/careers) | IT Computer Technician Entry Level | IT Support | Chicago, IL | Rejected | 10/15/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [TDS](https://tdstelecom.com/careers) | GIS Intern | GIS / Environmental | Remote | Rejected | 10/13/2025 | LinkedIn | Developrs spatial-data visualization and mapping analysis in environmental contexts. |
 | [LeoLabs](https://www.leolabs.space/careers) | Electrical Engineer | Engineering | Remote | Applied | 10/13/2025 | LinkedIn | Involves satellite tracking and radar systems; strengthens applied physics and hardware knowledge. |
 | [Robert Half](https://www.roberthalf.com/jobs) | Part-Time Admin Assistant | Admin | Chicago, IL | Applied | 10/03/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -203,8 +208,8 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [Robert Half](https://www.roberthalf.com/jobs) | Desktop Support Analyst | IT Support | Chicago, IL | Applied | 10/03/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Robert Half](https://www.roberthalf.com/jobs) | Help Desk Analyst | IT Support | Chicago, IL | Applied | 10/03/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [AllJoined](https://alljoined.com) | Software Engineering Research Intern | Software / Research | Remote | Applied | 10/02/2025 | LinkedIn | <span style='color:#999;'>—</span> |
-| [Bark Bark Club](https://www.barkbarkclub.com/) | Dog Daycare Attendant | Animal Care | Chicago, IL | Applied | 09/23/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Bark Bark Club](https://www.barkbarkclub.com/) | Dog Daycare Attendant (Full-Time) | Animal Care | Chicago, IL | Other | 09/23/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Bark Bark Club](https://www.barkbarkclub.com/) | Dog Daycare Attendant | Animal Care | Chicago, IL | Rejected | 09/23/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Bark Bark Club](https://www.barkbarkclub.com/) | Dog Daycare Attendant (Full-Time) | Animal Care | Chicago, IL | Rejected | 09/23/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Mercor](https://www.mercor.io/) | English Support | IT / Support | Remote | Applied | 09/19/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Mercor](https://www.mercor.io/) | Enterprise Cloud Domain Support | Cloud / IT | Remote | Applied | 09/19/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Mercor](https://www.mercor.io/) | Intelligent Identity Engineer | Security / IT | Remote | Applied | 09/19/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -215,8 +220,7 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [Epsilon](https://www.epsilon.com/us/about-us/careers) | New Grad Program | Software | Chicago, IL | Applied | 09/17/2025 | LinkedIn | Marketing-tech development; strengthens collaboration and large-scale software deployment. |
 | [Datadog](https://www.datadoghq.com/careers/) | Product Manager Intern | Product | Chicago, IL | Rejected | 09/10/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Capgemini (France)](https://www.capgemini.com/careers/) | Apprenticeship | Software | France | Rejected | 09/08/2025 | LinkedIn | <span style='color:#999;'>—</span> |
-| [Ravenswoof](https://www.ravenswoof.com/?gad_source=1&gad_campaignid=22676922603&gbraid=0AAAAAqwvntwaAuii5WDQFzZqKpMl_f7ry&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qdE4YxOPjDwyfsH15ohUFJVWXrIDCo2LDEYh-97qlAet5LVunlU0LhoCB3sQAvD_BwE) | Pet Bather | Animal Care | Chicago, IL | Applied | 09/07/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Ravenswoof](#) | Pet Bather | Animal Care | Chicago, IL | Closed | 09/07/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Ravenswoof](https://www.ravenswoof.com/?gad_source=1&gad_campaignid=22676922603&gbraid=0AAAAAqwvntwaAuii5WDQFzZqKpMl_f7ry&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qdE4YxOPjDwyfsH15ohUFJVWXrIDCo2LDEYh-97qlAet5LVunlU0LhoCB3sQAvD_BwE) | Pet Bather | Animal Care | Chicago, IL | Closed | 09/07/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Robert Half](https://www.roberthalf.com/jobs) | Desk Support Technician | IT Support | Chicago, IL | Applied | 09/06/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Optimum Healthcare IT](https://www.optimumhit.com/careers) | Entry-Level Healthcare IT Analyst | IT / Healthcare | Remote | Applied | 09/06/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [GreenLoop IT Solutions](https://www.greenloopit.com/careers) | IT Support Specialist | IT Support | Remote | Applied | 09/06/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -234,13 +238,13 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [Green Paws Chicago](https://greenpawschicago.com/) | Dog Walker & Pet Sitter | Animal Care | Chicago, IL | Interview | 09/05/2025 | Indeed | Pet care and client communication. |
 | [AESLIN Pup Hub](https://aeslin.com/) | Dog Daycare & Boarding Handler | Animal Care | Chicago, IL | Applied | 09/05/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [AESLIN Pup Hub](#) | Dog Daycare & Boarding Handler | Animal Care | Chicago, IL | Closed | 09/05/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [My Net Security, Inc.](#) | IT Technician | IT Support | Chicago, IL | Applied | 09/04/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [My Net Security, Inc.](#) | IT Technician | IT Support | Chicago, IL | Rejected | 09/04/2025 | Indeed | Entry-level onsite IT technician role performing hardware/software troubleshooting, user support, and basic network tasks. Solid hands-on experience builder with direct customer interaction. |
 | [Taylor Farms Illinois](https://www.taylorfarms.com/careers/) | Label Room Technician | Manufacturing / Ops | Chicago, IL | Applied | 09/04/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Creative Tech](#) | IT Field Technician | IT Support | Skokie, IL (North Suburbs) | Other | 09/04/2025 | Indeed | Fieldwork across Chicagoland supporting client IT systems. |
+| [Creative Tech](#) | IT Field Technician | IT Support | Skokie, IL (North Suburbs) | Rejected | 09/04/2025 | Indeed | Fieldwork across Chicagoland supporting client IT systems. |
 | [Fernwood Property Mgmt](#) | Maintenance Admin Intern | Admin / Operations | Chicago, IL | Applied | 09/04/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Trump Intl. Hotel Chicago](https://www.trumphotels.com/chicago/careers) | Security Intern | Security / Ops | River North, Chicago, IL | Rejected | 09/04/2025 | Indeed | Exposure to luxury property security operations. |
 | [Capgemini](https://www.capgemini.com/careers) | Business Analyst | Business / IT | Remote | Applied | 09/01/2025 | LinkedIn | <span style='color:#999;'>—</span> |
-| [Momotaro](https://www.bokagrp.com/careers) | Food Runner | Service | Fulton Market, Chicago, IL | Applied | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Momotaro](https://www.bokagrp.com/careers) | Food Runner | Service | Fulton Market, Chicago, IL | Rejected | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Veterinary Assistant Apprentice | Animal Care | Little Italy / Medical District, Chicago, IL | Rejected | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Wakamono](https://www.wakamonosush) | Food Runner | Service | Chicago, IL | Applied | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Adoption Services Associate | Animal Care / Service | Chicago, IL | Applied | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
@@ -264,7 +268,7 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [Tubman Technologies](#) | Java Developer | Software | Remote | Applied | 07/25/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Chicago Youth Centers](https://chicagoyouthcenters.org/careers) | STEAM Intern | Education / Nonprofit | Chicago, IL | Applied | 07/25/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [The Bridge Teen Center](https://thebridgeteencenter.org/) | Horticulture Plant Propagation Intern | Environmental / Education | Orland Park, IL | Applied | 07/25/2025 | LinkedIn | Environmental education internship supporting teen programs. |
-| [American Red Cross](https://www.redcross.org/about-us/careers.html) | Fundraising & Strategy Intern | Nonprofit / Strategy | Remote | Applied | 07/25/2025 | LinkedIn | <span style='color:#999;'>—</span> |
+| [American Red Cross](https://www.redcross.org/about-us/careers.html) | Fundraising & Strategy Intern | Nonprofit / Strategy | Remote | Closed | 07/25/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [SCB Global](https://www.scbglobal.com/) | Data Support Engineer | IT Support | Remote / Chicago, IL | Applied | 07/25/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [ifm efector inc](https://www.ifm.com/) | Software Developer, SAP Applications | Software | Remote / Chicago, IL | Applied | 07/25/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [Antra Inc.](https://www.antra.com/careers) | Java Full Stack Developer | Software | Hybrid / Chicago, IL / Sterling, VA | Applied | 07/25/2025 | Handshake | <span style='color:#999;'>—</span> |
@@ -279,7 +283,6 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [Anti-Cruelty Society](https://anticruelty.org/careers) | Animal Care Specialist | Animal Care | River North, Chicago, IL | Closed | 07/20/2025 | Indeed | Provides daily enrichment, feeding, and care for shelter animals; develops responsibility and teamwork under pressure. |
 | [Fire Hydrant Pet Sitting Co.](https://www.firehydrantpetsitting.com/) | Overnight Pet Care Specialist | Animal Care | Bucktown / Logan Square, IL | Rejected | 07/20/2025 | Indeed | Overnight care role requiring reliability and independence. |
 | [Thornton Tomasetti](https://www.thorntontomasetti.com/careers) | IT Support Technician | IT Support | Chicago, IL | Closed | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Lincoln Park Art Gallery](#) | Art Gallery Assistant | Arts / Admin | Chicago, IL | Rejected | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Advance Spine Rehab Center](#) | IT Personnel — As Needed | IT Support | Chicago, IL | Closed | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Veterinary Assistant Apprentice | Animal Care / Service | Chicago, IL | Rejected | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Lawrence Fish Market](https://ct.lawrencefish.com/) | Sushi Chef Assistant | Culinary | Chicago, IL | Applied | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
@@ -289,6 +292,7 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [Wesco](https://www.wesco.com/careers) | IT Development Program (2026) | IT / Graduate | Hybrid / Glenview, IL / Pittsburgh, PA | Applied | 07/20/2025 | Handshake | Rotational tech program; builds enterprise software, networking, and communication skills. |
 | [DataCapable](https://www.datacapable.com/careers) | Software Engineer | Software | Remote / Chicago, IL | Applied | 07/20/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [GenieAI](https://www.genieai.co/) | Software Engineer | AI / Software | Remote | Applied | 07/20/2025 | Handshake | <span style='color:#999;'>—</span> |
+| [Cadinho Bakery & Cafe](https://cadinhocafe.com/) | Food Service Associate | Food Service | Chicago, IL | Closed | 07/20/2025 | Indeed | Customer-facing cafe role handling service, basic food prep, and maintaining a clean storefront environment. |
 | [Northwestern Mutual Chicagoland](https://chicagoland.nm.com/careers.htm) | Financial Advisor | Finance / Insurance | Evanston, IL | Applied | 07/09/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [Blue Cross Blue Shield (HCSC)](https://jobs.hcsc.com/) | Associate Systems Analyst | Healthcare / IT | Hybrid / Chicago, IL | Applied | 06/27/2025 | Handshake | Entry-level healthcare IT; solid training in system documentation and process optimization. |
 | [Epic Systems Corporation](https://careers.epic.com/) | Software Developer | Software | Onsite / Verona, WI | Applied | 06/27/2025 | Handshake | <span style='color:#999;'>—</span> |
@@ -298,19 +302,21 @@ So far, I've applied to **214 positions** across multiple industries. Currently,
 | [Catholic Extension](https://www.catholicextension.org/about/careers/) | AI Data Strategy Intern | AI / Nonprofit | Onsite / Chicago, IL | Other | 06/26/2025 | Handshake | Merges data analysis with nonprofit goals; emphasizes AI ethics and data interpretation. |
 | [Fynite Corp.](https://fynite.ai/careers) | Data Scientist | Data | Remote / U.S. | Applied | 06/26/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [Fynite Corp.](https://fynite.ai/careers) | Data Engineer | Data | Remote / U.S. | Other | 06/26/2025 | Handshake | <span style='color:#999;'>—</span> |
-| [Kids STEM Studio](https://kidsstemstudio.com/) | After School Instructor | Education / Tech | Evanston, IL | Other | 05/16/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Kids STEM Studio](https://kidsstemstudio.com/) | After School Instructor | Education / Tech | Evanston, IL | Closed | 05/16/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Google](https://careers.google.com/students/) | Student Researcher (BS/MS) | Research / Software | Hybrid / Ann Arbor, MI / Austin, TX | Applied | 05/12/2025 | Handshake | <span style='color:#999;'>—</span> |
-| [Sweet Rabbit Bakery](#) | Part-Time FOH | Service | Chicago, IL | Other | 05/08/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Sweet Rabbit Bakery](#) | Part-Time FOH | Service | Chicago, IL | Rejected | 05/08/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Fusion92](https://www.fusion92.com/careers) | Internship Program | Marketing / Data | Chicago, IL | Closed | 05/08/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [APCIA](https://www.apci.org/) | IT Systems Support Intern | IT Support | Chicago, IL | Closed | 05/08/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [C4 Chicago](https://www.c4chicago.org/) | Development Intern | Nonprofit / Dev | Chicago, IL | Closed | 05/08/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Community Counseling Centers of Chicago Inc](https://www.c4chicago.org/) | Development Intern | Nonprofit / Dev | Chicago, IL | Closed | 05/08/2025 | Indeed | Support fundraising and development tasks for a community mental-health nonprofit; opportunity to build nonprofit development skills. |
+| [American Property Casualty Insurance Association](https://www.apci.org/) | IT Systems Support Intern | IT Support | Chicago, IL | Closed | 05/08/2025 | Indeed | Hands-on internship supporting systems and IT tasks at a national insurance trade association; good opportunity for early-career tech exposure. |
 | [Blueera Technologies, Inc.](https://blueeratech.com/careers) | DevOps Engineer | Software / IT | Remote / Indiana / TX | Applied | 05/07/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [The Public Interest Network Creative Team](https://publicinterestnetwork.org/jobs/) | Web & Digital Content Intern | Communications / Web | Remote / Chicago, IL / Boston, MA | Rejected | 05/07/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [Bark Bark Club](https://www.barkbarkclub.com/) | Dog Daycare Attendant (Part-Time) | Animal Care | Chicago, IL | Closed | 04/18/2025 | Indeed | <span style='color:#999;'>—</span> |
 
 </details>
 
-**Summary:** 📋 214 total — 🕐 133 active — ⏳ 41 likely inactive — ❌ 26 rejected — 💬 3 interviews — ✅ 0 hired.**
+**Summary:** 📋 220 total — 🕐 118 active — ⏳ 40 likely inactive — ❌ 43 rejected — 💬 2 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
