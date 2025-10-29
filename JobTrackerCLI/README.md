@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-227-blue">   <img src="https://img.shields.io/badge/Active-122-green">   <img src="https://img.shields.io/badge/Rejected-43-red">   <img src="https://img.shields.io/badge/Interviews-2-yellow">
+  <img src="https://img.shields.io/badge/Total-227-blue">   <img src="https://img.shields.io/badge/Active-123-green">   <img src="https://img.shields.io/badge/Rejected-42-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **227 positions** across multiple industries. Currently, **122 applications remain active**, and **43 likely inactive**, with **2 interviews** completed.
+So far, I've applied to **227 positions** across multiple industries. Currently, **123 applications remain active**, and **43 likely inactive**, with **3 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -27,13 +27,13 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 <table align="center"><tr><td align="left" width="50%">
 
 - **Total Applications:** 227  
-- 🕐 **Active / Pending:** 122  
+- 🕐 **Active / Pending:** 123  
 - ⏳ **Likely Inactive:** 43  
-- ❌ **Rejected:** 43  
+- ❌ **Rejected:** 42  
 
 </td><td align="left" width="50%">
 
-- 💬 **Interviewed:** 2  
+- 💬 **Interviewed:** 3  
 - ✅ **Hired / Offer:** 0  
 - 🗓️ **Last Updated:** October 29, 2025  
 
@@ -45,7 +45,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left">
 
-- 📈 **Success Rate:** 0.9%  
+- 📈 **Success Rate:** 1.3%  
 - 📦 **Closed:** 19  
 - 🌐 **Top Source:** Indeed  
 - ⚡ **Avg Applications per Week:** 8.2  
@@ -163,7 +163,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 | [The Doggy Dojo Inc.](https://www.indeed.com/cmp/The-Doggy-Dojo) | Dog Daycare Associate | Animal Care | Chicago, IL | Rejected | 10/21/2025 | Indeed | Animal care teamwork; nurturing and safety-focused environment. |
 | [Found Chicago Boarding & Training Center](https://www.foundtrainingcenter.com) | Dog Handler / Dog Training Apprentice | Animal Care | Chicago, IL | Rejected | 10/21/2025 | Indeed | Experience handling large breeds and maintaining safe play groups. |
 | [TeamLogic IT](https://www.teamlogicit.com) | Field IT Technician | IT Support | Chicago, IL (Hybrid with Suburban Client Visits) | Applied | 10/21/2025 | Indeed | Clarified hybrid field structure; hands-on IT troubleshooting across local client sites. |
-| [Windy City Paws](https://www.windycitypaws.com) | Dog Walker | Animal Care | Lakeview, Chicago, IL | Rejected | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Windy City Paws](https://www.windycitypaws.com) | Dog Walker | Animal Care | Lakeview, Chicago, IL | Interview | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Chicago Cubs](https://www.mlb.com/cubs) | IT Help Desk Technician | IT Support | The Loop, Chicago, IL | Applied | 10/21/2025 | Company Website | Public-facing IT support; strong addition for well-known organization experience. |
 | [The Phoenix Group](https://www.thephoenixgroup.com) | Help Desk Specialist | IT Support / Contract | River North, Chicago, IL (Hybrid) | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Northwestern University](https://www.northwestern.edu) | Technical Support Specialist | IT Support | Evanston, IL | Applied | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
@@ -261,7 +261,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 | [Supernova Companies](https://www.supernovacompanies.com/careers) | Data Analyst | Data | Chicago, IL | Applied | 08/07/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Magnifact](https://www.magnifact.com/careers) | Data Analyst – SQL / ETL | Data | Chicago, IL | Applied | 07/30/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Dominican University](https://www.dom.edu/hr/employment-opportunities) | Web Developer | Software / Web | Chicago, IL | Applied | 07/30/2025 | LinkedIn | Front-end and back-end development experience for academic sites. |
-| [Capgemini America Inc.](https://www.capgemini.com/us-en/careers/) | Chicago Junior Developer | Software | Chicago, IL / New York, NY | Interview | 07/30/2025 | LinkedIn | <span style='color:#999;'>—</span> |
+| [Capgemini America Inc.](https://www.capgemini.com/us-en/careers/) | Chicago Junior Developer | Software | Chicago, IL / New York, NY | Interview | 07/30/2025 | LinkedIn | Early-career consulting role with exposure to enterprise software development and client-facing delivery. Good opportunity to build technical breadth and professional communication skills within a global team. |
 | [Oak Street Health](https://www.oakstreethealth.com/careers) | Medical Scribe | Healthcare / IT | Chicago, IL | Applied | 07/26/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [SFORCE IT](https://www.sforceit.com/) | Robotic Process Automation Developer | Automation / IT | Chicago, IL / Dallas, TX | Applied | 07/26/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Sunixa Solutions Inc.](https://sunixasolutions.com/careers) | AI/ML Engineer | AI / Software | Remote | Applied | 07/26/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -323,7 +323,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 227 total — 🕐 122 active — ⏳ 43 likely inactive — ❌ 43 rejected — 💬 2 interviews — ✅ 0 hired.**
+**Summary:** 📋 227 total — 🕐 123 active — ⏳ 43 likely inactive — ❌ 42 rejected — 💬 3 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*

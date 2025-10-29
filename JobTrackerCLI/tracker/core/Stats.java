@@ -51,7 +51,7 @@ public class Stats {
         int total = applications.size();
 
         long rejected = applications.stream()
-                .filter(a -> a.getStatus() == ApplicationStatus.REJECTED)
+                .filter(a -> a.getStatus().name().toLowerCase().contains("reject"))
                 .count();
 
         long hired = applications.stream()
@@ -59,7 +59,7 @@ public class Stats {
                 .count();
 
         long interviews = applications.stream()
-                .filter(a -> a.getStatus() == ApplicationStatus.INTERVIEW)
+                .filter(a -> a.getStatus().name().toLowerCase().contains("interview"))
                 .count();
 
         long closed = applications.stream()
@@ -129,20 +129,32 @@ public class Stats {
             UIHelper.PINK, UIHelper.RESET, hired
         );
 
+        // Success Rate Bar
         String bar = progressBar(successRate, 40);
         System.out.printf("%s📈 Success Rate:%s %.1f%% %s%s%s%n",
             UIHelper.ORANGE, UIHelper.RESET, successRate,
             UIHelper.GREEN, bar, UIHelper.RESET);
+
+        // Rejection Rate Bar
         double rejectionRate = total == 0 ? 0 : (double) rejected / total * 100;
         String rejBar = progressBar(rejectionRate, 40);
         System.out.printf("%s📉 Rejection Rate:%s %.1f%% %s%s%s%n",
             UIHelper.RED, UIHelper.RESET, rejectionRate,
             UIHelper.RED, rejBar, UIHelper.RESET);
+        
+        // Additional Stats
         System.out.printf("%s⚡ Avg per Week:%s %.1f%n",
             UIHelper.GREEN, UIHelper.RESET, perWeek);
-        System.out.printf("%s📍 Top Location:%s %s%n",
-            UIHelper.GREEN, UIHelper.RESET, topLocation);
 
+        // Top Source and Location
+        System.out.printf("%s📍 Top Location:%s %s%n",
+            UIHelper.PURPLE, UIHelper.RESET, topLocation);
+
+        // Top Source
+        System.out.printf("%s🔗 Top Source:%s %s%n",
+            UIHelper.BLUE, UIHelper.RESET, topSource);
+        
+        // Most Recent Application
         if (latest != null)
             System.out.printf("%s🆕 Most Recent:%s %s — %s (%s)%n",
                 UIHelper.PINK, UIHelper.RESET,
