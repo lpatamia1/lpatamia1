@@ -84,7 +84,7 @@ public class MenuHandler {
         System.out.println("Company:   " + a.getCompany());
         System.out.println("Location:  " + a.getLocation());
         System.out.println("Role:      " + a.getRole());
-        System.out.println("Status:    " + a.getStatus());
+        System.out.println("Status:    " + statusBadge(a));
         System.out.println("Applied:   " + a.getDateApplied().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         System.out.println("Source:    " + a.getSource());
         System.out.println("Notes:     " + (a.getNotes() == null || a.getNotes().isEmpty() ? "—" : a.getNotes()));
@@ -108,6 +108,7 @@ public class MenuHandler {
             FileManager.saveApplications(applications);
             System.out.println(UIHelper.GREEN + "✅ Application updated and saved." + UIHelper.RESET);
         }
+        
     }
 
     // 🗑️ Remove application by keyword
@@ -223,4 +224,18 @@ public class MenuHandler {
         System.out.println(UIHelper.GREEN + "✅ Imported " + added + " applications from seed." + UIHelper.RESET);
         return added;
     }
+    // 🎀 Status Badges for all outcomes
+    private String statusBadge(JobApplication a) {
+        String s = a.getStatus().name().toLowerCase();
+        String notes = (a.getNotes() == null ? "" : a.getNotes().toLowerCase());
+
+        if (s.contains("hire")) return "🎉 Hired";
+        if (s.contains("close")) return "📪 Closed";
+        if (s.contains("reject") && notes.contains("interview")) return "❌ Rejected 🎤";
+        if (s.contains("reject")) return "❌ Rejected";
+        if (s.contains("interview") || notes.contains("interview")) return "🎤 Interview";
+
+        return "⏳ Applied";
+    }
+
 }

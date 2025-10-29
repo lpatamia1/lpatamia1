@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-227-blue">   <img src="https://img.shields.io/badge/Active-123-green">   <img src="https://img.shields.io/badge/Rejected-42-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
+  <img src="https://img.shields.io/badge/Total-226-blue">   <img src="https://img.shields.io/badge/Active-120-green">   <img src="https://img.shields.io/badge/Rejected-46-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **227 positions** across multiple industries. Currently, **123 applications remain active**, and **43 likely inactive**, with **3 interviews** completed.
+So far, I've applied to **226 positions** across multiple industries. Currently, **120 applications remain active**, and **41 likely inactive**, with **3 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -26,10 +26,10 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left" width="50%">
 
-- **Total Applications:** 227  
-- 🕐 **Active / Pending:** 123  
-- ⏳ **Likely Inactive:** 43  
-- ❌ **Rejected:** 42  
+- **Total Applications:** 226  
+- 🕐 **Active / Pending:** 120  
+- ⏳ **Likely Inactive:** 41  
+- ❌ **Rejected:** 46  
 
 </td><td align="left" width="50%">
 
@@ -49,7 +49,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 - 📦 **Closed:** 19  
 - 🌐 **Top Source:** Indeed  
 - ⚡ **Avg Applications per Week:** 8.2  
-- 🕐 **Still Waiting (Applied Only):** 161  
+- 🕐 **Still Waiting (Applied Only):** 159  
 - 📍 **Top Location:** Chicago, IL  
 - 📆 **Avg Days Since Application:** 45 days  
 - 🆕 **Most Recent:** [Blue Bird Day LLC](https://bluebirddayprogram.com/) — Teacher Assistant (10/29/2025)  
@@ -67,7 +67,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 • **AI / Data Science:** 18<br>
 • **Data / Analytics:** 14<br>
 • **Other:** 11<br>
-• **Retail / Service:** 11<br>
+• **Retail / Service:** 10<br>
 • **Administration:** 6<br>
 • **Culinary / Food Service:** 4<br>
 • **Education / Training:** 3<br>
@@ -163,7 +163,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 | [The Doggy Dojo Inc.](https://www.indeed.com/cmp/The-Doggy-Dojo) | Dog Daycare Associate | Animal Care | Chicago, IL | Rejected | 10/21/2025 | Indeed | Animal care teamwork; nurturing and safety-focused environment. |
 | [Found Chicago Boarding & Training Center](https://www.foundtrainingcenter.com) | Dog Handler / Dog Training Apprentice | Animal Care | Chicago, IL | Rejected | 10/21/2025 | Indeed | Experience handling large breeds and maintaining safe play groups. |
 | [TeamLogic IT](https://www.teamlogicit.com) | Field IT Technician | IT Support | Chicago, IL (Hybrid with Suburban Client Visits) | Applied | 10/21/2025 | Indeed | Clarified hybrid field structure; hands-on IT troubleshooting across local client sites. |
-| [Windy City Paws](https://www.windycitypaws.com) | Dog Walker | Animal Care | Lakeview, Chicago, IL | Interview | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Windy City Paws](https://www.windycitypaws.com) | Dog Walker | Animal Care | Lakeview, Chicago, IL | Rejected | 10/21/2025 | Indeed | Interview completed → not selected |
 | [Chicago Cubs](https://www.mlb.com/cubs) | IT Help Desk Technician | IT Support | The Loop, Chicago, IL | Applied | 10/21/2025 | Company Website | Public-facing IT support; strong addition for well-known organization experience. |
 | [The Phoenix Group](https://www.thephoenixgroup.com) | Help Desk Specialist | IT Support / Contract | River North, Chicago, IL (Hybrid) | Applied | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Northwestern University](https://www.northwestern.edu) | Technical Support Specialist | IT Support | Evanston, IL | Applied | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
@@ -177,7 +177,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 | [Duke Animal Hospital](https://www.dukeanimalhospital.com/) | Veterinary Customer Service Representative | Animal Care | Roscoe Village, Chicago, IL | Applied | 10/21/2025 | Indeed | Combines client communication with pet care coordination; ideal for empathy and multitasking. |
 | [Happy Camper](https://www.happycamper.pizza/) | Bartender | Hospitality | River North, Chicago, IL | Applied | 10/21/2025 | Indeed | Upbeat nightlife role emphasizing multitasking and customer engagement. |
 | [Museum of Ice Cream](https://www.museumoficecream.com/careers) | Service Ambassador | Hospitality | Chicago, IL | Rejected | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Capgemini](https://www.capgemini.com/) | Junior Data Analyst | Data Analyst | Chicago, IL / New York City, NY | Applied | 10/21/2025 | Handshake | Scientific and tech consulting |
+| [Capgemini](https://www.capgemini.com/) | Junior Data Analyst | Data Analyst | Chicago, IL / New York City, NY | Applied | 10/21/2025 | Handshake | Scientific and tech consulting. |
 | [The Peninsula — F&B Back Server Application](https://career10.successfactors.com/portalcareer?_s.crb=pOAhKgrGyC9ca%252b8vumVZ3dFeeNf%252bBXbckKb4n4aQz7s%253d) | Food & Beverage Server | Hospitality / Service / Restaurant | Magnificent Mile, Chicago, IL | Applied | 10/20/2025 | Company Website | High-end hospitality with attention to detail. |
 | [Business Development Sales Representative – Chicago, IL (January 2026 Start)](https://transportationinsight.wd1.myworkdayjobs.com/en-US/TI_NTG_External_Careers) | Business Development Sales Representative | Business / Sales | Downtown Chicago, IL | Applied | 10/20/2025 | Company Website | Entry-level corporate sales; enhances client outreach, pipeline management, and persuasive communication abilities. |
 | [Insight Global](https://www.insightglobal.com) | Remote Data Analyst | IT / Data Analyst (Contract, Remote) | United States | Applied | 10/20/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -242,7 +242,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 | [RealtyAds](https://www.realtyads.com/careers) | Junior Software Engineer | Software | Chicago, IL | Applied | 09/05/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [University of Chicago – Harris School of Public Policy](https://harris.uchicago.edu/) | Harris Social Impact Fellowship | Policy / Research | Chicago, IL | Applied | 09/05/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [SPAATECH, Inc](https://www.spaatech.com/) | Business Development Representative – Technology Solutions | Business / IT | Chicago, IL | Applied | 09/05/2025 | LinkedIn | <span style='color:#999;'>—</span> |
-| [Green Paws Chicago](https://greenpawschicago.com/) | Dog Walker & Pet Sitter | Animal Care | Chicago, IL | Interview | 09/05/2025 | Indeed | Pet care and client communication. |
+| [Green Paws Chicago](https://greenpawschicago.com/) | Dog Walker & Pet Sitter | Animal Care | Chicago, IL | Rejected | 09/05/2025 | Indeed | Interviewed and not selected. Pet care and client communication. |
 | [AESLIN Pup Hub](https://aeslin.com/) | Dog Daycare & Boarding Handler | Animal Care | Chicago, IL | Applied | 09/05/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [AESLIN Pup Hub](#) | Dog Daycare & Boarding Handler | Animal Care | Chicago, IL | Closed | 09/05/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [My Net Security, Inc.](#) | IT Technician | IT Support | Chicago, IL | Rejected | 09/04/2025 | Indeed | Entry-level onsite IT technician role performing hardware/software troubleshooting, user support, and basic network tasks. Solid hands-on experience builder with direct customer interaction. |
@@ -253,15 +253,14 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 | [Capgemini](https://www.capgemini.com/careers) | Business Analyst | Business / IT | Remote | Applied | 09/01/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Momotaro](https://www.bokagrp.com/careers) | Food Runner | Service | Fulton Market, Chicago, IL | Rejected | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Veterinary Assistant Apprentice | Animal Care | Little Italy / Medical District, Chicago, IL | Rejected | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Wakamono](https://www.wakamonosush) | Food Runner | Service | Chicago, IL | Applied | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
+| [Wakamono](https://www.wakamonosush) | Food Runner | Service | Chicago, IL | Rejected | 08/29/2025 | Indeed | Japanese food and cocktails in a casual, modern setting with a patio. |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Adoption Services Associate | Animal Care / Service | Chicago, IL | Applied | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Wakamono](#) | Food Runner | Service | Chicago, IL | Applied | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [METTLER TOLEDO](https://www.mt.com/us/en/home/careers.html) | Software Engineer | Software | Changzhou Shi, China | Applied | 08/07/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Supernova Companies](https://www.supernovacompanies.com/careers) | Entry Level Software Engineer | Software | Chicago, IL | Applied | 08/07/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Supernova Companies](https://www.supernovacompanies.com/careers) | Data Analyst | Data | Chicago, IL | Applied | 08/07/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Magnifact](https://www.magnifact.com/careers) | Data Analyst – SQL / ETL | Data | Chicago, IL | Applied | 07/30/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Dominican University](https://www.dom.edu/hr/employment-opportunities) | Web Developer | Software / Web | Chicago, IL | Applied | 07/30/2025 | LinkedIn | Front-end and back-end development experience for academic sites. |
-| [Capgemini America Inc.](https://www.capgemini.com/us-en/careers/) | Chicago Junior Developer | Software | Chicago, IL / New York, NY | Interview | 07/30/2025 | LinkedIn | Early-career consulting role with exposure to enterprise software development and client-facing delivery. Good opportunity to build technical breadth and professional communication skills within a global team. |
+| [Capgemini America Inc.](https://www.capgemini.com/us-en/careers/) | Chicago Junior Developer | Software | Chicago, IL / New York, NY | Rejected | 07/30/2025 | LinkedIn | Entry-level consulting role supporting enterprise software delivery within a global team. Interview completed but not selected. Gained useful insight into client-focused communication expectations. |
 | [Oak Street Health](https://www.oakstreethealth.com/careers) | Medical Scribe | Healthcare / IT | Chicago, IL | Applied | 07/26/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [SFORCE IT](https://www.sforceit.com/) | Robotic Process Automation Developer | Automation / IT | Chicago, IL / Dallas, TX | Applied | 07/26/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Sunixa Solutions Inc.](https://sunixasolutions.com/careers) | AI/ML Engineer | AI / Software | Remote | Applied | 07/26/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -323,7 +322,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 227 total — 🕐 123 active — ⏳ 43 likely inactive — ❌ 42 rejected — 💬 3 interviews — ✅ 0 hired.**
+**Summary:** 📋 226 total — 🕐 120 active — ⏳ 41 likely inactive — ❌ 46 rejected — 💬 3 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*

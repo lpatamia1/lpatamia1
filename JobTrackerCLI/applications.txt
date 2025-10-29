@@ -68,7 +68,7 @@
 [The Doggy Dojo Inc.](https://www.indeed.com/cmp/The-Doggy-Dojo)|Dog Daycare Associate|Animal Care|Chicago, IL|REJECTED|10/21/2025|Indeed|Animal care teamwork; nurturing and safety-focused environment.
 [Found Chicago Boarding & Training Center](https://www.foundtrainingcenter.com)|Dog Handler / Dog Training Apprentice|Animal Care|Chicago, IL|REJECTED|10/21/2025|Indeed|Experience handling large breeds and maintaining safe play groups.
 [TeamLogic IT](https://www.teamlogicit.com)|Field IT Technician|IT Support|Chicago, IL (Hybrid with Suburban Client Visits)|APPLIED|10/21/2025|Indeed|Clarified hybrid field structure; hands-on IT troubleshooting across local client sites.
-[Windy City Paws](https://www.windycitypaws.com)|Dog Walker|Animal Care|Lakeview, Chicago, IL|INTERVIEW|10/21/2025|Indeed|
+[Windy City Paws](https://www.windycitypaws.com)|Dog Walker|Animal Care|Lakeview, Chicago, IL|REJECTED|10/21/2025|Indeed|Interview completed → not selected
 [Chicago Cubs](https://www.mlb.com/cubs)|IT Help Desk Technician|IT Support|The Loop, Chicago, IL|APPLIED|10/21/2025|Company Website|Public-facing IT support; strong addition for well-known organization experience.
 [The Phoenix Group](https://www.thephoenixgroup.com)|Help Desk Specialist|IT Support / Contract|River North, Chicago, IL (Hybrid)|APPLIED|10/21/2025|LinkedIn|
 [Northwestern University](https://www.northwestern.edu)|Technical Support Specialist|IT Support|Evanston, IL|APPLIED|10/21/2025|Company Website|
@@ -82,7 +82,7 @@
 [Duke Animal Hospital](https://www.dukeanimalhospital.com/)|Veterinary Customer Service Representative|Animal Care|Roscoe Village, Chicago, IL|APPLIED|10/21/2025|Indeed|Combines client communication with pet care coordination; ideal for empathy and multitasking.
 [Happy Camper](https://www.happycamper.pizza/)|Bartender|Hospitality|River North, Chicago, IL|APPLIED|10/21/2025|Indeed|Upbeat nightlife role emphasizing multitasking and customer engagement.
 [Museum of Ice Cream](https://www.museumoficecream.com/careers)|Service Ambassador|Hospitality|Chicago, IL|REJECTED|10/21/2025|Indeed|
-[Capgemini](https://www.capgemini.com/)|Junior Data Analyst|Data Analyst|Chicago, IL / New York City, NY|APPLIED|10/21/2025|Handshake|Scientific and tech consulting
+[Capgemini](https://www.capgemini.com/)|Junior Data Analyst|Data Analyst|Chicago, IL / New York City, NY|APPLIED|10/21/2025|Handshake|Scientific and tech consulting.
 [The Peninsula — F&B Back Server Application](https://career10.successfactors.com/portalcareer?_s.crb=pOAhKgrGyC9ca%252b8vumVZ3dFeeNf%252bBXbckKb4n4aQz7s%253d)|Food & Beverage Server|Hospitality / Service / Restaurant|Magnificent Mile, Chicago, IL|APPLIED|10/20/2025|Company Website|High-end hospitality with attention to detail.
 [Business Development Sales Representative – Chicago, IL (January 2026 Start)](https://transportationinsight.wd1.myworkdayjobs.com/en-US/TI_NTG_External_Careers)|Business Development Sales Representative|Business / Sales|Downtown Chicago, IL|APPLIED|10/20/2025|Company Website|Entry-level corporate sales; enhances client outreach, pipeline management, and persuasive communication abilities.
 [Insight Global](https://www.insightglobal.com)|Remote Data Analyst|IT / Data Analyst (Contract, Remote)|United States|APPLIED|10/20/2025|LinkedIn|
@@ -147,7 +147,7 @@ Eataly|Cashier|Retail / Service|River North, Chicago, IL|APPLIED|10/15/2025|Link
 [RealtyAds](https://www.realtyads.com/careers)|Junior Software Engineer|Software|Chicago, IL|APPLIED|09/05/2025|LinkedIn|
 [University of Chicago – Harris School of Public Policy](https://harris.uchicago.edu/)|Harris Social Impact Fellowship|Policy / Research|Chicago, IL|APPLIED|09/05/2025|LinkedIn|
 [SPAATECH, Inc](https://www.spaatech.com/)|Business Development Representative – Technology Solutions|Business / IT|Chicago, IL|APPLIED|09/05/2025|LinkedIn|
-[Green Paws Chicago](https://greenpawschicago.com/)|Dog Walker & Pet Sitter|Animal Care|Chicago, IL|INTERVIEW|09/05/2025|Indeed|Pet care and client communication.
+[Green Paws Chicago](https://greenpawschicago.com/)|Dog Walker & Pet Sitter|Animal Care|Chicago, IL|REJECTED|09/05/2025|Indeed|Interviewed and not selected. Pet care and client communication.
 [AESLIN Pup Hub](https://aeslin.com/)|Dog Daycare & Boarding Handler|Animal Care|Chicago, IL|APPLIED|09/05/2025|Indeed|
 [AESLIN Pup Hub](#)|Dog Daycare & Boarding Handler|Animal Care|Chicago, IL|CLOSED|09/05/2025|Indeed|
 [My Net Security, Inc.](#)|IT Technician|IT Support|Chicago, IL|REJECTED|09/04/2025|Indeed|Entry-level onsite IT technician role performing hardware/software troubleshooting, user support, and basic network tasks. Solid hands-on experience builder with direct customer interaction.
@@ -158,15 +158,14 @@ Eataly|Cashier|Retail / Service|River North, Chicago, IL|APPLIED|10/15/2025|Link
 [Capgemini](https://www.capgemini.com/careers)|Business Analyst|Business / IT|Remote|APPLIED|09/01/2025|LinkedIn|
 [Momotaro](https://www.bokagrp.com/careers)|Food Runner|Service|Fulton Market, Chicago, IL|REJECTED|08/29/2025|Indeed|
 [PAWS Chicago](https://www.pawschicago.org/about-us/careers)|Veterinary Assistant Apprentice|Animal Care|Little Italy / Medical District, Chicago, IL|REJECTED|08/29/2025|Indeed|
-[Wakamono](https://www.wakamonosush)|Food Runner|Service|Chicago, IL|APPLIED|08/29/2025|Indeed|
+[Wakamono](https://www.wakamonosush)|Food Runner|Service|Chicago, IL|REJECTED|08/29/2025|Indeed|Japanese food and cocktails in a casual, modern setting with a patio.
 [PAWS Chicago](https://www.pawschicago.org/about-us/careers)|Adoption Services Associate|Animal Care / Service|Chicago, IL|APPLIED|08/29/2025|Indeed|
-[Wakamono](#)|Food Runner|Service|Chicago, IL|APPLIED|08/29/2025|Indeed|
 [METTLER TOLEDO](https://www.mt.com/us/en/home/careers.html)|Software Engineer|Software|Changzhou Shi, China|APPLIED|08/07/2025|LinkedIn|
 [Supernova Companies](https://www.supernovacompanies.com/careers)|Entry Level Software Engineer|Software|Chicago, IL|APPLIED|08/07/2025|LinkedIn|
 [Supernova Companies](https://www.supernovacompanies.com/careers)|Data Analyst|Data|Chicago, IL|APPLIED|08/07/2025|LinkedIn|
 [Magnifact](https://www.magnifact.com/careers)|Data Analyst – SQL / ETL|Data|Chicago, IL|APPLIED|07/30/2025|LinkedIn|
 [Dominican University](https://www.dom.edu/hr/employment-opportunities)|Web Developer|Software / Web|Chicago, IL|APPLIED|07/30/2025|LinkedIn|Front-end and back-end development experience for academic sites.
-[Capgemini America Inc.](https://www.capgemini.com/us-en/careers/)|Chicago Junior Developer|Software|Chicago, IL / New York, NY|INTERVIEW|07/30/2025|LinkedIn|Early-career consulting role with exposure to enterprise software development and client-facing delivery. Good opportunity to build technical breadth and professional communication skills within a global team.
+[Capgemini America Inc.](https://www.capgemini.com/us-en/careers/)|Chicago Junior Developer|Software|Chicago, IL / New York, NY|REJECTED|07/30/2025|LinkedIn|Entry-level consulting role supporting enterprise software delivery within a global team. Interview completed but not selected. Gained useful insight into client-focused communication expectations.
 [Oak Street Health](https://www.oakstreethealth.com/careers)|Medical Scribe|Healthcare / IT|Chicago, IL|APPLIED|07/26/2025|LinkedIn|
 [SFORCE IT](https://www.sforceit.com/)|Robotic Process Automation Developer|Automation / IT|Chicago, IL / Dallas, TX|APPLIED|07/26/2025|LinkedIn|
 [Sunixa Solutions Inc.](https://sunixasolutions.com/careers)|AI/ML Engineer|AI / Software|Remote|APPLIED|07/26/2025|LinkedIn|

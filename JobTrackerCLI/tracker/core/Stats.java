@@ -16,6 +16,7 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.stream.Collectors;
+import tracker.JobApplicationTracker;
 
 
 public class Stats {
@@ -25,7 +26,6 @@ public class Stats {
     public double successRate, perWeek;
     public String topSource, topLocation;
     public JobApplication latest;
-
     public Stats(int total, long rejected, long hired, long interviews, long closed,
                  long active, long stale, long trulyActive, double successRate,
                  double perWeek, long openApps, String topSource, String topLocation,
@@ -59,7 +59,11 @@ public class Stats {
                 .count();
 
         long interviews = applications.stream()
-                .filter(a -> a.getStatus().name().toLowerCase().contains("interview"))
+                .filter(a -> {
+                String status = a.getStatus().name().toLowerCase();
+                String notes = (a.getNotes() == null ? "" : a.getNotes().toLowerCase());
+                return status.contains("interview") || (notes != null && notes.contains("interview"));
+                })
                 .count();
 
         long closed = applications.stream()
@@ -159,6 +163,30 @@ public class Stats {
             System.out.printf("%s🆕 Most Recent:%s %s — %s (%s)%n",
                 UIHelper.PINK, UIHelper.RESET,
                 latest.getCompany(), latest.getRole(), latest.getDateApplied());
+
+        // ✅ Insert the interview section here, BEFORE printDashboard()
+        List<JobApplication> interviewApps = JobApplicationTracker.applications.stream()
+                .filter(a -> {
+                    String status = a.getStatus().name().toLowerCase();
+                    String notes = (a.getNotes() == null ? "" : a.getNotes().toLowerCase());
+                    return status.contains("interview") || notes.contains("interview");
+                })
+                .sorted(Comparator.comparing(JobApplication::getDateApplied).reversed())
+                .collect(Collectors.toList());
+
+        if (!interviewApps.isEmpty()) {
+            System.out.println("\n" + UIHelper.YELLOW + "🎤 Interview Stage Reached:" + UIHelper.RESET);
+            int i = 1;
+            for (JobApplication app : interviewApps) {
+                String badge = statusBadge(app);
+                System.out.printf("%d. %s — %s %s (%s)%n",
+                        i++,
+                        app.getCompany(),
+                        app.getRole(),
+                        badge,
+                        app.getDateApplied());
+            }
+        }
     }
 
     // 🌈 Dashboard Snapshot (Option 9)
@@ -198,4 +226,21 @@ public class Stats {
         int filled = (int)(length * percent / 100);
         return "█".repeat(filled) + "░".repeat(length - filled);
     }
+
+    // 🎀 Status Badges for all outcomes
+    private String statusBadge(JobApplication a) {
+        String s = a.getStatus().name().toLowerCase();
+        String notes = (a.getNotes() == null ? "" : a.getNotes().toLowerCase());
+
+        if (s.contains("hire")) return "🎉 Hired";
+        if (s.contains("close")) return "📪 Closed";
+        if (s.contains("reject") && notes.contains("interview")) return "❌ Rejected 🎤";
+        if (s.contains("reject")) return "❌ Rejected";
+        if (s.contains("interview") || notes.contains("interview")) return "🎤 Interview";
+
+        return "⏳ Applied";
+    }
+
+    
 }
+
