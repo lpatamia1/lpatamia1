@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-220-blue">   <img src="https://img.shields.io/badge/Active-118-green">   <img src="https://img.shields.io/badge/Rejected-43-red">   <img src="https://img.shields.io/badge/Interviews-2-yellow">
+  <img src="https://img.shields.io/badge/Total-227-blue">   <img src="https://img.shields.io/badge/Active-122-green">   <img src="https://img.shields.io/badge/Rejected-43-red">   <img src="https://img.shields.io/badge/Interviews-2-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **220 positions** across multiple industries. Currently, **118 applications remain active**, and **40 likely inactive**, with **2 interviews** completed.
+So far, I've applied to **227 positions** across multiple industries. Currently, **122 applications remain active**, and **43 likely inactive**, with **2 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -26,16 +26,16 @@ So far, I've applied to **220 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left" width="50%">
 
-- **Total Applications:** 220  
-- 🕐 **Active / Pending:** 118  
-- ⏳ **Likely Inactive:** 40  
+- **Total Applications:** 227  
+- 🕐 **Active / Pending:** 122  
+- ⏳ **Likely Inactive:** 43  
 - ❌ **Rejected:** 43  
 
 </td><td align="left" width="50%">
 
 - 💬 **Interviewed:** 2  
 - ✅ **Hired / Offer:** 0  
-- 🗓️ **Last Updated:** October 28, 2025  
+- 🗓️ **Last Updated:** October 29, 2025  
 
 </td></tr></table>
 
@@ -48,11 +48,11 @@ So far, I've applied to **220 positions** across multiple industries. Currently,
 - 📈 **Success Rate:** 0.9%  
 - 📦 **Closed:** 19  
 - 🌐 **Top Source:** Indeed  
-- ⚡ **Avg Applications per Week:** 8.0  
-- 🕐 **Still Waiting (Applied Only):** 154  
+- ⚡ **Avg Applications per Week:** 8.2  
+- 🕐 **Still Waiting (Applied Only):** 161  
 - 📍 **Top Location:** Chicago, IL  
 - 📆 **Avg Days Since Application:** 45 days  
-- 🆕 **Most Recent:** [CHC Wellness](https://www.chcw.com/) — Help Desk Support Specialist - Tier 1 (10/28/2025)  
+- 🆕 **Most Recent:** [Blue Bird Day LLC](https://bluebirddayprogram.com/) — Teacher Assistant (10/29/2025)  
 </td></tr></table>
 
 <div align="center">
@@ -61,13 +61,13 @@ So far, I've applied to **220 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td valign='top' align='left'>
 
-• **IT / Support:** 88<br>
+• **IT / Support:** 91<br>
 • **Software / Development:** 33<br>
-• **Animal Care:** 24<br>
-• **AI / Data Science:** 17<br>
+• **Animal Care:** 25<br>
+• **AI / Data Science:** 18<br>
 • **Data / Analytics:** 14<br>
+• **Other:** 11<br>
 • **Retail / Service:** 11<br>
-• **Other:** 9<br>
 • **Administration:** 6<br>
 • **Culinary / Food Service:** 4<br>
 • **Education / Training:** 3<br>
@@ -93,6 +93,13 @@ So far, I've applied to **220 positions** across multiple industries. Currently,
 
 | Company | Role | Type | Location | Status | Date Applied | Source | Notes |
 |----------|------|------|-----------|----------|---------------|---------|--------|
+| [Blue Bird Day LLC](https://bluebirddayprogram.com/) | Teacher Assistant | Teaching | Chicago, IL | Applied | 10/29/2025 | Indeed | Therapeutic preschool/kindergarten setting – early childhood support role with focus on developmental skills. |
+| [Grand Cru Chicago](https://www.grandcruchicago.com/) | Wine Bar Server | Hospitality / Retail | Chicago, IL | Applied | 10/29/2025 | Indeed | Part-time wine bar/retail store role; talk wine, fast-paced service, flexible schedule. |
+| [Qiao Lin Hotpot](https://www.choosechicago.com/listing/qiao-lin-hotpot-streeterville/) | Server | Hospitality / Restaurant | Chicago, IL | Applied | 10/29/2025 | Indeed | Authentic Chongqing-style hot pot concept in Streeterville; high energy dining, front-of-house guest service. |
+| [The Gwen Chicago](https://www.thegwenchicago.com/) | Server | Hospitality / Restaurant | Chicago, IL | Applied | 10/29/2025 | Indeed | Luxury hotel restaurant environment; high standards of service, guest-facing role in upscale setting. |
+| [Chicago Winery](https://www.chicagowinery.com/) | Tasting Room Server | Hospitality / Beverage | Chicago, IL | Applied | 10/29/2025 | Indeed | Wine/tasting room service job; combines retail, hospitality and wine knowledge. |
+| [Willow Tree Care Center](https://www.willowtreechicago.com/) | Teaching Assistant - PART TIME | Teaching | Chicago, IL | Applied | 10/29/2025 | Indeed | Part-time teaching assistant role in an early childhood environment. |
+| [Zen Dogs Chicago](https://zendogschicago.com/) | Dog Handler | Animal Care | Chicago, IL | Applied | 10/29/2025 | Indeed | Dog handler role supervising play, monitoring behavior, and ensuring a safe environment for dogs in a city daycare setting. |
 | [CHC Wellness](https://www.chcw.com/) | Help Desk Support Specialist - Tier 1 | IT | Chicago, IL | Applied | 10/28/2025 | Indeed | As a Help Desk Support Specialist at CHC Wellbeing, you’ll be the first point of contact for technical issues, helping both internal staff and program participants troubleshoot IT-and-software problems while supporting the company’s wellbeing technology infrastructure so everyone can focus on thriving rather than fighting tools. |
 | [Raden Wellness](https://www.radenwellness.com/) | Receptionist | Healthcare / Admin | Chicago, IL | Applied | 10/28/2025 | Indeed | First point of contact for patients with phone triage, appointment scheduling, and front-desk support in a functional wellness clinic focused on health optimization. |
 | [The Goddess and Grocer – Gold Coast](https://www.thegoddessandgrocer.com/) | Front of House Staff | Hospitality / Food Service | Chicago, IL | Applied | 10/28/2025 | Indeed | Full-time FOH role handling barista duties, guest service, counter operations and maintaining beautiful store displays in a gourmet food market setting. |
@@ -316,8 +323,8 @@ So far, I've applied to **220 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 220 total — 🕐 118 active — ⏳ 40 likely inactive — ❌ 43 rejected — 💬 2 interviews — ✅ 0 hired.**
+**Summary:** 📋 227 total — 🕐 122 active — ⏳ 43 likely inactive — ❌ 43 rejected — 💬 2 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
-*Last updated October 28, 2025.*
+*Last updated October 29, 2025.*

@@ -129,11 +129,15 @@ public class Stats {
             UIHelper.PINK, UIHelper.RESET, hired
         );
 
-        String bar = progressBar(successRate, 30);
+        String bar = progressBar(successRate, 40);
         System.out.printf("%s📈 Success Rate:%s %.1f%% %s%s%s%n",
             UIHelper.ORANGE, UIHelper.RESET, successRate,
             UIHelper.GREEN, bar, UIHelper.RESET);
-
+        double rejectionRate = total == 0 ? 0 : (double) rejected / total * 100;
+        String rejBar = progressBar(rejectionRate, 40);
+        System.out.printf("%s📉 Rejection Rate:%s %.1f%% %s%s%s%n",
+            UIHelper.RED, UIHelper.RESET, rejectionRate,
+            UIHelper.RED, rejBar, UIHelper.RESET);
         System.out.printf("%s⚡ Avg per Week:%s %.1f%n",
             UIHelper.GREEN, UIHelper.RESET, perWeek);
         System.out.printf("%s📍 Top Location:%s %s%n",
