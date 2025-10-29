@@ -57,11 +57,10 @@ public class MenuHandler {
 
         for (int i = 0; i < results.size(); i++) {
             JobApplication a = results.get(i);
-            System.out.printf("%2d. %-35s | %-25s | %-12s | %s\n",
-                    i + 1, a.getCompany(), a.getRole(), a.getStatus(),
+            System.out.printf("%2d. %-35s | %-25s | %-20s | %s\n",
+                    i + 1, a.getCompany(), a.getRole(), statusBadge(a),
                     a.getDateApplied().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         }
-
         System.out.print("\n💡 View details or update status (enter number, or press Enter to skip): ");
         String input = sc.nextLine().trim();
         if (input.isEmpty()) return;
@@ -135,10 +134,10 @@ public class MenuHandler {
         for (int i = 0; i < matches.size(); i++) {
             JobApplication a = matches.get(i);
             System.out.printf("%2d. %-35s | %-25s | %-12s | %s\n",
-                    i + 1, a.getCompany(), a.getRole(), a.getStatus(),
+                    i + 1, a.getCompany(), a.getRole(), statusBadge(a),
                     a.getDateApplied().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         }
-
+    
         System.out.print("\n❓ Enter the number of the job to remove (or press Enter to cancel): ");
         String input = sc.nextLine().trim();
         if (input.isEmpty()) {
@@ -177,7 +176,7 @@ public class MenuHandler {
 
         for (JobApplication a : recent) {
             System.out.printf("%s%-35s%s | %-25s | %-12s | %s\n",
-                    UIHelper.CYAN, a.getCompany(), UIHelper.RESET, a.getRole(), a.getStatus(),
+                    UIHelper.CYAN, a.getCompany(), UIHelper.RESET, a.getRole(), statusBadge(a),
                     a.getDateApplied().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         }
 
@@ -230,8 +229,8 @@ public class MenuHandler {
         String notes = (a.getNotes() == null ? "" : a.getNotes().toLowerCase());
 
         if (s.contains("hire")) return "🎉 Hired";
-        if (s.contains("close")) return "📪 Closed";
-        if (s.contains("reject") && notes.contains("interview")) return "❌ Rejected 🎤";
+        if (s.contains("close")) return "🔒 Closed";
+        if (s.contains("reject") && notes.contains("interview")) return "❌ Rejected 🎤 Interviewed";
         if (s.contains("reject")) return "❌ Rejected";
         if (s.contains("interview") || notes.contains("interview")) return "🎤 Interview";
 
