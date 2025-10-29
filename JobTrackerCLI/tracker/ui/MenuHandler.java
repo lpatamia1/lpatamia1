@@ -230,6 +230,11 @@ public class MenuHandler {
 
         if (s.contains("hire")) return "🎉 Hired";
         if (s.contains("close")) return "🔒 Closed";
+        if (s.contains("phone") || notes.contains("phone")) return "📩 Phone Screen";
+        if (s.contains("tech") || notes.contains("technical")) return "🧪 Technical";
+        if (s.contains("final") || notes.contains("final")) return "👥 Final Interview";
+        if (s.contains("ghost") || notes.contains("ghost")) return "⛔ Ghosted";
+        if (s.contains("reapply") || notes.contains("reapply")) return "🔁 Reapplied";
         if (s.contains("reject") && notes.contains("interview")) return "❌ Rejected 🎤 Interviewed";
         if (s.contains("reject")) return "❌ Rejected";
         if (s.contains("interview") || notes.contains("interview")) return "🎤 Interview";

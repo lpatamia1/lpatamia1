@@ -179,12 +179,11 @@ public class Stats {
             int i = 1;
             for (JobApplication app : interviewApps) {
                 String badge = statusBadge(app);
-                System.out.printf("%d. %s — %s %s (%s)%n",
+                System.out.printf("%d. %s — (%s)%n",
                         i++,
                         app.getCompany(),
-                        app.getRole(),
-                        badge,
-                        app.getDateApplied());
+                        app.getRole() 
+                );
             }
         }
     }
