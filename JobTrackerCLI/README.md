@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-226-blue">   <img src="https://img.shields.io/badge/Active-120-green">   <img src="https://img.shields.io/badge/Rejected-46-red">   <img src="https://img.shields.io/badge/Interviews-3-yellow">
+  <img src="https://img.shields.io/badge/Total-226-blue">   <img src="https://img.shields.io/badge/Active-118-green">   <img src="https://img.shields.io/badge/Rejected-48-red">   <img src="https://img.shields.io/badge/Interviews-4-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **226 positions** across multiple industries. Currently, **120 applications remain active**, and **41 likely inactive**, with **3 interviews** completed.
+So far, I've applied to **226 positions** across multiple industries. Currently, **118 applications remain active**, and **41 likely inactive**, with **4 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -27,15 +27,15 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 <table align="center"><tr><td align="left" width="50%">
 
 - **Total Applications:** 226  
-- 🕐 **Active / Pending:** 120  
+- 🕐 **Active / Pending:** 118  
 - ⏳ **Likely Inactive:** 41  
-- ❌ **Rejected:** 46  
+- ❌ **Rejected:** 48  
 
 </td><td align="left" width="50%">
 
-- 💬 **Interviewed:** 3  
+- 💬 **Interviewed:** 4  
 - ✅ **Hired / Offer:** 0  
-- 🗓️ **Last Updated:** October 29, 2025  
+- 🗓️ **Last Updated:** October 31, 2025  
 
 </td></tr></table>
 
@@ -45,13 +45,13 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left">
 
-- 📈 **Success Rate:** 1.3%  
+- 📈 **Success Rate:** 1.8%  
 - 📦 **Closed:** 19  
 - 🌐 **Top Source:** Indeed  
-- ⚡ **Avg Applications per Week:** 8.2  
-- 🕐 **Still Waiting (Applied Only):** 159  
+- ⚡ **Avg Applications per Week:** 8.1  
+- 🕐 **Still Waiting (Applied Only):** 156  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 45 days  
+- 📆 **Avg Days Since Application:** 47 days  
 - 🆕 **Most Recent:** [Blue Bird Day LLC](https://bluebirddayprogram.com/) — Teacher Assistant (10/29/2025)  
 </td></tr></table>
 
@@ -96,7 +96,7 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 | [Blue Bird Day LLC](https://bluebirddayprogram.com/) | Teacher Assistant | Teaching | Chicago, IL | Applied | 10/29/2025 | Indeed | Therapeutic preschool/kindergarten setting – early childhood support role with focus on developmental skills. |
 | [Grand Cru Chicago](https://www.grandcruchicago.com/) | Wine Bar Server | Hospitality / Retail | Chicago, IL | Applied | 10/29/2025 | Indeed | Part-time wine bar/retail store role; talk wine, fast-paced service, flexible schedule. |
 | [Qiao Lin Hotpot](https://www.choosechicago.com/listing/qiao-lin-hotpot-streeterville/) | Server | Hospitality / Restaurant | Chicago, IL | Applied | 10/29/2025 | Indeed | Authentic Chongqing-style hot pot concept in Streeterville; high energy dining, front-of-house guest service. |
-| [The Gwen Chicago](https://www.thegwenchicago.com/) | Server | Hospitality / Restaurant | Chicago, IL | Applied | 10/29/2025 | Indeed | Luxury hotel restaurant environment; high standards of service, guest-facing role in upscale setting. |
+| [The Gwen Chicago](https://www.thegwenchicago.com/) | Server | Hospitality / Restaurant | Chicago, IL | Rejected | 10/29/2025 | Indeed | Luxury hotel restaurant environment; high standards of service, guest-facing role in upscale setting. |
 | [Chicago Winery](https://www.chicagowinery.com/) | Tasting Room Server | Hospitality / Beverage | Chicago, IL | Applied | 10/29/2025 | Indeed | Wine/tasting room service job; combines retail, hospitality and wine knowledge. |
 | [Willow Tree Care Center](https://www.willowtreechicago.com/) | Teaching Assistant - PART TIME | Teaching | Chicago, IL | Applied | 10/29/2025 | Indeed | Part-time teaching assistant role in an early childhood environment. |
 | [Zen Dogs Chicago](https://zendogschicago.com/) | Dog Handler | Animal Care | Chicago, IL | Applied | 10/29/2025 | Indeed | Dog handler role supervising play, monitoring behavior, and ensuring a safe environment for dogs in a city daycare setting. |
@@ -109,7 +109,7 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 | [Itoko – Boka Restaurant Group](https://www.bokagrp.com/) | Server | Hospitality / Restaurant | Chicago, IL | Applied | 10/28/2025 | Indeed | Full-time server role delivering high-level guest service, proper food and beverage standards, and efficient service flow at a sushi and robata concept from a James Beard Award-winning restaurant group. |
 | [Mei’s](https://www.meischicago.com/) | Server | Hospitality / Restaurant | Chicago, IL | Applied | 10/28/2025 | Indeed | Part-time server position taking orders, delivering food and drinks, handling payments, and ensuring a positive dining experience at a Michigan Avenue restaurant. |
 | [Happy Camper – Wrigley](https://www.happycamper.pizza/) | Server | Hospitality / Restaurant | Chicago, IL | Applied | 10/28/2025 | Indeed | High-energy server role delivering friendly, fast service and managing multiple tables in a popular Clark Street pizzeria with strong tips and flexible scheduling. |
-| [SDI Presence](https://sdipresence.com/) | Apprentice (ServiceNow & Power BI) | IT / Apprenticeship | Chicago, IL (Hybrid) | Applied | 10/28/2025 | Indeed | Early-career hybrid role supporting Agile workflows, translating requirements, and coordinating between ServiceNow and Power BI teams for enterprise software integration projects. |
+| [SDI Presence](https://sdipresence.com/) | Apprentice (ServiceNow & Power BI) | IT / Apprenticeship | Chicago, IL (Hybrid) | Interview | 10/28/2025 | Indeed | Early-career hybrid role supporting Agile workflows, translating requirements, and coordinating between ServiceNow and Power BI teams for enterprise software integration projects. |
 | [Murgado Automotive Group](https://www.murgadoautomotivegroup.com/) | IT Helpdesk Technician | IT Support | Chicago, IL | Applied | 10/28/2025 | Indeed | Full-time help desk role providing first-line technical support, resolving hardware/software issues, managing accounts, and supporting users across Chicago dealership locations. |
 | [Supernova Technology](https://www.supernovacompanies.com/careers) | Junior Software Engineer | Software | Chicago, IL | Applied | 10/28/2025 | LinkedIn | Full-time engineering role building and maintaining software features. Opportunity to grow technical skills in an on-site collaborative environment at a Chicago fintech company. |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Animal Care Associate | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Daily feeding, cleaning, enrichment, medication logging, and maintaining clean kennel and common areas for dogs and cats in a shelter environment. |
@@ -218,7 +218,7 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 | [Bark Bark Club](https://www.barkbarkclub.com/) | Dog Daycare Attendant | Animal Care | Chicago, IL | Rejected | 09/23/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Bark Bark Club](https://www.barkbarkclub.com/) | Dog Daycare Attendant (Full-Time) | Animal Care | Chicago, IL | Rejected | 09/23/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Mercor](https://www.mercor.io/) | English Support | IT / Support | Remote | Applied | 09/19/2025 | LinkedIn | <span style='color:#999;'>—</span> |
-| [Mercor](https://www.mercor.io/) | Enterprise Cloud Domain Support | Cloud / IT | Remote | Applied | 09/19/2025 | LinkedIn | <span style='color:#999;'>—</span> |
+| [Mercor](https://www.mercor.io/) | Enterprise Cloud Domain Support | Cloud / IT | Remote | Rejected | 09/19/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Mercor](https://www.mercor.io/) | Intelligent Identity Engineer | Security / IT | Remote | Applied | 09/19/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Mercor](https://www.mercor.io/) | Software Eng. Code Review (Rust) | Software | Remote | Rejected | 09/19/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Mercor](https://www.mercor.io/) | Data Engineer | Data | Remote | Applied | 09/19/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -322,8 +322,8 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 226 total — 🕐 120 active — ⏳ 41 likely inactive — ❌ 46 rejected — 💬 3 interviews — ✅ 0 hired.**
+**Summary:** 📋 226 total — 🕐 118 active — ⏳ 41 likely inactive — ❌ 48 rejected — 💬 4 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
-*Last updated October 29, 2025.*
+*Last updated October 31, 2025.*
