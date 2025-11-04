@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-226-blue">   <img src="https://img.shields.io/badge/Active-118-green">   <img src="https://img.shields.io/badge/Rejected-48-red">   <img src="https://img.shields.io/badge/Interviews-4-yellow">
+  <img src="https://img.shields.io/badge/Total-226-blue">   <img src="https://img.shields.io/badge/Active-112-green">   <img src="https://img.shields.io/badge/Rejected-50-red">   <img src="https://img.shields.io/badge/Interviews-5-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **226 positions** across multiple industries. Currently, **118 applications remain active**, and **41 likely inactive**, with **4 interviews** completed.
+So far, I've applied to **226 positions** across multiple industries. Currently, **112 applications remain active**, and **40 likely inactive**, with **5 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -27,15 +27,15 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 <table align="center"><tr><td align="left" width="50%">
 
 - **Total Applications:** 226  
-- 🕐 **Active / Pending:** 118  
-- ⏳ **Likely Inactive:** 41  
-- ❌ **Rejected:** 48  
+- 🕐 **Active / Pending:** 112  
+- ⏳ **Likely Inactive:** 40  
+- ❌ **Rejected:** 50  
 
 </td><td align="left" width="50%">
 
-- 💬 **Interviewed:** 4  
+- 💬 **Interviewed:** 5  
 - ✅ **Hired / Offer:** 0  
-- 🗓️ **Last Updated:** October 31, 2025  
+- 🗓️ **Last Updated:** November 4, 2025  
 
 </td></tr></table>
 
@@ -45,13 +45,13 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left">
 
-- 📈 **Success Rate:** 1.8%  
-- 📦 **Closed:** 19  
+- 📈 **Success Rate:** 2.2%  
+- 📦 **Closed:** 24  
 - 🌐 **Top Source:** Indeed  
-- ⚡ **Avg Applications per Week:** 8.1  
-- 🕐 **Still Waiting (Applied Only):** 156  
+- ⚡ **Avg Applications per Week:** 7.9  
+- 🕐 **Still Waiting (Applied Only):** 149  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 47 days  
+- 📆 **Avg Days Since Application:** 51 days  
 - 🆕 **Most Recent:** [Blue Bird Day LLC](https://bluebirddayprogram.com/) — Teacher Assistant (10/29/2025)  
 </td></tr></table>
 
@@ -99,7 +99,7 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 | [The Gwen Chicago](https://www.thegwenchicago.com/) | Server | Hospitality / Restaurant | Chicago, IL | Rejected | 10/29/2025 | Indeed | Luxury hotel restaurant environment; high standards of service, guest-facing role in upscale setting. |
 | [Chicago Winery](https://www.chicagowinery.com/) | Tasting Room Server | Hospitality / Beverage | Chicago, IL | Applied | 10/29/2025 | Indeed | Wine/tasting room service job; combines retail, hospitality and wine knowledge. |
 | [Willow Tree Care Center](https://www.willowtreechicago.com/) | Teaching Assistant - PART TIME | Teaching | Chicago, IL | Applied | 10/29/2025 | Indeed | Part-time teaching assistant role in an early childhood environment. |
-| [Zen Dogs Chicago](https://zendogschicago.com/) | Dog Handler | Animal Care | Chicago, IL | Applied | 10/29/2025 | Indeed | Dog handler role supervising play, monitoring behavior, and ensuring a safe environment for dogs in a city daycare setting. |
+| [Zen Dogs Chicago](https://zendogschicago.com/) | Dog Handler | Animal Care | Chicago, IL | Rejected | 10/29/2025 | Indeed | Dog handler role supervising play, monitoring behavior, and ensuring a safe environment for dogs in a city daycare setting. |
 | [CHC Wellness](https://www.chcw.com/) | Help Desk Support Specialist - Tier 1 | IT | Chicago, IL | Applied | 10/28/2025 | Indeed | As a Help Desk Support Specialist at CHC Wellbeing, you’ll be the first point of contact for technical issues, helping both internal staff and program participants troubleshoot IT-and-software problems while supporting the company’s wellbeing technology infrastructure so everyone can focus on thriving rather than fighting tools. |
 | [Raden Wellness](https://www.radenwellness.com/) | Receptionist | Healthcare / Admin | Chicago, IL | Applied | 10/28/2025 | Indeed | First point of contact for patients with phone triage, appointment scheduling, and front-desk support in a functional wellness clinic focused on health optimization. |
 | [The Goddess and Grocer – Gold Coast](https://www.thegoddessandgrocer.com/) | Front of House Staff | Hospitality / Food Service | Chicago, IL | Applied | 10/28/2025 | Indeed | Full-time FOH role handling barista duties, guest service, counter operations and maintaining beautiful store displays in a gourmet food market setting. |
@@ -111,7 +111,7 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 | [Happy Camper – Wrigley](https://www.happycamper.pizza/) | Server | Hospitality / Restaurant | Chicago, IL | Applied | 10/28/2025 | Indeed | High-energy server role delivering friendly, fast service and managing multiple tables in a popular Clark Street pizzeria with strong tips and flexible scheduling. |
 | [SDI Presence](https://sdipresence.com/) | Apprentice (ServiceNow & Power BI) | IT / Apprenticeship | Chicago, IL (Hybrid) | Interview | 10/28/2025 | Indeed | Early-career hybrid role supporting Agile workflows, translating requirements, and coordinating between ServiceNow and Power BI teams for enterprise software integration projects. |
 | [Murgado Automotive Group](https://www.murgadoautomotivegroup.com/) | IT Helpdesk Technician | IT Support | Chicago, IL | Applied | 10/28/2025 | Indeed | Full-time help desk role providing first-line technical support, resolving hardware/software issues, managing accounts, and supporting users across Chicago dealership locations. |
-| [Supernova Technology](https://www.supernovacompanies.com/careers) | Junior Software Engineer | Software | Chicago, IL | Applied | 10/28/2025 | LinkedIn | Full-time engineering role building and maintaining software features. Opportunity to grow technical skills in an on-site collaborative environment at a Chicago fintech company. |
+| [Supernova Technology](https://www.supernovacompanies.com/careers) | Junior Software Engineer | Software | Chicago, IL | Rejected | 10/28/2025 | LinkedIn | Full-time engineering role building and maintaining software features. Opportunity to grow technical skills in an on-site collaborative environment at a Chicago fintech company. (Interviewed) |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Animal Care Associate | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Daily feeding, cleaning, enrichment, medication logging, and maintaining clean kennel and common areas for dogs and cats in a shelter environment. |
 | [The Dog Stop – Bucktown](https://www.thedogstop.com/locations/chicago-bucktown/) | Dog Handler and Daycare Attendant | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Supervise playgroups, ensure dog safety and enrichment, maintain clean kennels and play areas, assist with feeding and meds, and document behavior and health observations. |
 | [Wag Hotels – Dog Service Specialist (Seasonal)](https://waghotels.com/locations/chicago-il/) | Dog Service Specialist - Part Time - Seasonal | Animal Care | Chicago, IL | Applied | 10/27/2025 | Indeed | Supports dog play sessions, monitors behavior, cleans and maintains rooms/play areas, documents notes on dogs, and assists with weekend/holiday coverage in a fast-paced pet hotel environment. |
@@ -121,7 +121,7 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 | [Caboodle Media](https://caboodle.media/) | AI Operational Specialist | AI | United States (Remote) | Applied | 10/26/2025 | LinkedIn | Remote, part-time position focusing on using AI tools to solve technical challenges, support agency projects, and help build and launch an AI-powered SaaS product in a fast-paced startup environment. |
 | [CAI](https://careers.cai.io/us/en/apply?jobSeqNo=CAICAIUSR6485EXTERNALENUS&utm_source=linkedin&utm_medium=phenom-feeds&step=1&stepname=personalInformation) | Administrative Support Worker | IT Support | Evanston, IL | Rejected | 10/26/2025 | Company Website | Provide administrative support for scholarship programs including reviewing applications, maintaining student records, managing correspondence, and assisting with general office operations on-site. |
 | [CAI](https://www.linkedin.com/jobs/view/4017049324/) | Network and Systems Administrator | IT operations | Evanston, IL | Rejected | 10/26/2025 | Company Website | Support, configure, and maintain network infrastructure and Windows server systems, ensuring reliable performance, troubleshooting issues, deploying updates, and assisting IT operations on-site. |
-| [Addison Public Library](https://www.ziprecruiter.com/c/Addison-Public-Library/Job/IT-Services-Associate/-in-Addison,IL) | IT Services Associate | IT Support | Addison, IL | Applied | 10/26/2025 | ZipRecruiter | Provide in-person technology support and circulation assistance for staf and library patrons, troubleshooting devices, maintaining equipment, and helping ensure smooth daily operations. |
+| [Addison Public Library](https://www.ziprecruiter.com/c/Addison-Public-Library/Job/IT-Services-Associate/-in-Addison,IL) | IT Services Associate | IT Support | Addison, IL | Closed | 10/26/2025 | ZipRecruiter | Provide in-person technology support and circulation assistance for staf and library patrons, troubleshooting devices, maintaining equipment, and helping ensure smooth daily operations. |
 | [SPS North America](https://www.ziprecruiter.com/c/SPS-North-America/Job/AV-IT-Support/-in-Chicago,IL) | AV/IT Support Technician | IT Support | Chicago, IL | Applied | 10/26/2025 | ZipRecruiter | Responsible for the operation, maintenance, and troubleshooting of audio-visual equipment to support meetings, events, and day-to-day business needs. |
 | [Constellation Brands](https://www.ziprecruiter.com/c/Constellation-Brands/Job/Intern,-Information-Technology/-in-Chicago,IL) | Information Technology Intern | IT | Chicago, IL | Applied | 10/26/2025 | Company Website | Support IT operations at Constellation Brands' Chicago office, assisting with technical troubleshoorting, device setup, and systems administration while gaining hands-on industry experience. |
 | [Ignite Medical Resorts](https://www.ziprecruiter.com/c/Ignite-Medical-Resorts/Job/Help-Desk-Support-Specialist/-in-Park-Ridge,IL) | Help Desk Support Specialist | IT | Park Ridge, IL | Applied | 10/26/2025 | Company Website | Full-time help desk support role at Ignite Medical Resorts, Park Ridge, IL 60068; diagnosing and resolving technical issues, managing hardware & software support, and serving campus users. |
@@ -256,12 +256,12 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 | [Wakamono](https://www.wakamonosush) | Food Runner | Service | Chicago, IL | Rejected | 08/29/2025 | Indeed | Japanese food and cocktails in a casual, modern setting with a patio. |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Adoption Services Associate | Animal Care / Service | Chicago, IL | Applied | 08/29/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [METTLER TOLEDO](https://www.mt.com/us/en/home/careers.html) | Software Engineer | Software | Changzhou Shi, China | Applied | 08/07/2025 | LinkedIn | <span style='color:#999;'>—</span> |
-| [Supernova Companies](https://www.supernovacompanies.com/careers) | Entry Level Software Engineer | Software | Chicago, IL | Applied | 08/07/2025 | LinkedIn | <span style='color:#999;'>—</span> |
-| [Supernova Companies](https://www.supernovacompanies.com/careers) | Data Analyst | Data | Chicago, IL | Applied | 08/07/2025 | LinkedIn | <span style='color:#999;'>—</span> |
+| [Supernova Companies](https://www.supernovacompanies.com/careers) | Entry Level Software Engineer | Software | Chicago, IL | Closed | 08/07/2025 | LinkedIn | <span style='color:#999;'>—</span> |
+| [Supernova Companies](https://www.supernovacompanies.com/careers) | Data Analyst | Data | Chicago, IL | Closed | 08/07/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Magnifact](https://www.magnifact.com/careers) | Data Analyst – SQL / ETL | Data | Chicago, IL | Applied | 07/30/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Dominican University](https://www.dom.edu/hr/employment-opportunities) | Web Developer | Software / Web | Chicago, IL | Applied | 07/30/2025 | LinkedIn | Front-end and back-end development experience for academic sites. |
 | [Capgemini America Inc.](https://www.capgemini.com/us-en/careers/) | Chicago Junior Developer | Software | Chicago, IL / New York, NY | Rejected | 07/30/2025 | LinkedIn | Entry-level consulting role supporting enterprise software delivery within a global team. Interview completed but not selected. Gained useful insight into client-focused communication expectations. |
-| [Oak Street Health](https://www.oakstreethealth.com/careers) | Medical Scribe | Healthcare / IT | Chicago, IL | Applied | 07/26/2025 | LinkedIn | <span style='color:#999;'>—</span> |
+| [Oak Street Health](https://www.oakstreethealth.com/careers) | Medical Scribe | Healthcare / IT | Chicago, IL | Closed | 07/26/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [SFORCE IT](https://www.sforceit.com/) | Robotic Process Automation Developer | Automation / IT | Chicago, IL / Dallas, TX | Applied | 07/26/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Sunixa Solutions Inc.](https://sunixasolutions.com/careers) | AI/ML Engineer | AI / Software | Remote | Applied | 07/26/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [SoftStandard Solutions](https://www.softstandard.com/careers) | Data Engineer – Python Development with AI/ML | Data / AI | Remote | Applied | 07/26/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -278,7 +278,7 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 | [SCB Global](https://www.scbglobal.com/) | Data Support Engineer | IT Support | Remote / Chicago, IL | Applied | 07/25/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [ifm efector inc](https://www.ifm.com/) | Software Developer, SAP Applications | Software | Remote / Chicago, IL | Applied | 07/25/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [Antra Inc.](https://www.antra.com/careers) | Java Full Stack Developer | Software | Hybrid / Chicago, IL / Sterling, VA | Applied | 07/25/2025 | Handshake | <span style='color:#999;'>—</span> |
-| [Supernova Companies](https://www.supernovacompanies.com/careers) | Program Analyst | Data / Business | Chicago, IL | Applied | 07/25/2025 | Handshake | <span style='color:#999;'>—</span> |
+| [Supernova Companies](https://www.supernovacompanies.com/careers) | Program Analyst | Data / Business | Chicago, IL | Closed | 07/25/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [Aclipse](https://www.aclipse.net/) | Teach English in Korea | Education / International | Seoul, South Korea | Applied | 07/25/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Adoption Services Associate | Animal Care / Service | Chicago, IL | Applied | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Lawrence Fish Market](#) | Sushi Chef Assistant | Culinary | Chicago, IL | Closed | 07/20/2025 | Indeed | <span style='color:#999;'>—</span> |
@@ -322,8 +322,8 @@ So far, I've applied to **226 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 226 total — 🕐 118 active — ⏳ 41 likely inactive — ❌ 48 rejected — 💬 4 interviews — ✅ 0 hired.**
+**Summary:** 📋 226 total — 🕐 112 active — ⏳ 40 likely inactive — ❌ 50 rejected — 💬 5 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
-*Last updated October 31, 2025.*
+*Last updated November 4, 2025.*

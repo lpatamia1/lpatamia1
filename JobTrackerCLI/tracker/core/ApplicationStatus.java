@@ -14,11 +14,16 @@ package tracker.core;
 import java.util.Locale;
 
 public enum ApplicationStatus {
-    APPLIED, 
-    INTERVIEW, 
-    REJECTED, 
-    HIRED, 
-    CLOSED, 
+    APPLIED,
+    INTERVIEW,
+    TECHNICAL,
+    FINAL,
+    PHONE,
+    REAPPLY,
+    REJECTED,
+    HIRED,
+    CLOSED,
+    GHOSTED,
     OTHER;
 
     /**

@@ -94,7 +94,25 @@ public class MenuHandler {
         if (editChoice.equals("y")) {
             System.out.print("✏️  New Status (leave blank to keep): ");
             String newStatus = sc.nextLine().trim();
-            if (!newStatus.isEmpty()) a.setStatus(ApplicationStatus.from(newStatus));
+
+            if (!newStatus.isEmpty()) {
+                ApplicationStatus oldStatus = a.getStatus(); // track what it was before
+                String normalized = newStatus.trim().toUpperCase();
+
+                try {
+                    a.setStatus(ApplicationStatus.valueOf(normalized));
+                } catch (IllegalArgumentException e) {
+                    System.out.println(UIHelper.ORANGE + "⚠️  Unknown status. Saved as custom note instead." + UIHelper.RESET);
+                    a.setNotes((a.getNotes() == null ? "" : a.getNotes() + " ") + "[Status: " + newStatus + "]");
+                }
+
+                // 🪄 Auto-tag interview → rejected
+                if (oldStatus == ApplicationStatus.INTERVIEW &&
+                    a.getStatus() == ApplicationStatus.REJECTED &&
+                    (a.getNotes() == null || !a.getNotes().toLowerCase().contains("interview"))) {
+                    a.setNotes((a.getNotes() == null ? "" : a.getNotes() + " ") + "(Interviewed)");
+                }
+            }
 
             System.out.print("📍 New Location (leave blank to keep): ");
             String newLocation = sc.nextLine().trim();
@@ -228,6 +246,24 @@ public class MenuHandler {
         String s = a.getStatus().name().toLowerCase();
         String notes = (a.getNotes() == null ? "" : a.getNotes().toLowerCase());
 
+        // Combined cases first
+        if ((s.contains("reject") && notes.contains("technical") && notes.contains("interview")) ||
+        (s.contains("technical") && s.contains("reject") && notes.contains("interview")) ||
+        (s.contains("reject") && s.contains("interview") && notes.contains("technical"))) 
+        {
+        return "❌ Rejected 🧪 Technical 🎤 Interviewed";
+        }
+        if (s.contains("reject") && notes.contains("interview"))
+        {
+            return "❌ Rejected 🎤 Interviewed";
+        }
+        if ((s.contains("reject") && notes.contains("technical")) || (s.contains("technical") && notes.contains("reject"))) 
+        {
+            return "❌ Rejected 🧪 Technical";
+        }
+        if (s.contains("reject")) return "❌ Rejected";
+
+        // Then everything else
         if (s.contains("hire")) return "🎉 Hired";
         if (s.contains("close")) return "🔒 Closed";
         if (s.contains("phone") || notes.contains("phone")) return "📩 Phone Screen";
@@ -235,11 +271,8 @@ public class MenuHandler {
         if (s.contains("final") || notes.contains("final")) return "👥 Final Interview";
         if (s.contains("ghost") || notes.contains("ghost")) return "⛔ Ghosted";
         if (s.contains("reapply") || notes.contains("reapply")) return "🔁 Reapplied";
-        if (s.contains("reject") && notes.contains("interview")) return "❌ Rejected 🎤 Interviewed";
-        if (s.contains("reject")) return "❌ Rejected";
         if (s.contains("interview") || notes.contains("interview")) return "🎤 Interview";
 
         return "⏳ Applied";
     }
-
 }
