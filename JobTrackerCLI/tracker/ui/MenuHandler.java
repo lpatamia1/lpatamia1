@@ -286,5 +286,4 @@ public class MenuHandler {
 
         return "⏳ Applied";
     }
-
 }
