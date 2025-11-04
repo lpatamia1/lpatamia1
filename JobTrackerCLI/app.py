@@ -36,11 +36,35 @@ def dashboard():
     hired = (df['Status'].str.contains('HIRE', case=False, na=False)).sum()
     active = (df['Status'].str.contains('APPLIED', case=False, na=False)).sum()
 
-    # 🟪 By status
+    # 🧹 Normalize status values BEFORE counting
+    df['Status'] = df['Status'].astype(str).str.strip().str.lower()
+
+    status_map = {
+        'applied': 'APPLIED',
+        'apply': 'APPLIED',
+        'application sent': 'APPLIED',
+        'submitted': 'APPLIED',
+        'interview': 'INTERVIEW',
+        'technical': 'TECHNICAL',
+        'technical interview': 'TECHNICAL',
+        'final': 'FINAL',
+        'phone': 'PHONE',
+        'reapply': 'REAPPLY',
+        'rejected': 'REJECTED',
+        'hire': 'HIRED',
+        'offer': 'HIRED',
+        'closed': 'CLOSED',
+        'ghosted': 'GHOSTED',
+        'shortlist': 'SHORTLISTED'
+    }
+    df['Status'] = df['Status'].replace(status_map)
+
+    # 🟪 Now safely count by status
     by_status = df['Status'].value_counts().to_dict()
 
     # 🟩 By source
     by_source = df['Source'].value_counts().nlargest(8).to_dict()
+
     print("📄 CSV Columns:", list(df.columns))
 
     # 🔍 Count research-related applications

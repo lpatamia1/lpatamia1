@@ -17,7 +17,10 @@ function getChartPadding() {
 // 🟣 STATUS CHART
 {
   const ctx = document.getElementById('statusChart').getContext('2d');
-  const labels = Object.keys(statusData);
+  // Manually rename "other" → "APPLIED" for the x-axis
+  const labels = Object.keys(statusData).map(l =>
+    l.toLowerCase() === "other" ? "APPLIED" : l
+  );
   const data = Object.values(statusData);
 
   const gradientStatus = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
