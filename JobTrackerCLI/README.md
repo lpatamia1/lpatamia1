@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-229-blue">   <img src="https://img.shields.io/badge/Active-154-green">   <img src="https://img.shields.io/badge/Rejected-51-red">   <img src="https://img.shields.io/badge/Interviews-9-yellow">
+  <img src="https://img.shields.io/badge/Total-229-blue">   <img src="https://img.shields.io/badge/Active-153-green">   <img src="https://img.shields.io/badge/Rejected-52-red">   <img src="https://img.shields.io/badge/Interviews-9-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **229 positions** across multiple industries. Currently, **154 applications remain active**, and **0 likely inactive**, with **9 interviews** completed.
+So far, I've applied to **229 positions** across multiple industries. Currently, **153 applications remain active**, and **0 likely inactive**, with **9 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -27,9 +27,9 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 <table align="center"><tr><td align="left" width="50%">
 
 - **Total Applications:** 229  
-- 🕐 **Active / Pending:** 154  
+- 🕐 **Active / Pending:** 153  
 - ⏳ **Likely Inactive:** 0  
-- ❌ **Rejected:** 51  
+- ❌ **Rejected:** 52  
 
 </td><td align="left" width="50%">
 
@@ -180,7 +180,7 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 | [Duke Animal Hospital](https://www.dukeanimalhospital.com/) | Veterinary Customer Service Representative | Animal Care | Roscoe Village, Chicago, IL | Other | 10/21/2025 | Indeed | Combines client communication with pet care coordination; ideal for empathy and multitasking. |
 | [Happy Camper](https://www.happycamper.pizza/) | Bartender | Hospitality | River North, Chicago, IL | Other | 10/21/2025 | Indeed | Upbeat nightlife role emphasizing multitasking and customer engagement. |
 | [Museum of Ice Cream](https://www.museumoficecream.com/careers) | Service Ambassador | Hospitality | Chicago, IL | Rejected | 10/21/2025 | Indeed | <span style='color:#999;'>—</span> |
-| [Capgemini](https://www.capgemini.com/) | Junior Data Analyst | Data Analyst | Chicago, IL / New York City, NY | Other | 10/21/2025 | Handshake | Scientific and tech consulting. |
+| [Capgemini](https://www.capgemini.com/) | Junior Data Analyst | Data Analyst | Chicago, IL / New York City, NY | Rejected | 10/21/2025 | Handshake | Scientific and tech consulting. |
 | [The Peninsula — F&B Back Server Application](https://career10.successfactors.com/portalcareer?_s.crb=pOAhKgrGyC9ca%252b8vumVZ3dFeeNf%252bBXbckKb4n4aQz7s%253d) | Food & Beverage Server | Hospitality / Service / Restaurant | Magnificent Mile, Chicago, IL | Other | 10/20/2025 | Company Website | High-end hospitality with attention to detail. |
 | [Business Development Sales Representative – Chicago, IL (January 2026 Start)](https://transportationinsight.wd1.myworkdayjobs.com/en-US/TI_NTG_External_Careers) | Business Development Sales Representative | Business / Sales | Downtown Chicago, IL | Other | 10/20/2025 | Company Website | Entry-level corporate sales; enhances client outreach, pipeline management, and persuasive communication abilities. |
 | [Insight Global](https://www.insightglobal.com) | Remote Data Analyst | IT / Data Analyst (Contract, Remote) | United States | Other | 10/20/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -325,7 +325,7 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 229 total — 🕐 154 active — ⏳ 0 likely inactive — ❌ 51 rejected — 💬 9 interviews — ✅ 0 hired.**
+**Summary:** 📋 229 total — 🕐 153 active — ⏳ 0 likely inactive — ❌ 52 rejected — 💬 9 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
