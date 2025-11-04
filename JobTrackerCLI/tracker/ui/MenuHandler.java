@@ -97,12 +97,14 @@ public class MenuHandler {
 
             if (!newStatus.isEmpty()) {
                 ApplicationStatus oldStatus = a.getStatus(); // track what it was before
-                String normalized = newStatus.trim().toUpperCase();
-
                 try {
-                    a.setStatus(ApplicationStatus.valueOf(normalized));
-                } catch (IllegalArgumentException e) {
+                    // Use smart text-to-status mapping instead of strict enum name
+                    a.setStatus(ApplicationStatus.from(newStatus));
+                } catch (Exception e) {
                     System.out.println(UIHelper.ORANGE + "⚠️  Unknown status. Saved as custom note instead." + UIHelper.RESET);
+                    System.out.println(UIHelper.LAVENDER +
+                        "💡 Try one of: Applied, Interview, Technical, Final, Phone, Reapply, Rejected, Hired, Closed, Ghosted."
+                        + UIHelper.RESET);
                     a.setNotes((a.getNotes() == null ? "" : a.getNotes() + " ") + "[Status: " + newStatus + "]");
                 }
 
@@ -244,23 +246,32 @@ public class MenuHandler {
     // 🎀 Status Badges for all outcomes
     private String statusBadge(JobApplication a) {
         String s = a.getStatus().name().toLowerCase();
-        String notes = (a.getNotes() == null ? "" : a.getNotes().toLowerCase());
+
+        // 🪄 Normalize notes: strip [Status:] tags and extra symbols for easier keyword detection
+        String notes = (a.getNotes() == null ? "" : a.getNotes()
+            .toLowerCase()
+            .replace("[status:", "")
+            .replace("]", "")
+            .replace("(", "")
+            .replace(")", "")
+            .trim());
 
         // Combined cases first
-        if ((s.contains("reject") && notes.contains("technical") && notes.contains("interview")) ||
-        (s.contains("technical") && s.contains("reject") && notes.contains("interview")) ||
-        (s.contains("reject") && s.contains("interview") && notes.contains("technical"))) 
-        {
-        return "❌ Rejected 🧪 Technical 🎤 Interviewed";
+        if ((s.contains("reject") && notes.contains("technical") && (notes.contains("interview") || notes.contains("interviewed"))) ||
+            (s.contains("technical") && s.contains("reject") && (notes.contains("interview") || notes.contains("interviewed"))) ||
+            (s.contains("reject") && (notes.contains("interview") || notes.contains("interviewed")) && notes.contains("technical"))) {
+            return "❌ Rejected 🧪 Technical 🎤 Interviewed";
         }
-        if (s.contains("reject") && notes.contains("interview"))
-        {
+
+        if (s.contains("reject") && (notes.contains("interview") || notes.contains("interviewed"))) {
             return "❌ Rejected 🎤 Interviewed";
         }
-        if ((s.contains("reject") && notes.contains("technical")) || (s.contains("technical") && notes.contains("reject"))) 
-        {
+
+        if ((s.contains("reject") && notes.contains("technical")) || 
+            (s.contains("technical") && notes.contains("reject"))) {
             return "❌ Rejected 🧪 Technical";
         }
+
         if (s.contains("reject")) return "❌ Rejected";
 
         // Then everything else
@@ -271,8 +282,9 @@ public class MenuHandler {
         if (s.contains("final") || notes.contains("final")) return "👥 Final Interview";
         if (s.contains("ghost") || notes.contains("ghost")) return "⛔ Ghosted";
         if (s.contains("reapply") || notes.contains("reapply")) return "🔁 Reapplied";
-        if (s.contains("interview") || notes.contains("interview")) return "🎤 Interview";
+        if (s.contains("interview") || notes.contains("interview") || notes.contains("interviewed")) return "🎤 Interview";
 
         return "⏳ Applied";
     }
+
 }
