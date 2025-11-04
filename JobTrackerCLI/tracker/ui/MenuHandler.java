@@ -275,6 +275,7 @@ public class MenuHandler {
         if (s.contains("reject")) return "❌ Rejected";
 
         // Then everything else
+        if (s.contains("shortlist") || notes.contains("shortlist")) return "⭐ Shortlisted";
         if (s.contains("hire")) return "🎉 Hired";
         if (s.contains("close")) return "🔒 Closed";
         if (s.contains("phone") || notes.contains("phone")) return "📩 Phone Screen";

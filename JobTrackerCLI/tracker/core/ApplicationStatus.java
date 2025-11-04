@@ -24,6 +24,7 @@ public enum ApplicationStatus {
     HIRED,
     CLOSED,
     GHOSTED,
+    SHORTLISTED,
     OTHER;
 
     /**
@@ -33,6 +34,8 @@ public enum ApplicationStatus {
     public static ApplicationStatus from(String status) {
         if (status == null || status.isBlank()) return OTHER;
         String s = status.toLowerCase(Locale.ROOT).trim();
+        // 📝 Shortlisted
+        if (s.contains("shortlist")) return SHORTLISTED; 
 
         // 🎯 Rejections & closures
         if (s.contains("reject") || s.contains("decline") || s.contains("not selected")) return REJECTED;

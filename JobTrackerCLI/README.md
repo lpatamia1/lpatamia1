@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-227-blue">   <img src="https://img.shields.io/badge/Active-154-green">   <img src="https://img.shields.io/badge/Rejected-49-red">   <img src="https://img.shields.io/badge/Interviews-7-yellow">
+  <img src="https://img.shields.io/badge/Total-229-blue">   <img src="https://img.shields.io/badge/Active-154-green">   <img src="https://img.shields.io/badge/Rejected-51-red">   <img src="https://img.shields.io/badge/Interviews-9-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **227 positions** across multiple industries. Currently, **154 applications remain active**, and **0 likely inactive**, with **7 interviews** completed.
+So far, I've applied to **229 positions** across multiple industries. Currently, **154 applications remain active**, and **0 likely inactive**, with **9 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -26,14 +26,14 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left" width="50%">
 
-- **Total Applications:** 227  
+- **Total Applications:** 229  
 - 🕐 **Active / Pending:** 154  
 - ⏳ **Likely Inactive:** 0  
-- ❌ **Rejected:** 49  
+- ❌ **Rejected:** 51  
 
 </td><td align="left" width="50%">
 
-- 💬 **Interviewed:** 7  
+- 💬 **Interviewed:** 9  
 - ✅ **Hired / Offer:** 0  
 - 🗓️ **Last Updated:** November 4, 2025  
 
@@ -45,13 +45,13 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left">
 
-- 📈 **Success Rate:** 3.1%  
+- 📈 **Success Rate:** 3.9%  
 - 📦 **Closed:** 24  
 - 🌐 **Top Source:** Indeed  
-- ⚡ **Avg Applications per Week:** 7.9  
+- ⚡ **Avg Applications per Week:** 8.0  
 - 🕐 **Still Waiting (Applied Only):** 0  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 51 days  
+- 📆 **Avg Days Since Application:** 50 days  
 - 🆕 **Most Recent:** [Blue Bird Day LLC](https://bluebirddayprogram.com/) — Teacher Assistant (10/29/2025)  
 </td></tr></table>
 
@@ -64,7 +64,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 • **IT / Support:** 91<br>
 • **Software / Development:** 33<br>
 • **Animal Care:** 25<br>
-• **AI / Data Science:** 18<br>
+• **AI / Data Science:** 19<br>
 • **Data / Analytics:** 14<br>
 • **Other:** 12<br>
 • **Retail / Service:** 10<br>
@@ -74,12 +74,12 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 </td><td valign='top' align='left'>
 
 • **Environmental / Sustainability:** 2<br>
+• **Healthcare / Life Sciences:** 2<br>
 • **Policy / Research:** 2<br>
 • **Automation / Robotics:** 1<br>
 • **Business / Operations:** 1<br>
 • **Engineering:** 1<br>
 • **Finance:** 1<br>
-• **Healthcare / Life Sciences:** 1<br>
 • **Marketing / Communications:** 1<br>
 • **Product / Design:** 1<br>
 </td></tr></table>
@@ -113,6 +113,8 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 | [Murgado Automotive Group](https://www.murgadoautomotivegroup.com/) | IT Helpdesk Technician | IT Support | Chicago, IL | Other | 10/28/2025 | Indeed | Full-time help desk role providing first-line technical support, resolving hardware/software issues, managing accounts, and supporting users across Chicago dealership locations. |
 | [Supernova Technology](https://www.supernovacompanies.com/careers) | Junior Software Engineer | Software | Chicago, IL | Rejected | 10/28/2025 | LinkedIn | Full-time engineering role building and maintaining software features. Opportunity to grow technical skills in an on-site collaborative environment at a Chicago fintech company. (Interviewed) |
 | [Nolan Transportation Group](https://ntgfreight.com/careers) | Business Development Sales Representative | Sales | Chicago, IL | Interview | 10/28/2025 | Indeed | Research leads and cold-call potential clients to generate new business. |
+| [Snorkel AI](https://snorkel.ai/careers) | AI Training Contributor | AI / Data Annotation | Remote | Interview | 10/28/2025 | Indeed | Assist in training and evaluating machine learning models. |
+| [Tarian Group](https://www.tariangroup.com/join-our-team) | BioMed Field Service Technician III | Medical Equipment Service | Chicago, IL | Rejected | 10/28/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Animal Care Associate | Animal Care | Chicago, IL | Other | 10/27/2025 | Indeed | Daily feeding, cleaning, enrichment, medication logging, and maintaining clean kennel and common areas for dogs and cats in a shelter environment. |
 | [The Dog Stop – Bucktown](https://www.thedogstop.com/locations/chicago-bucktown/) | Dog Handler and Daycare Attendant | Animal Care | Chicago, IL | Other | 10/27/2025 | Indeed | Supervise playgroups, ensure dog safety and enrichment, maintain clean kennels and play areas, assist with feeding and meds, and document behavior and health observations. |
 | [Wag Hotels – Dog Service Specialist (Seasonal)](https://waghotels.com/locations/chicago-il/) | Dog Service Specialist - Part Time - Seasonal | Animal Care | Chicago, IL | Other | 10/27/2025 | Indeed | Supports dog play sessions, monitors behavior, cleans and maintains rooms/play areas, documents notes on dogs, and assists with weekend/holiday coverage in a fast-paced pet hotel environment. |
@@ -165,7 +167,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 | [Found Chicago Boarding & Training Center](https://www.foundtrainingcenter.com) | Dog Handler / Dog Training Apprentice | Animal Care | Chicago, IL | Interview | 10/21/2025 | Indeed | Experience handling large breeds and maintaining safe play groups. |
 | [TeamLogic IT](https://www.teamlogicit.com) | Field IT Technician | IT Support | Chicago, IL (Hybrid with Suburban Client Visits) | Other | 10/21/2025 | Indeed | Clarified hybrid field structure; hands-on IT troubleshooting across local client sites. |
 | [Windy City Paws](https://www.windycitypaws.com) | Dog Walker | Animal Care | Lakeview, Chicago, IL | Rejected | 10/21/2025 | Indeed | Interview completed → not selected |
-| [Chicago Cubs](https://www.mlb.com/cubs) | IT Help Desk Technician | IT Support | The Loop, Chicago, IL | Other | 10/21/2025 | Company Website | Public-facing IT support; strong addition for well-known organization experience. |
+| [Chicago Cubs](https://www.mlb.com/cubs) | IT Help Desk Technician | IT Support | The Loop, Chicago, IL | Interview | 10/21/2025 | Company Website | Public-facing IT support; strong addition for well-known organization experience. |
 | [The Phoenix Group](https://www.thephoenixgroup.com) | Help Desk Specialist | IT Support / Contract | River North, Chicago, IL (Hybrid) | Other | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [Northwestern University](https://www.northwestern.edu) | Technical Support Specialist | IT Support | Evanston, IL | Other | 10/21/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [WillHire](https://www.willhire.co) | Cyber Security Intern | Cybersecurity / Internship (Remote) | United States (Remote) | Other | 10/21/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -304,7 +306,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 | [Blue Cross Blue Shield (HCSC)](https://jobs.hcsc.com/) | Associate Systems Analyst | Healthcare / IT | Hybrid / Chicago, IL | Other | 06/27/2025 | Handshake | Entry-level healthcare IT; solid training in system documentation and process optimization. |
 | [Epic Systems Corporation](https://careers.epic.com/) | Software Developer | Software | Onsite / Verona, WI | Other | 06/27/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [Belay Diagnostics](https://belaydiagnostics.com/careers) | Intern, Technical Project & Systems Management | Biotech / IT | Hybrid / Chicago, IL | Other | 06/26/2025 | Handshake | <span style='color:#999;'>—</span> |
-| [Siemens Digital Industries Software](https://www.siemens.com/global/en/company/jobs.html) | Software Development Intern | Software | Hybrid / Marlborough, MA / Huntsville, AL | Other | 06/26/2025 | Handshake | <span style='color:#999;'>—</span> |
+| [Siemens Digital Industries Software](https://www.siemens.com/global/en/company/jobs.html) | Software Development Intern | Software | Hybrid / Marlborough, MA / Huntsville, AL | Rejected | 06/26/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [Vantero](https://vantero.ai/) | Software Engineering / LLM Intern | AI / Software | Remote | Other | 06/26/2025 | Handshake | <span style='color:#999;'>—</span> |
 | [Catholic Extension](https://www.catholicextension.org/about/careers/) | AI Data Strategy Intern | AI / Nonprofit | Onsite / Chicago, IL | Other | 06/26/2025 | Handshake | Merges data analysis with nonprofit goals; emphasizes AI ethics and data interpretation. |
 | [Fynite Corp.](https://fynite.ai/careers) | Data Scientist | Data | Remote / U.S. | Other | 06/26/2025 | Handshake | <span style='color:#999;'>—</span> |
@@ -323,7 +325,7 @@ So far, I've applied to **227 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 227 total — 🕐 154 active — ⏳ 0 likely inactive — ❌ 49 rejected — 💬 7 interviews — ✅ 0 hired.**
+**Summary:** 📋 229 total — 🕐 154 active — ⏳ 0 likely inactive — ❌ 51 rejected — 💬 9 interviews — ✅ 0 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
