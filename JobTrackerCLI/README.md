@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-233-blue">   <img src="https://img.shields.io/badge/Active-153-green">   <img src="https://img.shields.io/badge/Rejected-54-red">   <img src="https://img.shields.io/badge/Interviews-8-yellow">
+  <img src="https://img.shields.io/badge/Total-235-blue">   <img src="https://img.shields.io/badge/Active-155-green">   <img src="https://img.shields.io/badge/Rejected-54-red">   <img src="https://img.shields.io/badge/Interviews-8-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **233 positions** across multiple industries. Currently, **153 applications remain active**, and **0 likely inactive**, with **8 interviews** completed.
+So far, I've applied to **235 positions** across multiple industries. Currently, **155 applications remain active**, and **0 likely inactive**, with **8 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -26,8 +26,8 @@ So far, I've applied to **233 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left" width="50%">
 
-- **Total Applications:** 233  
-- 🕐 **Active / Pending:** 153  
+- **Total Applications:** 235  
+- 🕐 **Active / Pending:** 155  
 - ⏳ **Likely Inactive:** 0  
 - ❌ **Rejected:** 54  
 
@@ -61,11 +61,11 @@ So far, I've applied to **233 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td valign='top' align='left'>
 
-• **IT / Support:** 94<br>
+• **IT / Support:** 95<br>
 • **Software / Development:** 33<br>
 • **Animal Care:** 25<br>
 • **AI / Data Science:** 19<br>
-• **Data / Analytics:** 15<br>
+• **Data / Analytics:** 16<br>
 • **Other:** 12<br>
 • **Retail / Service:** 10<br>
 • **Administration:** 6<br>
@@ -97,6 +97,8 @@ So far, I've applied to **233 positions** across multiple industries. Currently,
 | [Talkdesk](https://www.linkedin.com/company/talkdesk/) | Technical Support Engineer | IT / Customer Support | Remote | Other | 11/13/2025 | LinkedIn | Full-time remote Technical Support Engineer role. Promoted post actively reviewing applicants. |
 | [Data Axle](https://www.linkedin.com/company/data-axle/) | Human Resources Systems and Data Analyst | Data / HR Analytics | Remote | Other | 11/13/2025 | LinkedIn | Full-time remote Human Resources Systems and Data Analyst role. |
 | [Reynolds and Reynolds](https://www.reyrey.com/) | Entry Level Customer Training Specialist - Traveling | IT / Customer Support | Chicago, IL | Other | 11/13/2025 | Indeed | Full-time traveling Customer Training Specialist role based in Chicago focused on customer software training and support. |
+| [Simon Hegele Healthcare Solutions](https://www.linkedin.com/company/simon-hegele-healthcare-solutions/) | Data Analyst | Data / Operations | Wood Dale, IL (Hybrid) | Other | 11/13/2025 | LinkedIn | Full-time hybrid Data Analyst role ($70K/year). Focus on operational data analysis, performance metrics, and process improvement. Works with operations and finance teams. Hiring contact: Lindsay Parochelli (Talent Acquisition Specialist). |
+| [The Planet Group](https://www.linkedin.com/company/the-planet-group/) | Recruiter – Recent Graduates | HR / Recruiting | Chicago, IL (On-site) | Other | 11/13/2025 | LinkedIn | Full-time on-site Recruiter role ($50K/year) for recent graduates. Promoted post actively reviewing applicants. |
 | [Blue Bird Day LLC](https://bluebirddayprogram.com/) | Teacher Assistant | Teaching | Chicago, IL | Other | 10/29/2025 | Indeed | Therapeutic preschool/kindergarten setting – early childhood support role with focus on developmental skills. |
 | [Grand Cru Chicago](https://www.grandcruchicago.com/) | Wine Bar Server | Hospitality / Retail | Chicago, IL | Other | 10/29/2025 | Indeed | Part-time wine bar/retail store role; talk wine, fast-paced service, flexible schedule. |
 | [Qiao Lin Hotpot](https://www.choosechicago.com/listing/qiao-lin-hotpot-streeterville/) | Server | Hospitality / Restaurant | Chicago, IL | Other | 10/29/2025 | Indeed | Authentic Chongqing-style hot pot concept in Streeterville; high energy dining, front-of-house guest service. |
@@ -329,7 +331,7 @@ So far, I've applied to **233 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 233 total — 🕐 153 active — ⏳ 0 likely inactive — ❌ 54 rejected — 💬 8 interviews — ✅ 2 hired.**
+**Summary:** 📋 235 total — 🕐 155 active — ⏳ 0 likely inactive — ❌ 54 rejected — 💬 8 interviews — ✅ 2 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
