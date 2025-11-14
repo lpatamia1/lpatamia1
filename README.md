@@ -31,6 +31,7 @@ I'm always excited to learn new things. Right now, I'm focused on:
       src="https://raw.githubusercontent.com/lpatamia1/lpatamia1/output/github-contribution-grid-snake-pink.svg" />
   </picture>
 </div>
+
 ---
 
 ### My Tech Stack 🛠️ 
