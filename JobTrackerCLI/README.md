@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-229-blue">   <img src="https://img.shields.io/badge/Active-149-green">   <img src="https://img.shields.io/badge/Rejected-54-red">   <img src="https://img.shields.io/badge/Interviews-8-yellow">
+  <img src="https://img.shields.io/badge/Total-233-blue">   <img src="https://img.shields.io/badge/Active-153-green">   <img src="https://img.shields.io/badge/Rejected-54-red">   <img src="https://img.shields.io/badge/Interviews-8-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **229 positions** across multiple industries. Currently, **149 applications remain active**, and **0 likely inactive**, with **8 interviews** completed.
+So far, I've applied to **233 positions** across multiple industries. Currently, **153 applications remain active**, and **0 likely inactive**, with **8 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -26,8 +26,8 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left" width="50%">
 
-- **Total Applications:** 229  
-- 🕐 **Active / Pending:** 149  
+- **Total Applications:** 233  
+- 🕐 **Active / Pending:** 153  
 - ⏳ **Likely Inactive:** 0  
 - ❌ **Rejected:** 54  
 
@@ -45,14 +45,14 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left">
 
-- 📈 **Success Rate:** 4.4%  
+- 📈 **Success Rate:** 4.3%  
 - 📦 **Closed:** 24  
 - 🌐 **Top Source:** Indeed  
-- ⚡ **Avg Applications per Week:** 7.6  
+- ⚡ **Avg Applications per Week:** 7.8  
 - 🕐 **Still Waiting (Applied Only):** 0  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 60 days  
-- 🆕 **Most Recent:** [Blue Bird Day LLC](https://bluebirddayprogram.com/) — Teacher Assistant (10/29/2025)  
+- 📆 **Avg Days Since Application:** 59 days  
+- 🆕 **Most Recent:** [Lucrotec LLC](https://www.linkedin.com/company/lucrotec/) — Information Technology Support Engineer (11/13/2025)  
 </td></tr></table>
 
 <div align="center">
@@ -61,11 +61,11 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td valign='top' align='left'>
 
-• **IT / Support:** 91<br>
+• **IT / Support:** 94<br>
 • **Software / Development:** 33<br>
 • **Animal Care:** 25<br>
 • **AI / Data Science:** 19<br>
-• **Data / Analytics:** 14<br>
+• **Data / Analytics:** 15<br>
 • **Other:** 12<br>
 • **Retail / Service:** 10<br>
 • **Administration:** 6<br>
@@ -93,6 +93,10 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 
 | Company | Role | Type | Location | Status | Date Applied | Source | Notes |
 |----------|------|------|-----------|----------|---------------|---------|--------|
+| [Lucrotec LLC](https://www.linkedin.com/company/lucrotec/) | Information Technology Support Engineer | IT | Remote | Other | 11/13/2025 | LinkedIn | Promoted postl remote full-time IT Support Engineer position. Hiring contact is David G. Alley (CPO, HR exec). Actively reviewing applicants, applied via LinkedIn Easy Apply. |
+| [Talkdesk](https://www.linkedin.com/company/talkdesk/) | Technical Support Engineer | IT / Customer Support | Remote | Other | 11/13/2025 | LinkedIn | Full-time remote Technical Support Engineer role. Promoted post actively reviewing applicants. |
+| [Data Axle](https://www.linkedin.com/company/data-axle/) | Human Resources Systems and Data Analyst | Data / HR Analytics | Remote | Other | 11/13/2025 | LinkedIn | Full-time remote Human Resources Systems and Data Analyst role. |
+| [Reynolds and Reynolds](https://www.reyrey.com/) | Entry Level Customer Training Specialist - Traveling | IT / Customer Support | Chicago, IL | Other | 11/13/2025 | Indeed | Full-time traveling Customer Training Specialist role based in Chicago focused on customer software training and support. |
 | [Blue Bird Day LLC](https://bluebirddayprogram.com/) | Teacher Assistant | Teaching | Chicago, IL | Other | 10/29/2025 | Indeed | Therapeutic preschool/kindergarten setting – early childhood support role with focus on developmental skills. |
 | [Grand Cru Chicago](https://www.grandcruchicago.com/) | Wine Bar Server | Hospitality / Retail | Chicago, IL | Other | 10/29/2025 | Indeed | Part-time wine bar/retail store role; talk wine, fast-paced service, flexible schedule. |
 | [Qiao Lin Hotpot](https://www.choosechicago.com/listing/qiao-lin-hotpot-streeterville/) | Server | Hospitality / Restaurant | Chicago, IL | Other | 10/29/2025 | Indeed | Authentic Chongqing-style hot pot concept in Streeterville; high energy dining, front-of-house guest service. |
@@ -325,7 +329,7 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 229 total — 🕐 149 active — ⏳ 0 likely inactive — ❌ 54 rejected — 💬 8 interviews — ✅ 2 hired.**
+**Summary:** 📋 233 total — 🕐 153 active — ⏳ 0 likely inactive — ❌ 54 rejected — 💬 8 interviews — ✅ 2 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
