@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-229-blue">   <img src="https://img.shields.io/badge/Active-151-green">   <img src="https://img.shields.io/badge/Rejected-52-red">   <img src="https://img.shields.io/badge/Interviews-8-yellow">
+  <img src="https://img.shields.io/badge/Total-229-blue">   <img src="https://img.shields.io/badge/Active-149-green">   <img src="https://img.shields.io/badge/Rejected-54-red">   <img src="https://img.shields.io/badge/Interviews-8-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **229 positions** across multiple industries. Currently, **151 applications remain active**, and **0 likely inactive**, with **8 interviews** completed.
+So far, I've applied to **229 positions** across multiple industries. Currently, **149 applications remain active**, and **0 likely inactive**, with **8 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -27,9 +27,9 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 <table align="center"><tr><td align="left" width="50%">
 
 - **Total Applications:** 229  
-- 🕐 **Active / Pending:** 151  
+- 🕐 **Active / Pending:** 149  
 - ⏳ **Likely Inactive:** 0  
-- ❌ **Rejected:** 52  
+- ❌ **Rejected:** 54  
 
 </td><td align="left" width="50%">
 
@@ -103,8 +103,8 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 | [CHC Wellness](https://www.chcw.com/) | Help Desk Support Specialist - Tier 1 | IT | Chicago, IL | Other | 10/28/2025 | Indeed | As a Help Desk Support Specialist at CHC Wellbeing, you’ll be the first point of contact for technical issues, helping both internal staff and program participants troubleshoot IT-and-software problems while supporting the company’s wellbeing technology infrastructure so everyone can focus on thriving rather than fighting tools. |
 | [Raden Wellness](https://www.radenwellness.com/) | Receptionist | Healthcare / Admin | Chicago, IL | Other | 10/28/2025 | Indeed | First point of contact for patients with phone triage, appointment scheduling, and front-desk support in a functional wellness clinic focused on health optimization. |
 | [The Goddess and Grocer – Gold Coast](https://www.thegoddessandgrocer.com/) | Front of House Staff | Hospitality / Food Service | Chicago, IL | Other | 10/28/2025 | Indeed | Full-time FOH role handling barista duties, guest service, counter operations and maintaining beautiful store displays in a gourmet food market setting. |
-| [Colectivo Coffee Roasters](https://colectivocoffee.com/) | Cafe Co-Worker | Hospitality / Barista | Ravenswood, Chicago, IL | Other | 10/28/2025 | Indeed | Front-facing cafe role preparing coffee and food, providing customer service, handling cash, and maintaining cleanliness in a busy neighborhood location. |
-| [Colectivo Coffee Roasters](https://colectivocoffee.com/) | Cafe Co-Worker - Seasonal | Hospitality / Barista | Ravenswood, Chicago, IL | Other | 10/28/2025 | Indeed | Part-time seasonal barista role providing customer service, preparing drinks and food, handling cash, and maintaining a clean cafe environment. |
+| [Colectivo Coffee Roasters](https://colectivocoffee.com/) | Cafe Co-Worker | Hospitality / Barista | Ravenswood, Chicago, IL | Rejected | 10/28/2025 | Indeed | Front-facing cafe role preparing coffee and food, providing customer service, handling cash, and maintaining cleanliness in a busy neighborhood location. |
+| [Colectivo Coffee Roasters](https://colectivocoffee.com/) | Cafe Co-Worker - Seasonal | Hospitality / Barista | Ravenswood, Chicago, IL | Rejected | 10/28/2025 | Indeed | Part-time seasonal barista role providing customer service, preparing drinks and food, handling cash, and maintaining a clean cafe environment. |
 | [Monos](https://www.monos.com/) | Retail Host | Retail / Hospitality | Chicago, IL | Other | 10/28/2025 | Indeed | Customer-focused retail host role delivering warm service, demonstrating premium travel products, handling POS, and supporting merchandising in a sustainability-focused brand environment. |
 | [Itoko – Boka Restaurant Group](https://www.bokagrp.com/) | Server | Hospitality / Restaurant | Chicago, IL | Other | 10/28/2025 | Indeed | Full-time server role delivering high-level guest service, proper food and beverage standards, and efficient service flow at a sushi and robata concept from a James Beard Award-winning restaurant group. |
 | [Mei’s](https://www.meischicago.com/) | Server | Hospitality / Restaurant | Chicago, IL | Other | 10/28/2025 | Indeed | Part-time server position taking orders, delivering food and drinks, handling payments, and ensuring a positive dining experience at a Michigan Avenue restaurant. |
@@ -325,7 +325,7 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 229 total — 🕐 151 active — ⏳ 0 likely inactive — ❌ 52 rejected — 💬 8 interviews — ✅ 2 hired.**
+**Summary:** 📋 229 total — 🕐 149 active — ⏳ 0 likely inactive — ❌ 54 rejected — 💬 8 interviews — ✅ 2 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
