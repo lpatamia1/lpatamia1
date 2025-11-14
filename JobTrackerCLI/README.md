@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-229-blue">   <img src="https://img.shields.io/badge/Active-153-green">   <img src="https://img.shields.io/badge/Rejected-52-red">   <img src="https://img.shields.io/badge/Interviews-9-yellow">
+  <img src="https://img.shields.io/badge/Total-229-blue">   <img src="https://img.shields.io/badge/Active-151-green">   <img src="https://img.shields.io/badge/Rejected-52-red">   <img src="https://img.shields.io/badge/Interviews-8-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **229 positions** across multiple industries. Currently, **153 applications remain active**, and **0 likely inactive**, with **9 interviews** completed.
+So far, I've applied to **229 positions** across multiple industries. Currently, **151 applications remain active**, and **0 likely inactive**, with **8 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -27,15 +27,15 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 <table align="center"><tr><td align="left" width="50%">
 
 - **Total Applications:** 229  
-- 🕐 **Active / Pending:** 153  
+- 🕐 **Active / Pending:** 151  
 - ⏳ **Likely Inactive:** 0  
 - ❌ **Rejected:** 52  
 
 </td><td align="left" width="50%">
 
-- 💬 **Interviewed:** 9  
-- ✅ **Hired / Offer:** 0  
-- 🗓️ **Last Updated:** November 4, 2025  
+- 💬 **Interviewed:** 8  
+- ✅ **Hired / Offer:** 2  
+- 🗓️ **Last Updated:** November 14, 2025  
 
 </td></tr></table>
 
@@ -45,13 +45,13 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left">
 
-- 📈 **Success Rate:** 3.9%  
+- 📈 **Success Rate:** 4.4%  
 - 📦 **Closed:** 24  
 - 🌐 **Top Source:** Indeed  
-- ⚡ **Avg Applications per Week:** 8.0  
+- ⚡ **Avg Applications per Week:** 7.6  
 - 🕐 **Still Waiting (Applied Only):** 0  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 50 days  
+- 📆 **Avg Days Since Application:** 60 days  
 - 🆕 **Most Recent:** [Blue Bird Day LLC](https://bluebirddayprogram.com/) — Teacher Assistant (10/29/2025)  
 </td></tr></table>
 
@@ -113,7 +113,7 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 | [Murgado Automotive Group](https://www.murgadoautomotivegroup.com/) | IT Helpdesk Technician | IT Support | Chicago, IL | Other | 10/28/2025 | Indeed | Full-time help desk role providing first-line technical support, resolving hardware/software issues, managing accounts, and supporting users across Chicago dealership locations. |
 | [Supernova Technology](https://www.supernovacompanies.com/careers) | Junior Software Engineer | Software | Chicago, IL | Rejected | 10/28/2025 | LinkedIn | Full-time engineering role building and maintaining software features. Opportunity to grow technical skills in an on-site collaborative environment at a Chicago fintech company. (Interviewed) |
 | [Nolan Transportation Group](https://ntgfreight.com/careers) | Business Development Sales Representative | Sales | Chicago, IL | Interview | 10/28/2025 | Indeed | Research leads and cold-call potential clients to generate new business. |
-| [Snorkel AI](https://snorkel.ai/careers) | AI Training Contributor | AI / Data Annotation | Remote | Interview | 10/28/2025 | Indeed | Assist in training and evaluating machine learning models. |
+| [Snorkel AI](https://snorkel.ai/careers) | AI Training Contributor | AI / Data Annotation | Remote | Hired | 10/28/2025 | Indeed | Assist in training and evaluating machine learning models. |
 | [Tarian Group](https://www.tariangroup.com/join-our-team) | BioMed Field Service Technician III | Medical Equipment Service | Chicago, IL | Rejected | 10/28/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [PAWS Chicago](https://www.pawschicago.org/about-us/careers) | Animal Care Associate | Animal Care | Chicago, IL | Other | 10/27/2025 | Indeed | Daily feeding, cleaning, enrichment, medication logging, and maintaining clean kennel and common areas for dogs and cats in a shelter environment. |
 | [The Dog Stop – Bucktown](https://www.thedogstop.com/locations/chicago-bucktown/) | Dog Handler and Daycare Attendant | Animal Care | Chicago, IL | Other | 10/27/2025 | Indeed | Supervise playgroups, ensure dog safety and enrichment, maintain clean kennels and play areas, assist with feeding and meds, and document behavior and health observations. |
@@ -138,7 +138,7 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 | [Benmore](https://benmore.tech) | Forward-Deployed Software Engineer | Software | Chicago, IL | Other | 10/25/2025 | LinkedIn | Chicago-based technical consulting firm that partners with startups and small businesses to bring software ideas from concept to MVP and beyond. |
 | [Titan Security Group](https://www.titan-security.com/) | Junior Software Support Specialist | Software | Chicago, IL | Other | 10/25/2025 | LinkedIn | Security group based in Chicago, privately-held security solutions provider offering services like security staffing and electronic security systems. |
 | [Resource Innovations](https://resource-innovations.com/) | Energy Efficiency Intern | Sustainability / Tech | Chicago, IL (Hybrid) | Other | 10/25/2025 | LinkedIn | Woman-led energy transformation company that partners with utilities, governments, and businesses to design and implement energy efficiency and sustainability programs. |
-| [TurnUp](https://www.turnup.us/) | Youth Activism Internship | Internship | Remote | Other | 10/24/2025 | Company Website | Remote program to amplify civic engagement and address social justice issues. |
+| [TurnUp](https://www.turnup.us/) | Youth Activism Internship | Internship | Remote | Hired | 10/24/2025 | Company Website | Remote program to amplify civic engagement and address social justice issues. |
 | [HANA Center](https://www.hanacenter.org/) | Community Volunteer | Volunteer | Chicago, IL | Other | 10/24/2025 | Company Website | Nonprofit empowering Korean, Asian American, and multiethnic immigrant communities through education, social services, culture, and community organizing. |
 | [Sarah’s Circle](https://sarahs-circle.org/) | Shelter Staff | Community Outreach / Nonprofit | Chicago, IL | Other | 10/24/2025 | Indeed | Support day-to-day operations of the women's emergency and interim housing programs. |
 | [SWATware LLC](https://swatware.com/) | It Specialist | IT | Chicago, IL | Rejected | 10/24/2025 | Indeed | Support clients in maintaining, securing, and optimizing their IT environments by providing help-desk and technical support for end-users and network operations. |
@@ -325,8 +325,8 @@ So far, I've applied to **229 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 229 total — 🕐 153 active — ⏳ 0 likely inactive — ❌ 52 rejected — 💬 9 interviews — ✅ 0 hired.**
+**Summary:** 📋 229 total — 🕐 151 active — ⏳ 0 likely inactive — ❌ 52 rejected — 💬 8 interviews — ✅ 2 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
-*Last updated November 4, 2025.*
+*Last updated November 14, 2025.*
