@@ -13,12 +13,12 @@ A living record of my 2025 job applications, interview progress, and outcomes ac
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total-235-blue">   <img src="https://img.shields.io/badge/Active-155-green">   <img src="https://img.shields.io/badge/Rejected-54-red">   <img src="https://img.shields.io/badge/Interviews-8-yellow">
+  <img src="https://img.shields.io/badge/Total-236-blue">   <img src="https://img.shields.io/badge/Active-152-green">   <img src="https://img.shields.io/badge/Rejected-58-red">   <img src="https://img.shields.io/badge/Interviews-8-yellow">
 </p>
 
 <hr style='width:60%;border:1px solid #f0d7ff;margin:20px auto;'>
 
-So far, I've applied to **235 positions** across multiple industries. Currently, **155 applications remain active**, and **0 likely inactive**, with **8 interviews** completed.
+So far, I've applied to **236 positions** across multiple industries. Currently, **152 applications remain active**, and **0 likely inactive**, with **8 interviews** completed.
 
 <div align="center">
   <h2>📊 Application Overview</h2>
@@ -26,16 +26,16 @@ So far, I've applied to **235 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left" width="50%">
 
-- **Total Applications:** 235  
-- 🕐 **Active / Pending:** 155  
+- **Total Applications:** 236  
+- 🕐 **Active / Pending:** 152  
 - ⏳ **Likely Inactive:** 0  
-- ❌ **Rejected:** 54  
+- ❌ **Rejected:** 58  
 
 </td><td align="left" width="50%">
 
 - 💬 **Interviewed:** 8  
 - ✅ **Hired / Offer:** 2  
-- 🗓️ **Last Updated:** November 14, 2025  
+- 🗓️ **Last Updated:** November 18, 2025  
 
 </td></tr></table>
 
@@ -45,13 +45,13 @@ So far, I've applied to **235 positions** across multiple industries. Currently,
 
 <table align="center"><tr><td align="left">
 
-- 📈 **Success Rate:** 4.3%  
+- 📈 **Success Rate:** 4.2%  
 - 📦 **Closed:** 24  
 - 🌐 **Top Source:** Indeed  
-- ⚡ **Avg Applications per Week:** 7.8  
+- ⚡ **Avg Applications per Week:** 7.7  
 - 🕐 **Still Waiting (Applied Only):** 0  
 - 📍 **Top Location:** Chicago, IL  
-- 📆 **Avg Days Since Application:** 59 days  
+- 📆 **Avg Days Since Application:** 63 days  
 - 🆕 **Most Recent:** [Lucrotec LLC](https://www.linkedin.com/company/lucrotec/) — Information Technology Support Engineer (11/13/2025)  
 </td></tr></table>
 
@@ -65,7 +65,7 @@ So far, I've applied to **235 positions** across multiple industries. Currently,
 • **Software / Development:** 33<br>
 • **Animal Care:** 25<br>
 • **AI / Data Science:** 19<br>
-• **Data / Analytics:** 16<br>
+• **Data / Analytics:** 17<br>
 • **Other:** 12<br>
 • **Retail / Service:** 10<br>
 • **Administration:** 6<br>
@@ -93,12 +93,13 @@ So far, I've applied to **235 positions** across multiple industries. Currently,
 
 | Company | Role | Type | Location | Status | Date Applied | Source | Notes |
 |----------|------|------|-----------|----------|---------------|---------|--------|
-| [Lucrotec LLC](https://www.linkedin.com/company/lucrotec/) | Information Technology Support Engineer | IT | Remote | Other | 11/13/2025 | LinkedIn | Promoted postl remote full-time IT Support Engineer position. Hiring contact is David G. Alley (CPO, HR exec). Actively reviewing applicants, applied via LinkedIn Easy Apply. |
+| [Lucrotec LLC](https://www.linkedin.com/company/lucrotec/) | Information Technology Support Engineer | IT | Remote | Rejected | 11/13/2025 | LinkedIn | Promoted postl remote full-time IT Support Engineer position. Hiring contact is David G. Alley (CPO, HR exec). Actively reviewing applicants, applied via LinkedIn Easy Apply. |
 | [Talkdesk](https://www.linkedin.com/company/talkdesk/) | Technical Support Engineer | IT / Customer Support | Remote | Other | 11/13/2025 | LinkedIn | Full-time remote Technical Support Engineer role. Promoted post actively reviewing applicants. |
-| [Data Axle](https://www.linkedin.com/company/data-axle/) | Human Resources Systems and Data Analyst | Data / HR Analytics | Remote | Other | 11/13/2025 | LinkedIn | Full-time remote Human Resources Systems and Data Analyst role. |
+| [Data Axle](https://www.linkedin.com/company/data-axle/) | Human Resources Systems and Data Analyst | Data / HR Analytics | Remote | Rejected | 11/13/2025 | LinkedIn | Full-time remote Human Resources Systems and Data Analyst role. |
 | [Reynolds and Reynolds](https://www.reyrey.com/) | Entry Level Customer Training Specialist - Traveling | IT / Customer Support | Chicago, IL | Other | 11/13/2025 | Indeed | Full-time traveling Customer Training Specialist role based in Chicago focused on customer software training and support. |
 | [Simon Hegele Healthcare Solutions](https://www.linkedin.com/company/simon-hegele-healthcare-solutions/) | Data Analyst | Data / Operations | Wood Dale, IL (Hybrid) | Other | 11/13/2025 | LinkedIn | Full-time hybrid Data Analyst role ($70K/year). Focus on operational data analysis, performance metrics, and process improvement. Works with operations and finance teams. Hiring contact: Lindsay Parochelli (Talent Acquisition Specialist). |
 | [The Planet Group](https://www.linkedin.com/company/the-planet-group/) | Recruiter – Recent Graduates | HR / Recruiting | Chicago, IL (On-site) | Other | 11/13/2025 | LinkedIn | Full-time on-site Recruiter role ($50K/year) for recent graduates. Promoted post actively reviewing applicants. |
+| [Radian](https://careers.radian.com/us/en) | Data Scientist I - Hybrid | Data Science | New York; NY | Rejected | 11/13/2025 | Indeed | Entry-level data science role focused on analytics, modeling, and supporting business insights. |
 | [Blue Bird Day LLC](https://bluebirddayprogram.com/) | Teacher Assistant | Teaching | Chicago, IL | Other | 10/29/2025 | Indeed | Therapeutic preschool/kindergarten setting – early childhood support role with focus on developmental skills. |
 | [Grand Cru Chicago](https://www.grandcruchicago.com/) | Wine Bar Server | Hospitality / Retail | Chicago, IL | Other | 10/29/2025 | Indeed | Part-time wine bar/retail store role; talk wine, fast-paced service, flexible schedule. |
 | [Qiao Lin Hotpot](https://www.choosechicago.com/listing/qiao-lin-hotpot-streeterville/) | Server | Hospitality / Restaurant | Chicago, IL | Other | 10/29/2025 | Indeed | Authentic Chongqing-style hot pot concept in Streeterville; high energy dining, front-of-house guest service. |
@@ -203,7 +204,7 @@ So far, I've applied to **235 positions** across multiple industries. Currently,
 | [Doggy Daycare Attendant / Dog Handler — Urban Pooch Canine Life Center](https://www.urbanpooch.com/employment/) | Doggy Daycare Attendant / Dog Handler | Animal Petcare / Pet Services | Chicago, IL | Rejected | 10/17/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [IT Support Specialist (Hybrid) — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/) | IT Support Specialist (Hybrid) | Healthcare / IT | Chicago, IL | Rejected | 10/17/2025 | Indeed | <span style='color:#999;'>—</span> |
 | [Barback — Z Bar, The Hongkong and Shanghai Hotels, Limited (Chicago, IL)](https://www.peninsula.com/en/careers) | Barback | Hospitality | Chicago, IL | Rejected | 10/17/2025 | Company Website | <span style='color:#999;'>—</span> |
-| [Front Desk Medical Receptionist — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/) | Front Desk Medical Receptionist | Healthcare / Administration | Chicago, IL | Other | 10/17/2025 | Company Website | <span style='color:#999;'>—</span> |
+| [Front Desk Medical Receptionist — Erie Family Health Center](https://www.eriefamilyhealth.org/careers/) | Front Desk Medical Receptionist | Healthcare / Administration | Chicago, IL | Rejected | 10/17/2025 | Company Website | <span style='color:#999;'>—</span> |
 | [East Bank Club](https://www.eastbankclub.com/) | Receptionist | Customer Service | Chicago, IL | Rejected | 10/17/2025 | Indeed | Fitness and social club. |
 | Eataly | Cashier | Retail / Service | River North, Chicago, IL | Other | 10/15/2025 | LinkedIn | <span style='color:#999;'>—</span> |
 | [MUSEUM OF ICE CREAM](https://www.museumoficecream.com/careers) | Show Ambassador (Weekends Only) | Retail / Customer Service | Chicago, IL | Rejected | 10/15/2025 | LinkedIn | <span style='color:#999;'>—</span> |
@@ -331,8 +332,8 @@ So far, I've applied to **235 positions** across multiple industries. Currently,
 
 </details>
 
-**Summary:** 📋 235 total — 🕐 155 active — ⏳ 0 likely inactive — ❌ 54 rejected — 💬 8 interviews — ✅ 2 hired.**
+**Summary:** 📋 236 total — 🕐 152 active — ⏳ 0 likely inactive — ❌ 58 rejected — 💬 8 interviews — ✅ 2 hired.**
 
 ---
 🌸 *Maintained by lpatamia1 — powered by the Java Job Application Tracker.*
-*Last updated November 14, 2025.*
+*Last updated November 18, 2025.*
